@@ -1,0 +1,180 @@
+Part 1:
+Prompt: Write a product description for a water bottle.
+Answer: 
+Stay Hydrated, Wherever Life Takes You!
+
+Meet your new everyday hydration essential! This sleek, durable water bottle is designed to keep you refreshed throughout your busy day. Whether you're heading to the gym, commuting to work, exploring the outdoors, or simply relaxing at home, it's the perfect companion.
+
+Featuring a lightweight, easy-to-carry design and a convenient leak-resistant lid, this bottle makes staying hydrated effortless. Its reusable construction offers an eco-friendly alternative to disposable plastic bottles, helping you reduce waste while enjoying your favorite beverages.
+
+Key Features:
+
+Durable Design: Built for everyday use and long-lasting convenience.
+Leak-Resistant Lid: Helps prevent spills and messes on the go.
+Portable & Lightweight: Easy to carry in your bag or backpack.
+Reusable & Eco-Friendly: A great alternative to single-use plastic bottles.
+Versatile Use: Perfect for the gym, office, school, travel, and outdoor adventures.
+Stay refreshed. Stay active. Stay hydrated!
+
+Part 2:
+
+Modified Prompt 1: You are the head of marketing of H2o4U. The company wants to get more sales and compete against other water bottle companies. 
+You are assigned to create a product description for the new H2o4U waterbottle.
+This water bottle has stainless steel with double wall vaccum insulation and is created to keep the water temperature for a longer period of time than most stainless steel water bottles. This description will be going on the social media page for the H2o4U comapny. 
+The target audience are the working class people, cooks and mostly women, though its still open for male sectors as well. 
+Create a description that is appealing to the audience and would bring in lots of sales as fast as possible. 
+ 
+Answer: 💧 MEET YOUR NEW EVERYDAY ESSENTIAL – H2o4U! 💧
+
+Busy mornings? Long work shifts? Hot kitchens? Endless errands? We've got you covered! ❤️
+
+Introducing the H2o4U Stainless Steel Insulated Water Bottle – designed to keep up with YOUR lifestyle!
+
+Whether you're working a long shift, cooking up a storm, running errands, hitting the gym, or simply enjoying a moment for yourself, H2o4U is here to keep your favorite drink at the temperature you love for longer!
+
+✨ WHY YOU'LL LOVE H2o4U:
+
+💦 Premium Stainless Steel: Durable, stylish, and made for everyday use.
+❄️ Double-Wall Vacuum Insulation: Advanced insulation designed to maintain your drink's temperature longer than most standard stainless steel water bottles.
+🔥 Hot or Cold, Your Choice: Enjoy refreshing cold water or your favorite warm drink throughout your busy day.
+💪 Made for Your Lifestyle: Perfect for working professionals, chefs, busy moms, students, fitness lovers, and everyone on the go!
+
+Your day is busy enough. Staying hydrated shouldn't be!
+
+Don't settle for lukewarm water when you can have H2o4U!
+
+❤️ STAY REFRESHED. STAY READY. STAY H2o4U!
+
+🛍️ ORDER YOUR H2o4U BOTTLE TODAY! Make every sip count!
+
+#H2o4U #StayHydrated #EverydayEssentials #WaterBottleGoals #WorkLifeEssentials #StayRefreshed #HydrationOnTheGo
+
+Analysis: Compared to the first simple prompt, this new prompt makes it more social media friendly by tailoring it more to how the product would help the user and then providing real facts about the bottle, instea dof made up facts. 
+The simple prompt generated a broad answer with random facts that weren't provided. It could not really provide specified answers about the water bottle because it was not given within the prompt, which would lead to halluciantion if the features or target audience was different.
+I used role prompting and context technique for this modified prompt. The prompt is a bit jumpy but the LLM was able to provide an answer that fits the prompt that was provided.
+It gave emojis, catchy lines and hashtags to fit the social media scene. It also states the actual features, lifestyles and targte audience. 
+
+Modified Prompt 2: Write a product description for a water bottle: let it feature the Headline first, followed with its tops features and why they should choose this bottle than any other water bottle. 
+For example, H2o's #1 water bottle:
+Are you tired of plastic water bottles, drinking microplastics, unknown chemicals and your water not staying cold in the heat?
+H2o has the perfect bottle for you:
+Water keeps its temperature for 120 hours regardless of whether the lid stays on or off
+replaceable straws 
+filtered water 
+great for being on the go, long work days, going to the gym and packing lunch. 
+Buy yours now !
+
+Answer: H2O – Your #1 Everyday Water Bottle!
+
+Tired of plastic water bottles, worrying about microplastics and unknown chemicals, or drinking warm water halfway through your day? It's time to upgrade your hydration!
+
+Meet H2O, the water bottle designed to keep you hydrated, refreshed, and ready for whatever the day brings.
+
+💧 Why H2O Stands Above the Rest:
+
+120-Hour Temperature Retention: Enjoy water at your desired temperature for up to 120 hours, whether the lid is on or off!
+Replaceable Straws: Convenient, reusable, and easy to replace whenever needed.
+Filtered Water: Enjoy cleaner, better-tasting water wherever life takes you.
+Convenience on the Go: Designed to fit seamlessly into your everyday lifestyle.
+Built for Your Busy Life: Perfect for long workdays, gym sessions, road trips, school, travel, and packing your lunch.
+
+Why Choose H2O?
+
+Why settle for an ordinary water bottle when you can have one designed to make staying hydrated easier and more convenient? With temperature retention, replaceable straws, and built-in water filtration, H2O brings together the features you need in one bottle.
+
+Less hassle. More hydration. Better everyday convenience.
+
+Your hydration deserves an upgrade.
+
+🛒 GET YOUR H2O BOTTLE TODAY!
+
+Stay cool. Stay refreshed. Stay hydrated. 💙
+
+Analysis: For this prompt I used Few-shot prompting and output format techniques. Telling the LLM how to format the anwser and giving it an example of what it should look like, or how i would do it. 
+The LLM used the same format and gave the description a bit more context than the example i gave.. which is good.  It gives 2 sections on why the user should choose the company. this could have just been one section because it makes it a bit repetitive. 
+
+I personally like the context and and few- shot prompting. though I did not try the two techniques together. Based of using these techniques on two different prompts. 
+The few-shot prompting gives it a direct format on what the answer should be like and giving the LLM more context prevents it from making up things randomly due to lack of data/information. 
+The LLM did not ignore any part in my prompt, it gave more context compared to the example that i gave it but it followed the format and the information given to it. 
+
+Part 3:
+
+Two products: smart thermostat, standing desk
+
+Simple prompts:
+write a product description for a smart thermostat/standing desk?
+
+Simple prompt Answers:
+A: Smart Thermostat – Intelligent Comfort, Effortless Control
+
+Take control of your home’s comfort with our innovative Smart Thermostat. Designed to make everyday living more convenient and energy-efficient, it automatically adjusts your home's temperature to match your preferences and daily routine.
+
+With an intuitive touchscreen display and easy-to-use smart controls, you can manage your home's heating and cooling from virtually anywhere using your smartphone. Create personalized temperature schedules, monitor energy usage, and enjoy consistent comfort throughout the day.
+
+Key Features:
+
+Smart Temperature Control: Automatically adjusts settings to maintain your ideal indoor temperature.
+Remote Access: Control your heating and cooling from your smartphone, wherever you are.
+Energy Efficiency: Optimize temperature settings to help reduce unnecessary energy consumption.
+Custom Scheduling: Set temperature preferences based on your daily routine.
+User-Friendly Design: Modern touchscreen interface that complements any home.
+Convenient Automation: Enjoy a smarter, more comfortable home with less manual adjustment.
+
+Comfort Meets Convenience
+
+Upgrade your home with a smarter way to manage indoor temperatures. Whether you're relaxing at home or away for the day, this Smart Thermostat helps create the perfect environment while giving you greater control over your home's energy use.
+
+
+B: Electric Standing Desk – Work Smarter, Feel Better
+
+Transform your workspace with our modern Electric Standing Desk, designed to enhance comfort, productivity, and flexibility throughout your workday. Whether you're working from home or in a professional office, this desk makes it easy to switch between sitting and standing with the touch of a button.
+
+Featuring a smooth electric height-adjustment system, a spacious desktop, and a sleek contemporary design, it provides the perfect balance of functionality and style. Customize your working position to suit your needs, reduce prolonged sitting, and create a workspace that supports a healthier daily routine.
+
+Key Features:
+
+Electric Height Adjustment: Easily switch between sitting and standing positions at the push of a button.
+Ergonomic Comfort: Adjust the desk height to support a more comfortable working posture.
+Spacious Work Surface: Plenty of room for monitors, laptops, office accessories, and everyday essentials.
+Quiet Operation: Smooth, low-noise motor for effortless height adjustments.
+Modern Design: Clean lines and a stylish finish that complement any home or office.
+Sturdy Construction: Durable frame designed for stability and dependable everyday use.
+Customizable Settings: Save preferred height positions for quick and convenient adjustments.
+
+Upgrade Your Workspace
+
+Experience greater flexibility and comfort with a desk that adapts to your workday. The Electric Standing Desk is the ideal addition to any modern workspace, helping you stay comfortable, focused, and productive from morning to evening.
+
+Modified Prompt (Smart Thermostat): You are the a Product manager for a company creating smart products. 
+Write a product description for a smart thermostat. This description will be presented to the CEO to get approved. 
+Key features:
+- Manages temperatures from anywhere using a smartphone app
+- Automatic temperature schedules based on daily routines
+- Receive automated reminders to change air filters
+Rules:
+- max 75 words 
+- End with one sentence on how the company and customers would benefit from the product
+
+Answer (Smart Thermostat): Smart Thermostat – Intelligent Comfort, Simplified
+
+The Smart Thermostat gives customers effortless control over their home environment. Through a smartphone app, users can manage temperatures from anywhere, create automatic temperature schedules based on daily routines, and receive timely reminders to replace air filters. Designed to deliver convenience, comfort, and smarter home management, this product will strengthen our smart home portfolio, drive customer satisfaction, and create new opportunities for company growth.
+
+Modified Prompt (standong desk): You are the a Product manager for a company. 
+Write a product description for a standing desk. This description will be presented to the CEO to get approved. 
+Key features:
+- Adjustment feature accomodating differnt heights 
+- Programmable menory presets
+Here's an example:
+"The Standing desk helps workers, working from home, accomadates all heights without straining and injuries. It has loads of benefits for the customenr. Best for people who work from home, and may not want to sit all day and or is taller than the average desk." 
+make it sound a bit better than this example. 
+
+Answer: Product Description: Height-Adjustable Standing Desk
+
+The Height-Adjustable Standing Desk is designed to provide a flexible, comfortable, and ergonomic workspace for employees working in both office and home environments. Its adjustable-height feature accommodates users of different heights, allowing each individual to customize the desk to their preferred working position. This flexibility helps promote better posture, reduce discomfort associated with prolonged sitting, and encourage a healthier balance between sitting and standing throughout the workday.
+
+The desk also features programmable memory presets, allowing users to save their preferred desk heights and switch between them with the touch of a button. This provides convenience, saves time, and makes it easy for multiple users to personalize the workstation.
+
+Overall, the standing desk offers a practical solution for creating a more comfortable, adaptable, and productive work environment. It is particularly beneficial for employees who spend extended periods at their desks and want the flexibility to alternate between sitting and standing.
+
+Analysis: I used role, context and constraint techniques for the imporvemnt promot for the smart thermostat while using the role, context and few-shot technique for the standing desk prompt. At first the gave alot of context in the answer tailored for the consumer appeal while the imporved version made it more concise and for C-Suite appeals on why or why not they should add the product. 
+

@@ -1,0 +1,173 @@
+Simple Prompt: Are these reviews positive or negative?
+Answer: The reviews are mixed overall, but lean slightly negative.
+
+I analyzed all 110 reviews in your product-reviews.csv file.
+Overall sentiment
+110 reviews
+
+
+
+
+
+
+Positive
+
+33 (30%)
+
+
+Negative
+
+38 (35%)
+
+
+Mixed
+
+21 (19%)
+
+
+Neutral / unclear
+
+18 (16%)
+
+
+Sentiment by product
+Product	Positive	Negative	Overall
+Trailmark Backpack	8	8	Mixed
+Breeze Earbuds	5	7	Slightly negative
+Cozy Knit Blanket	8	7	Slightly positive
+Hearth Electric Kettle	6	6	Mixed
+Lumen Smart Bulbs	6	10	Negative
+
+Key findings
+- Best-performing product: Cozy Knit Throw Blanket, with slightly more positive than negative feedback.
+- Most concerning product: Lumen Smart Bulbs, with 10 negative versus 6 positive reviews.
+- Breeze Wireless Earbuds: Customers appreciate sound quality and battery life but report reliability and connectivity problems.
+- Hearth Electric Kettle: Customers like its appearance and boiling speed, but safety and durability complaints are concerning.
+- Trailmark Backpack: Customers appreciate durability and value, but some report sizing and construction problems.
+Final assessment
+Mixed, leaning negative
+Approximately 35% of reviews are negative, compared with 30% positive. The remaining 35% are mixed or neutral.
+
+My recommendation: Focus on improving the Lumen Smart Bulbs and Breeze Earbuds first, particularly reliability, connectivity, and customer support.
+
+Analysis: The model categorized every label into it either being positive, negative, mixed, or neutral. It then shows how it got to its conclusion by labeling each product, stating the positive and negative value and its overall verdict, the gives bullet points (summary) to the key things it found, an assessment and its reccommendation.
+
+
+Version #1 Prompt: Label each review with exactly one sentiment. Positive: The customer is happy, Negative: customer is unhappy, Mixed: the customer has a clear praise and a clear complaint
+Answer: provides a csv file that has all reviews labeled either mixed, positve, or negative. Then gives me a overview of the file. 
+Labeled all 110 reviews using exactly one sentiment per review.
+Complete
+Sentiment	Count
+Positive	46
+Negative	44
+Mixed	20
+Total	110
+
+Download the labeled CSV:
+
+Version #2 Prompt: Are these reviews positive or negative? Examples:
+"would buy again" -> Positive
+"Wonderful, it's itchy AND thin." -> Negative (sarcasm)
+"Great taste, but the lid cracked in a week." -> Mixed
+ Provides an inline chat of every review and gives a summary in the end 
+ I reviewed all 110 product reviews, including sarcasm, complaints, praise, and mixed opinions.
+Review ID	Sentiment	Review ID	Sentiment
+R001	Negative	R056	Positive
+R002	Mixed	R057	Negative
+R003	Negative	R058	Negative
+R004	Negative	R059	Mixed
+R005	Negative	R060	Mixed
+R006	Positive	R061	Positive
+R007	Mixed	R062	Negative
+R008	Mixed	R063	Mixed
+R009	Mixed	R064	Positive
+R010	Positive	R065	Negative
+R011	Negative	R066	Negative
+R012	Mixed	R067	Mixed
+R013	Mixed	R068	Negative
+R014	Mixed	R069	Positive
+R015	Negative	R070	Positive
+R016	Mixed	R071	Mixed
+R017	Positive	R072	Positive
+R018	Negative	R073	Mixed
+R019	Negative	R074	Negative
+R020	Mixed	R075	Mixed
+R021	Positive	R076	Negative
+R022	Negative	R077	Positive
+R023	Positive	R078	Negative
+R024	Negative	R079	Positive
+R025	Negative	R080	Negative
+R026	Positive	R081	Positive
+R027	Positive	R082	Positive
+R028	Negative	R083	Positive
+R029	Mixed	R084	Positive
+R030	Negative	R085	Negative
+R031	Negative	R086	Positive
+R032	Negative	R087	Mixed
+R033	Positive	R088	Positive
+R034	Positive	R089	Positive
+R035	Positive	R090	Positive
+R036	Mixed	R091	Negative
+R037	Mixed	R092	Positive
+R038	Mixed	R093	Negative
+R039	Positive	R094	Mixed
+R040	Positive	R095	Negative
+R041	Mixed	R096	Negative
+R042	Positive	R097	Mixed
+R043	Mixed	R098	Negative
+R044	Positive	R099	Mixed
+R045	Positive	R100	Negative
+R046	Positive	R101	Mixed
+R047	Positive	R102	Positive
+R048	Negative	R103	Negative
+R049	Negative	R104	Mixed
+R050	Positive	R105	Positive
+R051	Negative	R106	Positive
+R052	Positive	R107	Negative
+R053	Negative	R108	Negative
+R054	Positive	R109	Negative
+R055	Mixed	R110	Negative
+
+Summary
+41
+Positive
+
+40
+Negative
+
+29
+Mixed / unclear
+
+
+
+Total: 110 reviews
+
+Note: Mixed includes reviews with both praise and complaints, as well as reviews without a clearly expressed positive or negative opinion (such as questions or neutral statements). Sarcastic complaints are classified as Negative, not Positive.
+
+
+My TEN reviews
+R092,Cozy Knit Throw Blanket,It's a blanket. Keeps me warm. Positive.
+R088,Lumen Smart Bulbs (4-Pack),Fun for parties! The music sync mode is a hit. Positive.
+R070,Lumen Smart Bulbs (4-Pack),Warm white setting is nice and cozy. Never use the colors. Unclear/mixed.
+R001,Trailmark Hiking Backpack,Smells like chemicals out of the box. Took a week to air out. Negative.
+R002,Breeze Wireless Earbuds,"Noise isolation is decent, but it's not true noise cancelling like the description implies. Still good for the gym." Mixed.
+R012,Lumen Smart Bulbs (4-Pack),Do these work with Google Home or only Alexa? Unclear
+R042,Cozy Knit Throw Blanket,Ok for the price. Mixed.
+R062,Breeze Wireless Earbuds,Shipping took 3 weeks. Negative.
+R108,Breeze Wireless Earbuds,"Wow, they lasted a whole three days before disconnecting every five minutes. Truly impressive engineering." Negative.
+R109,Breeze Wireless Earbuds,Charging case feels cheap and the lid snapped off within a month. Negative.
+
+Review  | My Verdict  | ChatGPT's Verdict
+R092    Positve        Postive
+R088    Positive       Positive
+R070    Unclear/Mixed  Positive 
+R001    Negative       Negative
+R002    Mixed          Mixed
+R012    Unclear        Mixed
+R042    Mixed          Positive
+R062    Negative       Negative
+R108    Negative       Negative
+R109    Negative       Negative
+
+I disagree with ChatGPT's verdit for R070 mainly because they were telling other customers to not use a specific setting, which probably means that that setting is not very good. That to me is not a full positive answer but ChatGPT saw that the beginning part was good and the second part of the review could be read as kind of confusing because it is not really clear.. 
+We also did not really agree with R042 I thought it was mixed becaseu 'ok' is not good or great so there must be something wrong or unsatsisfactory to the customer. Overall, ChatGPT is not wrong. 
