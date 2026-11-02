@@ -1,0 +1,101 @@
+Response: 
+Mixed, leaning slightly negative. I read all 110 reviews and sorted them by hand, since there's no star-rating column to go on.
+
+| Sentiment | Count | Share |
+|---|---|---|
+| Negative | 40 | 36% |
+| Positive | 36 | 33% |
+| Mixed | 20 | 18% |
+| Neutral / questions | 14 | 13% |
+
+The split is close to even across all five products, with each getting 22 reviews:
+
+| Product | Positive | Negative | Mixed | Neutral |
+|---|---|---|---|---|
+| Breeze Wireless Earbuds | 7 | 8 | 4 | 3 |
+| Cozy Knit Throw Blanket | 8 | 6 | 5 | 3 |
+| Hearth Electric Kettle | 7 | 9 | 4 | 2 |
+| Lumen Smart Bulbs | 7 | 9 | 3 | 3 |
+| Trailmark Hiking Backpack | 7 | 8 | 4 | 3 |
+
+- **Sarcasm:** About 10 reviews sound positive on the surface but are negative, such as "Love that the 'waterproof' pack turned my sleeping bag into a sponge. Ten stars." A keyword-based sentiment tool would likely count these as positive.
+- **Mixed reviews:** These split into two groups. Some praise the product but flag one flaw, like the earbuds with great battery but a terrible mic. Others are lukewarm ("good enough for the price").
+- **Neutral:** This bucket is mostly questions ("Does this work with a PS5?") and non-opinions like "Package arrived a day early."
+- **Shipping complaints:** A few negatives are about delivery or the seller, not the product (wrong size sent, box arrived wet). Counting those as neutral would bring negatives down to about 35.
+
+The negative reviews mostly cite durability and defects: broken zippers and buckles, dead bulbs, kettles that leaked or stopped working. The positive ones mostly praise value, comfort and ease of use.
+
+These calls are my own reading, and borderline cases like "it's fine" could go either way. I can export the full list with a sentiment label per review if you'd like to check or adjust it.
+
+Improved Prompt 1:
+Label each response as positive, negative, mixed, neutral, or unclear. 
+
+For example: 
+R001,Trailmark Hiking Backpack,Smells like chemicals out of the box. Took a week to air out.
+R002,Breeze Wireless Earbuds,"Noise isolation is decent, but it's not true noise cancelling like the description implies. Still good for the gym."
+R003,Breeze Wireless Earbuds,Left earbud stopped charging after two weeks. Contacted support and never heard back.
+
+I would label R001 as negative, R002 as neutral, R003 as negative.
+
+Response:
+I labeled all 110 reviews and saved them in `product-reviews-labeled.csv`, which is your original file with a new `label` column. The split is 40 negative, 36 positive, 17 mixed, 12 neutral and 5 unclear.
+
+I followed your examples and used these rules:
+
+- **Sarcasm:** I labeled it by what the reviewer means, so R022, R024, R030, R066, R068, R078, R080, R085, R098 and R108 are negative.
+- **Questions with no opinion:** R012, R067, R087 and R101 are unclear, and so is R094 (a gift that hasn't been opened).
+- **Neutral:** This covers lukewarm or merely adequate reviews like R007, R038, R042, R043, R104, plus R002, which is your example. I also put R005 and R073 here, since each has a complaint softened by a small consolation.
+- **Mixed:** This is for reviews with a clear strength and a clear weakness (R008, R055, R060, R097). It also covers reviews where a problem was fixed or a flaw was minor (R013, R014, R020, R056, R084).
+
+A few were judgment calls that could go another way:
+
+- **R026, R057, R062 and R093** are about shipping rather than the product. I labeled them by tone, so R026 is positive and the other three are negative.
+- **R072** ("can't complain" for a quarter of the price) is positive.
+- **R089** ("looks nice", just received) is positive.
+- **R059 and R070** are positive or mixed with small caveats.
+
+Tell me if you'd treat any of these differently, for example folding the "problem then resolved" reviews into positive, and I can relabel them.
+
+(Have a csv for each review labeled)
+
+Improved Prompt Version 2: 
+You are looking to buy some new items and is looking at their reviews. Review each response and label them as positive, negative, neutral, mixed, or unclear. Format the response so that each review is labeled and with a description on why that labeling. There doesn't need to be any additional text, just the table with the labels is enough.
+
+Response:
+| ID | Product | Label | Why |
+|---|---|---|---|
+| R001 | Trailmark Hiking Backpack | Negative | Strong chemical smell out of the box that took a week to fade. |
+| R002 | Breeze Wireless Earbuds | Mixed | Isolation is decent and good for the gym, but it isn't true noise cancelling as advertised. |
+| R003 | Breeze Wireless Earbuds | Negative | Left earbud stopped charging after two weeks and support never replied. |
+| R004 | Trailmark Hiking Backpack | Negative | Straps dig into shoulders, and the reviewer is returning it. |
+| R005 | Cozy Knit Throw Blanket | Mixed | Not warm enough for winter, but acceptable as a decorative throw. |
+| R006 | Breeze Wireless Earbuds | Positive | Works well for commuting, with clear calls and solid battery. |
+| R007 | Trailmark Hiking Backpack | Mixed | Decent for the price, but not suited to serious backpacking. |
+| R008 | Lumen Smart Bulbs (4-Pack) | Mixed | Bright and colorful, but they disconnect from Wi-Fi every few days. |
+| R009 | Lumen Smart Bulbs (4-Pack) | Mixed | Great bulbs but a terrible app and a painful setup. |
+| R010 | Hearth Electric Kettle | Positive | Repeat purchase, gifted one to mom, and the first is still working after a year. |
+| R011 | Cozy Knit Throw Blanket | Negative | Arrived with a stain. |
+| R012 | Lumen Smart Bulbs (4-Pack) | Unclear | A compatibility question with no opinion. |
+| R013 | Hearth Electric Kettle | Mixed | Failed after 6 weeks, but customer service sent a working replacement. |
+| R014 | Hearth Electric Kettle | Mixed | Arrived dented, but service replaced it quickly and the kettle is fine. |
+| R015 | Trailmark Hiking Backpack | Negative | Far too small for more than a day trip, contrary to the listing. |
+...
+
+Spot-check:
+Looking at the reviews I feel most of them are accurate and I would have label them the same way. The only ones that are mixed a bit are the mixed responses. Some of them 
+I would argue leans more towards "negative/positive" but with a unclear argument too.
+
+Analysis:
+- Techniques used: 
+    - Define categories: prompt it to use positive, negative, mixed, neutral, unclear labels
+            - It didn't do that much because the labels I could think of was mostly already there from the vague initial prompt. (The model was good enough at it already)
+    - Few-shot prompting: define how I would have label the first 3 reviews
+            - Unsure based on this sample. In the second version of improved prompt where I didn't give it examples, the model still "agrees" with the review I would have given.
+    - Output format: told it to format into a table without extra pargarphs summarizing
+            - Helps a lot with readability and allowed me to easily see the review-to-label without having to open the csv it provided in version 1 of improved prompt.
+    - Role prompting: told the model that they are the person looking to buy the product
+            - Unsure. This is more so that I don't see role prompting being useful for this specific scenario as I feel every role will look at these list of product reviews through the same lens.
+
+- Overall the model handled tricky reviews well and was able to distinguish sarcasm, mixed opinions, and unclear reviews from a generic positive/negative review.
+- The model initially did not label every review, but prompting it with categories and examples of how I would review a specific review signaled it to create a csv with review-to-label. Additionally, prompting it with a specific format also causes it to label every review.
+- The biggest difference to me is the output format. This is the main thing to get a clean table of each individual reviews with label and reasoning.
