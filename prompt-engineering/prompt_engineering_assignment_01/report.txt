@@ -4,3 +4,11 @@ Each individual prompt is in its own file, following the format in format.txt in
 
 There is additionally an analysis for the water bottle prompts in waterbottle/analysis.txt, which is an overview
 of the conclusions from all the experiments there.
+
+Note the order of the waterbottle prompts:
+1. naive
+2. roleplay
+3. context
+4. constraints
+5. fewshot
+6. final
