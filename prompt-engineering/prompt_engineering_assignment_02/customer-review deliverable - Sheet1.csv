@@ -1,0 +1,336 @@
+Label ID,Prompt Log,Output,Analysis
+Version 1,,,
+,Are these reviews positive or negative?,"I'll read through the reviews and classify each one.
+
+The 110 reviews split evenly between positive and negative, with a sizable middle group, so there isn't one overall verdict:
+
+| Sentiment | Count |
+|---|---|
+| Positive | 37 |
+| Negative | 37 |
+| Mixed (real praise and a real complaint) | 19 |
+| Neutral (""It's fine,"" ""They're lightbulbs. They light up."") | 8 |
+| Not a review (questions, shipping-only comments) | 9 |
+
+Every product lands about even too. The **Lumen Smart Bulbs** come out slightly worst, with 9 negative against 7 positive. Their complaints are mostly about the app and Wi-Fi. The **Cozy Knit Throw Blanket** comes out slightly best, with 8 positive against 5 negative.
+
+Some patterns that affected how I labeled things:
+
+- **Sarcasm.** About a dozen reviews sound positive but are complaints. Examples: ""Ten stars"" after a sleeping bag got soaked (R022), ""Fantastic… lasted a full week"" (R030), and ""Truly impressive engineering"" (R108). I counted all of these as negative. A keyword-based sentiment tool would likely count them as positive.
+- **Not about the product.** Some reviews are only about shipping or the seller, like ""Package arrived a day early,"" ""Delivery driver left it in the rain,"" and ""Shipping took 3 weeks."" Others are questions, like ""Do these work with a PS5?"" I put these in ""Not a review"" instead of forcing them into a positive or negative label.
+- **Customer service saves.** R013 and R014 describe a broken or damaged kettle that support quickly replaced. I marked them mixed.
+- **Safety flags on the kettle.** R048 says it leaks near an outlet, and R049 says the handle burned someone's hand. Those two stand out from ordinary complaints.
+
+These labels are my own judgment calls. The borderline cases, like ""Still a good bag"" after a color complaint, could reasonably go either way. The labeled file is product-reviews-labeled.csv.","Baseline prompt used zero-shot prompting without role framing, constraints, behavior boundaries. Due to no specified structure, the model did not label individual rows or output review-level data. Instead, the model produced high-level aggregate summry and independently expanded the requested binary options into a 5-tier classification scheme (Positive, Negative, Mixed, Nuetral, Not a review). Despite lacking clear instruction, the model observed to handle the tricky reviews well, it accurately deciphered contextual sarcasm and isolated irrelevant delivery complaints into a non-review bucket."
+Version 2,,,
+"R085
+R060
+R053
+R048
+R088
+R036
+R052
+R068
+R107
+R108","Classify each review from the dataset using exactly one of the following categories:
+
+Categories:
+- Positive: Clear satisfaction or praise for the product.
+- Negative: Clear dissatisfaction, product defects, or sarcastic complaints.
+- Mixed: Contains both genuine praise and a legitimate complaint about the product.
+
+
+Output Format:
+Output the results as a Markdown table with the following columns:
+| Review ID | Category | Summary Reason |
+
+Rules:
+1. Label every single review provided—do not skip any rows or summarize in aggregate.
+2. In the ""Category"" column, use only the exact category names listed above.
+3. Keep the ""Summary Reason"" concise (under 10 words).","I'll read the reviews and classify each one.
+
+| Review ID | Category | Summary Reason |
+|---|---|---|
+| R001 | Negative | Strong chemical smell out of box |
+| R002 | Mixed | Decent isolation, but not true noise cancelling |
+| R003 | Negative | Earbud stopped charging; support unresponsive |
+| R004 | Negative | Straps painful; returning |
+| R005 | Mixed | Not warm enough, fine as decor |
+| R006 | Positive | Clear calls, solid battery |
+| R007 | Mixed | Good value, not for serious backpacking |
+| R008 | Mixed | Bright colors, but frequent Wi-Fi drops |
+| R009 | Mixed | Great bulbs, terrible app |
+| R010 | Positive | Repeat buyer, durable after a year |
+| R011 | Negative | Arrived stained |
+| R012 | Mixed | Compatibility question, no opinion given |
+| R013 | Mixed | Failed at 6 weeks; replacement works |
+| R014 | Mixed | Arrived dented; fast replacement, kettle fine |
+| R015 | Negative | Too small despite listing claims |
+| R016 | Mixed | Lukewarm ""fine,"" no clear opinion |
+| R017 | Positive | Extremely durable on rough terrain |
+| R018 | Negative | Colors look washed out |
+| R019 | Negative | Wrong size sent |
+| R020 | Mixed | Color differs from photos; still good |
+| R021 | Positive | Great value, feels premium |
+| R022 | Negative | Sarcastic: ""waterproof"" pack leaked |
+| R023 | Positive | Sunrise alarm feature helps mornings |
+| R024 | Negative | Sarcastic: settings lost after update |
+| R025 | Negative | Buzzes when dimmed |
+| R026 | Positive | Arrived early |
+| R027 | Positive | Fast boil, sleek design |
+| R028 | Negative | Constant static; returned |
+| R029 | Mixed | Fine for podcasts, poor for music |
+| R030 | Negative | Sarcastic: switch broke in a week |
+| R031 | Negative | App crashes, bulbs unresponsive |
+| R032 | Negative | Keep-warm too short to be useful |
+| R033 | Positive | Best purchase; beats pricier pair |
+| R034 | Positive | Easy setup, vibrant colors |
+| R035 | Positive | Bought a second pack |
+| R036 | Mixed | Wrong color, but nice enough to keep |
+| R037 | Mixed | Lukewarm; does the bare minimum |
+| R038 | Mixed | Explicitly ""not bad, not great"" |
+| R039 | Positive | Coworkers ask where to buy it |
+| R040 | Positive | Durable through toddler use |
+| R041 | Mixed | Too many pockets, but well made |
+| R042 | Mixed | Merely okay for the price |
+| R043 | Mixed | Does the job, nothing special |
+| R044 | Positive | Comfortable, durable, useful pockets |
+| R045 | Positive | Perfect weight for summer evenings |
+| R046 | Positive | Soft and warm |
+| R047 | Positive | Highly recommends for new hikers |
+| R048 | Negative | Leaks; safety hazard |
+| R049 | Negative | Handle burned user's hand |
+| R050 | Positive | Gooseneck spout great for pour-over |
+| R051 | Negative | Cord too short |
+| R052 | Positive | Fantastic; would buy again |
+| R053 | Negative | One bulb dead on arrival |
+| R054 | Positive | Comfortable, instant pairing |
+| R055 | Mixed | Love presets, beep too loud |
+| R056 | Positive | Crushed box, but earbuds work well |
+| R057 | Negative | Slow, wet delivery |
+| R058 | Negative | Sheds everywhere |
+| R059 | Mixed | Waterproof, but hip belt lacks padding |
+| R060 | Mixed | Great battery, terrible mic |
+| R061 | Positive | Held up a full school year |
+| R062 | Negative | Shipping took 3 weeks |
+| R063 | Mixed | Small capacity, but boils fast |
+| R064 | Positive | Comfortable on 5-day trek |
+| R065 | Negative | Zipper broke first hike |
+| R066 | Negative | Sarcastic: earbuds keep falling out |
+| R067 | Mixed | Laptop sleeve question, no opinion given |
+| R068 | Negative | Sarcastic: itchy and thin |
+| R069 | Positive | Loves it, buying another |
+| R070 | Positive | Enjoys cozy warm white setting |
+| R071 | Mixed | Beautiful and cozy, but shrank |
+| R072 | Positive | Great value versus AirPods |
+| R073 | Mixed | Adequate, but would choose better brand |
+| R074 | Negative | Mineral buildup after one month |
+| R075 | Mixed | Very soft, but too small |
+| R076 | Negative | Worst earbuds ever owned |
+| R077 | Positive | Amazing sound, stays in while running |
+| R078 | Negative | Sarcastic: lingering warehouse smell |
+| R079 | Positive | Gifted; daughters love them |
+| R080 | Negative | Sarcastic: buckle snapped mid-climb |
+| R081 | Positive | Washes well, no pilling |
+| R082 | Positive | Perfect day-hike size |
+| R083 | Positive | Looks expensive; guests compliment it |
+| R084 | Positive | Pairing issue quickly resolved by support |
+| R085 | Negative | Sarcastic: water tastes like plastic |
+| R086 | Positive | Alexa control helps mother |
+| R087 | Mixed | Asks dimensions; listing omits them |
+| R088 | Positive | Music sync great for parties |
+| R089 | Positive | Looks nice on arrival |
+| R090 | Positive | Gorgeous, quick, quiet; no complaints |
+| R091 | Negative | Lid won't stay closed |
+| R092 | Mixed | Lukewarm; functional, no enthusiasm |
+| R093 | Negative | Left in the rain |
+| R094 | Mixed | Unopened gift, no opinion given |
+| R095 | Negative | Stitching failing after two uses |
+| R096 | Negative | Intrusive account and location requirements |
+| R097 | Mixed | Love sound, hate touch controls |
+| R098 | Negative | Sarcastic: router reset needed |
+| R099 | Mixed | Pretty, but snags on everything |
+| R100 | Negative | Died after a month |
+| R101 | Mixed | PS5 compatibility question, no opinion given |
+| R102 | Positive | Best throw ever owned |
+| R103 | Negative | Tinny sound, uncomfortable |
+| R104 | Mixed | Lukewarm; just functions |
+| R105 | Positive | Perfect apart from color options |
+| R106 | Positive | Fast and pretty |
+| R107 | Negative | Unraveling after a month |
+| R108 | Negative | Sarcastic: constant disconnects after three days |
+| R109 | Negative | Case lid snapped off |
+| R110 | Negative | Dimmer than claimed |
+
+**Totals:** 41 Positive, 41 Negative, 28 Mixed.
+
+Eleven reviews didn't really fit any of the three categories, so I labeled them **Mixed** as the closest neutral option:
+- **Questions with no opinion:** R012, R067, R087, R101
+- **No opinion yet:** R094
+- **Lukewarm, with neither clear praise nor a complaint:** R016, R037, R042, R043, R092, R104
+
+If you'd prefer a separate Neutral category for these, I can re-run the table with one.","In version 2, I combined category definitions with a a strict tabular output format which resultde in labeled invidual rows in a markdown table with concise reasons. Across the 10 sampled reviews, the model consistently applied defined taxonomy. Straightforward positive cases like R052 and R088 mapped cleanly to positive, while other reports such as R053 and R107 marked negative and balanced feedback like R060 were correctly categorized as Mixed. The model observedly handled tricky and nuanced reviews effectively under these rules. It was able to detect sarcasm where it labeled R085 and R108 as Negative with explicit paranthetical cues in its summary. Enforcing the output schema made a big difference across iterations. Eliminating the models need to guess the structure allowed it to result in a descriptive narrative and spreadsheet ready classification of the provided dataset. "
+Version 3,,,
+"R001
+R062
+R074
+R016 
+R023
+R032
+R042
+R058
+R086
+R099
+R103","You are a Senior Customer Insights Analyst for a retail brand. Your task is to evaluate customer sentiment with high precision to help product engineering and quality assurance teams isolate genuine product defects.
+
+Review Sentiment Categories:
+- Positive: Clear satisfaction, praise, or endorsement of the product.
+- Negative: Product malfunction, poor build quality, safety hazard, or sarcastic complaint.
+- Mixed: Contains both genuine praise and a legitimate complaint about the product itself.
+- Neutral: Purely factual observations without positive or negative sentiment.
+- Not a review: Irrelevant text, questions, or comments exclusively about packaging, transit, or delivery rather than the product.
+
+Few-Shot Examples:
+Review: ""Love that the 'waterproof' pack turned my sleeping bag into a sponge. Ten stars.""
+-> Label: Negative | Reason: Sarcastic complaint about waterproofing failure
+
+Review: ""Battery life easily hits 7 hours, but the microphone sounds like I'm underwater.""
+-> Label: Mixed | Reason: Strong battery life offset by poor mic quality
+
+Review: ""Package arrived a day early, but the box was wet.""
+-> Label: Not a review | Reason: Delivery and transit note, not a product review
+
+Review: ""They are lightbulbs. They light up.""
+-> Label: Neutral | Reason: Purely factual statement with no sentiment
+
+Review: ""Best purchase I've made all year. Solid build and easy to use.""
+-> Label: Positive | Reason: Strong praise and recommendation
+
+Constraints:
+1. Label every single review provided (R001 through R110). Do not skip reviews or group them in aggregate.
+2. In the Category column, use ONLY one of the 5 exact names listed above.
+3. If a review includes sarcasm, classify it by the customer's true underlying intent (e.g., sarcastic praise = Negative).
+4. Do not classify transit, carrier, or shipping complaints as Negative product reviews; assign them to ""Not a review"".
+5. Keep every Summary Reason under 10 words.
+
+Output Format:
+Return a Markdown table with exact columns:
+| Review ID | Category | Summary Reason |","| Review ID | Category | Summary Reason |
+|---|---|---|
+| R001 | Negative | Strong chemical odor out of box |
+| R002 | Mixed | Decent isolation, misleading noise-cancelling claim |
+| R003 | Negative | Left earbud stopped charging in two weeks |
+| R004 | Negative | Straps painful after an hour |
+| R005 | Mixed | Too thin for winter; fine decoratively |
+| R006 | Positive | Clear calls and solid battery |
+| R007 | Mixed | Good value, inadequate for serious backpacking |
+| R008 | Mixed | Bright colors but frequent Wi-Fi drops |
+| R009 | Mixed | Great bulbs, poor companion app |
+| R010 | Positive | Repeat buyer; durable after a year |
+| R011 | Negative | Product stained on arrival, QC issue |
+| R012 | Not a review | Compatibility question |
+| R013 | Negative | Kettle failed after six weeks |
+| R014 | Not a review | Transit dent; kettle itself fine |
+| R015 | Negative | Capacity smaller than listing claims |
+| R016 | Neutral | Secondhand, noncommittal ""fine"" |
+| R017 | Positive | Extremely durable in rough conditions |
+| R018 | Negative | Colors washed out versus competitors |
+| R019 | Not a review | Seller fulfillment error, wrong size |
+| R020 | Mixed | Color differs from photos; still good |
+| R021 | Positive | Great value, premium feel |
+| R022 | Negative | Sarcastic complaint about waterproofing failure |
+| R023 | Positive | Sunrise alarm feature praised |
+| R024 | Negative | Sarcasm: settings lost after update |
+| R025 | Negative | Audible buzzing when dimmed |
+| R026 | Not a review | Delivery timing only |
+| R027 | Positive | Fast boil, attractive design |
+| R028 | Negative | Constant static in right ear |
+| R029 | Mixed | Fine for podcasts, poor for music |
+| R030 | Negative | Sarcasm: switch broke within a week |
+| R031 | Negative | App crashes; bulbs unresponsive |
+| R032 | Negative | Keep-warm duration too short |
+| R033 | Positive | Outperforms pricier earbuds |
+| R034 | Positive | Easy setup, vibrant colors, scheduling |
+| R035 | Positive | Bought second pack, strong endorsement |
+| R036 | Positive | Likes blanket; wrong color is fulfillment |
+| R037 | Neutral | Purely factual statement |
+| R038 | Neutral | Lukewarm, no specific sentiment |
+| R039 | Positive | Coworkers admire it; implied endorsement |
+| R040 | Positive | Holds up to toddler use |
+| R041 | Mixed | Well made, but too many pockets |
+| R042 | Neutral | Lukewarm price-based remark |
+| R043 | Neutral | Functional, nothing special |
+| R044 | Positive | Comfortable, durable, functional pockets |
+| R045 | Positive | Ideal weight for summer |
+| R046 | Positive | Soft and warm |
+| R047 | Positive | Strong recommendation for new hikers |
+| R048 | Negative | Leaks; electrical safety hazard |
+| R049 | Negative | Handle overheats; burn hazard |
+| R050 | Positive | Gooseneck spout gives great control |
+| R051 | Negative | Power cord too short |
+| R052 | Positive | Exceeded expectations, would rebuy |
+| R053 | Negative | One bulb dead on arrival |
+| R054 | Positive | Comfortable fit, instant pairing |
+| R055 | Mixed | Great presets, completion beep too loud |
+| R056 | Positive | Earbuds work well; box damage is transit |
+| R057 | Not a review | Slow, wet delivery; product untested |
+| R058 | Negative | Excessive shedding |
+| R059 | Mixed | Truly waterproof; hip belt underpadded |
+| R060 | Mixed | Strong battery, poor microphone |
+| R061 | Positive | Held up a full school year |
+| R062 | Not a review | Shipping time complaint only |
+| R063 | Mixed | Small capacity but boils fast |
+| R064 | Positive | Comfortable on five-day trek |
+| R065 | Negative | Zipper broke on first hike |
+| R066 | Negative | Sarcasm: earbuds fall out constantly |
+| R067 | Not a review | Laptop sleeve size question |
+| R068 | Negative | Sarcasm: itchy and thin |
+| R069 | Positive | Enthusiastic; buying another |
+| R070 | Positive | Warm white setting praised |
+| R071 | Mixed | Cozy and pretty, but shrinks |
+| R072 | Positive | Good value versus premium brand |
+| R073 | Mixed | Acceptable for price; wouldn't rebuy |
+| R074 | Negative | Mineral buildup within one month |
+| R075 | Mixed | Very soft but too small |
+| R076 | Negative | Worst earbuds owned |
+| R077 | Positive | Great sound, secure fit running |
+| R078 | Negative | Sarcasm: persistent warehouse odor |
+| R079 | Positive | Gift recipients love them |
+| R080 | Negative | Sarcasm: buckle snapped mid-hike |
+| R081 | Positive | Washes well, no pilling |
+| R082 | Positive | Right size, useful hydration sleeve |
+| R083 | Positive | Looks premium; guests compliment |
+| R084 | Positive | Pairing issue resolved; works now |
+| R085 | Negative | Sarcasm: water tastes like plastic |
+| R086 | Positive | Seamless Alexa voice control |
+| R087 | Not a review | Dimensions question |
+| R088 | Positive | Music sync great for parties |
+| R089 | Positive | Favorable first impression, unused yet |
+| R090 | Positive | Gorgeous, fast, quiet |
+| R091 | Negative | Lid won't stay closed |
+| R092 | Neutral | Factual statement, no sentiment |
+| R093 | Not a review | Carrier left package in rain |
+| R094 | Not a review | Unopened gift, no product experience |
+| R095 | Negative | Stitching failing after two uses |
+| R096 | Negative | Mandatory account and location data |
+| R097 | Mixed | Great sound, faulty touch controls |
+| R098 | Negative | Sarcasm: requires router resets |
+| R099 | Mixed | Pretty but knit snags easily |
+| R100 | Negative | Stopped working after a month |
+| R101 | Not a review | PS5 compatibility question |
+| R102 | Positive | Best throw owned; warm, soft |
+| R103 | Negative | Tinny sound, uncomfortable fit |
+| R104 | Neutral | Purely factual statement |
+| R105 | Positive | Otherwise perfect; wants more colors |
+| R106 | Positive | Fast and attractive |
+| R107 | Negative | Unraveling after a month |
+| R108 | Negative | Sarcasm: disconnects after three days |
+| R109 | Negative | Charging case lid snapped off |
+| R110 | Negative | Dimmer than claimed 60W equivalent |
+
+**Totals:** 38 Positive, 37 Negative, 17 Mixed, 7 Neutral, 11 Not a review.
+
+A few borderline calls are worth checking against your team's conventions:
+- **R011** (stain on arrival) is labeled Negative. A stain is more likely a manufacturing or QC problem than shipping damage.
+- **R036 and R056** are labeled Positive. Their only complaints were fulfillment or packaging issues, which your rules exclude.
+- **R014** is labeled Not a review. It describes transit damage, and the reviewer says the kettle itself is fine.","For version 3, the prompt incorporated role prompting, few-shot examplars, and strict constraints. Across the labels I have chosen, the model demonstrated sharp boundary prevision. Functional praise mapped cleanly to Positive, while explicit product defects mapped to Negative. Furthermore, the constraints and few-shot guidance eliminated previous ambiguities - reviews were correctly labeled Not a review instead of being missclassified. The model handled tricky edge cases with great consistency than in earlier version. For example R032 was cleanly assigned to Negative because the analyst persona was instructed to isolate product shortcomings affecing user experience rather than confusing a limited feature for ""mixed"" feedback. It adhered to row-level generation across the dataset, maintaining the under-10 word constraint in its summary reasons without truncating to aggregate summaries. "
