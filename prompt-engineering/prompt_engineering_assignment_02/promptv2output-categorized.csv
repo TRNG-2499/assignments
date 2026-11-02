@@ -1,0 +1,111 @@
+review_id,product,review_text,sentiment
+R001,Trailmark Hiking Backpack,Smells like chemicals out of the box. Took a week to air out.,negative
+R002,Breeze Wireless Earbuds,"Noise isolation is decent, but it's not true noise cancelling like the description implies. Still good for the gym.",mixed
+R003,Breeze Wireless Earbuds,Left earbud stopped charging after two weeks. Contacted support and never heard back.,negative
+R004,Trailmark Hiking Backpack,Straps dig into my shoulders after an hour. Returning.,negative
+R005,Cozy Knit Throw Blanket,Not warm enough for winter. Fine as a decorative throw.,negative
+R006,Breeze Wireless Earbuds,"Perfect for my commute. Clear calls, solid battery.",positive
+R007,Trailmark Hiking Backpack,"decent bag for the money, not for serious backpacking tho",mixed
+R008,Lumen Smart Bulbs (4-Pack),"Bright and colorful, but they disconnect from Wi-Fi every few days.",mixed
+R009,Lumen Smart Bulbs (4-Pack),"Great bulbs, terrible app. If you can get past setup you'll love them.",mixed
+R010,Hearth Electric Kettle,"Second one I've bought, gave the first to my mom. Still going strong after a year.",positive
+R011,Cozy Knit Throw Blanket,Arrived with a stain on it.,negative
+R012,Lumen Smart Bulbs (4-Pack),Do these work with Google Home or only Alexa?,neutral
+R013,Hearth Electric Kettle,"Stopped turning on after 6 weeks. Customer service sent a replacement, which works so far.",mixed
+R014,Hearth Electric Kettle,Mine arrived dented and customer service shipped a new one the next day. The kettle itself is fine.,mixed
+R015,Trailmark Hiking Backpack,Way too small for anything over a day trip despite what the listing says.,negative
+R016,Trailmark Hiking Backpack,"Ordered for my husband. He says it's ""fine.""",neutral
+R017,Trailmark Hiking Backpack,"Absolutely bombproof. Dragged it through brush, rocks, and rivers with zero damage.",positive
+R018,Lumen Smart Bulbs (4-Pack),Colors look washed out compared to other brands I've used.,negative
+R019,Trailmark Hiking Backpack,Seller sent the wrong size.,negative
+R020,Trailmark Hiking Backpack,Color is different from the photos. More brown than green. Still a good bag.,mixed
+R021,Trailmark Hiking Backpack,Great value. Feels much more expensive than it was.,positive
+R022,Trailmark Hiking Backpack,"Love that the ""waterproof"" pack turned my sleeping bag into a sponge. Ten stars.",negative
+R023,Lumen Smart Bulbs (4-Pack),Sunrise alarm feature has made my mornings so much easier.,positive
+R024,Lumen Smart Bulbs (4-Pack),"wow so smart, it forgot all my settings after an update. genius.",negative
+R025,Lumen Smart Bulbs (4-Pack),Buzzes when dimmed below 30%. Very annoying in a quiet room.,negative
+R026,Lumen Smart Bulbs (4-Pack),Package arrived a day early.,neutral
+R027,Hearth Electric Kettle,Boils water in under 3 minutes. Sleek design looks great on my counter.,positive
+R028,Breeze Wireless Earbuds,Returned them. Constant static in the right ear.,negative
+R029,Breeze Wireless Earbuds,Fine for podcasts. Wouldn't use them for music.,mixed
+R030,Hearth Electric Kettle,Fantastic. Just fantastic. Mine lasted a full week before the switch broke.,negative
+R031,Lumen Smart Bulbs (4-Pack),App crashes constantly. Half the time the bulbs won't respond.,negative
+R032,Hearth Electric Kettle,"Keep warm function only lasts 30 minutes, which is useless for me.",negative
+R033,Breeze Wireless Earbuds,Best purchase I've made all year. My old $200 pair is collecting dust now.,positive
+R034,Lumen Smart Bulbs (4-Pack),Setup took two minutes and the colors are vibrant. Love the scheduling feature.,positive
+R035,Lumen Smart Bulbs (4-Pack),Bought a second 4-pack for the rest of the house. That's how much I like them.,positive
+R036,Cozy Knit Throw Blanket,Ordered the gray and got navy. Kept it anyway since it's nice.,mixed
+R037,Lumen Smart Bulbs (4-Pack),They're lightbulbs. They light up.,neutral
+R038,Breeze Wireless Earbuds,they r ok i guess. not bad not great,neutral
+R039,Hearth Electric Kettle,Bought this for my office. Coworkers keep asking where I got it.,positive
+R040,Cozy Knit Throw Blanket,My toddler drags it everywhere and it still looks new. Impressive.,positive
+R041,Trailmark Hiking Backpack,Too many pockets honestly. I can never find anything. But very well made.,mixed
+R042,Cozy Knit Throw Blanket,Ok for the price,neutral
+R043,Hearth Electric Kettle,"It's fine. Does the job, nothing special.",neutral
+R044,Trailmark Hiking Backpack,"Comfortable, durable, and the side pockets actually fit a water bottle. Rare!",positive
+R045,Cozy Knit Throw Blanket,Perfect weight for summer evenings on the porch.,positive
+R046,Cozy Knit Throw Blanket,So soft and warm. My cat has claimed it as hers.,positive
+R047,Trailmark Hiking Backpack,10/10 would recommend to anyone getting into hiking.,positive
+R048,Hearth Electric Kettle,Leaks from the bottom. Dangerous near an electrical outlet.,negative
+R049,Hearth Electric Kettle,The handle gets dangerously hot. Burned my hand the first day.,negative
+R050,Hearth Electric Kettle,I use it for pour-over coffee and the gooseneck spout gives great control.,positive
+R051,Hearth Electric Kettle,The cord is too short to reach anywhere useful.,negative
+R052,Breeze Wireless Earbuds,I was skeptical but these are fantastic. Would buy again.,positive
+R053,Lumen Smart Bulbs (4-Pack),One of the four bulbs was dead on arrival.,negative
+R054,Breeze Wireless Earbuds,"Super comfortable, I forget I'm wearing them. Pairing was instant.",positive
+R055,Hearth Electric Kettle,Love the temperature presets for tea. The beep when it finishes is way too loud though.,mixed
+R056,Breeze Wireless Earbuds,Box arrived crushed but the earbuds inside were fine. They work well.,mixed
+R057,Hearth Electric Kettle,Took forever to get here and the box was wet. Haven't tried it yet.,neutral
+R058,Cozy Knit Throw Blanket,Shed everywhere. My couch is covered in fuzz.,negative
+R059,Trailmark Hiking Backpack,Waterproof as advertised and stayed dry in a downpour. Wish the hip belt had more padding.,mixed
+R060,Breeze Wireless Earbuds,"Battery life is great, easily 7 hours. Mic is terrible though, everyone says I sound like I'm underwater.",mixed
+R061,Trailmark Hiking Backpack,My son uses it for school and it's held up all year.,positive
+R062,Breeze Wireless Earbuds,Shipping took 3 weeks.,negative
+R063,Hearth Electric Kettle,"Small capacity, only enough for about 3 mugs. Boils fast though.",mixed
+R064,Trailmark Hiking Backpack,"Carried this through a 5-day trek. Comfortable straps, tons of pockets.",positive
+R065,Trailmark Hiking Backpack,Zipper broke on the first hike.,negative
+R066,Breeze Wireless Earbuds,Absolutely love how they fall out every time I turn my head. Great feature.,negative
+R067,Trailmark Hiking Backpack,Is the laptop sleeve big enough for a 16-inch laptop?,neutral
+R068,Cozy Knit Throw Blanket,"Wonderful, it's itchy AND thin. Two for one.",negative
+R069,Cozy Knit Throw Blanket,love love love!!! buying another,positive
+R070,Lumen Smart Bulbs (4-Pack),Warm white setting is nice and cozy. Never use the colors.,mixed
+R071,Cozy Knit Throw Blanket,"Beautiful color and super cozy, but it shrank in the wash even on cold.",mixed
+R072,Breeze Wireless Earbuds,Not as good as my AirPods but for a quarter of the price I can't complain.,mixed
+R073,Lumen Smart Bulbs (4-Pack),Good enough for the price. I'd buy a better brand next time though.,mixed
+R074,Hearth Electric Kettle,Mineral buildup after one month even with filtered water. Disappointed.,negative
+R075,Cozy Knit Throw Blanket,Smaller than expected. Barely covers my lap. Very soft though.,mixed
+R076,Breeze Wireless Earbuds,Worst earbuds I've ever owned. Save your money.,negative
+R077,Breeze Wireless Earbuds,Sound quality is amazing for the price. Bass is punchy and they stay in during runs.,positive
+R078,Cozy Knit Throw Blanket,I'm thrilled that it smells like a warehouse even after three washes.,negative
+R079,Cozy Knit Throw Blanket,Gave one to each of my daughters for Christmas. They both love them.,positive
+R080,Trailmark Hiking Backpack,"Oh sure, I just love when the buckle snaps halfway up a mountain.",negative
+R081,Cozy Knit Throw Blanket,"Washes well, no pilling after many cycles. Great quality.",positive
+R082,Trailmark Hiking Backpack,Perfect size for day hikes. The hydration sleeve is a nice bonus.,positive
+R083,Cozy Knit Throw Blanket,Looks way more expensive than it is. Guests always compliment it.,positive
+R084,Lumen Smart Bulbs (4-Pack),"Had a problem pairing, but support walked me through it in 10 minutes. Now everything works.",mixed
+R085,Hearth Electric Kettle,"Oh good, a kettle that makes my water taste like plastic. Exactly what I wanted.",negative
+R086,Lumen Smart Bulbs (4-Pack),"Works perfectly with Alexa. Voice control is a game changer for my mom, who has limited mobility.",positive
+R087,Cozy Knit Throw Blanket,What are the dimensions? The listing doesn't say.,neutral
+R088,Lumen Smart Bulbs (4-Pack),Fun for parties! The music sync mode is a hit.,positive
+R089,Trailmark Hiking Backpack,"Received it today, looks nice.",neutral
+R090,Hearth Electric Kettle,"Gorgeous kettle, quick boil, quiet. No complaints at all.",positive
+R091,Hearth Electric Kettle,Lid won't stay closed. Steam everywhere.,negative
+R092,Cozy Knit Throw Blanket,It's a blanket. Keeps me warm.,neutral
+R093,Cozy Knit Throw Blanket,Delivery driver left it in the rain.,negative
+R094,Breeze Wireless Earbuds,Bought these as a gift for my brother. He hasn't opened them yet.,neutral
+R095,Trailmark Hiking Backpack,The stitching is already coming apart and I've only used it twice.,negative
+R096,Lumen Smart Bulbs (4-Pack),Requires an account and wants my location data just to turn on a light. No thanks.,negative
+R097,Breeze Wireless Earbuds,"Love the sound, hate the touch controls. Every time I adjust them the music pauses.",mixed
+R098,Lumen Smart Bulbs (4-Pack),"Nothing says ""smart home"" like having to unplug the router to turn on my lights.",negative
+R099,Cozy Knit Throw Blanket,The knit pattern snags on everything. Pretty but impractical.,mixed
+R100,Lumen Smart Bulbs (4-Pack),Stopped working entirely after a month. Waste of money.,negative
+R101,Breeze Wireless Earbuds,Does anyone know if these work with a PS5?,neutral
+R102,Cozy Knit Throw Blanket,"Best throw blanket I've owned. Heavy, warm, and soft.",positive
+R103,Breeze Wireless Earbuds,meh. sound is tinny and they hurt after an hour,negative
+R104,Hearth Electric Kettle,It boils water. It's a kettle.,neutral
+R105,Hearth Electric Kettle,Wish it came in more colors. Otherwise perfect.,mixed
+R106,Hearth Electric Kettle,good kettle!!! fast and pretty,positive
+R107,Cozy Knit Throw Blanket,Unraveling after a month. Poor quality.,negative
+R108,Breeze Wireless Earbuds,"Wow, they lasted a whole three days before disconnecting every five minutes. Truly impressive engineering.",negative
+R109,Breeze Wireless Earbuds,Charging case feels cheap and the lid snapped off within a month.,negative
+R110,Lumen Smart Bulbs (4-Pack),Not as bright as a regular 60W bulb despite the claim.,negative
