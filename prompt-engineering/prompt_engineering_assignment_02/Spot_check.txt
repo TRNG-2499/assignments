@@ -1,0 +1,90 @@
+# Classify product reviews
+
+> Are These review positive or negative?
+>
+> 1. Noise isolation is decent, but it's not true noise cancelling like the description implies. Still good for the gym. Mixed
+> 2. Not warm enough for winter. Fine as a decorative throw. Mixed
+> 3. decent bag for the money, not for serious backpacking tho. Mixed
+> 4. Arrived with a stain on it. Negative
+> 5. Way too small for anything over a day trip despite what the listing says. Negative
+> 6. Fantastic. Just fantastic. Mine lasted a full week before the switch broke Negative
+> 7. Great value. Feels much more expensive than it was. Positive
+> 8. It's fine. Does the job, nothing special. Positive
+> 9. 10/10 would recommend to anyone getting into hiking. Positive
+> 10. What are the dimensions? The listing doesn't say. other
+>
+> Label each categories as positive, negative, mixed, other
+>
+> Format the output in table with rows and columns, where columns are number, categories,  and review text&#x20;
+>
+> You should follow these constraints
+>
+> - Each review should only belong to 1 categories
+> - ignore blank reviews
+>
+> You are an professional analyzer analyzing this csv file and forging an report for review
+>
+> Example response
+>
+> number categories review text
+>
+> 1             positive        "text"
+
+| number | categories | review text |
+|---:|---|---|
+| 1 | mixed | “Noise isolation is decent, but it's not true noise cancelling like the description implies. Still good for the gym.” |
+| 2 | mixed | “Not warm enough for winter. Fine as a decorative throw.” |
+| 3 | mixed | “decent bag for the money, not for serious backpacking tho.” |
+| 4 | negative | “Arrived with a stain on it.” |
+| 5 | negative | “Way too small for anything over a day trip despite what the listing says.” |
+| 6 | negative | “Fantastic. Just fantastic. Mine lasted a full week before the switch broke” |
+| 7 | positive | “Great value. Feels much more expensive than it was.” |
+| 8 | mixed | “It's fine. Does the job, nothing special.” |
+| 9 | positive | “10/10 would recommend to anyone getting into hiking.” |
+| 10 | other | “What are the dimensions? The listing doesn't say.”
+
+
+
+> Are These review positive or negative?
+>
+> 1. Noise isolation is decent, but it's not true noise cancelling like the description implies. Still good for the gym.
+> 2. Not warm enough for winter. Fine as a decorative throw.
+> 3. decent bag for the money, not for serious backpacking tho.
+> 4. Arrived with a stain on it.
+> 5. Way too small for anything over a day trip despite what the listing says.
+> 6. Fantastic. Just fantastic. Mine lasted a full week before the switch broke
+> 7. Great value. Feels much more expensive than it was.
+> 8. It's fine. Does the job, nothing special.
+> 9. 10/10 would recommend to anyone getting into hiking.
+> 10. What are the dimensions? The listing doesn't say.
+>
+> Label each categories as positive, negative, neutral, mixed, other
+>
+> Format the output in table with rows and columns, where columns are number, categories,  and review text&#x20;
+>
+> You should follow these constraints
+>
+> - Each review should only belong to 1 categories
+> - ignore blank reviews
+>
+> You are an professional analyzer analyzing this csv file and forging an report for review
+>
+> Example response
+>
+> number categories review text
+>
+> 1             positive        "text"
+
+| number | categories | review text |
+|---:|---|---|
+| 1 | mixed | “Noise isolation is decent, but it's not true noise cancelling like the description implies. Still good for the gym.” |
+| 2 | mixed | “Not warm enough for winter. Fine as a decorative throw.” |
+| 3 | mixed | “decent bag for the money, not for serious backpacking tho.” |
+| 4 | negative | “Arrived with a stain on it.” |
+| 5 | negative | “Way too small for anything over a day trip despite what the listing says.” |
+| 6 | negative | “Fantastic. Just fantastic. Mine lasted a full week before the switch broke” |
+| 7 | positive | “Great value. Feels much more expensive than it was.” |
+| 8 | neutral | “It's fine. Does the job, nothing special.” |
+| 9 | positive | “10/10 would recommend to anyone getting into hiking.” |
+| 10 | other | “What are the dimensions? The listing doesn't say.”
+

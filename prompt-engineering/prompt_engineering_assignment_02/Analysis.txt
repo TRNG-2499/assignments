@@ -1,0 +1,10 @@
+- For version 1 I used no techniques, version 2 I added define categories and output format, version 3 I added
+constraints and role prompting, version 4 I added few-shot
+
+- Define categories and output format clearly improved the response, by applying these techniques the response was clear and well formatted.Few-shot prompting, Constraints, and role prompting did not change the result significantly, other than mentioning these rules in the response.
+
+- The model handled tricky reviews such as mixed review by assigning it to specific categories, for sarcasm the LLM just labeled it as negative, result of tricky reviews such as questions falls into other categories. I manually added the review categories for tricky reviews.
+
+- The model labeled every review
+
+- Define the categories made the biggest difference to me,  because with proper categories type the model does not have to assign tricky reviews into categories that is not perfect fit, thus improving the response.

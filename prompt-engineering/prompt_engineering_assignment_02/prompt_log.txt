@@ -1,0 +1,415 @@
+# Classify review sentiment
+
+Version 1
+> Are These review positive or negative? 
+>
+> User context
+>
+> Attachments:
+> - product-reviews.csv: `C:/Users/haizh/Downloads/product-reviews.csv`
+
+<details><summary>2 previous messages</summary>
+
+> I’ll review the CSV’s text and classify each review as positive or negative, with a brief overall summary.
+>
+> <details><summary>Ran 2 commands</summary>
+>
+> - Ran `Get-Content -LiteralPath 'C:\Users\haizh\Downloads\product-reviews.csv' -TotalCount 12`
+> - Ran `Import-Csv -LiteralPath 'C:\Users\haizh\Downloads\product-reviews.csv' | Format-Table -Wrap`
+>
+> </details>
+</details>
+
+They’re mixed: the CSV has positive, negative, and some mixed or neutral reviews.
+
+For example, R006 is positive (“Perfect for my commute”), R003 is negative (the earbud stopped charging and support didn’t reply), and R002 is mixed (decent for the gym, but not truly noise cancelling). R012 is a question rather than an opinion.
+
+I can label all 110 reviews individually if you’d like.
+
+
+Version 2 with define categories and output format
+> Are These review positive or negative?
+>
+> Label each categories as positive, negative, mixed, other
+>
+> Format the output in table with rows and columns, where columns are number, categories,  and review text
+
+| Number | Categories | Review text |
+|---:|---|---|
+| R001 | Negative | Smells like chemicals out of the box. Took a week to air out. |
+| R002 | Mixed | Noise isolation is decent, but it's not true noise cancelling like the description implies. Still good for the gym. |
+| R003 | Negative | Left earbud stopped charging after two weeks. Contacted support and never heard back. |
+| R004 | Negative | Straps dig into my shoulders after an hour. Returning. |
+| R005 | Mixed | Not warm enough for winter. Fine as a decorative throw. |
+| R006 | Positive | Perfect for my commute. Clear calls, solid battery. |
+| R007 | Mixed | decent bag for the money, not for serious backpacking tho |
+| R008 | Mixed | Bright and colorful, but they disconnect from Wi-Fi every few days. |
+| R009 | Mixed | Great bulbs, terrible app. If you can get past setup you'll love them. |
+| R010 | Positive | Second one I've bought, gave the first to my mom. Still going strong after a year. |
+| R011 | Negative | Arrived with a stain on it. |
+| R012 | Other | Do these work with Google Home or only Alexa? |
+| R013 | Mixed | Stopped turning on after 6 weeks. Customer service sent a replacement, which works so far. |
+| R014 | Mixed | Mine arrived dented and customer service shipped a new one the next day. The kettle itself is fine. |
+| R015 | Negative | Way too small for anything over a day trip despite what the listing says. |
+| R016 | Other | Ordered for my husband. He says it's "fine." |
+| R017 | Positive | Absolutely bombproof. Dragged it through brush, rocks, and rivers with zero damage. |
+| R018 | Negative | Colors look washed out compared to other brands I've used. |
+| R019 | Negative | Seller sent the wrong size. |
+| R020 | Mixed | Color is different from the photos. More brown than green. Still a good bag. |
+| R021 | Positive | Great value. Feels much more expensive than it was. |
+| R022 | Negative | Love that the "waterproof" pack turned my sleeping bag into a sponge. Ten stars. |
+| R023 | Positive | Sunrise alarm feature has made my mornings so much easier. |
+| R024 | Negative | wow so smart, it forgot all my settings after an update. genius. |
+| R025 | Negative | Buzzes when dimmed below 30%. Very annoying in a quiet room. |
+| R026 | Other | Package arrived a day early. |
+| R027 | Positive | Boils water in under 3 minutes. Sleek design looks great on my counter. |
+| R028 | Negative | Returned them. Constant static in the right ear. |
+| R029 | Mixed | Fine for podcasts. Wouldn't use them for music. |
+| R030 | Negative | Fantastic. Just fantastic. Mine lasted a full week before the switch broke. |
+| R031 | Negative | App crashes constantly. Half the time the bulbs won't respond. |
+| R032 | Negative | Keep warm function only lasts 30 minutes, which is useless for me. |
+| R033 | Positive | Best purchase I've made all year. My old $200 pair is collecting dust now. |
+| R034 | Positive | Setup took two minutes and the colors are vibrant. Love the scheduling feature. |
+| R035 | Positive | Bought a second 4-pack for the rest of the house. That's how much I like them. |
+| R036 | Mixed | Ordered the gray and got navy. Kept it anyway since it's nice. |
+| R037 | Other | They're lightbulbs. They light up. |
+| R038 | Other | they r ok i guess. not bad not great |
+| R039 | Positive | Bought this for my office. Coworkers keep asking where I got it. |
+| R040 | Positive | My toddler drags it everywhere and it still looks new. Impressive. |
+| R041 | Mixed | Too many pockets honestly. I can never find anything. But very well made. |
+| R042 | Other | Ok for the price |
+| R043 | Other | It's fine. Does the job, nothing special. |
+| R044 | Positive | Comfortable, durable, and the side pockets actually fit a water bottle. Rare! |
+| R045 | Positive | Perfect weight for summer evenings on the porch. |
+| R046 | Positive | So soft and warm. My cat has claimed it as hers. |
+| R047 | Positive | 10/10 would recommend to anyone getting into hiking. |
+| R048 | Negative | Leaks from the bottom. Dangerous near an electrical outlet. |
+| R049 | Negative | The handle gets dangerously hot. Burned my hand the first day. |
+| R050 | Positive | I use it for pour-over coffee and the gooseneck spout gives great control. |
+| R051 | Negative | The cord is too short to reach anywhere useful. |
+| R052 | Positive | I was skeptical but these are fantastic. Would buy again. |
+| R053 | Negative | One of the four bulbs was dead on arrival. |
+| R054 | Positive | Super comfortable, I forget I'm wearing them. Pairing was instant. |
+| R055 | Mixed | Love the temperature presets for tea. The beep when it finishes is way too loud though. |
+| R056 | Mixed | Box arrived crushed but the earbuds inside were fine. They work well. |
+| R057 | Other | Took forever to get here and the box was wet. Haven't tried it yet. |
+| R058 | Negative | Shed everywhere. My couch is covered in fuzz. |
+| R059 | Mixed | Waterproof as advertised and stayed dry in a downpour. Wish the hip belt had more padding. |
+| R060 | Mixed | Battery life is great, easily 7 hours. Mic is terrible though, everyone says I sound like I'm underwater. |
+| R061 | Positive | My son uses it for school and it's held up all year. |
+| R062 | Other | Shipping took 3 weeks. |
+| R063 | Mixed | Small capacity, only enough for about 3 mugs. Boils fast though. |
+| R064 | Positive | Carried this through a 5-day trek. Comfortable straps, tons of pockets. |
+| R065 | Negative | Zipper broke on the first hike. |
+| R066 | Negative | Absolutely love how they fall out every time I turn my head. Great feature. |
+| R067 | Other | Is the laptop sleeve big enough for a 16-inch laptop? |
+| R068 | Negative | Wonderful, it's itchy AND thin. Two for one. |
+| R069 | Positive | love love love!!! buying another |
+| R070 | Positive | Warm white setting is nice and cozy. Never use the colors. |
+| R071 | Mixed | Beautiful color and super cozy, but it shrank in the wash even on cold. |
+| R072 | Mixed | Not as good as my AirPods but for a quarter of the price I can't complain. |
+| R073 | Mixed | Good enough for the price. I'd buy a better brand next time though. |
+| R074 | Negative | Mineral buildup after one month even with filtered water. Disappointed. |
+| R075 | Mixed | Smaller than expected. Barely covers my lap. Very soft though. |
+| R076 | Negative | Worst earbuds I've ever owned. Save your money. |
+| R077 | Positive | Sound quality is amazing for the price. Bass is punchy and they stay in during runs. |
+| R078 | Negative | I'm thrilled that it smells like a warehouse even after three washes. |
+| R079 | Positive | Gave one to each of my daughters for Christmas. They both love them. |
+| R080 | Negative | Oh sure, I just love when the buckle snaps halfway up a mountain. |
+| R081 | Positive | Washes well, no pilling after many cycles. Great quality. |
+| R082 | Positive | Perfect size for day hikes. The hydration sleeve is a nice bonus. |
+| R083 | Positive | Looks way more expensive than it is. Guests always compliment it. |
+| R084 | Positive | Had a problem pairing, but support walked me through it in 10 minutes. Now everything works. |
+| R085 | Negative | Oh good, a kettle that makes my water taste like plastic. Exactly what I wanted. |
+| R086 | Positive | Works perfectly with Alexa. Voice control is a game changer for my mom, who has limited mobility. |
+| R087 | Other | What are the dimensions? The listing doesn't say. |
+| R088 | Positive | Fun for parties! The music sync mode is a hit. |
+| R089 | Other | Received it today, looks nice. |
+| R090 | Positive | Gorgeous kettle, quick boil, quiet. No complaints at all. |
+| R091 | Negative | Lid won't stay closed. Steam everywhere. |
+| R092 | Other | It's a blanket. Keeps me warm. |
+| R093 | Negative | Delivery driver left it in the rain. |
+| R094 | Other | Bought these as a gift for my brother. He hasn't opened them yet. |
+| R095 | Negative | The stitching is already coming apart and I've only used it twice. |
+| R096 | Negative | Requires an account and wants my location data just to turn on a light. No thanks. |
+| R097 | Mixed | Love the sound, hate the touch controls. Every time I adjust them the music pauses. |
+| R098 | Negative | Nothing says "smart home" like having to unplug the router to turn on my lights. |
+| R099 | Mixed | The knit pattern snags on everything. Pretty but impractical. |
+| R100 | Negative | Stopped working entirely after a month. Waste of money. |
+| R101 | Other | Does anyone know if these work with a PS5? |
+| R102 | Positive | Best throw blanket I've owned. Heavy, warm, and soft. |
+| R103 | Negative | meh. sound is tinny and they hurt after an hour |
+| R104 | Other | It boils water. It's a kettle. |
+| R105 | Positive | Wish it came in more colors. Otherwise perfect. |
+| R106 | Positive | good kettle!!! fast and pretty |
+| R107 | Negative | Unraveling after a month. Poor quality. |
+| R108 | Negative | Wow, they lasted a whole three days before disconnecting every five minutes. Truly impressive engineering. |
+| R109 | Negative | Charging case feels cheap and the lid snapped off within a month. |
+| R110 | Negative | Not as bright as a regular 60W bulb despite the claim.
+
+
+Version 3 with Define the categories, Output format, Constraints, Role prompting
+> Are These review positive or negative?
+>
+> Label each categories as positive, negative, mixed, other
+>
+> Format the output in table with rows and columns, where columns are number, categories,  and review text&#x20;
+>
+> You should follow these constraints
+>
+> - Each review should only belong to 1 categories
+> - ignore blank reviews
+>
+> You are an professional analyzer analyzing this csv file and forging an report for review
+
+## Product review sentiment report
+
+Each review is assigned to one category. **Other** covers questions, delivery or packaging comments, and statements that don’t clearly express a product opinion. There are no blank reviews.
+
+| Number | Categories | Review text |
+|---:|---|---|
+| R001 | Negative | Smells like chemicals out of the box. Took a week to air out. |
+| R002 | Mixed | Noise isolation is decent, but it's not true noise cancelling like the description implies. Still good for the gym. |
+| R003 | Negative | Left earbud stopped charging after two weeks. Contacted support and never heard back. |
+| R004 | Negative | Straps dig into my shoulders after an hour. Returning. |
+| R005 | Mixed | Not warm enough for winter. Fine as a decorative throw. |
+| R006 | Positive | Perfect for my commute. Clear calls, solid battery. |
+| R007 | Mixed | decent bag for the money, not for serious backpacking tho |
+| R008 | Mixed | Bright and colorful, but they disconnect from Wi-Fi every few days. |
+| R009 | Mixed | Great bulbs, terrible app. If you can get past setup you'll love them. |
+| R010 | Positive | Second one I've bought, gave the first to my mom. Still going strong after a year. |
+| R011 | Negative | Arrived with a stain on it. |
+| R012 | Other | Do these work with Google Home or only Alexa? |
+| R013 | Mixed | Stopped turning on after 6 weeks. Customer service sent a replacement, which works so far. |
+| R014 | Mixed | Mine arrived dented and customer service shipped a new one the next day. The kettle itself is fine. |
+| R015 | Negative | Way too small for anything over a day trip despite what the listing says. |
+| R016 | Other | Ordered for my husband. He says it's "fine." |
+| R017 | Positive | Absolutely bombproof. Dragged it through brush, rocks, and rivers with zero damage. |
+| R018 | Negative | Colors look washed out compared to other brands I've used. |
+| R019 | Negative | Seller sent the wrong size. |
+| R020 | Mixed | Color is different from the photos. More brown than green. Still a good bag. |
+| R021 | Positive | Great value. Feels much more expensive than it was. |
+| R022 | Negative | Love that the "waterproof" pack turned my sleeping bag into a sponge. Ten stars. |
+| R023 | Positive | Sunrise alarm feature has made my mornings so much easier. |
+| R024 | Negative | wow so smart, it forgot all my settings after an update. genius. |
+| R025 | Negative | Buzzes when dimmed below 30%. Very annoying in a quiet room. |
+| R026 | Other | Package arrived a day early. |
+| R027 | Positive | Boils water in under 3 minutes. Sleek design looks great on my counter. |
+| R028 | Negative | Returned them. Constant static in the right ear. |
+| R029 | Mixed | Fine for podcasts. Wouldn't use them for music. |
+| R030 | Negative | Fantastic. Just fantastic. Mine lasted a full week before the switch broke. |
+| R031 | Negative | App crashes constantly. Half the time the bulbs won't respond. |
+| R032 | Negative | Keep warm function only lasts 30 minutes, which is useless for me. |
+| R033 | Positive | Best purchase I've made all year. My old $200 pair is collecting dust now. |
+| R034 | Positive | Setup took two minutes and the colors are vibrant. Love the scheduling feature. |
+| R035 | Positive | Bought a second 4-pack for the rest of the house. That's how much I like them. |
+| R036 | Mixed | Ordered the gray and got navy. Kept it anyway since it's nice. |
+| R037 | Other | They're lightbulbs. They light up. |
+| R038 | Other | they r ok i guess. not bad not great |
+| R039 | Positive | Bought this for my office. Coworkers keep asking where I got it. |
+| R040 | Positive | My toddler drags it everywhere and it still looks new. Impressive. |
+| R041 | Mixed | Too many pockets honestly. I can never find anything. But very well made. |
+| R042 | Other | Ok for the price |
+| R043 | Other | It's fine. Does the job, nothing special. |
+| R044 | Positive | Comfortable, durable, and the side pockets actually fit a water bottle. Rare! |
+| R045 | Positive | Perfect weight for summer evenings on the porch. |
+| R046 | Positive | So soft and warm. My cat has claimed it as hers. |
+| R047 | Positive | 10/10 would recommend to anyone getting into hiking. |
+| R048 | Negative | Leaks from the bottom. Dangerous near an electrical outlet. |
+| R049 | Negative | The handle gets dangerously hot. Burned my hand the first day. |
+| R050 | Positive | I use it for pour-over coffee and the gooseneck spout gives great control. |
+| R051 | Negative | The cord is too short to reach anywhere useful. |
+| R052 | Positive | I was skeptical but these are fantastic. Would buy again. |
+| R053 | Negative | One of the four bulbs was dead on arrival. |
+| R054 | Positive | Super comfortable, I forget I'm wearing them. Pairing was instant. |
+| R055 | Mixed | Love the temperature presets for tea. The beep when it finishes is way too loud though. |
+| R056 | Mixed | Box arrived crushed but the earbuds inside were fine. They work well. |
+| R057 | Other | Took forever to get here and the box was wet. Haven't tried it yet. |
+| R058 | Negative | Shed everywhere. My couch is covered in fuzz. |
+| R059 | Mixed | Waterproof as advertised and stayed dry in a downpour. Wish the hip belt had more padding. |
+| R060 | Mixed | Battery life is great, easily 7 hours. Mic is terrible though, everyone says I sound like I'm underwater. |
+| R061 | Positive | My son uses it for school and it's held up all year. |
+| R062 | Other | Shipping took 3 weeks. |
+| R063 | Mixed | Small capacity, only enough for about 3 mugs. Boils fast though. |
+| R064 | Positive | Carried this through a 5-day trek. Comfortable straps, tons of pockets. |
+| R065 | Negative | Zipper broke on the first hike. |
+| R066 | Negative | Absolutely love how they fall out every time I turn my head. Great feature. |
+| R067 | Other | Is the laptop sleeve big enough for a 16-inch laptop? |
+| R068 | Negative | Wonderful, it's itchy AND thin. Two for one. |
+| R069 | Positive | love love love!!! buying another |
+| R070 | Positive | Warm white setting is nice and cozy. Never use the colors. |
+| R071 | Mixed | Beautiful color and super cozy, but it shrank in the wash even on cold. |
+| R072 | Mixed | Not as good as my AirPods but for a quarter of the price I can't complain. |
+| R073 | Mixed | Good enough for the price. I'd buy a better brand next time though. |
+| R074 | Negative | Mineral buildup after one month even with filtered water. Disappointed. |
+| R075 | Mixed | Smaller than expected. Barely covers my lap. Very soft though. |
+| R076 | Negative | Worst earbuds I've ever owned. Save your money. |
+| R077 | Positive | Sound quality is amazing for the price. Bass is punchy and they stay in during runs. |
+| R078 | Negative | I'm thrilled that it smells like a warehouse even after three washes. |
+| R079 | Positive | Gave one to each of my daughters for Christmas. They both love them. |
+| R080 | Negative | Oh sure, I just love when the buckle snaps halfway up a mountain. |
+| R081 | Positive | Washes well, no pilling after many cycles. Great quality. |
+| R082 | Positive | Perfect size for day hikes. The hydration sleeve is a nice bonus. |
+| R083 | Positive | Looks way more expensive than it is. Guests always compliment it. |
+| R084 | Positive | Had a problem pairing, but support walked me through it in 10 minutes. Now everything works. |
+| R085 | Negative | Oh good, a kettle that makes my water taste like plastic. Exactly what I wanted. |
+| R086 | Positive | Works perfectly with Alexa. Voice control is a game changer for my mom, who has limited mobility. |
+| R087 | Other | What are the dimensions? The listing doesn't say. |
+| R088 | Positive | Fun for parties! The music sync mode is a hit. |
+| R089 | Other | Received it today, looks nice. |
+| R090 | Positive | Gorgeous kettle, quick boil, quiet. No complaints at all. |
+| R091 | Negative | Lid won't stay closed. Steam everywhere. |
+| R092 | Positive | It's a blanket. Keeps me warm. |
+| R093 | Other | Delivery driver left it in the rain. |
+| R094 | Other | Bought these as a gift for my brother. He hasn't opened them yet. |
+| R095 | Negative | The stitching is already coming apart and I've only used it twice. |
+| R096 | Negative | Requires an account and wants my location data just to turn on a light. No thanks. |
+| R097 | Mixed | Love the sound, hate the touch controls. Every time I adjust them the music pauses. |
+| R098 | Negative | Nothing says "smart home" like having to unplug the router to turn on my lights. |
+| R099 | Mixed | The knit pattern snags on everything. Pretty but impractical. |
+| R100 | Negative | Stopped working entirely after a month. Waste of money. |
+| R101 | Other | Does anyone know if these work with a PS5? |
+| R102 | Positive | Best throw blanket I've owned. Heavy, warm, and soft. |
+| R103 | Negative | meh. sound is tinny and they hurt after an hour |
+| R104 | Other | It boils water. It's a kettle. |
+| R105 | Positive | Wish it came in more colors. Otherwise perfect. |
+| R106 | Positive | good kettle!!! fast and pretty |
+| R107 | Negative | Unraveling after a month. Poor quality. |
+| R108 | Negative | Wow, they lasted a whole three days before disconnecting every five minutes. Truly impressive engineering. |
+| R109 | Negative | Charging case feels cheap and the lid snapped off within a month. |
+| R110 | Negative | Not as bright as a regular 60W bulb despite the claim. |
+
+**Category counts:** Positive 32 · Negative 37 · Mixed 21 · Other 20.
+
+Version 4 with Define the categories, Output format, Constraints, Role prompting, few-shot
+> Are These review positive or negative?
+>
+> Label each categories as positive, negative, mixed, other
+>
+> Format the output in table with rows and columns, where columns are number, categories,  and review text&#x20;
+>
+> You should follow these constraints
+>
+> - Each review should only belong to 1 categories
+> - ignore blank reviews
+>
+> You are an professional analyzer analyzing this csv file and forging an report for review
+>
+> Example response
+>
+> number categories review text
+>
+> 1             positive        "text"
+
+| number | categories | review text |
+|---:|---|---|
+| 1 | negative | "Smells like chemicals out of the box. Took a week to air out." |
+| 2 | mixed | "Noise isolation is decent, but it's not true noise cancelling like the description implies. Still good for the gym." |
+| 3 | negative | "Left earbud stopped charging after two weeks. Contacted support and never heard back." |
+| 4 | negative | "Straps dig into my shoulders after an hour. Returning." |
+| 5 | mixed | "Not warm enough for winter. Fine as a decorative throw." |
+| 6 | positive | "Perfect for my commute. Clear calls, solid battery." |
+| 7 | mixed | "decent bag for the money, not for serious backpacking tho" |
+| 8 | mixed | "Bright and colorful, but they disconnect from Wi-Fi every few days." |
+| 9 | mixed | "Great bulbs, terrible app. If you can get past setup you'll love them." |
+| 10 | positive | "Second one I've bought, gave the first to my mom. Still going strong after a year." |
+| 11 | negative | "Arrived with a stain on it." |
+| 12 | other | "Do these work with Google Home or only Alexa?" |
+| 13 | mixed | "Stopped turning on after 6 weeks. Customer service sent a replacement, which works so far." |
+| 14 | mixed | "Mine arrived dented and customer service shipped a new one the next day. The kettle itself is fine." |
+| 15 | negative | "Way too small for anything over a day trip despite what the listing says." |
+| 16 | other | "Ordered for my husband. He says it's 'fine.'" |
+| 17 | positive | "Absolutely bombproof. Dragged it through brush, rocks, and rivers with zero damage." |
+| 18 | negative | "Colors look washed out compared to other brands I've used." |
+| 19 | negative | "Seller sent the wrong size." |
+| 20 | mixed | "Color is different from the photos. More brown than green. Still a good bag." |
+| 21 | positive | "Great value. Feels much more expensive than it was." |
+| 22 | negative | "Love that the 'waterproof' pack turned my sleeping bag into a sponge. Ten stars." |
+| 23 | positive | "Sunrise alarm feature has made my mornings so much easier." |
+| 24 | negative | "wow so smart, it forgot all my settings after an update. genius." |
+| 25 | negative | "Buzzes when dimmed below 30%. Very annoying in a quiet room." |
+| 26 | other | "Package arrived a day early." |
+| 27 | positive | "Boils water in under 3 minutes. Sleek design looks great on my counter." |
+| 28 | negative | "Returned them. Constant static in the right ear." |
+| 29 | mixed | "Fine for podcasts. Wouldn't use them for music." |
+| 30 | negative | "Fantastic. Just fantastic. Mine lasted a full week before the switch broke." |
+| 31 | negative | "App crashes constantly. Half the time the bulbs won't respond." |
+| 32 | negative | "Keep warm function only lasts 30 minutes, which is useless for me." |
+| 33 | positive | "Best purchase I've made all year. My old $200 pair is collecting dust now." |
+| 34 | positive | "Setup took two minutes and the colors are vibrant. Love the scheduling feature." |
+| 35 | positive | "Bought a second 4-pack for the rest of the house. That's how much I like them." |
+| 36 | mixed | "Ordered the gray and got navy. Kept it anyway since it's nice." |
+| 37 | other | "They're lightbulbs. They light up." |
+| 38 | other | "they r ok i guess. not bad not great" |
+| 39 | positive | "Bought this for my office. Coworkers keep asking where I got it." |
+| 40 | positive | "My toddler drags it everywhere and it still looks new. Impressive." |
+| 41 | mixed | "Too many pockets honestly. I can never find anything. But very well made." |
+| 42 | other | "Ok for the price" |
+| 43 | other | "It's fine. Does the job, nothing special." |
+| 44 | positive | "Comfortable, durable, and the side pockets actually fit a water bottle. Rare!" |
+| 45 | positive | "Perfect weight for summer evenings on the porch." |
+| 46 | positive | "So soft and warm. My cat has claimed it as hers." |
+| 47 | positive | "10/10 would recommend to anyone getting into hiking." |
+| 48 | negative | "Leaks from the bottom. Dangerous near an electrical outlet." |
+| 49 | negative | "The handle gets dangerously hot. Burned my hand the first day." |
+| 50 | positive | "I use it for pour-over coffee and the gooseneck spout gives great control." |
+| 51 | negative | "The cord is too short to reach anywhere useful." |
+| 52 | positive | "I was skeptical but these are fantastic. Would buy again." |
+| 53 | negative | "One of the four bulbs was dead on arrival." |
+| 54 | positive | "Super comfortable, I forget I'm wearing them. Pairing was instant." |
+| 55 | mixed | "Love the temperature presets for tea. The beep when it finishes is way too loud though." |
+| 56 | mixed | "Box arrived crushed but the earbuds inside were fine. They work well." |
+| 57 | other | "Took forever to get here and the box was wet. Haven't tried it yet." |
+| 58 | negative | "Shed everywhere. My couch is covered in fuzz." |
+| 59 | mixed | "Waterproof as advertised and stayed dry in a downpour. Wish the hip belt had more padding." |
+| 60 | mixed | "Battery life is great, easily 7 hours. Mic is terrible though, everyone says I sound like I'm underwater." |
+| 61 | positive | "My son uses it for school and it's held up all year." |
+| 62 | other | "Shipping took 3 weeks." |
+| 63 | mixed | "Small capacity, only enough for about 3 mugs. Boils fast though." |
+| 64 | positive | "Carried this through a 5-day trek. Comfortable straps, tons of pockets." |
+| 65 | negative | "Zipper broke on the first hike." |
+| 66 | negative | "Absolutely love how they fall out every time I turn my head. Great feature." |
+| 67 | other | "Is the laptop sleeve big enough for a 16-inch laptop?" |
+| 68 | negative | "Wonderful, it's itchy AND thin. Two for one." |
+| 69 | positive | "love love love!!! buying another" |
+| 70 | positive | "Warm white setting is nice and cozy. Never use the colors." |
+| 71 | mixed | "Beautiful color and super cozy, but it shrank in the wash even on cold." |
+| 72 | mixed | "Not as good as my AirPods but for a quarter of the price I can't complain." |
+| 73 | mixed | "Good enough for the price. I'd buy a better brand next time though." |
+| 74 | negative | "Mineral buildup after one month even with filtered water. Disappointed." |
+| 75 | mixed | "Smaller than expected. Barely covers my lap. Very soft though." |
+| 76 | negative | "Worst earbuds I've ever owned. Save your money." |
+| 77 | positive | "Sound quality is amazing for the price. Bass is punchy and they stay in during runs." |
+| 78 | negative | "I'm thrilled that it smells like a warehouse even after three washes." |
+| 79 | positive | "Gave one to each of my daughters for Christmas. They both love them." |
+| 80 | negative | "Oh sure, I just love when the buckle snaps halfway up a mountain." |
+| 81 | positive | "Washes well, no pilling after many cycles. Great quality." |
+| 82 | positive | "Perfect size for day hikes. The hydration sleeve is a nice bonus." |
+| 83 | positive | "Looks way more expensive than it is. Guests always compliment it." |
+| 84 | positive | "Had a problem pairing, but support walked me through it in 10 minutes. Now everything works." |
+| 85 | negative | "Oh good, a kettle that makes my water taste like plastic. Exactly what I wanted." |
+| 86 | positive | "Works perfectly with Alexa. Voice control is a game changer for my mom, who has limited mobility." |
+| 87 | other | "What are the dimensions? The listing doesn't say." |
+| 88 | positive | "Fun for parties! The music sync mode is a hit." |
+| 89 | other | "Received it today, looks nice." |
+| 90 | positive | "Gorgeous kettle, quick boil, quiet. No complaints at all." |
+| 91 | negative | "Lid won't stay closed. Steam everywhere." |
+| 92 | positive | "It's a blanket. Keeps me warm." |
+| 93 | other | "Delivery driver left it in the rain." |
+| 94 | other | "Bought these as a gift for my brother. He hasn't opened them yet." |
+| 95 | negative | "The stitching is already coming apart and I've only used it twice." |
+| 96 | negative | "Requires an account and wants my location data just to turn on a light. No thanks." |
+| 97 | mixed | "Love the sound, hate the touch controls. Every time I adjust them the music pauses." |
+| 98 | negative | "Nothing says 'smart home' like having to unplug the router to turn on my lights." |
+| 99 | mixed | "The knit pattern snags on everything. Pretty but impractical." |
+| 100 | negative | "Stopped working entirely after a month. Waste of money." |
+| 101 | other | "Does anyone know if these work with a PS5?" |
+| 102 | positive | "Best throw blanket I've owned. Heavy, warm, and soft." |
+| 103 | negative | "meh. sound is tinny and they hurt after an hour" |
+| 104 | other | "It boils water. It's a kettle." |
+| 105 | positive | "Wish it came in more colors. Otherwise perfect." |
+| 106 | positive | "good kettle!!! fast and pretty" |
+| 107 | negative | "Unraveling after a month. Poor quality." |
+| 108 | negative | "Wow, they lasted a whole three days before disconnecting every five minutes. Truly impressive engineering." |
+| 109 | negative | "Charging case feels cheap and the lid snapped off within a month." |
+| 110 | negative | "Not as bright as a regular 60W bulb despite the claim." |
