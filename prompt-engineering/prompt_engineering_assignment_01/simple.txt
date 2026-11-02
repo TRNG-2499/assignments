@@ -1,0 +1,232 @@
+Assignment #1
+
+Model Used: Claude (Sonnet 5.5)
+
+Part 1:
+1. 
+
+2. 
+**HydraCore Insulated Water Bottle**
+
+Stay refreshed from the first sip to the last drop. The HydraCore keeps drinks ice-cold for 24 hours or piping hot for 12, so your morning coffee is still warm at lunch and your afternoon water is still frosty after a long hike.
+
+Built from double-wall, vacuum-insulated stainless steel, it resists dents, never retains flavors or odors, and is free of BPA and other nasty stuff. The powder-coated finish gives you a secure, sweat-free grip, even when you're on the move.
+
+**Features**
+- 24-hour cold / 12-hour hot insulation
+- Leak-proof, one-handed flip lid with a carry loop
+- Wide mouth that fits ice cubes and cleans easily
+- Fits most cup holders and backpack side pockets
+- Dishwasher-safe (lid on the top rack)
+- Available in 20 oz, 32 oz, and 40 oz sizes, in five colors
+
+Whether you're commuting, training, or exploring, the HydraCore is the bottle you'll actually want to carry every day. Backed by a lifetime warranty.
+
+---
+
+I can tailor this if you tell me the product's real features, target audience (athletes, kids, office workers), or the tone you're after, whether playful, premium, or eco-focused.
+
+3. 
+Because the user didn't add any context, role, instructions, or specifics in the water bottle description prompt, the LLM just guessed the name and features of a water bottle product, the information that is currently missing is its specific dimensions, and the output seemed to be written for customers who want their drink temperatures maintained during long, all-day activities. 
+
+Part 2:
+
+Run #1:
+1. Revised Prompt: You are a product designer currently tasked with designing a water bottle that can maintain cold & hot temperatures for approximately several days and tailoring that product's audience to athletes. Be sure to make the description appear in an ad that appears around the internet.
+
+   Techniques used: Role Prompting, Context
+
+   Output:
+   # **THE VAULT™ Performance Bottle**
+### *Cold stays cold. Hot stays hot. For days.*
+
+---
+
+## Ad Copy (Digital Banner / Social / Display)
+
+**HEADLINE**
+**Your Hydration Doesn't Quit. Neither Should You.**
+
+**SUBHEAD**
+Ice-cold for up to 72 hours. Piping hot for up to 48. One bottle from the first rep to the last mile.
+
+**BODY**
+Race-day. Two-a-days. Altitude camps. Sideline sessions that run long.
+
+The Vault™ is built on a triple-wall vacuum core with a copper-lined inner shell, so your water stays the exact temperature you filled it at, whether that's ice-cold after a Monday-morning pack or hot electrolyte tea after a freezing trail run.
+
+**WHY ATHLETES SWITCH**
+- **72-Hour Ice Retention.** Fill it Sunday, still crushing ice Wednesday.
+- **48-Hour Heat Lock.** Hot recovery drinks and broth that stay hot.
+- **Sweat-Proof Grip.** Textured, non-slip armor sleeve that holds up in wet, gloved or chalky hands.
+- **One-Hand Flip-Sip Cap.** Fast flow, no twisting, no stopping.
+- **Bite-Proof, Dent-Proof.** 18/8 stainless steel with a shock-absorbing silicone base.
+- **Gym-Bag Safe.** Leakproof lock. Fits standard cup holders and bike cages.
+- **Pure Taste.** BPA-free, no metallic aftertaste, no flavor ghosting from your last pre-workout.
+
+**SIZES:** 24 oz | 32 oz | 40 oz | 64 oz Recovery Jug
+**COLORS:** Midnight Black, Summit Gray, Volt Green, Tempo Red, Glacier Blue
+
+**CTA BUTTON**
+**Shop The Vault →**
+
+**OFFER LINE**
+Free shipping on orders over $40. 30-day performance guarantee: if it doesn't outlast your training week, send it back.
+
+**TAGLINE**
+*Built for the grind. Insulated for the long haul.*
+
+---
+
+## Design Rationale (Product Notes)
+
+**Audience:** Endurance and team-sport athletes, CrossFit and gym regulars, and coaches/trainers who need reliable hydration through long training blocks and travel.
+
+**Core insight:** Athletes lose performance to heat, cold and dehydration. A bottle that holds temperature for days means less refilling, safer hydration in extreme conditions, and fewer excuses.
+
+**Key engineering choices:**
+- Triple-wall vacuum insulation with copper lining for maximum thermal retention
+- Wide mouth (accepts ice cubes and shaker-style powders) with a narrower sip spout
+- Weight-conscious build (24 oz is about 13 oz empty) for runners and cyclists
+- Optional carry loop and bike-cage-compatible diameter
+
+**Ad placement strategy:** Retargeting banners on fitness blogs and running apps, short-form video on Instagram, TikTok and YouTube pre-roll, sponsored posts in athlete communities, and Google Display placements on gear-review and race-calendar sites.
+
+---
+
+**Note:** The 72-hour and 48-hour figures are marketing targets; real-world retention depends on the starting temperature, ice-to-water ratio and ambient conditions. Before launch, test results should back the final claims, and the ad copy should include a brief "results may vary" footnote.
+
+If you'd like, I can build a visual banner mockup, write alternate versions for different platforms, or draft a short video ad script next.
+
+Run #2:
+1. Revised Prompt: Give a description of the water bottle for athletes that maintains cold and hot temperatures for several days, but use the following format: 
+Description section (should be no more than three lines)
+Advantages section (bulleted list; for each advantage, specify how it benefits athletic customers)
+
+   Techniques used: Constraints, Output format
+
+   Output:
+   **Description**
+
+Built for training, competition, and everything in between, this double-wall vacuum-insulated bottle keeps drinks ice-cold or piping hot for several days. Its rugged stainless steel body and leak-proof lid are made to survive gym bags, sidelines, and trail runs. One bottle, any conditions.
+
+**Advantages**
+
+- **Multi-day temperature retention:** Fill it once before a weekend tournament or multi-day event and your drink stays at the right temperature the whole time, so you're not hunting for ice or a microwave between sessions.
+- **Ice-cold hydration in extreme heat:** Cold water lowers perceived exertion and helps regulate core temperature, which supports endurance during summer runs, long rides, and outdoor practices.
+- **Hot-drink capability:** Keeps tea, broth, or electrolyte-rich warm drinks hot for cold-weather training, early-morning starts, or post-workout recovery.
+- **Durable stainless steel construction:** Resists dents, drops, and rough handling, so it holds up in gear bags, on trails, and on the field without cracking or warping.
+- **Leak-proof, one-handed lid:** Lets you drink on the move without stopping or spilling, which is useful mid-run, mid-ride, or between sets.
+- **BPA-free, no flavor transfer:** Keeps water, sports drinks, and supplements tasting clean, so your hydration doesn't pick up the lingering flavors of past drinks.
+- **Fits standard cup holders and gear pockets:** Easy to carry in a bike cage, car, locker, or backpack, so it's always within reach when you need it.
+
+Run #3:
+1. Revised Prompt: Give a description of a water bottle for athletes that maintain cold and hot temperatures for several days, but only list the advantages towards that audience. For example you could write the following:
+- Athletes don't feel like their drinks are dried and spoiled in no more than a few days.
+- The flavors and nutrients are maintained for athletes, not expired or wasted.
+- While consistent temperatures are completely sealed due to the bottle's multi-layer vaccum design, it doesn't overheat or freeze carrying equipment that it's on.
+
+   Techniques used: Few-shot prompting
+
+   Output:
+   **Product Description: The Endurance Insulated Water Bottle**
+
+Built for athletes who train hard and plan ahead, this vacuum-insulated bottle keeps drinks ice-cold or piping hot for days, so your hydration performs as well as you do.
+
+**Advantages for athletes:**
+
+- **Cold drinks stay cold through the whole event.** Ice water or electrolyte mix is still refreshing at the final mile, the last quarter, or the end of a long tournament day, even in summer heat.
+- **Hot drinks stay hot for cold-weather training.** Warm tea, broth, or recovery drinks are ready after a winter run, a mountain descent, or an early-morning practice.
+- **Prep once, use for days.** Fill it the night before a multi-day race, camp, or tournament and you won't need to hunt for ice or a kettle between sessions.
+- **Flavors and nutrients stay intact.** Sports drinks, protein shakes, and electrolyte blends hold their taste and potency instead of going flat, warm, or stale, so you get the full benefit of what you mixed.
+- **Fewer spoiled or wasted drinks.** Stable temperatures help you avoid dumping out expensive supplements or recovery drinks that sat too long in a hot gym bag or car.
+- **Drinks you'll actually want to drink.** A drink at the right temperature is easier to finish, which helps you stay consistently hydrated during training and competition.
+- **Gear stays comfortable.** The multi-layer vacuum design keeps the outside of the bottle at a neutral temperature, so it won't scorch or freeze your hands, soak your bag with condensation, or overheat or chill the equipment it's packed next to.
+- **Sealed against leaks and spills.** The tight, secure seal keeps your drink in the bottle and your kit dry, even when it's tossed in a duffel, strapped to a bike, or jostled on the sideline.
+- **Built to take a beating.** The durable construction handles drops, bumps, and rough travel from the locker room to the trailhead.
+- **One bottle for every season and sport.** Whether you're running, cycling, climbing, lifting, or competing, the same bottle gives you reliable temperature control in any climate.
+
+Part 3:
+
+Product 1: Reusable Grocery Bag
+Original Prompt: Give a description of a reusable grocery bag product
+
+Original Output:
+**EverCarry Reusable Grocery Bag**
+
+The EverCarry is a durable, foldable shopping bag built to replace the endless stream of single-use plastic bags. It's designed for real grocery runs: heavy cans, glass jars, produce, and the occasional gallon of milk.
+
+**Key features**
+
+- **Strong construction:** Made from ripstop recycled polyester (or heavy-duty cotton canvas), with reinforced stitching at the handles and seams. Holds up to 40 lbs without sagging or tearing.
+- **Roomy design:** A wide, flat-bottomed shape with a rigid base insert keeps the bag upright in your trunk or cart, so groceries don't tip or spill. Capacity is about 25 liters, roughly equal to 2-3 standard plastic bags.
+- **Comfortable carry:** Long, padded handles fit over the shoulder, and a shorter grip handle works for hand carrying.
+- **Folds small:** Packs down into a built-in pouch about the size of a fist, with a clip so it can hang from your keys or purse and never get left at home.
+- **Easy to clean:** Machine washable, water-resistant, and wipeable, which is handy after leaky meat packaging or muddy root vegetables.
+- **Extras:** An interior pocket for receipts or small items, and an optional insulated liner for cold goods.
+
+**Why it matters**
+
+One reusable bag can replace hundreds of single-use bags over its lifetime. Made from recycled materials and built to last for years, it cuts down on plastic waste, saves money at stores that charge per bag, and makes unloading the car a lot easier with fewer trips.
+
+**Available in:** Sage Green, Charcoal, Sky Blue, and Sunset Orange.
+
+Would you like me to adjust the tone (for example, more playful or more eco-focused), shorten it into ad copy, or tailor it to a specific brand or material?
+
+Enhanced Prompt:
+You are a product designer tasked with designing a reusable grocery bag minimizes disposable bag waste, which can cause plastic pollution, and makes it easier to remove food stains from it and tailor it to grocery consumer audiences who don't prefer continuously disposing bags. Give a description of that product as if it appeared in an ad that appears around the Internet but keep it as short and easy to read as possible.
+
+Techniques Used: Role prompting, Context, Constraints.
+
+Enhanced Output:
+
+Product 2: Ergonomic Office Chair
+Original Prompt: Give a description of an ergonomic office chair product
+
+Original Output:
+**The ErgoFlex Pro Office Chair**
+
+Built for people who spend long hours at a desk, the ErgoFlex Pro supports your body through the entire workday, whether you're deep in focused work or bouncing between calls.
+
+**Lumbar support that adapts to you.** An adjustable lumbar system lets you raise, lower, and tune the depth of support so it fits the natural curve of your lower back. This helps reduce the slouching and strain that build up over a long day.
+
+**Breathable mesh back.** The tensioned mesh backrest promotes airflow and keeps you cool, while still offering firm, even support from your shoulder blades to your hips.
+
+**Seat built for comfort.** A waterfall-edge seat with high-density cushioning relieves pressure on the thighs and improves circulation. A sliding seat depth adjustment accommodates different leg lengths, so you can sit back fully without the seat edge pressing behind your knees.
+
+**Fully adjustable throughout.** The 4D armrests move up, down, forward, back, and pivot inward, letting you support your forearms at the right height whether you're typing, writing, or using a mouse. A synchronized recline mechanism moves the seat and backrest together, with a tension knob and multiple locking positions. The adjustable headrest supports your neck during leaning-back moments.
+
+**Durable and smooth.** A reinforced nylon base, a class-4 gas lift, and silent dual-wheel casters designed for both carpet and hard floors keep the chair stable, quiet, and easy to move around your workspace.
+
+**Key specs**
+- Weight capacity: 300 lbs
+- Seat height range: 17" to 21"
+- Recline: up to 120°
+- Materials: breathable mesh, molded foam, nylon frame
+- Assembly: tool-free in about 15 minutes
+- Warranty: 5 years
+
+Whether you work from a home office, a corner of the living room, or a corporate desk, the ErgoFlex Pro is designed to help you sit better, feel better, and stay productive longer.
+
+Enhanced Prompt: Give a description of an ergonomic office chair that is designed and manufactured to allow the customer to seamlessly control its height, rotation, joints, and inflation, but keep it to the following format:
+Brief Description (paragraph format; keep it no more than 2 lines)
+Advantages (bulleted list; for each advantage, keep it no more than one line and ensure it explains how it benefits customers)
+
+Example of bulleted list of Advantages:
+Advantages:
+- Dynamic Inflation: you can adjust the inflation of chair cushions to stay in a comfortable and appropriate posture while sitting
+- Height Adjustment: Helps to maintain arm posture while typing.
+
+Techniques Used: Context, Few-shot Prompting, Output Format
+
+Enhanced Output:
+**Brief Description:**
+This ergonomic office chair gives you effortless control over height, rotation, joint positioning, and cushion inflation. Every adjustment is built into the chair so you can tailor it to your body throughout the workday.
+
+**Advantages:**
+- Height Adjustment: Lets you set the seat so your feet rest flat and your arms stay level with your desk, reducing shoulder and wrist strain.
+- Smooth Rotation: Lets you turn to reach items or face colleagues without twisting your spine, protecting your lower back.
+- Adjustable Joints: Lets you fine-tune the armrests, backrest, and seat tilt to support your natural posture and relieve pressure on your joints.
+- Dynamic Inflation: Lets you adjust cushion firmness for personalized comfort and to shift pressure points during long sitting sessions.
+- Seamless Controls: Puts every adjustment within easy reach so you can change settings in seconds without leaving your seat or interrupting your work.
+
