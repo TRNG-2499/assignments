@@ -1,0 +1,210 @@
+Part 1:
+
+Response received after sending the prompt: Write a product description for a water bottle.
+=======================================================================================================
+**HydraFlow Insulated Water Bottle**
+
+Stay refreshed from sunrise to sunset. The HydraFlow keeps drinks ice-cold for 24 hours or piping hot for 12, so your morning coffee is still warm at lunch and your ice water is still frosty after a long hike.
+
+**Why you'll love it**
+
+- **Double-wall vacuum insulation:** Keeps temperatures steady without condensation, so no sweaty hands or damp bags.
+- **Durable 18/8 stainless steel:** Built to handle drops, dents, and daily wear.
+- **Leak-proof, one-handed lid:** Flip, sip, and go. Spill-free in your gym bag, backpack, or car cup holder.
+- **Wide mouth opening:** Easy to fill, add ice cubes, and clean.
+- **BPA-free and taste-neutral:** No metallic aftertaste, just clean, fresh flavor.
+- **Fits standard cup holders:** Made for commutes, road trips, and desks.
+
+**Available in** 18 oz, 24 oz, and 32 oz, with a powder-coated finish in six colors that resists scratches and stays grippy when wet.
+
+Whether you're hitting the trail, the gym, or a back-to-back meeting schedule, HydraFlow makes it easy to drink more water and waste less plastic.
+
+*Backed by a lifetime warranty.*
+
+---
+
+I can tailor this to a specific brand, tone (playful, premium, minimalist), or platform (Amazon listing, Shopify, social ad) if you'd like.
+=======================================================================================================
+
+This response feels generic because it's built from text that can be easily replaced. For example, "the HydraFlow keeps drinks ice-cold for 24 hours ... so your morning coffee is still warm at lunch and your ice water is still frosty after a long hike",
+can be easily replaced with a different time frame, different "generic" story. Instead of 24 hours it could be substituted with 36 hours, and instead of warm at lunch, it could just be warm all day. In the same vein, this information seems to be targeting
+everybody, there doesn't seem to be a single target audience.
+
+Part 2:
+Improved Prompt: You are a salesman that's trying to sell water bottles to students. This water bottle should be used to help students keep track of how much water they drank today. Write a water bottle description for it.
+
+Response:
+
+# Meet the SipSmart Bottle 💧
+
+**Stay hydrated. Stay sharp. Ace the day.**
+
+Let's be honest: between 8 a.m. lectures, group projects, and that all-nighter before finals, drinking water is the last thing on your mind. But your brain runs on hydration, and even mild dehydration can tank your focus, memory, and mood.
+
+**The SipSmart Bottle does the tracking for you.**
+
+### Why you'll love it
+
+- **Built-in intake tracker:** Every sip is logged automatically. Check the glowing display on the bottle or in the free app to see exactly how much you've had today.
+- **Daily goal reminders:** Gentle LED pulses nudge you when you're falling behind. No more realizing at 9 p.m. that you've had one coffee and zero water.
+- **Streaks and rewards:** Hit your goal, build your streak, and unlock badges. Challenge your roommates and see who's the hydration champ.
+- **Fits your student life:** Leakproof lid, backpack-friendly size, and a durable, BPA-free body that survives drops on dorm floors and lecture hall stairs.
+- **Keeps drinks cold for 24 hours:** Ice-cold water at your 3 p.m. study session, even if you filled it up at breakfast.
+- **Battery lasts weeks:** Charges quickly with USB-C, so it won't die mid-midterms.
+
+### The science (short version)
+Staying hydrated is linked to better concentration, steadier energy, and fewer headaches. That means better focus in class and better results when it counts.
+
+### Student-friendly pricing
+**$24.99**, which is less than a textbook rental and way more useful. Show your student ID for **15% off**, and grab a friend's bottle to get a free custom sticker pack.
+
+**Your future self (and your GPA) will thank you.**
+
+👉 *Grab your SipSmart today and make every sip count!*
+
+From the improved prompt which uses role prompting and context, we see that there is more tto the water bottle description.
+It tells a short story that correlates to the target audience (the student, which is the context), it adds a price (which correlates to the role prompting of it being a salesman), and it also adds a "uniqueness" to this water bottle.
+This improved the prompt from a simple water bottle description that can be used by everyone to something unique (the technology -- gentle LED pulses).
+
+Part 3:
+
+Product 1: Noise-canceling headphones
+Prompt: Write a product description for a noise-canceling headphone.
+Response: 
+**Silence the world. Hear what matters.**
+
+Meet the **AuraQuiet Pro**, wireless noise-canceling headphones built for focus, comfort, and sound that moves you.
+
+**Adaptive Noise Cancellation**
+Six microphones constantly monitor your surroundings and adjust in real time, so the roar of a train, the hum of an office, or the chatter of a café fades into the background. Need to stay aware? Transparency mode lets voices and announcements through at the tap of a button.
+
+**Rich, Balanced Sound**
+Custom 40mm drivers deliver deep, controlled bass, clear mids, and crisp highs. Whether you're listening to a podcast, a film score, or your favorite album, you'll catch details you've never noticed before.
+
+**All-Day Comfort**
+Plush memory-foam ear cushions and a lightweight, adjustable headband make long flights and full workdays feel effortless. At just 250 grams, you'll forget you're wearing them.
+
+**Battery That Keeps Up**
+Enjoy up to 40 hours of playback with noise canceling on, and get 5 hours of listening from a quick 10-minute charge.
+
+**Made for Calls and Connectivity**
+Beamforming microphones isolate your voice and suppress background noise, so you sound clear wherever you are. Bluetooth 5.3 and multipoint pairing let you switch between your laptop and phone seamlessly.
+
+**In the Box**
+Headphones, hard travel case, USB-C charging cable, 3.5mm audio cable, and airplane adapter.
+
+**Available in** Midnight Black, Stone Gray, and Sage Green.
+
+*AuraQuiet Pro. Your own quiet space, wherever you go.*
+
+---
+
+I can adjust the tone (more technical, luxury, playful), tailor it for a specific platform like Amazon or Shopify, or rewrite it for your actual product's specs if you share them.
+
+Improved Prompt: 
+Write a product description for a noise-canceling headphones. Make the description concise and set a professional tone. However, it should be readable for everyone, including those that may only have introductory level of English reading. 
+
+This headphone should be aimed at targeting gamers and will be posted as a reddit post.
+
+Response:
+**Noise-Canceling Gaming Headphones: Hear Everything. Miss Nothing.**
+
+Want to focus on your game? These headphones block out the noise around you, so you can hear every detail.
+
+**Why gamers like them:**
+
+- **Strong noise canceling:** Blocks loud sounds like fans, traffic, and talking.
+- **Clear sound:** Hear footsteps, voices, and music with great detail.
+- **Clear microphone:** Your teammates hear you well. The mic also reduces background noise.
+- **Comfortable fit:** Soft ear cushions and a light design. Play for hours without pain.
+- **Long battery life:** Play all day on one charge.
+- **Easy to connect:** Works with PC, PlayStation, Xbox, Nintendo Switch, and mobile.
+
+**Who are they for?**
+Anyone who wants to play without distractions, from casual players to competitive gamers.
+
+**Have questions?** Ask in the comments. We are happy to help!
+
+---
+
+A few notes on how I wrote this:
+
+- **Simple words and short sentences** keep it easy to read for people learning English.
+- **Bullet points** make it quick to scan, which works well on Reddit.
+- **I used general features.** If you share the real specs (battery hours, price, connection type, and so on), I can add them to make it more accurate and convincing.
+
+Reddit communities can be sensitive to ads, so check the rules of your target subreddit before posting.
+
+By addding some context to the prompt, such as it being posted on Reddit, we see that the response also warns us about potential things to look out for:
+this ad can break some Reddit communities rules. Additionally, from the constraints we added onto it -- needing to be concise and using introductory English -- we 
+actually made the technical specs of the description worse. However, the scannability of the description is better. It is easier to see what the headphones can do.
+
+Product 2: Monthly coffee subscription
+Prompt: Write a product for a monthly coffee subscription.
+Response:
+Here's a product listing you can adapt.
+
+---
+
+## The Daily Ritual: Monthly Coffee Subscription
+
+**Fresh-roasted coffee from small-batch roasters, delivered to your door.**
+
+Great coffee shouldn't depend on a trip to the café. Every month, we send you freshly roasted beans from independent roasters, picked for flavor, ethics, and a little surprise. Each bag is roasted within days of shipping, so your first cup is as good as your last.
+
+**What you get**
+- Two 12 oz bags of whole bean or ground coffee, chosen by our tasting team
+- A tasting card with origin, roast level, flavor notes, and brew tips
+- Free shipping, with roast-to-door freshness guaranteed
+- Skip, pause, or cancel anytime, no questions asked
+
+**Choose your plan**
+
+| Plan | Best for | Price |
+|---|---|---|
+| **Sampler** | One 12 oz bag a month | $16/mo |
+| **Regular** | Two 12 oz bags, our most popular option | $29/mo |
+| **Enthusiast** | Three bags, including a limited-release micro-lot | $44/mo |
+
+**Tailored to your taste**
+Tell us how you brew (drip, espresso, French press, pour-over) and whether you like bright and fruity or dark and chocolatey. Rate your favorites, and your selections get better each month.
+
+**Why you'll love it**
+- **Freshness:** Roasted to order, never sitting on a shelf
+- **Discovery:** New origins and roasters every month
+- **Ethical sourcing:** Direct-trade and sustainably farmed beans, with fair prices paid to growers
+- **Flexibility:** Change your plan, roast, or delivery date in seconds
+
+**Perfect as a gift**
+Gift 3, 6, or 12 months with a custom message and a beautiful presentation box.
+
+**Start your ritual today. Your first bag ships within 48 hours.**
+
+---
+
+I can adjust the tone (playful, premium, minimalist), tailor it to a specific brand name, or write shorter versions for a social ad or an email.
+
+Improved Prompt: Write a product description for a monthly coffee subscription. This will be for a local coffee shop that office workers often stop by before taking the subway to work. Format the response in a simple table where the reader can easily see the plan and the price without extra paragraphs.
+Response:
+**Monthly Coffee Subscription: Skip the Line, Start Your Day Right**
+
+| Plan | What You Get | Price / Month |
+|---|---|---|
+| **Commuter** | 10 drip coffees (any size), 1 free pastry | $39 |
+| **Rush Hour** | 20 drip coffees or lattes (any size), 2 free pastries | $79 |
+| **Daily Grind** | Unlimited drip coffees (1 per day), 4 free pastries, priority pickup | $99 |
+| **Team Pack** | 40 drinks to share with coworkers, 6 free pastries | $149 |
+
+**All plans include:** Mobile ordering for grab-and-go pickup, 10% off beans and merch, and the option to pause or cancel anytime.
+
+I used placeholder prices and perks, so swap in your shop's actual numbers. If you'd like, I can adjust the tiers, add a quick tagline, or tailor the language to your shop's name and style.
+
+The response got way better for what I want after telling it how to format the response. I was able to get rid of "extra" texts that make it seem like an advertisement,
+and instead focus on the actual product description in a table. It still had some "extra" texts though, but it was only 1 sentence instead of paragraphs. Additionally,
+adding the context that it was for a local coffee shop and targeted at office workers in the morning, we were able to change the actual product from a coffee bag to an actual coffee drink.
+
+Analysis:
+Overall I think there wasn't much hallucinations in the prompting for these examples. Most of them have "improved" responses that fit what I was looking for. There are variations
+that fit what context I gave it. I think the technique that is most useful and made the biggest difference is the context. From the noise-canceling headphones and water bottle, we got two
+widely different response based on what context we gave it (one professional, one simple).
+
