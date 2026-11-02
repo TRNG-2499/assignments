@@ -1,0 +1,222 @@
+Prompt Log,Output,Analysis
+Write a pruduction description for a water bottle,"**Summit 24 oz Insulated Water Bottle**
+
+Cold for 24 hours. Hot for 12. Ready for whatever your day throws at it.
+
+The Summit is built from double-wall, vacuum-insulated 18/8 stainless steel, so your water stays ice-cold through a long hike or a full workday. Your coffee stays hot through the morning commute. The outside never sweats, so there are no rings on your desk or damp spots in your bag.
+
+The leak-proof chug cap has a wide, comfortable spout and a sturdy carry loop. The 24 oz size fits most cup holders and bike cages, and the opening is wide enough for ice cubes and easy cleaning. A powder-coated finish gives you a secure grip and resists scratches and dings.
+
+It's BPA-free, holds no flavors, and the lid is dishwasher-safe. One bottle can replace hundreds of single-use plastic ones each year.
+
+**Features:**
+- Keeps drinks cold for 24 hours and hot for 12
+- Leak-proof lid with integrated carry loop
+- Sweat-free, grippy powder-coat finish
+- Fits standard cup holders
+- BPA-free, dishwasher-safe lid
+
+*Hydration that keeps up with you.*
+
+---
+
+If you share the actual product details (brand, size, materials, price point, audience) or where it's going (Amazon listing, Etsy, website), I can tailor the length and tone to fit.","The LLM I used is Claude. It created its own water bottle, providing a high level description of the product including features. It even provided a slogan ""Hydration that keeps up with you"" at the end that could be great for advertising. It provided some specific details like the size of the cup, a powder-coated finish, etc. However it did not provide a price. The description seems to be target a wide audience as it describes several different scenarios which feels very generic. "
+"You are an experienced direct-to-consumer copywriter specializing in outdoor an active lifestyle gear. Your writing is engaging, concise, and focused on benefits rather than buzzwords. 
+
+Task:
+Write a high-converting product description for an e-commerce product page based strictly on the provided product details.
+
+Product details:
+
+* Name: Flash 24 oz Insulated Sport Bottle
+* Materials: 18/8 food-grade stainless steel, copper lined vacuum insulation
+* Performance: Keeps liquid cold for 24 hours or hot for 12 hours; sweat-proof
+* Design: Fits standard vehicle cup holders; leak-proof straw lid with integrated carry handle; textured powdered-finish 
+* Safety/care: BPA-free, top rack dishwasher safe lid, hand-wash bottle body
+* Audience: Commuters, fitness enthusiasts, daily travelers
+
+
+Output Requirements:
+
+* One bold headline (under 10 words)
+* A two-paragraph product description
+* Bulleted list of 4 key feature highlights as ""**Feature:** Benefit""
+* Do not include conversational introductory or concluding text-output the formatted product copy only.","**Ice-Cold Focus From Your Morning Commute to Your Last Rep**
+
+The Flash 24 oz Insulated Sport Bottle keeps up with your busiest days. Built from 18/8 food-grade stainless steel with copper-lined vacuum insulation, it keeps drinks cold for 24 hours or hot for 12, so your morning coffee stays warm through the commute and your water stays crisp through the evening workout. The sweat-proof exterior means no drips on your desk, gym bag, or car seat.
+
+Designed for life on the move, the Flash slides into standard vehicle cup holders and features a leak-proof straw lid with an integrated carry handle for easy sipping and grab-and-go convenience. A textured powder finish gives you a confident grip whether you're mid-workout or rushing out the door. It's BPA-free, and the lid is top-rack dishwasher safe for quick cleanup (hand-wash the bottle body to keep it looking its best).
+
+- **Copper-Lined Vacuum Insulation:** Drinks stay cold for 24 hours or hot for 12, all day, every day.
+- **Leak-Proof Straw Lid:** Sip easily on the go and toss it in your bag without worrying about spills.
+- **Cup Holder Compatible:** Fits standard vehicle cup holders for seamless commutes and road trips.
+- **Textured Powder Finish:** A secure, sweat-proof grip that holds steady in your hand, even during tough workouts.","For the second prompt, I tested defining the role, providing the LLM context and Output Format. Providing a concrete role and example of output enabled the LLM to be more specific with the product details and resulted in a more engaging description than the original prompt. It strictly adhered to the output format, context information and provided exactly 4 bulleted features. "
+"Write an e-commerce product description for the water bottle described below. 
+
+Follow the pattern, structure, and tone demonstrated in the reference example exactly.
+
+---
+[Reference Example]
+
+Input Details:
+- Name: Apex 32 oz Trail Flask
+- Material: Heavy-duty 18/8 stainless steel, powder-coated exterior
+- Key Features: Wide-mouth screw cap, Paracord carry handle, keeps ice 36 hours
+- Audience: Backcountry hikers and outdoor workers
+
+Output:
+**BUILT FOR THE BACKCOUNTRY**
+The Apex 32 oz Trail Flask handles the punishment of the trail without dropping its core temperature. Engineered with heavy-duty 18/8 stainless steel and a high-traction powder coat, it holds up against rocky drops and full packs while keeping ice solid for 36 hours.
+
+- **High-Impact Build:** Reinforced stainless steel resists denting on rugged terrain.
+- **Ice-Retention Core:** Keeps water sub-zero for up to 36 hours in extreme heat.
+- **Paracord Carry Handle:** Clips quickly to packs or holds securely with gloved hands.
+---
+
+[Current Input]
+
+Product Details:
+- Name: Flash 24 oz Insulated Sport Bottle
+- Materials: 18/8 food-grade stainless steel, copper-lined vacuum insulation
+- Performance: Keeps liquid cold for 24 hours or hot for 12 hours; sweat-proof
+- Design: Fits standard vehicle cup holders; leak-proof straw lid with integrated carry handle; textured powder-coat finish
+- Safety/Care: BPA-free, top-rack dishwasher safe lid, hand-wash bottle body
+- Audience: Commuters, fitness enthusiasts, daily travelers
+
+Negative & Formatting Constraints:
+1. Do NOT include conversational filler, greetings, or sign-offs (e.g., ""Here is your copy:"").
+2. Do NOT use passive voice or exclamation marks.
+3. Length constraint: The narrative body must be between 40 and 60 words.
+4. Output format: Exactly one bold headline in all-caps, followed by one single paragraph, followed by exactly three bullet points in the format ""- **[Feature]:** [Direct benefit]"".","**ENGINEERED FOR YOUR DAILY GRIND**
+The Flash 24 oz Insulated Sport Bottle keeps pace with packed commutes, hard workouts, and long travel days. Copper-lined vacuum insulation and 18/8 food-grade stainless steel keep drinks cold for 24 hours or hot for 12, while a textured powder coat delivers a secure grip. The sweat-proof body slides easily into standard cup holders.
+
+- **Copper-Lined Insulation:** Holds ice-cold water through a full day and hot coffee through your entire workday.
+- **Leak-Proof Straw Lid:** Lets you sip on the move and carry the bottle by its integrated handle without spills.
+- **BPA-Free Easy Care:** Run the lid through the dishwasher's top rack and hand-wash the body to protect the finish.","For the third prompt, I tested few-shot prompting alongside strict negative and formatting constraints instead of relying primarily on role-prompting and broad guidelines. Providing a concrete input-output example gave the LLM an exact pattern to follow, while the constraints eliminated conversational filler and forced a rigid structure: all caps headline, a single tight narrative paragraph, and exactly three formatted bullets. 
+
+In comparison to the second prompt this approach resulted in a compact copy. The model adhered to the negative constraints by eliminating introductory pleasantries and uneccessary details. The few-shot reference successfully guided the model to balance technical specifications with consumer utility. "
+Write a product description for Noise-cancelling Headphones,"**Silence the World. Hear What Matters.**
+
+Step into your own space with headphones built for focus, comfort, and rich, detailed sound. Advanced active noise cancellation uses multiple microphones to read your surroundings and cancel out unwanted noise in real time, whether that's a roaring jet engine, a busy commute, or chatter at the office.
+
+**Immersive, Balanced Sound**
+Custom-tuned 40mm drivers deliver deep, controlled bass, clear mids, and crisp highs, so every track, podcast, and call sounds the way it was meant to.
+
+**All-Day Comfort**
+Plush memory-foam ear cushions and a lightweight, adjustable headband make long listening sessions easy. The foldable design slips into the included travel case.
+
+**Battery That Keeps Up**
+Get up to 30 hours of playback with noise cancellation on. Running low? A quick 10-minute charge gives you hours more listening.
+
+**Stay Aware When You Need To**
+Transparency mode lets outside sound in with a tap, so you can catch a train announcement or a quick conversation without taking your headphones off.
+
+**Crystal-Clear Calls**
+Beamforming microphones focus on your voice and reduce background noise, keeping calls clear wherever you are.
+
+**Seamless Connectivity**
+Bluetooth 5.3 delivers a stable, low-latency connection, and multipoint pairing lets you switch between your phone and laptop without missing a beat.
+
+**What's in the Box:** Headphones, travel case, USB-C charging cable, 3.5mm audio cable
+
+The battery life, driver size, and Bluetooth version above are placeholders. If you share the brand name, real specs, price point, or where this will be posted (Amazon, Shopify, a print catalog), I can tailor the copy and adjust the length to fit.","I used zero-shot prompt for the initial baseline. Because no specifications were provided, the model created all of the specifications of the hardware while generating an unprompted ""What's in the Box"" section. The result also defaulted to several separate headings and trailing off into conversational meta-commentary asking for real details. "
+"Role:
+You are a senior direct-to-consumer (D2C) e-commerce copywriter for a high-end audio and travel tech brand. Your writing is sharp, benefit-led, and punchy, avoiding marketing clichés and filler.
+
+Task:
+Write a premium e-commerce product description for the noise-cancelling headphones detailed below.
+
+Pattern & Reference Example:
+---
+[REFERENCE INPUT]
+Product: Horizon QuietSound Earbuds
+Specs: Dual-mic ANC, 8-hour battery (24 with case), IPX4 water resistance, custom 10mm graphene drivers.
+Audience: Daily subway commuters and runners.
+
+[REFERENCE OUTPUT]
+**ESCAPE THE COMMUTE.**
+Engineered for crowded trains and morning downpours, Horizon QuietSound Earbuds silence transit chaos while delivering crisp, balanced audio. Dual-mic active noise cancellation filters ambient rumble, while custom 10mm graphene drivers keep every bassline and vocal crystal clear.
+
+- **Dual-Mic Active Cancellation:** Neutralizes low-frequency engine and rail drone instantly.
+- **24-Hour Total Reserve:** Delivers 8 continuous hours of playback plus two recharges in the pocket case.
+- **IPX4 Sweat Protection:** Defends internal drivers against sudden rain and heavy workouts.
+---
+
+Current Product Specifications:
+- Product Name: Apex QuietPro Wireless Headphones
+- Noise Cancellation: Hybrid Active Noise Cancellation (4 external microphones, 2 internal) with a 1-touch Transparency Mode
+- Hardware & Sound: 40mm bio-cellulose drivers, high-definition Bluetooth 5.3 multipoint pairing
+- Battery & Charging: 35-hour battery life (ANC on); quick-charge delivers 4 hours on a 10-minute USB-C charge
+- Build & Comfort: Memory foam ear cushions, lightweight aluminum folding frame (240g), hard-shell travel case included
+- Target Audience: Frequent business travelers, remote workers, and daily office commuters
+
+Strict Constraints:
+1. Negative Constraint: Do not include introductory or concluding conversational filler (e.g., no ""Here is your description"", no questions at the end).
+2. Negative Constraint: Do not invent any specs, accessories, or certifications not listed above.
+3. Structure & Formatting:
+   - Exactly one bold, all-caps headline (under 6 words).
+   - Exactly one narrative paragraph (50–70 words).
+   - Exactly three bullet points formatted strictly as ""- **[Feature Name]:** [Direct benefit]"".","**YOUR OFFICE, ANYWHERE.**
+Built for red-eye flights, open-plan offices, and back-to-back calls, Apex QuietPro Wireless Headphones turn any seat into a private workspace. Hybrid active noise cancellation pairs four external and two internal microphones to erase cabin and office drone, while 40mm bio-cellulose drivers keep every detail precise. A single touch of Transparency Mode brings the gate announcement back in.
+
+- **35-Hour ANC Endurance:** Carries you through long-haul flights and full workweeks with cancellation on, and a 10-minute USB-C charge adds 4 hours before boarding.
+- **Bluetooth 5.3 Multipoint:** Stays connected to your laptop and phone at once, moving between calls and playback without re-pairing.
+- **240g Folding Aluminum Frame:** Memory foam cushions stay comfortable through long days, and the frame folds into the included hard-shell travel case.","For this iteration, I combined role prompting, few-shot prompting, and constraints to guide the output. Providing these concrete guidelines allowed the model to mirror the exact benefit-drive syntax needed without defaulting to multi-section bloat seen in the baseline and enforced an exact three bullet limit while keeping the narrative to within the defined length limit. Ultimately, combining the utilized techiques made the biggest impact by anchoring the model strictly to provided specs and eliminating the need for manual cleanup. "
+Write a product description for an ergonomic office chair,"Here's a ready-to-use product description. I've invented a placeholder name and specs, so swap in your actual details.
+
+**The Meridian Ergonomic Office Chair**
+*Support that moves with you, all day long.*
+
+Long workdays shouldn't end with a sore back. The Meridian is built around how your body actually sits: shifting, leaning, reaching, and settling back in. Every adjustment is designed to keep you aligned and comfortable from your first email to your last meeting.
+
+**Key features**
+
+- **Adaptive lumbar support:** Height- and depth-adjustable lumbar pad follows the natural curve of your spine and reduces lower-back strain.
+- **Breathable mesh back:** High-tension mesh keeps air flowing so you stay cool, without sagging over time.
+- **4D adjustable armrests:** Move up, down, forward, back, and pivot to support your arms whether you're typing, writing, or on a call.
+- **Synchro-tilt mechanism:** Seat and backrest recline together at a balanced ratio, so your feet stay planted and your posture stays supported as you lean back. Lock at any of four positions.
+- **Sliding seat depth:** Adjust the seat forward or back to fit your leg length and relieve pressure behind the knees.
+- **Contoured headrest:** Adjustable height and angle support your neck during focused work or a well-earned stretch.
+- **Built to last:** Reinforced nylon base, smooth-rolling casters safe for hard floors and carpet, and a weight capacity of 300 lbs.
+
+**Specifications**
+- Seat height: 17""–21""
+- Seat depth: 18""–20.5""
+- Recline range: 95°–125°
+- Weight capacity: 300 lbs
+- Assembly: About 15 minutes, tools included
+
+Whether you're working from home, managing a busy office, or putting in long hours on a creative project, the Meridian gives you the support you need to stay comfortable and focused.
+
+**Sit better. Work better.**
+
+---
+
+If you tell me where it's going (Amazon listing, a company website, a short catalog blurb) or give me the real specs and target customer, I can tighten it to fit.","Utilize zero shot prompting again, the model hallucinated the entire product identity. The output also opened up with conversational meta-commentary warning that it had invented a placeholder specs and asking for real details."
+"Create a product description for the following described product:
+
+Context & Product Specifications:
+- Product Name: ErgoStance Pro High-Back Office Chair
+- Materials & Build: Reinforced aluminum 5-star base, breathable elastomeric mesh backrest, high-density molded foam seat cushion
+- Ergonomics & Adjustability: 3D dynamic lumbar support (self-adjusting tension), 4D armrests (height, depth, width, and 20° pivot), synchro-tilt recline mechanism with 4-position locking up to 135°
+- Dimensions & Capacity: Seat height 18""–22"", seat depth 19.5"", supports up to 330 lbs
+- Audience: Remote workers, programmers, and office professionals sitting 8+ hours daily
+
+Output Format:
+1. Headline: Exactly one bold, title-case hook (under 8 words).
+2. Narrative Description: Exactly two short paragraphs focusing on spine support, cooling airflow, and daily comfort (total word count between 60 and 80 words).
+3. Key Features: Exactly three bullet points formatted strictly as:
+   - **[Feature Name]:** [Direct ergonomic benefit]
+
+Constraints:
+1. Negative Constraint: Do not include introductory conversational filler, pleasantries, or closing remarks (e.g., no ""Here is your description"", no follow-up questions).
+2. Negative Constraint: Do not invent any materials, warranty periods, or features not provided in the specifications above.
+3. Tone Constraint: Professional, direct, and benefit-driven—avoid passive voice and excessive marketing jargon.","**Engineered Support for Your Longest Workdays**
+
+The ErgoStance Pro's 3D dynamic lumbar support adjusts its tension automatically, tracking your spine as you shift through long coding sessions and meetings. A synchro-tilt mechanism lets you recline up to 135° and lock into four positions.
+
+Breathable elastomeric mesh lets air circulate across your back to keep you cool, while a high-density molded foam cushion holds its shape through 8+ hour days. Set the seat between 18"" and 22"" to match your desk.
+
+- **3D Dynamic Lumbar Support:** Self-adjusting tension keeps your lower back supported as you move.
+- **4D Armrests:** Height, depth, width, and 20° pivot adjustments relieve shoulder and wrist strain.
+- **Synchro-Tilt Recline:** Four locking positions up to 135° let you change posture and ease spinal pressure.","I utilized grounded context specification with explicitly defined output formatting including negative constraints. The model followed the instructions, generating a concise title-case headline, length specific narrative across two paragraphs, and the specified bulleted output. The negative constraints eliminated the conversational introduction and disclaimers present in the baseline, while the context prevented any hallucinations. Defning an explicit output format paired with constraints made a big difference by enforcing structural discipline and a clean output. "
