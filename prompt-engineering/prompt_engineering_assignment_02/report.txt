@@ -1,0 +1,5 @@
+Note the order of the prompts:
+
+1. naive
+2. format
+3. final

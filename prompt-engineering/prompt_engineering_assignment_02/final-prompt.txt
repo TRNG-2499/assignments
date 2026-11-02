@@ -1,0 +1,233 @@
+--------------
+--  Prompt  --
+--------------
+
+Analyze the following reviews and produce a table with the following format.
+There are a couple examples in the table provided, as well.
+
+Produce a separate table for each product.
+
+REVIEW ID | REVIEW SENTIMENT | SUMMARY
+----------------------------
+R011 | Negative | Disappointed with quality control.
+R037 | Mixed | Nothing set the product apart.
+R050 | Positive | Loves the gooseneck spout.
+
+For each row in each table, you MUST:
+- Provide the source review's ID
+- Use Negative, Mixed, or Positive as the sentiment.
+- Summarize the main concern or compliment of the review.
+
+Then, for each table, write a short sentence summarizing the overall sentiment regarding the individual product.
+
+Finally, review your work and ensure that it adheres to these guidelines.
+
+--------------
+-- Response --
+--------------
+
+# Product Review Sentiment Analysis
+
+I analyzed all 110 reviews in the uploaded file, grouping them by product. Each review is assigned one of three sentiment categories:
+
+- Positive: The review expresses satisfaction, praise, or a favorable experience.
+- Negative: The review expresses dissatisfaction, a significant problem, or a complaint.
+- Mixed: The review contains both positive and negative feedback, neutral observations, or ambiguous sentiment.
+
+Each table includes the original Review ID and a concise summary of the main concern or compliment. Sarcasm and implied sentiment are taken into account.
+
+## 1. Trailmark Hiking Backpack
+
+| REVIEW ID | REVIEW SENTIMENT | SUMMARY                                                                                                                       |
+| --------- | ---------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| R001      | Negative         | Strong chemical odor upon arrival that took a week to dissipate.                                                              |
+| R004      | Negative         | Shoulder straps are uncomfortable and dig into the shoulders; reviewer is returning it.                                       |
+| R007      | Mixed            | Decent value for the price, but unsuitable for serious backpacking.                                                           |
+| R015      | Negative         | Backpack is too small for trips longer than one day despite listing claims.                                                   |
+| R016      | Mixed            | Reviewer describes the backpack as merely adequate.                                                                           |
+| R017      | Positive         | Extremely durable and withstands rough outdoor conditions without damage.                                                     |
+| R019      | Negative         | Seller delivered the wrong size.                                                                                              |
+| R020      | Mixed            | Color differs from the product photos, although the backpack itself is good.                                                  |
+| R021      | Positive         | Excellent value and feels more expensive than its actual price.                                                               |
+| R022      | Negative         | Backpack fails to keep contents dry despite being advertised as waterproof.                                                   |
+| R041      | Mixed            | Well-made backpack, but excessive pockets make organization difficult.                                                        |
+| R044      | Positive         | Comfortable, durable, and has practical side pockets that fit water bottles.                                                  |
+| R047      | Positive         | Highly recommended for people beginning their hiking journey.                                                                 |
+| R059      | Mixed            | Successfully keeps contents dry in heavy rain, but the hip belt lacks sufficient padding.                                     |
+| R061      | Positive         | Durable enough to withstand a full school year of use.                                                                        |
+| R064      | Positive         | Comfortable straps and ample pockets make it suitable for a five-day trek.                                                    |
+| R065      | Negative         | Zipper broke during the first hike.                                                                                           |
+| R067      | Mixed            | Reviewer asks whether the laptop sleeve accommodates a 16-inch laptop; no clear satisfaction or dissatisfaction is expressed. |
+| R080      | Negative         | Buckle snaps during a mountain hike, indicating a serious durability problem.                                                 |
+| R082      | Positive         | Ideal size for day hikes, with a useful hydration sleeve.                                                                     |
+| R089      | Positive         | Attractive appearance upon arrival.                                                                                           |
+| R095      | Negative         | Stitching begins to come apart after only two uses.                                                                           |
+
+Overall sentiment: The Trailmark Hiking Backpack receives generally positive feedback for durability, comfort, and value. However, significant concerns about quality control, sizing, waterproofing, and component failures reduce overall satisfaction.
+
+## 2. Breeze Wireless Earbuds
+
+| REVIEW ID | REVIEW SENTIMENT | SUMMARY                                                                                                   |
+| --------- | ---------------- | --------------------------------------------------------------------------------------------------------- |
+| R002      | Mixed            | Decent noise isolation and gym performance, but lacks the advertised true noise cancellation.             |
+| R003      | Negative         | Left earbud stopped charging after two weeks, and customer support failed to respond.                     |
+| R006      | Positive         | Excellent commuting experience with clear calls and reliable battery life.                                |
+| R028      | Negative         | Constant static in the right ear led to a return.                                                         |
+| R029      | Mixed            | Suitable for podcasts but not recommended for music.                                                      |
+| R033      | Positive         | Excellent purchase that outperforms the reviewer's previous expensive earbuds.                            |
+| R038      | Mixed            | Mediocre overall experience; neither particularly good nor bad.                                           |
+| R052      | Positive         | Fantastic performance and reviewer would purchase again.                                                  |
+| R054      | Positive         | Very comfortable, with effortless pairing.                                                                |
+| R056      | Mixed            | Packaging arrived damaged, but earbuds themselves work well.                                              |
+| R060      | Mixed            | Excellent battery life, but microphone quality is poor.                                                   |
+| R062      | Negative         | Shipping took three weeks.                                                                                |
+| R066      | Negative         | Earbuds repeatedly fall out when the user turns their head.                                               |
+| R072      | Mixed            | Inferior to AirPods, but acceptable considering the significantly lower price.                            |
+| R076      | Negative         | Extremely poor overall experience; reviewer advises against purchasing.                                   |
+| R077      | Positive         | Impressive sound quality, punchy bass, and secure fit during running.                                     |
+| R094      | Mixed            | Purchased as a gift, but the recipient has not opened them; no product performance feedback is available. |
+| R097      | Mixed            | Excellent sound quality, but touch controls interrupt music when adjusting the earbuds.                   |
+| R101      | Mixed            | Reviewer asks about PS5 compatibility; no clear sentiment is expressed.                                   |
+| R103      | Negative         | Tinny sound quality and uncomfortable fit after an hour.                                                  |
+| R108      | Negative         | Frequent disconnections began after only three days of use.                                               |
+| R109      | Negative         | Cheap-feeling charging case with a lid that broke within a month.                                         |
+
+Overall sentiment: Breeze Wireless Earbuds receive a mixed-to-negative overall assessment. Positive feedback highlights sound quality, comfort, and value, while recurring complaints concern connectivity, fit, microphone performance, charging reliability, and build quality.
+
+## 3. Cozy Knit Throw Blanket
+
+| REVIEW ID | REVIEW SENTIMENT | SUMMARY                                                                              |
+| --------- | ---------------- | ------------------------------------------------------------------------------------ |
+| R005      | Mixed            | Insufficient warmth for winter but acceptable as a decorative throw.                 |
+| R011      | Negative         | Blanket arrived with a stain.                                                        |
+| R036      | Mixed            | Wrong color was delivered, although the reviewer likes the blanket.                  |
+| R040      | Positive         | Remains in excellent condition despite extensive use by a toddler.                   |
+| R042      | Mixed            | Considered acceptable for the price, without strong praise or criticism.             |
+| R045      | Positive         | Perfect weight for comfortable summer evenings.                                      |
+| R046      | Positive         | Exceptionally soft and warm; even the reviewer's cat loves it.                       |
+| R058      | Negative         | Excessive shedding leaves fuzz all over the couch.                                   |
+| R068      | Negative         | Blanket is both itchy and thin.                                                      |
+| R069      | Positive         | Extremely enthusiastic satisfaction, with plans to purchase another.                 |
+| R071      | Mixed            | Attractive and cozy, but shrinks after washing in cold water.                        |
+| R075      | Mixed            | Smaller than expected and barely covers the lap, though very soft.                   |
+| R078      | Negative         | Persistent warehouse odor remains even after three washes.                           |
+| R079      | Positive         | Purchased as gifts, and both recipients love the blankets.                           |
+| R081      | Positive         | Excellent quality, washes well, and resists pilling.                                 |
+| R083      | Positive         | Attractive appearance and premium-looking design at an affordable price.             |
+| R087      | Mixed            | Product listing lacks dimensions, leaving the reviewer uncertain about its size.     |
+| R092      | Positive         | Effectively provides warmth as expected from a blanket.                              |
+| R093      | Negative         | Delivery driver left the blanket in the rain.                                        |
+| R099      | Mixed            | Attractive knit pattern, but easily snags and is impractical.                        |
+| R102      | Positive         | Outstanding warmth, weight, and softness; best throw blanket the reviewer has owned. |
+| R107      | Negative         | Blanket begins unraveling after a month, indicating poor quality.                    |
+
+Overall sentiment: The Cozy Knit Throw Blanket receives generally positive sentiment for its softness, warmth, appearance, and value. However, concerns about shedding, shrinkage, odors, sizing, and durability create a notable negative minority.
+
+## 4. Lumen Smart Bulbs (4-Pack)
+
+| REVIEW ID | REVIEW SENTIMENT | SUMMARY                                                                                        |
+| --------- | ---------------- | ---------------------------------------------------------------------------------------------- |
+| R008      | Mixed            | Bright and colorful bulbs, but they frequently disconnect from Wi-Fi.                          |
+| R009      | Mixed            | Bulbs perform well, but the accompanying app is frustrating and difficult to use during setup. |
+| R012      | Mixed            | Reviewer seeks clarification about Google Home compatibility versus Alexa.                     |
+| R018      | Negative         | Colors appear washed out compared with competing brands.                                       |
+| R023      | Positive         | Sunrise alarm feature significantly improves the reviewer's morning routine.                   |
+| R024      | Negative         | Software update erased all saved settings.                                                     |
+| R025      | Negative         | Bulbs produce an annoying buzzing sound when dimmed below 30%.                                 |
+| R026      | Positive         | Package arrived earlier than expected.                                                         |
+| R031      | Negative         | App crashes frequently, and bulbs often fail to respond.                                       |
+| R034      | Positive         | Easy setup, vibrant colors, and useful scheduling functionality.                               |
+| R035      | Positive         | High satisfaction prompted the reviewer to purchase another four-pack.                         |
+| R037      | Mixed            | Bulbs perform their basic lighting function but offer no standout features.                    |
+| R053      | Negative         | One of the four bulbs was defective upon arrival.                                              |
+| R070      | Positive         | Pleasant warm-white lighting that creates a cozy atmosphere.                                   |
+| R073      | Mixed            | Acceptable performance for the price, but reviewer would prefer a better brand.                |
+| R084      | Positive         | Customer support resolved pairing problems quickly, and bulbs now work correctly.              |
+| R086      | Positive         | Excellent Alexa integration and voice control that benefits a user with limited mobility.      |
+| R088      | Positive         | Music synchronization mode is entertaining and popular at parties.                             |
+| R096      | Negative         | Requires an account and location data to operate, raising privacy concerns.                    |
+| R098      | Negative         | Unreliable smart-home functionality makes the lights unusable without router troubleshooting.  |
+| R100      | Negative         | Bulbs stopped working completely after one month.                                              |
+| R110      | Negative         | Brightness is lower than the advertised equivalent of a standard 60W bulb.                     |
+
+Overall sentiment: Lumen Smart Bulbs receive mixed-to-negative sentiment. Users appreciate their colors, scheduling, voice control, and smart features, but recurring issues with connectivity, app stability, reliability, privacy, and brightness significantly detract from satisfaction.
+
+## 5. Hearth Electric Kettle
+
+| REVIEW ID | REVIEW SENTIMENT | SUMMARY                                                                                                   |
+| --------- | ---------------- | --------------------------------------------------------------------------------------------------------- |
+| R010      | Positive         | Reliable long-term performance; reviewer purchased a second kettle as a gift.                             |
+| R013      | Mixed            | Kettle stopped working after six weeks, but customer service provided a replacement that currently works. |
+| R014      | Mixed            | Kettle arrived dented, but customer service promptly replaced it; the product itself is satisfactory.     |
+| R027      | Positive         | Fast boiling and sleek design make it attractive on the kitchen counter.                                  |
+| R030      | Negative         | Switch broke after only one week of use.                                                                  |
+| R032      | Negative         | Keep-warm function lasts only 30 minutes, which is insufficient for the reviewer.                         |
+| R039      | Positive         | Attractive kettle that receives compliments from coworkers.                                               |
+| R043      | Mixed            | Performs its basic function but lacks any special or standout qualities.                                  |
+| R048      | Negative         | Leaks from the bottom, creating a potentially dangerous electrical hazard.                                |
+| R049      | Negative         | Handle becomes dangerously hot and caused a burn on the first day.                                        |
+| R050      | Positive         | Gooseneck spout provides excellent pouring control for pour-over coffee.                                  |
+| R051      | Negative         | Power cord is too short to reach convenient locations.                                                    |
+| R055      | Mixed            | Temperature presets are excellent for tea, but the completion beep is excessively loud.                   |
+| R057      | Negative         | Delivery was significantly delayed, and the package arrived wet; product remains untested.                |
+| R063      | Mixed            | Boils water quickly, but capacity is limited to approximately three mugs.                                 |
+| R074      | Negative         | Mineral buildup appeared after one month, despite using filtered water.                                   |
+| R085      | Negative         | Water develops an unpleasant plastic taste.                                                               |
+| R090      | Positive         | Beautiful design, fast boiling, quiet operation, and no complaints.                                       |
+| R091      | Negative         | Lid fails to remain closed, causing steam to escape.                                                      |
+| R104      | Mixed            | Performs its basic boiling function but offers nothing beyond expectations.                               |
+| R105      | Mixed            | Reviewer wishes for more color options, although the kettle is otherwise perfect.                         |
+| R106      | Positive         | Fast boiling and attractive appearance receive enthusiastic praise.                                       |
+
+Overall sentiment: The Hearth Electric Kettle receives mixed sentiment with a substantial number of positive reviews. Users appreciate its speed, design, temperature controls, and pouring precision, but concerns about safety, durability, leakage, and usability are significant.
+
+## Final Quality Check
+
+&#x20;Review analysis verification
+
+- All 110 source reviews have been included.
+- All five products have their own separate table.
+- Every row includes the original Review ID.
+- Every review has been assigned a sentiment of Positive, Negative, or Mixed.
+- Each summary reflects the main concern, compliment, or neutral observation in the source review.
+- Sarcastic reviews were interpreted according to their intended meaning.
+- Reviews asking questions or providing insufficient product experience were classified as Mixed.
+- An overall sentiment summary is provided for each product.
+
+Conclusion: The tables adhere to the requested format and provide a complete, review-by-review sentiment analysis of the uploaded dataset.
+
+--------------
+-- Analysis --
+--------------
+
+Two changes were made from the previous prompt:
+1. Instruct it to do fewer differing tasks to focus it.
+2. Ask it to review its work to make sure it followed the instructions properly.
+
+These changes seemed to have a profound effect, and the output seems good.
+
+I have picked out the following reviews:
+R096 - Lumen Smart Bulbs - Requires an account and wants my location data just to turn on a light. No thanks.
+R054 - Breeze Wireless Earbuds - Super comfortable, I forget I'm wearing them. Pairing was instant.
+R080 - Trailmark Hiking Backpack - Oh sure, I just love when the buckle snaps halfway up a mountain.
+
+My analysis of these reviews is as follows:
+
+| REVIEW ID | REVIEW SENTIMENT | SUMMARY                                                       |
+| --------- | ---------------- | ------------------------------------------------------------- |
+| R096      | Negative         | Customer cannot justify the data collection.                  |
+| R054      | Positive         | Comfortable and easy to use.                                  |
+| R080      | Negative         | Poor quality and durability, especially for a hiking backpack |
+
+And the AI:
+
+| REVIEW ID | REVIEW SENTIMENT | SUMMARY                                                                                        |
+| --------- | ---------------- | ---------------------------------------------------------------------------------------------- |
+| R096      | Negative         | Requires an account and location data to operate, raising privacy concerns.                    |
+| R054      | Positive         | Very comfortable, with effortless pairing.                                                     |
+| R080      | Negative         | Buckle snaps during a mountain hike, indicating a serious durability problem.                  |
+
+
+The AI properly identified the sarcasm in R080, which was the toughest of the three reviews.
+
+Overall, well formatted, understandable, and correct.
