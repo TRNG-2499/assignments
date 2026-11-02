@@ -1,0 +1,267 @@
+Part 1
+
+    1. Entered the task into chatGPT
+
+    2. Water Bottle V1 
+        Here’s a product description that works well for an online store or product listing.
+        💧 Stay Hydrated in Style!
+        Meet your new everyday essential—the perfect water bottle for staying refreshed wherever life takes you! Designed with convenience and style in mind, this water bottle is 
+        ideal for school, work, the gym, travel, or outdoor adventures.
+
+        ✨ Features & Benefits:
+        - Durable Design: Built for everyday use and long-lasting performance.
+        - Leak-Resistant Lid: Helps prevent spills and keeps your bag dry.
+        - Easy to Carry: Lightweight and portable, perfect for life on the go.
+        - Reusable & Eco-Friendly: Reduce single-use plastic waste with a bottle you can use again and again.
+        - Stylish Appearance: A sleek, modern design that complements any lifestyle.
+        Stay refreshed. Stay active. Stay hydrated.
+
+        Whether you're hitting the gym, heading to class, or exploring the outdoors, this water bottle is your perfect hydration companion!
+
+
+
+        If you tell me the bottle's color, size, material, and special features, I can customize the description to match your exact product.
+
+    3. The product description is incredibly vague. While it includes notes about "durable design" and "easy to carry" it doesn't make any concrete claims about those points. It would be very easy with a 
+    traditional ad to say something alone the lines of "Durable, stainless steel exterior" or "ergonomic and packable" but without any additional information for the model it made a lot of assumptions. 
+    The description seems written for an incredibly broad audience, with the description of "hitting the gym, heading to class, or exploring the outdoors," targeting massive groups at once.
+
+Part 2
+
+    I am now improving the prompt.
+    Water bottle V2
+        For the first modifications, I have assigned the model the role of a marketing manager at a midsize company and added context about key features of the bottle and the target audience.
+        Below is the prompt I wrote.
+            You are a marketing manager at a midsize company.
+
+            Write a product description for a water bottle
+
+            Key features:
+            - Stainless steel, double walled construction
+            - Packable
+            - Durable
+            - 1L capacity
+            The product description will feature on a social media post aimed at hikers and outdoors enthusiasts
+    
+    Below is the supplied response
+        🏔️ Adventure Further. Hydrate Smarter. 💧
+
+        Whether you're conquering mountain trails or exploring the great outdoors, stay hydrated with a bottle built for the journey.
+
+        💪 Durable stainless steel to handle your outdoor adventures
+        ❄️ Double-walled construction to help keep your drinks at the right temperature
+        🎒 Packable design that fits seamlessly into your outdoor gear
+        💧 Generous 1L capacity to keep you fueled on the trail
+
+        From sunrise hikes to weekend camping trips, this is your reliable companion for every adventure.
+
+        Fill it up. Gear up. Get out there. 🌲🥾
+
+        #OutdoorAdventure #HikingEssentials #StayHydrated #ExploreMore #TrailReady
+    
+    This response does show improvement. It has detailed descriptions that are relevant to the features actually included with the water bottle and a much more focused message with the information on the
+    target audience. In addition, the message is pre-formatted for social media posts.
+
+    From here I will include an example for comparison and constraints. 
+    Below is the prompt I used, the example was found from a quick google search for a water bottle advertisement. The added constraints request a tie in to the Thanksgiving Holiday and request a 
+    pro-environmental message be included. This is 
+    Water Bottle V3
+        You are a marketing manager at a midsize company.
+
+        Write a product description for a water bottle
+
+        Key features:
+        - Stainless steel, double walled construction
+        - Packable 
+        - Durable
+        - 1L capacity
+        The product description will feature on a social media post aimed at hikers and outdoors enthusiasts. It should be written in an excited, friendly tone and must include a tie in to the Thanksgiving Holiday. 
+        Feature a pro-environmental message.
+        Consider the following example when creating a response
+        "While some play with every drop,  others walk miles for a single pot.
+        Water is life
+        Respect it, Protect it, Save it
+
+        World Water Day 
+        22nd March, 2026
+        #WorldWaterDay"
+
+    And below is the response received
+        Here’s an engaging social media post that connects outdoor adventure, sustainability, and the spirit of Thanksgiving!
+            🍂 GIVE THANKS. GET OUTSIDE. LEAVE NO TRACE. 🏔️
+
+            This Thanksgiving, let’s celebrate the greatest gift of all: the great outdoors! 🧡
+
+            Whether you’re hitting the hiking trails, exploring forest paths, or chasing mountain views, stay hydrated and adventure-ready with our 1L Stainless Steel Water Bottle! 💧
+
+            🌲 Built for the wild. Made for adventure.
+            💪 Durable, double-walled stainless steel construction
+            🎒 Packable and ready to go wherever the trail takes you
+            💧 Generous 1L capacity to keep you fueled on the journey
+
+            This season, give thanks for the trails we wander, the rivers that refresh us, and the wild places that inspire us. Choose reusable, reduce single-use plastic waste, and help keep nature beautiful for generations to come. 🌎💚
+
+            BE THANKFUL. STAY HYDRATED. PROTECT THE PLANET.
+
+            Happy Thanksgiving from our trail-loving family to yours! 🦃🥾
+
+            #ThankfulForNature #ThanksgivingAdventures #HikeMoreWasteLess #ChooseReusable #LeaveNoTrace #OutdoorEssentials
+
+    This is quite a bit better than earlier results, I'll add the last prompt improvement technique, instructions on formatting.
+    I have requested the social media post be made to fit in an X post, which includes character limits. The post was requested to be ready to just be copy pasted directly into a post.
+    Below is my final prompt.
+    Water bottle V4
+
+        You are a marketing manager at a midsize company.
+
+        Write a product description for a water bottle
+
+        Key features:
+        - Stainless steel, double walled construction
+        - Packable 
+        - Durable
+        - 1L capacity
+        The product description will feature on a social media post aimed at hikers and outdoors enthusiasts. It should be written in an excited, friendly tone and must include a tie in to the Thanksgiving Holiday. Feature a pro-environmental message.
+        This will be specifically posted on X and should be formatted to be copy pasted immediately and obey character limits.
+        Consider the following example when creating a response
+
+        "While some play with every drop,  others walk miles for a single pot.
+
+        Water is life
+
+        Respect it, Protect it, Save it
+
+        World Water Day 
+
+        22nd March, 2026
+
+        #WorldWaterDay"   
+
+    And the response I received is -
+        This Thanksgiving, give thanks for the great outdoors! 🍂🥾
+
+        Take 1L of adventure anywhere with our durable, packable, double-wall stainless steel bottle. 💧
+
+        Love the trails? Protect them! 🌎 Choose reusable. Leave no trace.
+
+        #Thanksgiving #OptOutside #SustainableLiving
+
+    It now obeys needed formatting restrictions, contains the relevant information, and is ready to go immediately.
+
+Part 3
+
+    Two additional products I have chosen to write improved prompts for will be -
+    Standing desk
+    Monthly coffee subscription
+
+    Standing desk prompt 1-
+        You are a web designer writing product descriptions for a furniture web store specialized in rustic style furniture.
+
+        Write a product description for a new standing desk, key features include
+        - Adjustable height with saveable settings
+        - Solid walnut construction with a matte polyurethane varnish
+        - built in wireless charger
+        
+        Audience: Remote workers looking to improve a home office
+
+        Rules:
+        Between 50 and 200 words
+        Specific and calm tone
+        End with a message advertising a temporary free shipping promotion
+
+        Here is an example of a product description:
+        "The Homestyle Coffee Table Set is available with a distressed finish and includes a coffee table and two end tables.
+        The table set comes standard with a matte polyurethane varnish but could be ordered in other colors. Other colors are subject
+        to additional time to allow for manufacturing and may be subject to additional costs. You can view other stain and color options
+        on our main page.
+        All special sales are final."
+
+    This description uses all of the listed prompt-improvement techniques. 
+    A persona is applied to the model in the first line, in this case as a web designer for a furniture sales website.
+    Context is added with the audience included and a list of key features for the product.
+    Constraints are included with a small rules section informing the tone, word count, and a requirement for the conclusion.
+    An example is included of a product description already on the website.
+
+    ChatGPT returned the following - 
+        Here’s a product description tailored to your rustic furniture store and remote-working audience.
+            The Rustic Walnut Standing Desk combines solid walnut craftsmanship with practical features designed for a comfortable and organized home office.
+
+            Constructed from solid walnut, this desk features a natural wood grain and a matte polyurethane varnish that protects the surface while maintaining its understated, 
+            rustic appearance. The adjustable-height mechanism allows you to switch between sitting and standing throughout the workday. Saveable height settings make it easy to 
+            return to your preferred positions without repeated adjustments.
+
+            A built-in wireless charger keeps compatible devices powered without adding extra cables or taking up valuable workspace. The combination of durable materials, 
+            adjustable functionality, and integrated charging makes this desk a practical addition to any home office.
+
+            The desk's timeless walnut finish complements rustic, farmhouse, and modern interiors. It is designed for remote workers who value quality construction, everyday convenience, 
+            and a workspace that feels comfortable and thoughtfully arranged.
+
+            Limited-Time Offer: Enjoy FREE SHIPPING on your order for a limited time. Take advantage of this special promotion while it lasts!
+    
+    I think I could have done a bit more to add additional constraints to include more about the same hypothetical  "special orders for colors" i had included from the example. 
+    I suspect the model got a bit caught on ending on the free shipping promo and would have included it if I had thought to add a rule requiring it.
+    This prompt did not generate any information I didn't provide, it just added embellishment onto the general descriptions I provided.
+
+    Monthly coffee subscription service prompt 1 - 
+        You are a marketing manager writing a social media post for a monthly coffee subscription service.
+
+        Key features of the service include:
+        - Monthly shipping of 4 8oz bags of coffee
+        - Coffee is roasted by a master coffee roaster
+        - Ethically sourced and environmentally conscious
+        - fast tracked shipping
+        - larger subscription tiers for more coffee
+        - variety of coffee
+
+        Audience: Individuals who make a cup of coffee every day.
+
+        Rules
+        - Less than 200 words
+        - Calm and professional tone
+        - End with a positive message about freshly roasted coffee
+
+    With this prompt I used all of the improvement techniques except I did not include an example.
+    The persona is that of a marketing manager writing a social media post.
+    The context is included in the features list and the target audience.
+    Constraints are included in the rules description.
+
+    Below is the response from ChatGPT
+        ☕ Make Every Morning a Little Better.
+
+        Bring variety and quality to your daily coffee routine with our monthly coffee subscription.
+
+        Each month, enjoy four 8 oz bags of freshly roasted coffee, expertly prepared by a master coffee roaster. Discover a variety of flavors while enjoying coffee that is ethically sourced and 
+        produced with environmental responsibility in mind.
+
+        Your coffee, your way:
+
+        ☕ Freshly Roasted: Expertly roasted for quality and flavor.
+
+        🌱 Ethically Sourced: Enjoy coffee chosen with people and the planet in mind.
+
+        📦 Fast-Tracked Shipping: Get your coffee delivered right to your door.
+
+        🌎 Variety in Every Delivery: Explore different coffees and discover new favorites.
+
+        ☕ Flexible Subscription Tiers: Need more coffee? Choose a larger subscription to keep your supply stocked.
+
+        Whether you enjoy one cup each morning or brew throughout the day, we make it easy to keep great coffee within reach.
+
+        Start your subscription and make every cup count.
+
+        Here's to brighter mornings and the simple pleasure of freshly roasted coffee! ☕
+
+   The response is quite good, even without an example. I suspect this is because I requested this to be written as a social media post. While I did not include an example there are likely
+   millions of social media posts in the training data for it to reference when creating this output.
+
+   Assigning a persona to the model helped a lot with formatting. Once the model has that it would adjust its output to match that context. It will include emojis from content from a 
+   marketing manager for social media, for example.
+   
+   Constraints applied the most immediate impact. Requesting the content be made for X immediately changed the format and the way it was written. 
+
+   Overall, I found that the most critical inclusion was context. Including context like features and audience appear to have the greatest overall impact on the result.
+   Including the context added relevant information to the results instead of it taking shots in the dark or just using incredibly generic terms.
+   While in the first water bottle prompt, it was quite general, once I included context about the materials and features it was much more specific to my needs.
+
+   Including an example had a smaller impact than the others, but I suspect thats because of the type of content being generated. With social media posts and website product descriptions
+   the model has likely trained on millions or billions of those and has a wealth of data to reference without needing extra context.

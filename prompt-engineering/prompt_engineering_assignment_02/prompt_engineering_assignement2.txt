@@ -1,0 +1,155 @@
+Part 1
+
+1. ChatGPT returned a response quite quickly for this task.
+
+These results are based on sentiment analysis of the review text, not on star ratings.
+It provided a summary of reviews as opposed to labelling them individually for me. It includeded percentages of what reviews were positive and negative but nothing on a per-review basis.
+Below is the prompt, the table was not transferred cleanly.
+    I reviewed the 110 reviews in your product-reviews.csv file. Overall, the reviews are mixed, with both positive and negative opinions. Customers praise certain products for their quality, features, and value for money, but others report problems with durability, performance, and customer experience.
+    Sentiment by product
+    Product	                    Positive	Negative	Neutral / Mixed 	Overall sentiment
+    Trailmark Hiking Backpack	11	        8	        3	                Slightly positive
+    Breeze Wireless Earbuds	    7	        9	        6	                Slightly negative
+    Cozy Knit Throw Blanket	    9	        10	        3	                Slightly negative
+    Hearth Electric Kettle	    8	        11	        3	                Negative
+    Lumen Smart Bulbs (4-Pack)	7	        10	        5	                Negative
+    Total	                    42	        48	        20	                Mixed, leaning negative
+
+
+    These are approximate classifications based on the wording of each review. Some reviews express mixed opinions, so their classification can be subjective.
+    Key findings
+    - Positive reviews: Customers appreciate good product quality, useful features, comfort, and value for money.
+    - Negative reviews: Common complaints include products breaking prematurely, connectivity issues, uncomfortable designs, and misleading product descriptions.
+    - Neutral reviews: Some customers describe products as average, ask questions, or have not used the product enough to evaluate it.
+    Final conclusion
+    Of the 110 reviews:
+    - 38.2% are positive (42 reviews).
+    - 43.6% are negative (48 reviews).
+    - 18.2% are neutral or mixed (20 reviews).
+    The overall sentiment leans negative, because negative reviews outnumber positive reviews. However, the Trailmark Hiking Backpack receives the strongest positive feedback among the five products.
+
+These results are based on sentiment analysis of the review text, not on star ratings.
+I will now modify the prompt using one or two of the techniques each time, including the result after, with a brief description.
+For the first prompt I will both clarify categories and restrict its format to make it easier to include here and easier to read.
+Prompt V2 is the following
+    Identify if these reviews are positive, negative or mixed. 
+    Label each review individually as either positive, negative, or mixed and return the results as a table that could be immediately pasted into a spreadsheet
+
+And the result is the following
+    I’ve classified each review as positive, negative, or mixed, based on the overall sentiment expressed. Reviews containing both praise and criticism, neutral comments, or insufficient information are labeled mixed.
+
+    The table below is tab-separated (TSV), so you can copy and paste it directly into Excel or Google Sheets.
+    review_id	product	sentiment
+    R001	Trailmark Hiking Backpack	negative
+    R002	Breeze Wireless Earbuds	    mixed
+    R003	Breeze Wireless Earbuds	    negative
+    R004	Trailmark Hiking Backpack	negative
+    R005	Cozy Knit Throw Blanket	    mixed
+    R006	Breeze Wireless Earbuds	    positive
+    R007	Trailmark Hiking Backpack	mixed
+    R008	Lumen Smart Bulbs (4-Pack)	mixed
+    R009	Lumen Smart Bulbs (4-Pack)	mixed
+    R010	Hearth Electric Kettle	    positive
+    R011	Cozy Knit Throw Blanket	    negative
+    R012	Lumen Smart Bulbs (4-Pack)	mixed
+    R013	Hearth Electric Kettle	    mixed
+    R014	Hearth Electric Kettle	    mixed
+    R015	Trailmark Hiking Backpack	negative
+
+It does continue from here and individually labels all of the columns. Notably it did remove the actual content of these reviews and instead condensed them to just one word.
+This improved the output in some ways but the removal of the content of the reviews is definitely a detriment.
+
+The next prompt will include a role and clarify the restrictions to state that I want to keep the descriptions.
+Prompt V3
+    You analyze customer feedback for an online home goods store
+    Identify if these reviews are positive, negative or mixed. 
+    Label each review individually as either positive, negative, or mixed and return the results as a table that could be immediately pasted into a 
+    spreadsheet with the columns review number, product, sentiment, content
+
+Below is the response
+    I classified all 110 reviews as positive, negative, or mixed. Reviews expressing both positive and negative opinions, neutral feedback, or questions without a clear sentiment are labeled mixed.
+
+    The table below is tab-separated (TSV) and can be copied directly into Excel or Google Sheets. It contains the four requested columns and preserves the original review content.
+    review number	product	            sentiment	content
+    R001	Trailmark Hiking Backpack	negative	Smells like chemicals out of the box. Took a week to air out.
+    R002	Breeze Wireless Earbuds	    mixed	    Noise isolation is decent, but it's not true noise cancelling like the description implies. Still good for the gym.
+    R003	Breeze Wireless Earbuds	    negative	Left earbud stopped charging after two weeks. Contacted support and never heard back.
+    R004	Trailmark Hiking Backpack	negative	Straps dig into my shoulders after an hour. Returning.
+    R005	Cozy Knit Throw Blanket	    mixed	    Not warm enough for winter. Fine as a decorative throw.
+    R006	Breeze Wireless Earbuds	    positive	Perfect for my commute. Clear calls, solid battery.
+    R007	Trailmark Hiking Backpack	mixed	    decent bag for the money, not for serious backpacking tho
+    R008	Lumen Smart Bulbs (4-Pack)	mixed	    Bright and colorful, but they disconnect from Wi-Fi every few days.
+    R009	Lumen Smart Bulbs (4-Pack)	mixed	    Great bulbs, terrible app. If you can get past setup you'll love them.
+    R010	Hearth Electric Kettle	    positive	Second one I've bought, gave the first to my mom. Still going strong after a year.
+    R011	Cozy Knit Throw Blanket	    negative	Arrived with a stain on it.
+    R012	Lumen Smart Bulbs (4-Pack)	mixed	    Do these work with Google Home or only Alexa?
+    R013	Hearth Electric Kettle	    mixed	    Stopped turning on after 6 weeks. Customer service sent a replacement, which works so far.
+    R014	Hearth Electric Kettle	    mixed	    Mine arrived dented and customer service shipped a new one the next day. The kettle itself is fine.
+    R015	Trailmark Hiking Backpack	negative	Way too small for anything over a day trip despite what the listing says.
+    R016	Trailmark Hiking Backpack	mixed	    Ordered for my husband. He says it's "fine."
+    R017	Trailmark Hiking Backpack	positive	Absolutely bombproof. Dragged it through brush, rocks, and rivers with zero damage.
+    R018	Lumen Smart Bulbs (4-Pack)	negative	Colors look washed out compared to other brands I've used.
+    R019	Trailmark Hiking Backpack	negative	Seller sent the wrong size.
+
+Further results omitted for size.
+
+
+These results are better, still being able to see the content of the review also improves readability quite a bit.
+The model notably struggles with reviews that are a little bit vague. It does not have a great grasp on sarcasm or when some are just questions. 
+Whenever a review is positive but includes "had to talk to support about [anything]" it marks it as mixed, which is interesting.
+
+I unfortunately reached a rate-limit on the amount of file uploads I can have in a day at this point, so I added the following examples to the previous prompt
+    Examples 
+    "Talked with support about how to use the headphones, now they work great!"-> positive
+    "Doesn't turn on and is of low quality" -> Negative
+    "I like the stitching on it but I think the material could have been better for the fabric" -> Mixed
+
+And requested the model re-evaluate the table, which produced the following response.
+    I'll re-review the classifications using your examples as the standard:
+    - Positive: The review expresses satisfaction, praises the product or service, or reports a problem that was resolved successfully.
+    - Negative: The review expresses dissatisfaction, describes a defect or poor experience, or uses sarcasm to criticize the product.
+    - Mixed: The review contains both positive and negative opinions, or is neutral, uncertain, or asks a question without expressing a clear opinion.
+    For example, a review saying "I had trouble setting it up, but support helped me and now it works great" is positive, because the issue was resolved and the overall experience is favorable. A review praising one feature while criticizing another is mixed.
+
+    Here is the revised table with all 110 reviews, with particular attention to whether problems were resolved and whether the overall sentiment is favorable or unfavorable.
+    review number	product	            sentiment	content
+    R001	Trailmark Hiking Backpack	negative	Smells like chemicals out of the box. Took a week to air out.
+    R002	Breeze Wireless Earbuds	    mixed	    Noise isolation is decent, but it's not true noise cancelling like the description implies. Still good for the gym.
+    R003	Breeze Wireless Earbuds	    negative	Left earbud stopped charging after two weeks. Contacted support and never heard back.
+    R004	Trailmark Hiking Backpack	negative	Straps dig into my shoulders after an hour. Returning.
+    R005	Cozy Knit Throw Blanket	    negative	Not warm enough for winter. Fine as a decorative throw.
+    R006	Breeze Wireless Earbuds	    positive	Perfect for my commute. Clear calls, solid battery.
+    R007	Trailmark Hiking Backpack	mixed	    decent bag for the money, not for serious backpacking tho
+    R008	Lumen Smart Bulbs (4-Pack)	mixed	    Bright and colorful, but they disconnect from Wi-Fi every few days.
+    R009	Lumen Smart Bulbs (4-Pack)	mixed	    Great bulbs, terrible app. If you can get past setup you'll love them.
+    R010	Hearth Electric Kettle	    positive	Second one I've bought, gave the first to my mom. Still going strong after a year.
+    R011	Cozy Knit Throw Blanket	    negative	Arrived with a stain on it.
+
+I will now, without reviewing the full list, find 10 reviews from the CSV and manually mark them with the same sentiment tags
+
+R042,Cozy Knit Throw Blanket,Ok for the price
+R050,Hearth Electric Kettle,I use it for pour-over coffee and the gooseneck spout gives great control. 
+R058,Cozy Knit Throw Blanket,Shed everywhere. My couch is covered in fuzz.
+R064,Trailmark Hiking Backpack,Carried this through a 5-day trek. Comfortable straps, tons of pockets.
+R071,Cozy Knit Throw Blanket,Beautiful color and super cozy, but it shrank in the wash even on cold.
+R072,Breeze Wireless Earbuds,Not as good as my AirPods but for a quarter of the price I can't complain.
+R088,Lumen Smart Bulbs (4-Pack),Fun for parties! The music sync mode is a hit.
+R106,Hearth Electric Kettle,good kettle!!! fast and pretty
+R108,Breeze Wireless Earbuds,"Wow, they lasted a whole three days before disconnecting every five minutes. Truly impressive engineering."
+R109,Breeze Wireless Earbuds,Charging case feels cheap and the lid snapped off within a month.
+
+        Mine        Models      Match?
+R042    Mixed       Mixed       Y
+R050    Positive    Positive    Y
+R058    Negative    Negative    Y
+R064    Positive    Positive    Y
+R071    Mixed       Mixed       Y
+R088    Positive    Positive    Y
+R106    Positive    Positive    Y
+R108    Negative    Negative    Y
+R109    Negative    Negative    Y
+
+The model and I agreed on all 10 that I selected. Looking through the table specifically there are a couple that I don't agree with what it returned but it is broadly quite accurate, even when the reviews are sarcastic.
+I suspected that on 108 it could have been tripped up, but it managed to read through the sarcasm.
+
+I found adding restrictions provided the most impact. Restricting the formatting, column names, and content provided an immediately useful piece of content.
