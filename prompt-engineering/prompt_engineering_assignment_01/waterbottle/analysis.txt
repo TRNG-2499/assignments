@@ -1,0 +1,6 @@
+Overall, the model did a good job of describing the product,
+but in most cases, lacked the understanding of my vision of the description
+and produced something that "didn't sound quite right".
+
+Providing examples was definitely the most helpful, as it was the closest to my imagined description
+in tone and length. However, a combination of techniques could be useful as well, as seen in final-prompt.txt

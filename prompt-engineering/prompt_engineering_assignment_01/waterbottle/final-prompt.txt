@@ -1,0 +1,49 @@
+--------------
+--  Prompt  --
+--------------
+
+Write a product description for a water bottle intended for campers and outdoors people.
+
+The water bottle is made of aluminum alloy for low weight.
+The inside is coated with a food-safe material to keep the water drinkable.
+To fit in a backpack and be easy to hold on-the-go, the bottle is more tall than it is wide.
+
+Do not overtly advertise; it should be a description, not an ad.
+Ensure that you talk about the features with more detail than just a bullet point or two so that the reader can really understand it.
+
+Finally, follow the tone of these examples, but ensure that the previous instructions take priority over copying the template.
+
+1.
+Neon Pink Water Bottle
+
+Reusable bottle with a distinct neon pink coating on the outside.
+This makes it easy to spot, even in the wilderness.
+
+Comes with a neon pink straw embedded into the lid as well.
+
+2.
+Aluminum food-safe bottle
+
+Lightweight and durable due to the aluminum core,
+with a food-safe plastic shell for safe drinking.
+
+--------------
+-- Response --
+--------------
+
+Lightweight Aluminum Camping Water Bottle
+
+A tall, narrow water bottle made from aluminum alloy to reduce weight while remaining suitable for outdoor use. Its lightweight construction makes it easier to carry on longer hikes, camping trips, and other outdoor activities without adding unnecessary weight to a backpack.
+
+The interior is coated with a food-safe material designed to prevent direct contact between the water and the aluminum. This coating helps keep the contents suitable for drinking while providing a protective inner surface.
+
+Its elongated shape, with a greater height than width, allows it to fit more easily into backpack side pockets and other narrow storage spaces. The slim profile also makes the bottle easier to grip and handle while walking, hiking, or travelling.
+
+--------------
+-- Analysis --
+--------------
+
+Overall good job describing the product and following the prompt.
+
+Could use a couple tweaks here or there, such as adjusting the mix between objective description and advertisement
+to create a slightly more energetic description, or providing a slightly better format for it to follow.

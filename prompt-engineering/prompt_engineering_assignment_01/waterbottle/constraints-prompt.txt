@@ -1,0 +1,49 @@
+--------------
+--  Prompt  --
+--------------
+
+Write a product description for a water bottle.
+
+Do not overtly advertise; it should be a description, not an ad.
+Ensure that you talk about the features with more detail than just a bullet point or two so that the reader can really understand it.
+
+--------------
+-- Response --
+--------------
+
+Water Bottle – Product Description
+
+Designed for everyday use, this water bottle provides a practical and convenient way to stay hydrated throughout the day. Its simple, functional design makes it suitable for a variety of settings, including work, school, travel, exercise, and outdoor activities. With an emphasis on usability, durability, and portability, it offers a straightforward solution for carrying water wherever the day takes you.
+
+Durable Construction
+
+The bottle is designed with a durable exterior that can withstand the demands of regular daily use. Its sturdy construction helps protect it from the minor bumps and knocks that can occur when carried in a backpack, gym bag, or vehicle. The smooth surface also makes it comfortable to hold and easy to clean, helping maintain its appearance over time.
+
+Convenient Capacity and Portability
+
+With a practical design intended to accommodate everyday hydration needs, the bottle provides enough room to carry water without becoming unnecessarily bulky. Its portable shape makes it easy to take along during commutes, workouts, classes, or longer trips. It can fit conveniently into many bags and cup holders, depending on its dimensions, making it a useful addition to a daily routine.
+
+Secure, Easy-to-Use Lid
+
+The bottle features a secure-fitting lid designed to help prevent accidental spills during transport. Its opening allows for convenient access to drinking water, while the lid can be removed when the bottle needs to be refilled or cleaned. This practical design makes it suitable for use at a desk, during physical activities, or while travelling.
+
+Reusable and Easy to Maintain
+
+As a reusable alternative to disposable plastic water bottles, it can be refilled throughout the day, reducing the need for single-use containers. Its design supports regular cleaning and repeated use, making routine maintenance straightforward. Keeping a reusable bottle nearby also makes it easier to monitor and maintain consistent water intake.
+
+Versatile Everyday Use
+
+Whether placed on a desk, carried in a backpack, taken to the gym, or brought along on an outdoor excursion, this water bottle is designed to fit naturally into different lifestyles. Its combination of practical construction, convenient portability, and reusable functionality makes it an everyday item suited to a wide range of hydration needs.
+
+Overall, this water bottle combines functional design with everyday convenience. Rather than relying on unnecessary features, it focuses on the essentials: carrying water securely, providing easy access, and offering a reusable container that can be incorporated into daily activities.
+
+--------------
+-- Analysis --
+--------------
+
+The response is far less advertisement-like, and leaves little to the imagination on features.
+
+However, the description is still not great.
+Notable flaws include using the literal phrase "product description" and also
+merging features into other feature descriptions, such as talking about portability
+in multiple sections of the description.

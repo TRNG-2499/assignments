@@ -1,0 +1,33 @@
+--------------
+--  Prompt  --
+--------------
+
+Write a product description for a water bottle intended for campers and outdoors people.
+
+The water bottle is made of aluminum alloy for low weight.
+The inside is coated with a food-safe material to keep the water drinkable.
+To fit in a backpack and be easy to hold on-the-go, the bottle is more tall than it is wide.
+
+--------------
+-- Response --
+--------------
+
+Lightweight Aluminum Water Bottle – Built for the Outdoors
+
+Stay hydrated wherever the trail takes you. Designed for campers, hikers, and outdoor enthusiasts, this lightweight water bottle combines practical durability with a streamlined shape that makes it easy to carry on every adventure.
+
+Crafted from lightweight aluminum alloy, the bottle minimizes unnecessary pack weight without compromising everyday practicality. Its interior features a food-safe protective coating, helping keep your drinking water safe and suitable for hydration throughout your journey.
+
+The bottle's tall, slim profile is designed to fit conveniently into backpacks and side pockets while providing a comfortable grip for drinking on the go. Whether you're hiking mountain trails, setting up camp, or exploring the outdoors, it's a reliable hydration companion built to move with you.
+
+Light to carry. Easy to grip. Ready for adventure.
+
+--------------
+-- Analysis --
+--------------
+
+The output is far more focused on concrete features, including some inferred
+from the intent driving the product (camping/outdoors).
+
+Though instructed to be a product description instead of an ad, it definitely
+has some parts that do just read like an ad.

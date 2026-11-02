@@ -1,0 +1,87 @@
+--------------
+--  Prompt  --
+--------------
+
+Write a product description for an ergonomic office chair.
+
+It is intended to be sold to older patients with joint pain, so it must feature minimal movement required
+to adjust your position while sitting, possibly with automatic adjustment of the armrests, etc.
+Also, it must have wheels on the bottom for ease of moving the chair itself.
+
+Limit your response to about 20 words per feature description, and follow the overall format provided below,
+with your text replacing anything in brackets. Describe exactly three features with this format.
+
+-------
+<TITLE>
+-------
+
+<OVERVIEW>
+<A summary of all three features in one or two short sentences. Keep it brief, and do not mention the target audience here.>
+
+
+<Feature 1>
+<short description of feature 1. 2-3 sentences, 20 words roughly>
+
+
+<SUMMARY>
+<ensure that the target audience is mentioned in this last sentence about the product>.
+
+
+As an example:
+
+
+-------------------------------
+ERGO-JOINT WHEELED OFFICE CHAIR
+-------------------------------
+
+An office chair designed for minimal required movement to change positions, including wheels for large adjustments.
+
+
+MINIMAL MOVEMENT
+
+Designed to reduce movement needed to change your focus and position,
+including automatically-adjusting armrests and other ergonomic features.
+
+
+POWERED WHEELS
+
+Small motor in the base of the chair to avoid using your legs to move. Omnidirectional and supports up to 300 pounds.
+
+
+COMFORT
+
+Comes with semi-rigid memory foam pads for seating and back support.
+
+
+ERGO-JOINT is perfect for those who have trouble moving.
+
+--------------
+-- Response --
+--------------
+
+ERGO-EASE ERGONOMIC OFFICE CHAIR
+
+An ergonomic office chair designed to minimize physical effort when adjusting sitting positions, with automated comfort features and smooth-rolling wheels.
+
+AUTOMATIC POSITION ADJUSTMENT
+
+Intelligent ergonomic controls automatically adjust the backrest, seat angle, and armrests, allowing users to change positions without unnecessary reaching or stretching.
+
+EFFORTLESS MOBILITY
+
+Smooth-rolling, omnidirectional wheels allow the chair to move easily across floors, reducing the physical effort required to reposition it.
+
+ADAPTIVE JOINT SUPPORT
+
+Contoured memory foam cushioning and adjustable lumbar support provide consistent comfort, reducing pressure on sensitive joints during extended periods of sitting.
+
+ERGO-EASE is designed to provide greater comfort, independence, and ease of use for older adults experiencing joint pain or limited mobility.
+
+--------------
+-- Analysis --
+--------------
+
+Correct tone and almost correct format (missing the dashes and spacing between sentences).
+Left out some details regarding the motorized wheels at the bottom, but otherwise feature-complete.
+
+Combining many prompting techniques proves to provide a more desirable result.

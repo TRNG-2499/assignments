@@ -1,0 +1,39 @@
+--------------
+--  Prompt  --
+--------------
+
+You are the lead ad producer for a coffee company.
+The product this time around is a subscription-based variety pack, shipped on a monthly basis.
+
+Write a short description of what is included in the subscription and provide an example package from a previous month.
+Note that there are one or two generic flavors, and the rest are exotic, like raspberry flavored coffee.
+
+You MUST:
+- Not imply that the flavors are the same every month. There is a new variety pack every month.
+- Limit the description to two short paragraphs.
+  The first paragraph must be a description of the subscription, and the second must provide an example pack from a prior month.
+- Mention the gourmet taste-testers that ensure the quality of the more esoteric flavors.
+- Mention the price per month, including a discount for purchasing multiple months of the subscription at once.
+
+--------------
+-- Response --
+--------------
+
+Discover a new coffee adventure every month with our Gourmet Variety Pack Subscription! Each monthly shipment features a freshly curated selection of coffees, including one or two familiar favorites alongside an exciting assortment of exotic flavors. From classic blends to unexpected creations like raspberry-flavored coffee, every pack offers something new to explore. Our expert gourmet taste-testers carefully sample and approve even our most esoteric flavors to ensure every cup meets our high standards of quality. Subscriptions start at $24.99 per month, with special discounts available when you purchase multiple months upfront.
+
+A Taste of a Past Month: One previous variety pack featured two comforting classics—Original House Blend and French Vanilla—alongside three adventurous selections: Raspberry Delight, Toasted Coconut, and Chocolate-Covered Cherry. Just one example of the surprises our monthly subscription can deliver. Next month brings an entirely new collection!
+
+--------------
+-- Analysis --
+--------------
+
+Mostly a good response, but the format is lacking due to a poor input description and no examples.
+
+The content of both paragraphs is as instructed, barring a few minor errors:
+1. The price is in the middle of the paragraph. Possibly user error, but I expected it to be more obvious.
+2. While creative on the esoteric flavors, the wording about the past
+   collection is a little awkward, especially in the second sentence.
+
+The rules definitely helped the format, but enacting hard rules/constraints seems to limit its
+creativity a little too much. Possibly have different 'severity' levels for each rule, indicating
+how strongly it must be followed.

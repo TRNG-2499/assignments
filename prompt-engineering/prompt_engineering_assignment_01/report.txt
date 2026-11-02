@@ -1,0 +1,6 @@
+Deliverables are in folders organized by the product name.
+
+Each individual prompt is in its own file, following the format in format.txt in this directory.
+
+There is additionally an analysis for the water bottle prompts in waterbottle/analysis.txt, which is an overview
+of the conclusions from all the experiments there.

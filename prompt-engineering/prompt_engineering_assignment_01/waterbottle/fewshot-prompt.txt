@@ -1,0 +1,46 @@
+--------------
+--  Prompt  --
+--------------
+
+Write a product description for a water bottle.
+
+Make it sound similar to these brief examples, but don't copy them verbatim, as these are not real products.
+
+1.
+Neon Pink Water Bottle
+
+Reusable bottle with a distinct neon pink coating on the outside.
+This makes it easy to spot, even in the wilderness.
+
+Comes with a neon pink straw embedded into the lid as well.
+
+2.
+Aluminum food-safe bottle
+
+Lightweight and durable due to the aluminum core,
+with a food-safe plastic shell for safe drinking.
+
+--------------
+-- Response --
+--------------
+
+Matte Black Insulated Water Bottle
+
+Reusable water bottle with a sleek matte black exterior and double-wall insulated construction.
+
+Designed to keep drinks cold for hours while preventing condensation on the outside.
+
+Features a secure screw-on lid to help prevent leaks when carried in a bag.
+
+--------------
+-- Analysis --
+--------------
+
+As instructed, the LLM did not copy verbatim, instead including new details.
+Also, the response is short and succinct, just like the examples.
+
+However, the response is lacking in terms of the creativity front,
+which was desired as indicated by the second half of the instructions.
+
+Possibly more examples could help, or even feeding this prompt several times
+and using it as input to another prompt after.
