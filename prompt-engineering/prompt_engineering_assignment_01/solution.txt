@@ -1,0 +1,187 @@
+Water Bottle - Version 1
+
+Prompt:
+Write a product description for a water bottle.
+
+Output:
+Stay Hydrated, Your Way
+
+Meet the bottle that goes everywhere you do. Built with double-wall vacuum insulation, it keeps drinks ice-cold for 24 hours or piping hot for 12, so your morning coffee is still warm at lunch and your afternoon water is still refreshing at sunset.
+
+Features
+
+Durable 18/8 stainless steel that stands up to drops, dings, and daily life
+Leakproof, one-handed lid with a built-in carry loop, so it’s ready for the gym, the trail, or the commute
+Wide mouth opening that fits ice cubes and makes cleaning easy
+Sweat-proof exterior that won’t leave rings on your desk or dampen your bag
+BPA-free and taste-neutral, so your water tastes like water, not last week’s smoothie
+Fits most cup holders and backpack side pockets
+
+Available in 20 oz, 32 oz, and 40 oz in a range of matte finishes.
+
+Whether you’re hiking, working, or just trying to drink more water, this is the bottle you’ll actually want to carry. Swap out disposable plastic and keep your drinks at the right temperature, all day long.
+
+Backed by a lifetime warranty.
+
+Water Bottle - Version 2
+
+Prompt:
+You are a marketing director for a water bottle sales team.
+
+Write a product description for a water bottle. Key Features:
+stainless steel
+wide straw
+variety of vibrant colors
+durable and scratch resistant
+
+Audience: water drinkers
+
+Output:
+Sip Bolder. Stay Hydrated. Look Great Doing It.
+
+Meet the water bottle that makes drinking water the best part of your day.
+
+Built from premium stainless steel, this bottle is made for real life. Toss it in your gym bag, clip it to your backpack, or leave it on your desk. It keeps your water tasting clean and fresh, with no metallic aftertaste and no lingering flavors.
+
+The wide straw changes everything. Take big, satisfying sips without tilting your head back or fighting a tiny opening. Water flows freely, so it’s easier to hit your daily goal. It’s also easy to clean and easy to fill with ice.
+
+Color that stands out. Choose from a range of vibrant shades, from bold and electric to cool and calming. Pick the one that matches your style, your mood, or your whole week.
+
+Tough enough for the long haul. The durable, scratch-resistant finish handles bumps, drops, and daily wear without losing its good looks. Months from now, it will still look as good as the day you got it.
+
+Why You’ll Love It
+Premium stainless steel construction
+Wide straw for effortless, full-flavored sips
+A rainbow of vibrant colors to choose from
+Durable, scratch-resistant finish that lasts
+
+Great hydration should never feel like a chore. Grab yours today and make every sip count.
+
+Water Bottle - Version 3
+
+Prompt:
+Write a product description for a water bottle.
+
+Constraints: do not repeat features, conversational advertisement tone
+
+Output: heading with a few sentences, and bullet points for features. End with one or two closing sentences.
+
+Output:
+Meet the Bottle That Actually Gets Used
+
+Let’s be honest: most water bottles end up forgotten in a cupboard. This one earns a spot in your bag, on your desk, and in your hand. It’s built for real days, from early commutes to long hikes, and it just keeps up.
+
+-Double-wall vacuum insulation keeps drinks icy for 24 hours or piping hot for 12
+-Leakproof flip lid with a one-handed sip spout, so you can toss it in a tote without a second thought
+-Wide mouth opening fits ice cubes, makes cleaning easy, and welcomes your favorite infuser
+-Powder-coated finish gives you a grippy, sweat-free hold in a range of bold colors
+-Fits standard cup holders, so it rides along in your car, bike, or stroller
+-BPA-free, food-grade stainless steel means water tastes like water, with no metallic aftertaste
+
+Fill it up, clip it on, and go. Staying hydrated has never felt this effortless.
+
+Noise-canceling headphones
+
+Prompt:
+You are the lead of the marketing team writing product advertisements.
+
+Write a product description for noise-canceling headphones.
+
+Features:
+
+over the ear
+active noise cancellation
+premium quality (sound/materials)
+affordable
+
+Rules:
+Write a few sentences as a heading with a bullet point list for features. Then write a sentence or two for the closing.
+
+Output:
+
+Silence the World. Amplify Your Sound.
+
+Step into a space that’s entirely your own. Our over-ear noise-canceling headphones block out the chaos of commutes, open offices, and busy cafés, so every beat, word, and note comes through with stunning clarity. Premium sound shouldn’t come with a premium price tag, and with these, it doesn’t.
+
+-Active Noise Cancellation: Advanced technology filters out unwanted background noise, so you can focus, relax, or lose yourself in your music.
+-Over-the-Ear Comfort: Plush, cushioned ear cups wrap around your ears for a secure fit that stays comfortable through all-day wear.
+-Premium Quality: Rich, balanced sound paired with high-grade, durable materials that look and feel as good as they perform.
+-Affordable Price: Studio-caliber listening at a price that makes sense for everyday life.
+
+Experience the difference quiet makes. Get yours today and hear what you’ve been missing.
+
+Trail Running Shoes
+Prompt:
+
+You are in charge of writing descriptions for a prestigious shoe manufacturer.
+
+Write a product description for trail running shoes.
+
+Features: durable, variety of colors, comfort, support
+
+Audience: passionate runners and hikers.
+
+Example of a different shoe description:
+"Exposed Air Zoom unit meets an ultralight design for next-level responsiveness.
+
+Take responsive cushioning to the next level with the Pegasus Plus 2. With even higher energy return than its predecessor, it delivers a smooth, energized ride for everyday runs. Superlight ZoomX foam and an exposed forefoot Air Zoom unit team up for a propulsive sensation. Plus, it's updated with an accommodating fit and breathable upper for a comfortable, secure run.
+
+Exposed Air Zoom Unit
+Ultralight and responsive ZoomX foam pairs with an exposed, curved Air Zoom unit in the forefoot for a more propulsive and energized sensation.
+
+Redesigned Upper
+We streamlined the upper, allowing the sleek mesh to reveal the midfoot containment band, delivering a secure fit that's ready for speed. The lightweight material offers breathability.
+
+Waffle Outsole
+An updated Waffle design features a diagonal pattern and sharp edges for improved zonal traction and ground feel."
+
+
+Output:
+Built for the long way up. Ready for the long way down.
+
+Whether you’re chasing a summit at sunrise or logging miles on a rain-soaked ridgeline, the trail is unpredictable. Your shoes shouldn’t be. Engineered for runners and hikers who go where the pavement ends, this trail shoe pairs rugged durability with all-day comfort and the support to keep you steady on every step.
+
+Reinforced, Abrasion-Resistant Upper
+A tough woven mesh is fortified with a protective overlay that shrugs off rock scrapes, roots, and brush. A reinforced toe cap shields against stubbed toes and scree, while the breathable construction keeps your feet cool on the climb.
+
+Cushioned Comfort, Mile After Mile
+A responsive midsole absorbs impact on rocky descents and returns energy on the climb, so your legs feel fresh long after the trailhead is behind you. A plush, padded collar and moisture-wicking lining keep your foot cradled from the first mile to the fiftieth.
+
+Locked-In Support
+A structured heel counter and a secure midfoot wrap hold your foot in place on technical terrain and uneven ground. Whether you’re side-hilling a slope or picking through a boulder field, you’ll feel stable, confident, and in control.
+
+Grip That Goes Anywhere
+Deep, multidirectional lugs bite into loose dirt, wet rock, and muddy switchbacks, delivering reliable traction when conditions turn. A durable rubber compound is built to last through season after season of hard use.
+
+Colors as Bold as the Backcountry
+Choose from a range of colorways, from earthy forest and slate tones to high-visibility accents inspired by alpine sunrises and canyon sunsets. Find the pair that matches your pace and your personality.
+
+Rugged where it counts. Comfortable where it matters. Made for the trail, and for you.
+
+
+Analysis
+
+Techniques:
+
+Role: Water V2, headphones, shoes
+Context: Water V2, headphones, shoes
+Constraints: Water V3, headphones
+Few-shot: Shoes
+Output format: Water V3
+
+Effects:
+
+Water V1 (no guidance): Generic, with invented specs (insulation times, sizes, warranty).
+Water V2 (role + context): Punchier tone and focused on my four features, with fewer fabricated details. Features repeated between body and bullets.
+Water V3 (constraints + format): Matched the structure and conversational tone, but invented details again since I gave no features.
+Headphones (role, context, constraints): Best adherence. Structure and features matched, with little invention.
+Shoes (few-shot, context, role): Copied the example’s structure and style, but invented extra features and ran long.
+
+Ignored or invented
+The model made up details whenever I omitted features (Water V1, Water V3) and added extras in the shoe prompt. Fixes: supply real features and add “only describe the features listed.” Also, implementing a length requirement could be helpful for shortening or lengthening responses.
+
+Biggest difference
+Context. It determined whether the content was accurate or invented. Few-shot most affected style, but it worked best on top of good context.
+
+Least Difference
+Role prompting. In this particular situation changing the role did not affect the output style or quality as much as other techniques.

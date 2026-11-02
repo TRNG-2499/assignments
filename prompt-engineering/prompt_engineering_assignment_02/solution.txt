@@ -1,0 +1,227 @@
+Part 1:
+Prompt:
+Are these reviews positive or negative?
+
+Output:
+Overall, they’re mixed and lean slightly negative. I read all 110 reviews by hand and sorted them like this:
+
+Sentiment					Count
+Negative					39
+Positive					35
+Mixed (praise and complaints together)		21
+Neutral or questions				15
+
+By product (22 reviews each), the split is similar and no product stands out:
+
+Product				Positive	Negative	Mixed	Neutral
+Trailmark Hiking Backpack	7		8		4	3
+Breeze Wireless Earbuds		6		8		5	3
+Cozy Knit Throw Blanket		8		6		5	3
+Lumen Smart Bulbs		7		9		3	3
+Hearth Electric Kettle		7		8		4	3
+
+Ten of the negatives are sarcasm that reads as positive on the surface, such as “Love that the ‘waterproof’ pack turned my sleeping bag into a sponge. Ten stars” (R022) or “Fantastic. Just fantastic. Mine lasted a full week before the switch broke” (R030). A basic keyword-based sentiment tool would likely misclassify these. The other sarcastic ones are R024, R066, R068, R078, R080, R085, R098, and R108.
+
+A few judgment calls could shift the numbers slightly:
+
+Mixed vs. positive or negative: I counted a review as mixed when it had real praise and a real complaint, like “Great bulbs, terrible app” (R009).
+Shipping and delivery complaints: I counted these as negative when the product was never judged, like “Delivery driver left it in the rain” (R093). Two shipping-only reviews with no verdict on the product (R057 and R026) I left as neutral.
+Lukewarm reviews: Ones like “It’s fine” or “Ok for the price” went into neutral.
+
+I can also break down the most common complaints by product if that’s useful.
+
+Part 2:
+Version 1
+Prompt:
+Sort these reviews in to the categories: positive, negative, mixed
+
+Output a table with the review number, sentiment, and a reason in under 10 words.
+
+Output:
+I put neutral reviews (questions, “it’s fine”, no opinion) under Mixed, since you gave three categories. Their reasons say “neutral”. Sarcastic reviews are classed by their real meaning.
+
+Review	Sentiment	Reason
+R001	Negative	Chemical smell, needed a week to air out
+R002	Mixed		Decent isolation, misleading ANC claim, good for gym
+R003	Negative	Earbud failed; support never responded
+R004	Negative	Straps painful; returning it
+R005	Mixed		Not warm enough, fine as decoration
+R006	Positive	Great for commute, clear calls, solid battery
+R007	Mixed		Decent value, not for serious backpacking
+R008	Mixed		Bright colors, but frequent Wi-Fi disconnects
+R009	Mixed		Great bulbs, terrible app
+R010	Positive	Durable; repurchased and gifted one
+R011	Negative	Arrived stained
+R012	Mixed		Neutral; just a compatibility question
+R013	Mixed		Failed at six weeks; replacement works so far
+R014	Mixed		Arrived dented; fast replacement, kettle merely fine
+R015	Negative	Too small, contradicts listing
+R016	Mixed		Neutral; lukewarm “fine”
+R017	Positive	Extremely durable in harsh conditions
+R018	Negative	Colors washed out versus other brands
+R019	Negative	Wrong size sent
+R020	Mixed		Color differs from photos, still a good bag
+R021	Positive	Great value, feels premium
+R022	Negative	Sarcastic; “waterproof” pack soaked the sleeping bag
+R023	Positive	Sunrise alarm improved mornings
+R024	Negative	Sarcastic; lost settings after update
+R025	Negative	Annoying buzzing when dimmed
+R026	Positive	Early delivery; nothing on product
+R027	Positive	Fast boil, sleek design
+R028	Negative	Constant static; returned
+R029	Mixed		Fine for podcasts, poor for music
+R030	Negative	Sarcastic; switch broke after a week
+R031	Negative	App crashes, bulbs unresponsive
+R032	Negative	Keep-warm too short to be useful
+R033	Positive	Best purchase of the year
+R034	Positive	Easy setup, vibrant colors, great scheduling
+R035	Positive	Bought a second pack; loves them
+R036	Mixed		Wrong color sent, kept it anyway
+R037	Mixed		Neutral; works, no enthusiasm
+R038	Mixed		Neutral; “not bad not great”
+R039	Positive	Coworkers admire it
+R040	Positive	Survives toddler use, looks new
+R041	Mixed		Too many pockets, but well made
+R042	Mixed		Neutral; just okay for price
+R043	Mixed		Neutral; does the job, nothing special
+R044	Positive	Comfortable, durable, practical pockets
+R045	Positive	Perfect weight for summer evenings
+R046	Positive	Soft, warm, cat-approved
+R047	Positive	Enthusiastic recommendation
+R048	Negative	Leaks; unsafe near outlet
+R049	Negative	Handle dangerously hot; burned hand
+R050	Positive	Gooseneck spout great for pour-over
+R051	Negative	Cord too short
+R052	Positive	Skeptical, now fantastic; would rebuy
+R053	Negative	One bulb dead on arrival
+R054	Positive	Comfortable, instant pairing
+R055	Mixed		Loves presets, beep far too loud
+R056	Positive	Works well despite crushed box
+R057	Negative	Slow, wet delivery; product untested
+R058	Negative	Sheds fuzz everywhere
+R059	Mixed		Waterproof as advertised, wants more padding
+R060	Mixed		Great battery, terrible mic
+R061	Positive	Held up all school year
+R062	Negative	Three-week shipping
+R063	Mixed		Boils fast, small capacity
+R064	Positive	Comfortable and roomy on a 5-day trek
+R065	Negative	Zipper broke on first hike
+R066	Negative	Sarcastic; earbuds fall out constantly
+R067	Mixed		Neutral; laptop sleeve question
+R068	Negative	Sarcastic; itchy and thin
+R069	Positive	Loves it; buying another
+R070	Positive	Nice warm white setting
+R071	Mixed		Beautiful and cozy, but shrank
+R072	Positive	Great value despite not matching AirPods
+R073	Mixed		Adequate for price; would upgrade
+R074	Negative	Mineral buildup after one month
+R075	Mixed		Very soft but too small
+R076	Negative	Worst earbuds ever owned
+R077	Positive	Great sound, secure fit
+R078	Negative	Sarcastic; persistent warehouse smell
+R079	Positive	Daughters both love them
+R080	Negative	Sarcastic; buckle snapped mid-hike
+R081	Positive	Washes well, no pilling
+R082	Positive	Ideal day-hike size, bonus hydration sleeve
+R083	Positive	Looks expensive, draws compliments
+R084	Positive	Pairing issue fixed quickly; works well now
+R085	Negative	Sarcastic; water tastes like plastic
+R086	Positive	Works great; voice control helps mom
+R087	Mixed		Neutral; dimensions question
+R088	Positive	Music sync is a party hit
+R089	Positive	Looks nice on arrival
+R090	Positive	Gorgeous, quick, quiet; no complaints
+R091	Negative	Lid won’t stay closed
+R092	Mixed		Neutral; keeps warm, nothing more
+R093	Negative	Left in the rain
+R094	Mixed		Neutral; gift, not yet opened
+R095	Negative	Stitching failing after two uses
+R096	Negative	Requires account and location data
+R097	Mixed		Loves sound, hates touch controls
+R098	Negative	Sarcastic; must unplug router to work
+R099	Mixed		Pretty but snags on everything
+R100	Negative	Died after a month
+R101	Mixed		Neutral; PS5 compatibility question
+R102	Positive	Best throw blanket owned
+R103	Negative	Tinny sound, painful after an hour
+R104	Mixed		Neutral; it boils water
+R105	Positive	Only wants more colors; otherwise perfect
+R106	Positive	Fast and pretty
+R107	Negative	Unraveling after a month
+R108	Negative	Sarcastic; constant disconnections after three days
+R109	Negative	Cheap case, lid snapped off
+R110	Negative	Dimmer than advertised
+
+Version 2
+Prompt:
+You are a data analyst for an online company.
+
+Make a table categorizing reviews.
+
+example:
+"positive - 20
+negative - 10
+mixed- 2"
+
+Output:
+Here is the breakdown of all 110 reviews:
+
+Category		Count	Share
+Negative		40	36%
+Positive		32	29%
+Mixed			24	22%
+Neutral / no sentiment	14	13%
+Total			110	100%
+
+Judgment calls I made:
+
+Sarcasm counts as negative. Examples are R022, R024, R030, R066, R068, R078, R080, R085, R098 and R108. They read as praise on the surface but are complaints.
+Mixed means the review has both a real positive and a real negative. This includes “good product, but problem X”, “bad product, but great support”, and lukewarm “good for the price” reviews.
+Neutral covers questions (e.g. “Does this work with a PS5?”), flat statements (“It’s a blanket”), and reviews written before the product was used (e.g. “Haven’t opened them yet”).
+Shipping-only complaints (R057, R062, R093) are counted as negative, even though they say nothing about the product itself.
+
+The borderline reviews could reasonably go either way, so the counts could shift by a few. I can also break this down by product or add the list of review IDs per category.
+
+Part 3:
+
+My labels:
+R001 - mixed (no negatives about backpack, only smell)
+R002 - mixed (slightly negative, but fine)
+R028 - negative (returned)
+R040 - positive
+R041 - positive (review slightly sarcastic)
+R066 - negative (sarcastic)
+R069 - positive
+R077 - positive
+R080 - negative (sarcastic)
+R092 - positive (slightly sarcastic)
+
+Model labels/different or same:
+
+R001 - negative / different --- This review could go either way. There were no negative comments about the backpack, and obviously used it for over a week. only complained about smell
+R002 - mixed / same
+R028 - negative / same
+R040 - positive / same
+R041 - mixed / different --- slight sarcasm, but I don't think the reviewer meant that too many pockets as a negative comment.
+R066 - negative / same
+R069 - positive / same
+R077 - positive / same
+R080 - negative / same
+R092 - mixed / different --- slight sarcasm, describes a blanket. I think it is a positive/neutral review
+
+Analysis
+
+Techniques:
+
+Version 1: categories, output format/constraints
+Version 2: Role prompting, Few-shot
+
+This model handled the reviews very well without any specific techniques. In the initial response It did not directly give each review a positive or negative rating, but instead it made a table of each category and also each item. It also pointed out problematic reviews. The most useful technique in this situation was output formatting as it directly labeled each review. 
+
+The model handled tricky reviews well, but it leaned toward mixed/negative when there was sarcasm. I wouldn't necessarily consider some of the sarcastic reviews as negative or mixed where the model did.
+
+The model labeled or categorized every review each time, but without the output formatting the model did not directly assign each review with a label.
+
+Overall, I believe the output formatting made the most difference in this case, although the model did well without it. If you are wanting a direct label for each review it needed to be specified.
+
+
