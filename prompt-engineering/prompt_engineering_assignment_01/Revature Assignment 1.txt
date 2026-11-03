@@ -1,0 +1,75 @@
+1.
+
+Water Bottle Version 0:
+Write a product description for a water bottle.
+
+Response:
+Stay Hydrated, Wherever Life Takes You
+
+Stay refreshed throughout the day with this durable, stylish, and convenient water bottle. Designed for everyday use, it makes staying hydrated easy whether you're at work, hitting the gym, traveling, or enjoying the outdoors. Its practical design makes it easy to carry, while its reusable construction provides an environmentally friendly alternative to disposable plastic bottles.
+
+Combining functionality, durability, and style, this water bottle is the perfect everyday companion. Keep it by your side and enjoy convenient hydration wherever your day takes you!
+
+
+Water Bottle Version 1:
+Write a product description for a water bottle as if you're a mom who bought it when it was a big trend but now no longer wants it and is selling it on Facebook marketplace. The water bottle was never used and went viral a year ago.
+
+Response 2:
+Bought this water bottle last year when everyone was going crazy over it and, of course, I had to jump on the trend! 😂 Unfortunately, it's been sitting in my cabinet ever since, so I'm finally letting it go. It went viral last year for a reason, and it's still such a cute bottle! Brand new, never used, just taking up space in my kitchen.
+
+Perfect for anyone who missed out on the trend or wants one for themselves! Asking $__. Message me if interested! 😊
+
+
+Water Bottle Version 2:
+Write a product description for a water bottle as if you're a mom who bought it when it was a big trend but now no longer wants it and is selling it on Facebook marketplace. The water bottle was never used and went viral a year ago. Make the description easy to read and under 70 words, and keep it all in one paragraph with a simple header at the top to catch potential buyers' eyes.
+
+Response 3:
+✨ VIRAL WATER BOTTLE – BRAND NEW!
+
+Bought this when everyone was obsessed with it last year, but now it's just taking up space in my kitchen! Never been used and still in brand-new condition. Perfect if you missed the trend the first time around or just want to see what all the hype was about. My loss is your gain! 😊
+
+
+Prompt Rewrite 4:
+Write a product description for a water bottle as if you're a mom who bought it when it was a big trend but now no longer wants it and is selling it on Facebook marketplace. The water bottle was never used and went viral a year ago. Make the description easy to read and under 70 words, and keep it all in one paragraph with a simple header at the top to catch potential buyers' eyes.
+
+Example:
+✨ VIRAL WATER BOTTLE – BRAND NEW!
+
+Bought this when everyone was obsessed with it last year, but now it's just taking up space in my kitchen! Never been used and still in brand-new condition. Perfect if you missed the trend the first time around or just want to see what all the hype was about. My loss is your gain! 😊
+
+
+Response 4:
+✨ VIRAL WATER BOTTLE – BRAND NEW!
+
+Bought this when everyone was going crazy over it last year, but now it's just sitting in my kitchen collecting dust! Never been used and still in perfect, brand-new condition. Figured someone else could enjoy it instead of letting it go to waste. Perfect if you missed out on the hype! 😊
+
+
+
+Standing Desk Prompt:
+Write a product description for a standing desk as if your a doctor recommending it to a patient with joint issues. Emphasize the benefits but avoid mentions of weight or anything that someone might take offense to.
+
+Response:
+Give Your Joints a Break! 🩺
+
+As a doctor, I often recommend standing desks to patients who spend long hours sitting throughout the day. This desk makes it easy to alternate between sitting and standing, helping reduce prolonged joint stiffness and encourage gentle movement throughout the day. Its adjustable height allows you to find a comfortable working position while supporting better posture and everyday comfort. A great addition to any home or office!
+
+
+Indoor Houseplant Prompt:
+Write a product description for an indoor houseplant as if you're a plant enthusiast who think everyone would benefit from having a plant in their home. Your target audience is people who don't have any houseplants because they think they're too much work, think that they aren't capable of taking care of one, or see no reason to get one. To reach this audience the plant you're selling is low maintenance, resilient, and considered beautiful.  Write the description as a single paragraph with bullet points emphasizing it's pros and no header.
+
+Response:
+Bring a little life, beauty, and personality into your home with this gorgeous, easy-to-care-for houseplant! If you've always thought houseplants were too much work or worried you wouldn't have a green thumb, this is the perfect plant to change your mind. Designed by nature to be resilient, it doesn't require constant attention or a complicated care routine to thrive. Even if you've never owned a plant before, you'll find that keeping this one happy is surprisingly simple. Beyond its beautiful appearance, having a plant in your home is a wonderful way to make your space feel more welcoming, peaceful, and connected to nature. Here's why you'll love it:
+- Effortless Care: Requires minimal attention, making it ideal for busy schedules and first-time plant owners.
+- Hardy and Resilient: Forgiving of occasional missed waterings and minor changes in its environment.
+- Naturally Beautiful: Adds a touch of greenery and elegance to any room, complementing nearly any decorating style.
+- Beginner-Friendly: No special gardening skills or experience required.
+- A More Inviting Home: Brings warmth, character, and a refreshing touch of nature into your everyday surroundings.
+- A Little Something to Enjoy: Watching a plant grow and thrive is a simple, rewarding experience that makes caring for your home even more enjoyable.
+You don't need to be a plant expert to enjoy the benefits of having a little greenery in your life!
+
+
+2.
+I used the techniques listed in the assignment. For role prompting I told the LLM to write it as if they were a mom looked to get rid of it. For context I added that it was being sold on Facebook marketplace and the water bottle "was never used and went viral a year ago" to the prompt. For constraints I added "make the description easy to read and under 70 words" to the prompt. For few-shot prompting I added the third response I got from the LLM as the example to the prompt. For output format I added "keep it all in one paragraph with a simple header at the top to catch potential buyers' eyes" to the prompt.
+There wasn't much improvement after the first rewrite. The role prompting and context changed the tone to more friendly and playful, and put the focus on the bottle being viral instead of it's quality. Adding output format and constraints didn't change much, just added a header and made it shorter, but I don't think it was any better than the previous iteration. Adding the example also didn't change much, just slightly reworded somethings and moved stuff around, I didn't think there was any improvement.
+For the water bottle prompt, the LLM added quite a few things not mentioned because of how little was in the prompt. It added that the bottle was durable, easy to hold, and reusable, however, that makes sense as those are features used in a lost of advertising for bottles. For my standing desk prompt the LLM added that the desk easily switched between standing and sitting which is not something I mentioned in the prompt. Unlike the other prompts however, the LLM added nothing to my indoor houseplant prompt.
+Role prompting or context made the biggest difference (don't know which because both were added in the same prompt), the entire tone and vibe of the description changed. It went from boring corporate to very informal personal listing.
