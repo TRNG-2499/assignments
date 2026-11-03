@@ -1,0 +1,295 @@
+I can assess the reviews in product-reviews.csv and classify them as positive, negative, or mixed/neutral based on the customers' experiences.
+
+I'll also distinguish between minor complaints and more serious problems, such as defective products, poor durability, or misleading product descriptions.
+Overall assessment
+The reviews are mixed, with noticeable differences between products. Some products receive consistently positive feedback, while others have recurring quality, reliability, or usability complaints.
+Sentiment by product
+Product	Overall sentiment	Main takeaway
+Trailmark Hiking Backpack	Mixed	Durable and comfortable for some, but sizing, straps, and zipper problems hurt ratings.
+Breeze Wireless Earbuds	Mixed to negative	Good sound and battery life for some customers, but connectivity and durability issues are common.
+Cozy Knit Throw Blanket	Mixed to positive	Customers like its softness and appearance, but shrinking, shedding, and quality issues are concerns.
+Lumen Smart Bulbs (4-Pack)	Mixed to negative	Good features and colors, but app crashes, connectivity, and reliability issues are recurring complaints.
+Hearth Electric Kettle	Mixed	Attractive design and fast boiling, but several concerning safety and durability complaints.
+
+Notable patterns
+1. Trailmark Hiking Backpack
+- Positive: Durability, storage capacity, and comfort.
+- Negative: Broken zippers, uncomfortable straps, incorrect sizing, and waterproofing concerns.
+- Verdict: Some excellent experiences, but quality control appears inconsistent.
+2. Breeze Wireless Earbuds
+- Positive: Sound quality, affordability, and battery life.
+- Negative: Static, disconnecting, poor microphone quality, and charging failures.
+- Verdict: More concerning reliability complaints than I'd like to see.
+3. Cozy Knit Throw Blanket
+- Positive: Softness, warmth, appearance, and value.
+- Negative: Shedding, shrinking, unraveling, and unpleasant odors.
+- Verdict: Generally appealing, but durability and maintenance are concerns.
+4. Lumen Smart Bulbs
+- Positive: Color options, scheduling, Alexa integration, and convenience.
+- Negative: App instability, Wi-Fi disconnections, dead bulbs, and privacy concerns.
+- Verdict: Promising features undermined by software and reliability problems.
+5. Hearth Electric Kettle
+- Positive: Fast boiling, attractive design, and temperature presets.
+- Negative: Leaking, dangerously hot handles, broken switches, and plastic taste.
+- Verdict: Particularly concerning because some complaints involve potential safety hazards.
+Final conclusion
+My overall ranking
+1. Cozy Knit Throw Blanket
+Most positive
+
+2. Trailmark Hiking Backpack
+Mixed
+
+3. Hearth Electric Kettle
+Mixed
+
+4. Lumen Smart Bulbs
+Concerning
+
+5. Breeze Wireless Earbuds
+Concerning
+
+
+One important distinction: this assessment considers the meaning of the reviews, including sarcasm. For example, a review saying "I love how they fall out every time I turn my head. Great feature" is negative, despite containing positive-sounding words.
+
+Bottom line: The blanket has the strongest overall positive impression, while the earbuds and smart bulbs have substantial reliability concerns. The kettle also deserves attention because of its reported safety problems.
+
+Analysis: The output seems fine to me? It lists the positive reviews and negative reviews that each product contains, and even considers patterns of sarcasm from the reviewers. Additionally, correctly assigns the reviews to be mixed, as it is the most common review. Additionally, a table is already provided showcasing the sentiments that the reviewers have of each products.
+
+Prompt: Assume that you are a senior data analyst, reviewing the products for a company that you are hired under that sells all of these products. With each of these reviews, create a table that summarizes the general positives, negatives, and mixed reviews of each product. In addition to this, list the number of reviews that each product has received. Have the table be formatted in a way to where I can easily copy and paste it onto Google Sheets. 
+
+Result: 
+I've reviewed the uploaded CSV file, which contains 110 customer reviews across 5 products.
+
+Each product has exactly 22 reviews. I'll organize the findings from a senior data analyst's perspective, separating recurring positive feedback, negative feedback, and mixed opinions.
+
+A few considerations in the analysis:
+- Positive feedback captures product strengths and customer satisfaction.
+- Negative feedback captures defects, dissatisfaction, misleading descriptions, and customer service issues.
+- Mixed feedback captures reviews where customers liked certain aspects but criticized others.
+- Questions, shipping comments, and reviews without meaningful product feedback are not treated as definitive evidence of customer satisfaction or dissatisfaction.
+Product review summary
+The following table is formatted as tab-separated values (TSV). You can copy the entire contents of the code block and paste it directly into Google Sheets. Each field should automatically populate its own cell.
+
+GOOGLE SHEETS–READY TABLE
+Product	Total Reviews	General Positives	General Negatives	Mixed Reviews
+Trailmark Hiking Backpack	22	Durable construction; comfortable straps on longer hikes; good value for money; suitable for day hikes and extended trips; useful hydration sleeve and side pockets; waterproof performance praised by some customers.	Straps cause discomfort; chemical smell upon arrival; smaller than advertised; zipper, buckle, and stitching failures; incorrect sizing or color; questionable waterproof performance; insufficient padding.	Good value and overall construction, but not suitable for serious backpacking; plenty of storage, but too many pockets can make organization difficult; generally comfortable and durable, but hip belt padding could improve; attractive appearance, but color differs from listing photos.
+Breeze Wireless Earbuds	22	Good sound quality for the price; comfortable fit; easy pairing; strong battery life; clear call quality reported by some customers; suitable for commuting, exercise, and podcasts.	Charging failures; static and frequent disconnections; poor microphone quality; uncomfortable fit for some users; weak sound quality reported by some customers; fragile charging case; unreliable touch controls; inconsistent customer support.	Good overall value compared with more expensive alternatives, but not comparable to premium earbuds; decent noise isolation, but does not provide true noise cancellation; good battery life, but microphone quality is poor; enjoyable sound, but touch controls can be frustrating.
+Cozy Knit Throw Blanket	22	Soft and cozy material; attractive appearance and knit pattern; good value for money; suitable for decorative use and mild weather; generally positive durability and washing experiences; popular as a gift.	Insufficient warmth for winter; shedding and excessive fuzz; shrinking after washing; unraveling and snagging; stains upon arrival; unpleasant warehouse smell; smaller than expected; inconsistent product quality.	Soft and attractive, but some customers find it too thin or small; comfortable for summer evenings, but not sufficiently warm for winter; visually appealing, but the knit pattern can snag easily; generally cozy, but some customers experience shrinking or shedding after washing.
+Lumen Smart Bulbs (4-Pack)	22	Bright and colorful lighting; convenient scheduling and sunrise alarm features; Alexa compatibility and voice control; music synchronization; easy setup for some customers; positive customer support experiences.	Unreliable Wi-Fi connectivity; app crashes and setup difficulties; settings lost after updates; buzzing at lower brightness; inconsistent brightness; defective bulbs; privacy concerns regarding account and location requirements; premature product failures.	Excellent lighting features and customization, but software reliability is inconsistent; vibrant colors and scheduling are appreciated, but app performance can be frustrating; convenient smart-home integration, but connectivity problems undermine usability; good functionality once configured, but initial setup can be difficult.
+Hearth Electric Kettle	22	Fast boiling performance; attractive and sleek design; temperature presets for tea; useful gooseneck spout for pour-over coffee; quiet operation reported by some customers; positive replacement experiences; generally convenient for everyday use.	Defective switches and premature failures; leaking from the bottom; dangerously hot handle; short power cord; plastic taste in water; mineral buildup; lid closure problems; limited keep-warm duration; loud completion notification.	Fast boiling and attractive appearance, but durability is inconsistent; useful temperature controls, but the completion notification is too loud; good performance for pour-over coffee, but limited capacity; generally functional and convenient, but safety and reliability concerns appear in several reviews.
+
+
+Analyst observations
+Beyond the individual product summaries, there are several patterns worth highlighting from a business perspective.
+Product	Primary Strength	Primary Concern	Suggested Business Priority
+Trailmark Hiking Backpack	Durability and value	Hardware failures and sizing discrepancies	Improve quality control and verify product specifications
+Breeze Wireless Earbuds	Sound quality and affordability	Connectivity and hardware reliability	Investigate charging, disconnection, and microphone issues
+Cozy Knit Throw Blanket	Comfort and appearance	Material consistency and washing durability	Review fabric quality and manufacturing consistency
+Lumen Smart Bulbs (4-Pack)	Smart features and customization	App stability and connectivity	Prioritize software updates and connectivity testing
+Hearth Electric Kettle	Boiling speed and design	Safety and premature hardware failures	Investigate handle temperature, leakage, and electrical safety
+
+Important findings
+1. Hearth Electric Kettle – Potential safety concern
+
+Reports of leaking near electrical outlets and dangerously hot handles warrant immediate investigation. These complaints should receive higher priority than ordinary cosmetic or convenience-related complaints.
+
+2. Lumen Smart Bulbs – Software reliability
+
+The product's primary selling point is smart functionality. However, repeated complaints about app crashes, Wi-Fi disconnections, and lost settings suggest that software reliability is undermining the product's value.
+
+3. Breeze Wireless Earbuds – Quality consistency
+
+Customers appreciate the affordability and sound quality, but reports of charging failures, static, and disconnections suggest potential hardware or manufacturing inconsistencies.
+
+4. Cozy Knit Throw Blanket – Material quality
+
+The blanket receives praise for its appearance and softness, but shrinking, shedding, and unraveling suggest opportunities to improve material selection and manufacturing quality.
+
+5. Trailmark Hiking Backpack – Product description accuracy
+
+Customers have reported discrepancies involving sizing, color, and waterproofing. Improving listing accuracy could help reduce dissatisfaction and product returns.
+
+Data interpretation note: The positive, negative, and mixed columns are qualitative summaries of recurring themes, not numerical sentiment classifications. Some reviews are neutral, sarcastic, questions, or shipping-related comments. They remain included in the total of 22 reviews per product.
+
+For a company-wide review, I would recommend using these findings as an initial quality assessment rather than treating every complaint as a confirmed manufacturing defect.
+
+Analysis: This new prompt brings up similar and different results from the initial prompt. Instead of where it previously grouped most of the reviews as mixed, now it groups most of them under positive traits. One mistake that I did notice that I made, was that I should have specified how many reviews that the LLM defined as positive, negative, or mixed, instead of only finding the whole number of reviews.
+
+My analysis:
+R001,Trailmark Hiking Backpack,Smells like chemicals out of the box. Took a week to air out. [Clearly negative]
+R005,Cozy Knit Throw Blanket,Not warm enough for winter. Fine as a decorative throw. [Negative, but still positive. Mixed, leaning towards negative]
+R024,Lumen Smart Bulbs (4-Pack),"wow so smart, it forgot all my settings after an update. genius." [Clearly sarcasm, negative]
+R026,Lumen Smart Bulbs (4-Pack),Package arrived a day early. [Positive? Does not really describe product, so I will say unrelated]
+R050,Hearth Electric Kettle,I use it for pour-over coffee and the gooseneck spout gives great control. [Clearly positive]
+R068,Cozy Knit Throw Blanket,"Wonderful, it's itchy AND thin. Two for one." [Clearly sarcasm, negative]
+R069,Cozy Knit Throw Blanket,love love love!!! buying another [Clearly positive]
+R072,Breeze Wireless Earbuds,Not as good as my AirPods but for a quarter of the price I can't complain. [Positive, but negative. Mixed.]
+R087,Cozy Knit Throw Blanket,What are the dimensions? The listing doesn't say. [Does not describe product, unrelated]
+R109,Breeze Wireless Earbuds,Charging case feels cheap and the lid snapped off within a month. [Clearly negative]
+
+Prompt: Assume that you are a senior data analyst for a company that created 5 different products. For these ten reviews, state if they are positive, negative, or completely unrelated. Be sure to give a through description as to why you labelled the reviews as such. [10 reviews listed]
+LLM Analysis:Sentiment Analysis of Product Reviews
+As a senior data analyst, I would classify each review based on the customer's overall sentiment toward the product or their experience using it.
+
+The three classifications are:
+- Positive: The review expresses satisfaction, praise, or a favorable experience with the product.
+- Negative: The review expresses dissatisfaction, criticism, or problems with the product.
+- Completely Unrelated: The review does not provide an opinion about the product's quality, performance, or customer experience. It may ask a question or provide information that does not indicate sentiment.
+Individual Review Analysis
+Review ID	Product	Sentiment
+R001	Trailmark Hiking Backpack	Negative
+R005	Cozy Knit Throw Blanket	Negative
+R024	Lumen Smart Bulbs (4-Pack)	Negative
+R026	Lumen Smart Bulbs (4-Pack)	Completely Unrelated
+R050	Hearth Electric Kettle	Positive
+R068	Cozy Knit Throw Blanket	Negative
+R069	Cozy Knit Throw Blanket	Positive
+R072	Breeze Wireless Earbuds	Positive
+R087	Cozy Knit Throw Blanket	Completely Unrelated
+R109	Breeze Wireless Earbuds	Negative
+
+Detailed Explanations
+R001 – Trailmark Hiking Backpack
+Negative
+Review: "Smells like chemicals out of the box. Took a week to air out."
+
+The customer expresses dissatisfaction with the backpack's condition upon arrival. The chemical smell is an undesirable characteristic that negatively affects the initial customer experience. Additionally, having to leave the backpack outside or in an open area for an entire week to eliminate the smell is an inconvenience.
+
+Although the customer does not explicitly state that they dislike the backpack overall, the review focuses on a product defect or unpleasant characteristic. Therefore, it is negative.
+
+R005 – Cozy Knit Throw Blanket
+Negative
+Review: "Not warm enough for winter. Fine as a decorative throw."
+
+The customer indicates that the blanket does not adequately fulfill its expected purpose of providing warmth during winter. Although they acknowledge that it works as a decorative throw, this is a limited positive observation rather than an endorsement of its primary functionality.
+
+The overall sentiment is negative because the product does not meet the customer's expectations for warmth.
+
+R024 – Lumen Smart Bulbs (4-Pack)
+Negative
+Review: "wow so smart, it forgot all my settings after an update. genius."
+
+This review uses sarcasm to communicate dissatisfaction with the smart bulbs. Although the words "wow so smart" and "genius" might initially appear positive, their context indicates the opposite.
+
+The customer is criticizing the product for losing its saved settings following a software update. This suggests a reliability or software functionality issue.
+
+The sarcastic language reinforces the customer's frustration, making this a negative review.
+
+R026 – Lumen Smart Bulbs (4-Pack)
+Completely Unrelated
+Review: "Package arrived a day early."
+
+The customer is simply reporting that their package arrived earlier than expected. While this might indicate a positive delivery experience, it does not provide information about the smart bulbs themselves.
+
+There is no mention of the product's quality, functionality, reliability, or performance.
+
+For this analysis, the review should be classified as completely unrelated because it concerns shipping rather than the product.
+
+R050 – Hearth Electric Kettle
+Positive
+Review: "I use it for pour-over coffee and the gooseneck spout gives great control."
+
+The customer expresses satisfaction with the kettle's functionality, specifically highlighting the usefulness of its gooseneck spout.
+
+The review identifies a specific product feature that provides practical value. The phrase "gives great control" indicates that the kettle performs well for the customer's intended purpose.
+
+Because the customer praises a functional feature and describes a positive usage experience, this review is positive.
+
+R068 – Cozy Knit Throw Blanket
+Negative
+Review: "Wonderful, it's itchy AND thin. Two for one."
+
+This review uses sarcasm to express dissatisfaction with the blanket's quality.
+
+The customer identifies two undesirable characteristics: the material is uncomfortable against the skin, and the blanket is too thin. The phrases "Wonderful" and "Two for one" are sarcastic rather than genuine expressions of satisfaction.
+
+Both criticisms suggest that the product fails to provide the comfort and quality the customer expected.
+
+Therefore, this review is negative.
+
+R069 – Cozy Knit Throw Blanket
+Positive
+Review: "love love love!!! buying another"
+
+This is a clearly positive review. The customer expresses strong enthusiasm through repeated use of the word "love" and multiple exclamation marks.
+
+Furthermore, the customer's intention to purchase another blanket demonstrates satisfaction with the original purchase.
+
+The willingness to make a repeat purchase is a particularly strong indicator of positive customer sentiment.
+
+Therefore, this review is positive.
+
+R072 – Breeze Wireless Earbuds
+Positive
+Review: "Not as good as my AirPods but for a quarter of the price I can't complain."
+
+Although the customer compares the earbuds unfavorably to AirPods, the overall sentiment is positive.
+
+The customer acknowledges that the earbuds may not offer the same quality as a more expensive alternative. However, they consider the significantly lower price a worthwhile trade-off.
+
+The phrase "I can't complain" indicates that the customer is generally satisfied with what they received for the price.
+
+This review demonstrates positive value perception: the product may not be the best available, but it provides satisfactory performance relative to its cost.
+
+R087 – Cozy Knit Throw Blanket
+Completely Unrelated
+Review: "What are the dimensions?"
+
+The customer is asking a question about the blanket's measurements rather than expressing an opinion about the product.
+
+There is no indication of satisfaction or dissatisfaction, nor does the customer describe any experience using the blanket.
+
+Although the question is relevant to the product listing, it does not provide enough information to determine customer sentiment.
+
+Therefore, it is classified as completely unrelated.
+
+R109 – Breeze Wireless Earbuds
+Negative
+Review: "Charging case feels cheap and the lid snapped off within a month."
+
+The customer expresses dissatisfaction with the earbuds' charging case, specifically criticizing its build quality and durability.
+
+The phrase "feels cheap" indicates that the customer perceives the materials or construction as low quality. More importantly, the lid breaking within a month suggests a significant durability issue.
+
+The short timeframe in which the damage occurred further reinforces the negative experience and indicates that the product may not meet reasonable expectations for longevity.
+
+Therefore, this review is negative.
+
+Overall Sentiment Summary
+10 Reviews Analyzed
+Positive
+3 (30%)
+
+
+
+Negative
+5 (50%)
+
+
+
+Completely Unrelated
+2 (20%)
+
+
+
+
+Key Findings
+1. Negative sentiment is the most common: Half of the reviews express dissatisfaction, suggesting potential opportunities to improve product quality, functionality, and durability.
+
+2. Positive customer experiences: Three reviews express satisfaction, particularly with the Hearth Electric Kettle's functionality, the Cozy Knit Throw Blanket's appeal, and the Breeze Wireless Earbuds' value for money.
+
+3. Unrelated feedback: Two reviews concern shipping information or product inquiries rather than actual product experiences.
+
+4. Sarcasm matters: Reviews R024 and R068 demonstrate why sentiment analysis must consider context rather than relying exclusively on individual positive or negative words.
+Final Conclusion
+Out of the ten reviews, 50% are negative, 30% are positive, and 20% are completely unrelated.
+
+From a business perspective, the company should prioritize investigating recurring product-quality concerns, particularly durability, material quality, and software reliability. It should also recognize the features customers appreciate and use those insights to guide future product improvements.
+
+Analytical note: The completely unrelated category is being used strictly to mean that a review does not communicate product sentiment. Both unrelated reviews are still relevant to other business functions, such as shipping operations and customer support.
+
+Analysis: Apart from one review which the LLM marked as negative, where I marked mixed (granted, it could also be interpretted as negative), the LLM accurately matched my initial expectations of the reviews regarding the positive, negative, or unrelated outlook on the reviews. A change is not needed therefore.
+
+Final Analysis: The techniques used include Role prompting, where I asked the LLM to act as a senior data analyst, and context giving the simple context of them working for a company with these products. Additionally, output format was utilized to have the table to displayed in a google sheets format once. 
+These techniques, I will be honest, did not appear to change the quality of the output at all. The model was already able to differentiate sarcastic reviews from legitimate ones, and was even able to discern reviews that were completely unrelated. Not positive, negative, or even mixed. It was even able to accurately assess the ten reviews that I picked out. As such, I do not really believe that these techniques made a difference, apart from output format changing how the LLM displayed the information for me to utilize.
