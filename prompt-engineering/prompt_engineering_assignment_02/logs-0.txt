@@ -1,0 +1,138 @@
+
+
+---!
+CSV:
+product-reviews.csv
+
+Prompt (ver 0):
+Are these reviews positive or negative?
+
+Response:
+The dataset contains a **mix of positive, negative, and neutral/mixed reviews**, as well as several reviews that are sarcastic or non-evaluative (questions, unboxing status, shipping complaints).
+
+---
+
+### Summary Breakdown
+* **Positive (~40 reviews):** Praise product quality, durability, ease of use, or value.
+* **Negative (~48 reviews):** Product failures, poor quality, design flaws, privacy issues, or strong sarcasm (e.g., R022, R024, R030, R066, R068, R078, R080, R085, R098, R108).
+* **Neutral / Mixed / Other (~22 reviews):** Mixed pros/cons, lukewarm "fine/ok" reactions, questions, or comments solely about shipping/unopened gifts.
+
+---
+
+### Individual Review Classification
+
+| Review ID | Product | Sentiment | Key Reason / Notes |
+| :--- | :--- | :--- | :--- |
+| **R001** | Trailmark Hiking Backpack | **Negative** | Strong chemical smell out of the box |
+| **R002** | Breeze Wireless Earbuds | **Mixed / Positive** | Misleading noise cancelling, but decent and good for gym |
+| **R003** | Breeze Wireless Earbuds | **Negative** | Earbud broke; unresponsive customer support |
+| **R004** | Trailmark Hiking Backpack | **Negative** | Uncomfortable straps; returning |
+| **R005** | Cozy Knit Throw Blanket | **Mixed / Neutral** | Not warm enough, but fine decoratively |
+| **R006** | Breeze Wireless Earbuds | **Positive** | Clear calls, solid battery, perfect for commute |
+| **R007** | Trailmark Hiking Backpack | **Mixed / Neutral** | Decent for price, not for serious backpacking |
+| **R008** | Lumen Smart Bulbs (4-Pack) | **Mixed / Negative** | Good colors, but frequent Wi-Fi disconnects |
+| **R009** | Lumen Smart Bulbs (4-Pack) | **Mixed / Positive** | Terrible app/setup, but great bulbs once working |
+| **R010** | Hearth Electric Kettle | **Positive** | Repeat purchase; durable after a year |
+| **R011** | Cozy Knit Throw Blanket | **Negative** | Arrived stained |
+| **R012** | Lumen Smart Bulbs (4-Pack) | **Neutral / Question** | Product inquiry (Google Home vs. Alexa) |
+| **R013** | Hearth Electric Kettle | **Mixed / Neutral** | Broke after 6 weeks, though replacement works |
+| **R014** | Hearth Electric Kettle | **Mixed / Neutral** | Arrived dented; fast replacement; kettle is fine |
+| **R015** | Trailmark Hiking Backpack | **Negative** | Misleading size listing; too small |
+| **R016** | Trailmark Hiking Backpack | **Neutral** | Husband said it's just "fine" |
+| **R017** | Trailmark Hiking Backpack | **Positive** | Extremely durable ("bombproof") |
+| **R018** | Lumen Smart Bulbs (4-Pack) | **Negative** | Washed out colors |
+| **R019** | Trailmark Hiking Backpack | **Negative** | Fulfillment error (wrong size sent) |
+| **R020** | Trailmark Hiking Backpack | **Mixed / Positive** | Color mismatch, but still likes the bag |
+| **R021** | Trailmark Hiking Backpack | **Positive** | Great value; feels premium |
+| **R022** | Trailmark Hiking Backpack | **Negative** | Sarcastic ("sponge", "Ten stars"); not waterproof |
+| **R023** | Lumen Smart Bulbs (4-Pack) | **Positive** | Sunrise alarm feature works well |
+| **R024** | Lumen Smart Bulbs (4-Pack) | **Negative** | Sarcastic ("genius"); lost settings after update |
+| **R025** | Lumen Smart Bulbs (4-Pack) | **Negative** | Annoying buzzing noise when dimmed |
+| **R026** | Lumen Smart Bulbs (4-Pack) | **Positive / Neutral** | Shipping feedback (arrived early) |
+| **R027** | Hearth Electric Kettle | **Positive** | Fast boil, sleek aesthetics |
+| **R028** | Breeze Wireless Earbuds | **Negative** | Defective (constant static in earbud); returned |
+| **R029** | Breeze Wireless Earbuds | **Mixed / Neutral** | Acceptable for spoken word, bad for music |
+| **R030** | Hearth Electric Kettle | **Negative** | Sarcastic ("Fantastic"); switch broke after a week |
+| **R031** | Lumen Smart Bulbs (4-Pack) | **Negative** | Frequent app crashes and unresponsive bulbs |
+| **R032** | Hearth Electric Kettle | **Negative** | Keep-warm timer too short (useless) |
+| **R033** | Breeze Wireless Earbuds | **Positive** | Replaced expensive $200 earbuds; high praise |
+| **R034** | Lumen Smart Bulbs (4-Pack) | **Positive** | Easy setup, vibrant colors, good scheduling |
+| **R035** | Lumen Smart Bulbs (4-Pack) | **Positive** | Bought a second pack for the house |
+| **R036** | Cozy Knit Throw Blanket | **Mixed / Positive** | Wrong color received, but liked the blanket anyway |
+| **R037** | Lumen Smart Bulbs (4-Pack) | **Neutral** | Basic function; completely indifferent |
+| **R038** | Breeze Wireless Earbuds | **Neutral** | "Not bad not great" |
+| **R039** | Hearth Electric Kettle | **Positive** | Impressed coworkers in office |
+| **R040** | Cozy Knit Throw Blanket | **Positive** | Durable against toddler use; still looks new |
+| **R041** | Trailmark Hiking Backpack | **Mixed / Positive** | Pockets are chaotic, but very well constructed |
+| **R042** | Cozy Knit Throw Blanket | **Neutral** | Average / "Ok for the price" |
+| **R043** | Hearth Electric Kettle | **Neutral** | Average / "Does the job, nothing special" |
+| **R044** | Trailmark Hiking Backpack | **Positive** | Comfortable, durable, fits water bottle well |
+| **R045** | Cozy Knit Throw Blanket | **Positive** | Ideal weight for summer evenings |
+| **R046** | Cozy Knit Throw Blanket | **Positive** | Very soft and warm |
+| **R047** | Trailmark Hiking Backpack | **Positive** | 10/10 recommendation |
+| **R048** | Hearth Electric Kettle | **Negative** | Safety hazard (leaks near outlet) |
+| **R049** | Hearth Electric Kettle | **Negative** | Safety hazard (handle burned user) |
+| **R050** | Hearth Electric Kettle | **Positive** | Great pour control for coffee |
+| **R051** | Hearth Electric Kettle | **Negative** | Power cord is far too short |
+| **R052** | Breeze Wireless Earbuds | **Positive** | Exceeded skeptical expectations |
+| **R053** | Lumen Smart Bulbs (4-Pack) | **Negative** | Dead on arrival (1 bulb) |
+| **R054** | Breeze Wireless Earbuds | **Positive** | Comfortable, instant pairing |
+| **R055** | Hearth Electric Kettle | **Mixed / Positive** | Good temperature presets, but alert beep is too loud |
+| **R056** | Breeze Wireless Earbuds | **Positive** | Packaging damaged, but product works well |
+| **R057** | Hearth Electric Kettle | **Neutral / Negative** | Delayed and wet delivery; untested |
+| **R058** | Cozy Knit Throw Blanket | **Negative** | Severe shedding on furniture |
+| **R059** | Trailmark Hiking Backpack | **Mixed / Positive** | Great waterproofing, but needs better hip padding |
+| **R060** | Breeze Wireless Earbuds | **Mixed / Negative** | Great battery, but unusable microphone quality |
+| **R061** | Trailmark Hiking Backpack | **Positive** | Durable across a whole school year |
+| **R062** | Breeze Wireless Earbuds | **Negative** | Delivery took 3 weeks |
+| **R063** | Hearth Electric Kettle | **Mixed / Neutral** | Small capacity, but boils quickly |
+| **R064** | Trailmark Hiking Backpack | **Positive** | Comfortable on 5-day trek; spacious |
+| **R065** | Trailmark Hiking Backpack | **Negative** | Zipper broke on first use |
+| **R066** | Breeze Wireless Earbuds | **Negative** | Sarcastic ("Great feature"); earbuds fall out |
+| **R067** | Trailmark Hiking Backpack | **Neutral / Question** | Product inquiry (laptop sleeve size) |
+| **R068** | Cozy Knit Throw Blanket | **Negative** | Sarcastic ("Wonderful"); scratchy and thin |
+| **R069** | Cozy Knit Throw Blanket | **Positive** | Enthusiastic repeat buyer |
+| **R070** | Lumen Smart Bulbs (4-Pack) | **Neutral / Positive** | Likes warm white; doesn't use colors |
+| **R071** | Cozy Knit Throw Blanket | **Mixed / Negative** | Cozy, but shrank in cold water wash |
+| **R072** | Breeze Wireless Earbuds | **Mixed / Positive** | Good budget alternative to AirPods |
+| **R073** | Lumen Smart Bulbs (4-Pack) | **Mixed / Neutral** | Acceptable, but plans to upgrade brands next time |
+| **R074** | Hearth Electric Kettle | **Negative** | Heavy mineral buildup after one month |
+| **R075** | Cozy Knit Throw Blanket | **Mixed** | Too small, but very soft |
+| **R076** | Breeze Wireless Earbuds | **Negative** | "Worst earbuds I've ever owned" |
+| **R077** | Breeze Wireless Earbuds | **Positive** | Great sound, strong bass, stay in place during runs |
+| **R078** | Cozy Knit Throw Blanket | **Negative** | Sarcastic ("thrilled"); persistent warehouse odor |
+| **R079** | Cozy Knit Throw Blanket | **Positive** | Daughters loved them as gifts |
+| **R080** | Trailmark Hiking Backpack | **Negative** | Sarcastic ("just love when"); buckle broke on mountain |
+| **R081** | Cozy Knit Throw Blanket | **Positive** | Holds up to washing, no pilling |
+| **R082** | Trailmark Hiking Backpack | **Positive** | Perfect size, useful hydration sleeve |
+| **R083** | Cozy Knit Throw Blanket | **Positive** | Looks high-end, gets compliments |
+| **R084** | Lumen Smart Bulbs (4-Pack) | **Positive** | Great customer support resolved setup issue |
+| **R085** | Hearth Electric Kettle | **Negative** | Sarcastic; water tastes like plastic |
+| **R086** | Lumen Smart Bulbs (4-Pack) | **Positive** | Reliable Alexa integration helps user with limited mobility |
+| **R087** | Cozy Knit Throw Blanket | **Neutral / Question** | Product inquiry (dimensions) |
+| **R088** | Lumen Smart Bulbs (4-Pack) | **Positive** | Music sync mode works well at parties |
+| **R089** | Trailmark Hiking Backpack | **Neutral / Positive** | First impression only ("looks nice") |
+| **R090** | Hearth Electric Kettle | **Positive** | Attractive, fast boil, quiet |
+| **R091** | Hearth Electric Kettle | **Negative** | Lid won't stay shut; escaping steam hazard |
+| **R092** | Cozy Knit Throw Blanket | **Neutral / Positive** | Basic blanket that functions as expected |
+| **R093** | Cozy Knit Throw Blanket | **Negative** | Delivery issue (left in rain) |
+| **R094** | Breeze Wireless Earbuds | **Neutral** | Unopened gift |
+| **R095** | Trailmark Hiking Backpack | **Negative** | Stitching unraveled after two uses |
+| **R096** | Lumen Smart Bulbs (4-Pack) | **Negative** | Intrusive account and location requirements |
+| **R097** | Breeze Wireless Earbuds | **Mixed / Negative** | Good sound, but frustrating touch controls |
+| **R098** | Lumen Smart Bulbs (4-Pack) | **Negative** | Sarcastic; router reboot required to turn on lights |
+| **R099** | Cozy Knit Throw Blanket | **Mixed / Negative** | Attractive look, but snags easily / impractical |
+| **R100** | Lumen Smart Bulbs (4-Pack) | **Negative** | Failed after one month; complete waste |
+| **R101** | Breeze Wireless Earbuds | **Neutral / Question** | Product inquiry (PS5 compatibility) |
+| **R102** | Cozy Knit Throw Blanket | **Positive** | "Best throw blanket I've owned" |
+| **R103** | Breeze Wireless Earbuds | **Negative** | Tinny sound; hurts ears |
+| **R104** | Hearth Electric Kettle | **Neutral** | Utilitarian; "It's a kettle" |
+| **R105** | Hearth Electric Kettle | **Positive** | Minor color wish, otherwise "perfect" |
+| **R106** | Hearth Electric Kettle | **Positive** | Fast and aesthetically pleasing |
+| **R107** | Cozy Knit Throw Blanket | **Negative** | Unraveling after a month |
+| **R108** | Breeze Wireless Earbuds | **Negative** | Sarcastic ("Truly impressive"); frequent disconnects |
+| **R109** | Breeze Wireless Earbuds | **Negative** | Cheap case, lid broke within a month |
+| **R110** | Lumen Smart Bulbs (4-Pack) | **Negative** | Dimmer than advertised 60W equivalent |
+
+---!
+Log:[Malformed CSV syntax in results: org.apache.commons.csv.CSVException: Invalid character between encapsulated token and delimiter at line: 37, position: 2,939, Line count mismatch: expected 110 lines, got 120., Line 1: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 6., Line 2: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 3: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 4: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 4., Line 5: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 15., Line 6: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 4., Line 7: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 8: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 9: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 10: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 11: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 12: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 2., Line 13: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 14: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 15: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 2., Line 16: unexpected review_id '| **R006** | Breeze Wireless Earbuds | **Positive** | Clear calls' (not in source CSV)., Line 16 (| **R006** | Breeze Wireless Earbuds | **Positive** | Clear calls): invalid sentiment 'solid battery' (expected POSITIVE, NEGATIVE, or NEUTRAL)., Line 17: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 2., Line 18: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 2., Line 19: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 2., Line 20: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 21: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 22: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 23: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 2., Line 24: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 25: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 26: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 27: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 28: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 29: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 30: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 2., Line 31: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 32: malformed CSV row (org.apache.commons.csv.CSVException: Invalid character between encapsulated token and delimiter at line: 1, position: 89)., Line 33: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 34: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 35: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 36: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 37: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 2., Line 38: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 39: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 2., Line 40: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 41: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 42: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 43: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 44: unexpected review_id '| **R034** | Lumen Smart Bulbs (4-Pack) | **Positive** | Easy setup' (not in source CSV)., Line 44 (| **R034** | Lumen Smart Bulbs (4-Pack) | **Positive** | Easy setup): invalid sentiment 'vibrant colors' (expected POSITIVE, NEGATIVE, or NEUTRAL)., Line 45: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 46: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 2., Line 47: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 48: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 49: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 50: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 51: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 2., Line 52: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 53: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 2., Line 54: unexpected review_id '| **R044** | Trailmark Hiking Backpack | **Positive** | Comfortable' (not in source CSV)., Line 54 (| **R044** | Trailmark Hiking Backpack | **Positive** | Comfortable): invalid sentiment 'durable' (expected POSITIVE, NEGATIVE, or NEUTRAL)., Line 55: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 56: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 57: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 58: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 59: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 60: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 61: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 62: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 63: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 64: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 2., Line 65: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 2., Line 66: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 2., Line 67: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 68: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 69: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 2., Line 70: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 2., Line 71: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 72: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 73: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 2., Line 74: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 75: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 76: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 77: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 78: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 79: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 80: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 81: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 2., Line 82: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 83: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 2., Line 84: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 85: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 2., Line 86: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 87: unexpected review_id '| **R077** | Breeze Wireless Earbuds | **Positive** | Great sound' (not in source CSV)., Line 87 (| **R077** | Breeze Wireless Earbuds | **Positive** | Great sound): invalid sentiment 'strong bass' (expected POSITIVE, NEGATIVE, or NEUTRAL)., Line 88: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 89: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 90: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 91: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 2., Line 92: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 2., Line 93: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 2., Line 94: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 95: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 96: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 97: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 98: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 99: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 100: unexpected review_id '| **R090** | Hearth Electric Kettle | **Positive** | Attractive' (not in source CSV)., Line 100 (| **R090** | Hearth Electric Kettle | **Positive** | Attractive): invalid sentiment 'fast boil' (expected POSITIVE, NEGATIVE, or NEUTRAL)., Line 101: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 102: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 103: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 104: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 105: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 106: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 107: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 2., Line 108: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 109: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 2., Line 110: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 111: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 112: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 113: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 114: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 115: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 2., Line 116: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 117: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 118: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 119: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 2., Line 120: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Missing review_id: R001, Missing review_id: R002, Missing review_id: R003, Missing review_id: R004, Missing review_id: R005, Missing review_id: R006, Missing review_id: R007, Missing review_id: R008, Missing review_id: R009, Missing review_id: R010, Missing review_id: R011, Missing review_id: R012, Missing review_id: R013, Missing review_id: R014, Missing review_id: R015, Missing review_id: R016, Missing review_id: R017, Missing review_id: R018, Missing review_id: R019, Missing review_id: R020, Missing review_id: R021, Missing review_id: R022, Missing review_id: R023, Missing review_id: R024, Missing review_id: R025, Missing review_id: R026, Missing review_id: R027, Missing review_id: R028, Missing review_id: R029, Missing review_id: R030, Missing review_id: R031, Missing review_id: R032, Missing review_id: R033, Missing review_id: R034, Missing review_id: R035, Missing review_id: R036, Missing review_id: R037, Missing review_id: R038, Missing review_id: R039, Missing review_id: R040, Missing review_id: R041, Missing review_id: R042, Missing review_id: R043, Missing review_id: R044, Missing review_id: R045, Missing review_id: R046, Missing review_id: R047, Missing review_id: R048, Missing review_id: R049, Missing review_id: R050, Missing review_id: R051, Missing review_id: R052, Missing review_id: R053, Missing review_id: R054, Missing review_id: R055, Missing review_id: R056, Missing review_id: R057, Missing review_id: R058, Missing review_id: R059, Missing review_id: R060, Missing review_id: R061, Missing review_id: R062, Missing review_id: R063, Missing review_id: R064, Missing review_id: R065, Missing review_id: R066, Missing review_id: R067, Missing review_id: R068, Missing review_id: R069, Missing review_id: R070, Missing review_id: R071, Missing review_id: R072, Missing review_id: R073, Missing review_id: R074, Missing review_id: R075, Missing review_id: R076, Missing review_id: R077, Missing review_id: R078, Missing review_id: R079, Missing review_id: R080, Missing review_id: R081, Missing review_id: R082, Missing review_id: R083, Missing review_id: R084, Missing review_id: R085, Missing review_id: R086, Missing review_id: R087, Missing review_id: R088, Missing review_id: R089, Missing review_id: R090, Missing review_id: R091, Missing review_id: R092, Missing review_id: R093, Missing review_id: R094, Missing review_id: R095, Missing review_id: R096, Missing review_id: R097, Missing review_id: R098, Missing review_id: R099, Missing review_id: R100, Missing review_id: R101, Missing review_id: R102, Missing review_id: R103, Missing review_id: R104, Missing review_id: R105, Missing review_id: R106, Missing review_id: R107, Missing review_id: R108, Missing review_id: R109, Missing review_id: R110]

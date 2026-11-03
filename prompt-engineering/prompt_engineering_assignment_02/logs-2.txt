@@ -1,0 +1,126 @@
+
+
+---!
+CSV:
+product-reviews.csv
+
+Prompt (ver 2):
+You are a sentiment analysis agent. Designed to grade the sentiment of reviews.
+Are these reviews positive or negative?
+The reviews are for various products sold online. Sentiment analysis will be programmatically parsed for completeness and analysis.
+Reply in one line, ordered review-id sentiment reason.
+
+Response:
+R001 Negative Chemical smell out of the box took a week to air out.
+R002 Positive Decent noise isolation and good for gym use despite lack of true noise cancellation.
+R003 Negative Left earbud failed to charge after two weeks and customer support was unresponsive.
+R004 Negative Straps cause shoulder pain after an hour, leading to a return.
+R005 Neutral Fine as a decorative throw but lacks warmth for winter.
+R006 Positive Reliable battery and clear calls make it ideal for commuting.
+R007 Positive Decent value for money, though not suited for serious backpacking.
+R008 Negative Frequent Wi-Fi disconnections undermine the bright and colorful lighting.
+R009 Positive Great bulbs that users will love once past the difficult app setup.
+R010 Positive High satisfaction leading to a second purchase that remains durable after a year.
+R011 Negative Item arrived stained upon delivery.
+R012 Neutral Customer inquiry regarding smart platform compatibility with no sentiment expressed.
+R013 Positive Prompt customer service replacement resolved the issue after the initial unit failed.
+R014 Positive Fast customer service replacement for transit damage and satisfactory product quality.
+R015 Negative Capacity is far too small for overnight trips contrary to the product listing.
+R016 Neutral Indifferent reaction with no strong positive or negative sentiment.
+R017 Positive Exceptional durability and ruggedness through harsh conditions with zero damage.
+R018 Negative Colors appear washed out when compared to competing brands.
+R019 Negative Seller fulfilled the order with the incorrect size.
+R020 Positive Bag is good quality despite the color differing from listing photos.
+R021 Positive Great value and feels significantly more expensive than its price.
+R022 Negative Sarcastic criticism of failed waterproofing that soaked gear.
+R023 Positive Sunrise alarm feature provides significant daily convenience.
+R024 Negative Sarcastic complaint about smart settings being erased after a software update.
+R025 Negative Annoying buzzing sound occurs when dimmed below thirty percent.
+R026 Positive Delivery arrived earlier than expected.
+R027 Positive Fast boiling speed and sleek countertop aesthetic.
+R028 Negative Persistent static in one ear forced a product return.
+R029 Neutral Mediocre audio acceptable for spoken podcasts but inadequate for music.
+R030 Negative Sarcastic review detailing a broken switch after only one week of use.
+R031 Negative Constant application crashes and unresponsive bulbs cause frustration.
+R032 Negative Short thirty-minute keep-warm duration fails to meet user needs.
+R033 Positive Outstanding performance that completely replaced a much more expensive alternative.
+R034 Positive Quick setup, vibrant colors, and useful scheduling capabilities.
+R035 Positive Repeat purchase of another multi-pack demonstrates high satisfaction.
+R036 Positive Customer pleased with overall quality despite receiving the wrong color.
+R037 Neutral Factual statement describing basic bulb functionality without sentiment.
+R038 Neutral Mediocre product that is neither particularly good nor bad.
+R039 Positive Attractive office appliance that generates compliments from colleagues.
+R040 Positive Impressive durability and resilience against heavy toddler use.
+R041 Positive High build quality outweighs personal frustration with excessive pockets.
+R042 Neutral Merely acceptable product quality given the price point.
+R043 Neutral Unremarkable item that performs basic functions adequately.
+R044 Positive Comfortable, durable, and thoughtfully designed with functional water bottle pockets.
+R045 Positive Ideal weight and comfort for summer evening use.
+R046 Positive Soft, warm, and highly enjoyed by the owner and pet.
+R047 Positive Perfect recommendation for beginner hikers.
+R048 Negative Hazardous bottom leak creates an electrical safety risk.
+R049 Negative Severe burn hazard caused by a dangerously hot handle.
+R050 Positive Gooseneck spout provides excellent pour-over coffee control.
+R051 Negative Inconveniently short power cord limits usable placement.
+R052 Positive High satisfaction that overcame initial skepticism, prompting repeat purchase intent.
+R053 Negative Multiple-pack included a unit that was dead on arrival.
+R054 Positive Extremely comfortable fit and instant device pairing.
+R055 Positive Excellent temperature presets for tea despite an overly loud completion beep.
+R056 Positive Product performs well despite being delivered in damaged exterior packaging.
+R057 Negative Delayed shipping and water-damaged packaging created a poor delivery experience.
+R058 Negative Excessive shedding leaves fuzz all over furniture.
+R059 Positive Reliable waterproof performance in heavy rain despite limited hip belt padding.
+R060 Negative Poor microphone quality ruins call functionality despite solid battery life.
+R061 Positive High durability that withstood an entire school year of daily use.
+R062 Negative Unacceptable three-week shipping delay.
+R063 Neutral Fast boiling performance balanced by limited liquid capacity.
+R064 Positive Comfortable straps and ample storage supported a multi-day trek.
+R065 Negative Immediate zipper breakage on the first hike shows poor durability.
+R066 Negative Sarcastic complaint regarding earbuds constantly falling out during normal head movement.
+R067 Neutral Informational question regarding compartment dimensions without sentiment.
+R068 Negative Sarcastic remark criticizing thin and uncomfortable scratchy material.
+R069 Positive Enthusiastic praise and definite intent to repurchase.
+R070 Positive Cozy and appealing warm white light quality despite ignoring color modes.
+R071 Negative Item shrank significantly in the wash despite following cold-water care instructions.
+R072 Positive Great value for money delivering satisfactory performance at a low price.
+R073 Neutral Acceptable temporary value, but not compelling enough for brand loyalty.
+R074 Negative Premature mineral buildup causes disappointment even when using filtered water.
+R075 Negative Disappointingly small dimensions fail to provide adequate coverage despite soft fabric.
+R076 Negative Total dissatisfaction and strong recommendation against purchasing.
+R077 Positive Punchy bass, secure fit during exercise, and great sound value.
+R078 Negative Sarcastic complaint about persistent warehouse odor surviving multiple washes.
+R079 Positive Highly successful and well-received holiday gift for family members.
+R080 Negative Sarcastic review regarding sudden buckle failure during a hike.
+R081 Positive Exceptional wash durability without fabric pilling over multiple cycles.
+R082 Positive Well-proportioned daypack with a valuable hydration bladder sleeve.
+R083 Positive Premium appearance that garners frequent compliments from visitors.
+R084 Positive Effective and swift customer support resolved initial pairing difficulties.
+R085 Negative Sarcastic frustration regarding foul plastic taste imparted to boiled water.
+R086 Positive Flawless smart home integration providing life-changing accessibility.
+R087 Neutral Product inquiry pointing out missing dimension specifications in the listing.
+R088 Positive Entertaining music synchronization feature that enhances social gatherings.
+R089 Positive Favorable initial impression of product aesthetics upon delivery.
+R090 Positive Beautiful, quiet, and fast-boiling unit with zero complaints.
+R091 Negative Faulty lid mechanism allows excessive steam escape.
+R092 Positive Fulfills its basic intended function of providing warmth.
+R093 Negative Delivery driver negligence left the package exposed to rain.
+R094 Neutral Unopened gift with no usage experience or product sentiment.
+R095 Negative Premature structural failure with unraveling stitching after only two uses.
+R096 Negative Excessive privacy intrusion requiring account registration and location tracking.
+R097 Negative Frustratingly sensitive touch controls detract from good audio quality.
+R098 Negative Sarcastic criticism of poor connectivity requiring router reboots to operate lights.
+R099 Negative Attractive appearance undermined by impractical open-knit snagging.
+R100 Negative Complete hardware failure after one month represents a waste of money.
+R101 Neutral Technical inquiry regarding gaming console compatibility.
+R102 Positive Exceptional softness, substantial weight, and superior warmth.
+R103 Negative Tinny audio and physical ear discomfort after an hour of use.
+R104 Neutral Purely matter-of-fact description of basic appliance operation.
+R105 Positive Near-perfect execution with only a minor desire for expanded color options.
+R106 Positive Fast, aesthetically pleasing, and effective boiling performance.
+R107 Negative Poor craftsmanship resulting in material unraveling after a month.
+R108 Negative Sarcastic critique of severe connection dropouts within three days of use.
+R109 Negative Subpar materials and fragile construction led to a snapped case lid.
+R110 Negative Insufficient light output failing to match advertised 60W brightness equivalence.
+
+---!
+Log:[Line 1: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 2: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 3: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 4: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 2., Line 5: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 6: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 7: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 2., Line 8: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 9: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 10: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 11: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 12: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 13: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 14: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 15: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 16: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 17: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 18: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 19: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 20: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 21: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 22: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 23: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 24: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 25: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 26: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 27: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 28: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 29: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 30: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 31: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 32: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 33: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 34: unexpected review_id 'R034 Positive Quick setup' (not in source CSV)., Line 34 (R034 Positive Quick setup): invalid sentiment 'vibrant colors' (expected POSITIVE, NEGATIVE, or NEUTRAL)., Line 35: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 36: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 37: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 38: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 39: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 40: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 41: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 42: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 43: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 44: unexpected review_id 'R044 Positive Comfortable' (not in source CSV)., Line 44 (R044 Positive Comfortable): invalid sentiment 'durable' (expected POSITIVE, NEGATIVE, or NEUTRAL)., Line 45: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 46: unexpected review_id 'R046 Positive Soft' (not in source CSV)., Line 46 (R046 Positive Soft): invalid sentiment 'warm' (expected POSITIVE, NEGATIVE, or NEUTRAL)., Line 47: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 48: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 49: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 50: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 51: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 52: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 2., Line 53: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 54: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 55: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 56: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 57: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 58: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 59: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 60: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 61: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 62: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 63: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 64: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 65: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 66: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 67: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 68: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 69: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 70: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 71: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 72: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 73: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 2., Line 74: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 75: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 76: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 77: unexpected review_id 'R077 Positive Punchy bass' (not in source CSV)., Line 77 (R077 Positive Punchy bass): invalid sentiment 'secure fit during exercise' (expected POSITIVE, NEGATIVE, or NEUTRAL)., Line 78: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 79: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 80: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 81: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 82: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 83: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 84: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 85: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 86: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 87: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 88: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 89: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 90: unexpected review_id 'R090 Positive Beautiful' (not in source CSV)., Line 90 (R090 Positive Beautiful): invalid sentiment 'quiet' (expected POSITIVE, NEGATIVE, or NEUTRAL)., Line 91: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 92: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 93: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 94: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 95: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 96: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 97: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 98: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 99: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 100: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 101: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 102: unexpected review_id 'R102 Positive Exceptional softness' (not in source CSV)., Line 102 (R102 Positive Exceptional softness): invalid sentiment 'substantial weight' (expected POSITIVE, NEGATIVE, or NEUTRAL)., Line 103: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 104: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 105: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 106: unexpected review_id 'R106 Positive Fast' (not in source CSV)., Line 106 (R106 Positive Fast): invalid sentiment 'aesthetically pleasing' (expected POSITIVE, NEGATIVE, or NEUTRAL)., Line 107: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 108: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 109: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Line 110: invalid format — expected 3 CSV fields (review_id, sentiment, reason), got 1., Missing review_id: R001, Missing review_id: R002, Missing review_id: R003, Missing review_id: R004, Missing review_id: R005, Missing review_id: R006, Missing review_id: R007, Missing review_id: R008, Missing review_id: R009, Missing review_id: R010, Missing review_id: R011, Missing review_id: R012, Missing review_id: R013, Missing review_id: R014, Missing review_id: R015, Missing review_id: R016, Missing review_id: R017, Missing review_id: R018, Missing review_id: R019, Missing review_id: R020, Missing review_id: R021, Missing review_id: R022, Missing review_id: R023, Missing review_id: R024, Missing review_id: R025, Missing review_id: R026, Missing review_id: R027, Missing review_id: R028, Missing review_id: R029, Missing review_id: R030, Missing review_id: R031, Missing review_id: R032, Missing review_id: R033, Missing review_id: R034, Missing review_id: R035, Missing review_id: R036, Missing review_id: R037, Missing review_id: R038, Missing review_id: R039, Missing review_id: R040, Missing review_id: R041, Missing review_id: R042, Missing review_id: R043, Missing review_id: R044, Missing review_id: R045, Missing review_id: R046, Missing review_id: R047, Missing review_id: R048, Missing review_id: R049, Missing review_id: R050, Missing review_id: R051, Missing review_id: R052, Missing review_id: R053, Missing review_id: R054, Missing review_id: R055, Missing review_id: R056, Missing review_id: R057, Missing review_id: R058, Missing review_id: R059, Missing review_id: R060, Missing review_id: R061, Missing review_id: R062, Missing review_id: R063, Missing review_id: R064, Missing review_id: R065, Missing review_id: R066, Missing review_id: R067, Missing review_id: R068, Missing review_id: R069, Missing review_id: R070, Missing review_id: R071, Missing review_id: R072, Missing review_id: R073, Missing review_id: R074, Missing review_id: R075, Missing review_id: R076, Missing review_id: R077, Missing review_id: R078, Missing review_id: R079, Missing review_id: R080, Missing review_id: R081, Missing review_id: R082, Missing review_id: R083, Missing review_id: R084, Missing review_id: R085, Missing review_id: R086, Missing review_id: R087, Missing review_id: R088, Missing review_id: R089, Missing review_id: R090, Missing review_id: R091, Missing review_id: R092, Missing review_id: R093, Missing review_id: R094, Missing review_id: R095, Missing review_id: R096, Missing review_id: R097, Missing review_id: R098, Missing review_id: R099, Missing review_id: R100, Missing review_id: R101, Missing review_id: R102, Missing review_id: R103, Missing review_id: R104, Missing review_id: R105, Missing review_id: R106, Missing review_id: R107, Missing review_id: R108, Missing review_id: R109, Missing review_id: R110]
