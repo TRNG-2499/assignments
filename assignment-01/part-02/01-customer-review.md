@@ -2,7 +2,9 @@
 ### Model used: ChatGPT
 
 **Simple Prompt:**
+```text
 Are these reviews positive or negative?
+```
 
 **Typical output:**
 After reviewing all 110 product reviews in your CSV file, the overall sentiment is mixed, but leans slightly negative.
@@ -46,8 +48,10 @@ Conclusion: Negative reviews outnumber positive reviews by 9. However, a signifi
 ## Part 2 Version 2
 
 **Improved prompt (role + defined categories + Constraint):**
+```text 
 You are a senior customer feedback analyst for an e-commerce brand.
 The following reviews will be categorized into positive, negative, mixed, and neutral. You must Read sarcastic sentences like "Oh great, it broke on day two" as Negative, not Positive. You have to assign every review ID exactly one category. 
+```
 
 **Output:**
 Customer Review Sentiment Classification
@@ -214,8 +218,10 @@ Validation: All 110 review IDs (R001–R110) are accounted for, with exactly one
 ## Part 2 Version 3:
 
 **Improved prompt (role + defined categories + Constraint + output format):**
+```text
 You are a senior customer feedback analyst for an e-commerce brand.
 The following reviews will be categorized into positive, negative, mixed, and neutral. You must Read sarcastic sentences like "Oh great, it broke on day two" as Negative, not Positive. You have to group all the sentiment categories together. Return the table with these columns: Review #, Product, Sentiment, Key Evidence.
+```
 
 **Output:**
 Customer Review Sentiment Analysis
