@@ -600,18 +600,14 @@ Final analyst assessment: The company has products with appealing features and c
 
 
 3.
-I used the techniques listed in the assignment. For defining the categories I added "If a review is not strictly positive or negative then it can be labeled as mixed or neutral if no feedback is given in the review," to the prompt. For few-shot prompting I added: 
-   "Works great, I use it every morning!" -> Positive
-   "Perfect if you don't want to be comfortable." -> Negative (sarcasm)
-   "Noise cancelling worked well, however earbuds broke after only a few months." -> Mixed
-   "Can't wait to try this!" -> Neutral
-   I used the techniques listed in the assignment. For defining the categories I added "If a review is not strictly positive or negative then it can be labeled as mixed or neutral if no feedback is given in the review," to the prompt. For few-shot prompting I added:
+* I used the techniques listed in the assignment. For defining the categories I added "If a review is not strictly positive or negative then it can be labeled as mixed or neutral if no feedback is given in the review," to the prompt. For few-shot prompting I added: 
    "Works great, I use it every morning!" -> Positive
    "Perfect if you don't want to be comfortable." -> Negative (sarcasm)
    "Noise cancelling worked well, however earbuds broke after only a few months." -> Mixed
    "Can't wait to try this!" -> Neutral
    For output format I added "format the response as a table with a review number, label, and feedback column, for each individual product," and "at the end of reach table write a summary of the feedback," to the prompt. For constants I added "keep explanations short and keep track of what the positive or negative feedback in each review is" to the prompt. For role prompting I told the LLM to act as if it was "an analyst for the company relaying costumer feedback"
-After adding constraints and a role, I didn't notice a big change when the other techniques were added.
-The model actually handled tricky reviews very well. The first time it labeled mixed and unclear reviews together, however after adding a role and constraints it handled them separately. It's unclear which made the difference unfortunately, because I did both changes in the same version.
-The model labeled every review in every version!
-I found that adding constraints(keep track of what the positive or negative feedback in each review is) made the biggest difference. When I added them it started adding a summary of the review to each labeling and seperated mixed and neutral/unclear into separate categories.
+* After adding constraints and a role, I didn't notice a big change when the other techniques were added.
+* The model actually handled tricky reviews very well. The first time it labeled mixed and unclear reviews together, however after adding a role and constraints it handled them separately. It's unclear which made the difference unfortunately, because I did both changes in the same version.
+* The model labeled every review in every version!
+* I found that adding constraints(keep track of what the positive or negative feedback in each review is) made the biggest difference. When I added them it started adding a summary of the review to each labeling and seperated mixed and neutral/unclear into separate categories.
+
