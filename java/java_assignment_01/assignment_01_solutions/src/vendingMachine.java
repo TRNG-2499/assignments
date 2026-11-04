@@ -5,7 +5,7 @@ import java.util.List;
  * Assignment 01 - Vending Machine Change Maker
  */
 
-public class vending_machine {
+public class vendingMachine {
     public static void main(String[] args) {
         /*
          * Testing Main Code
