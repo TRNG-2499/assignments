@@ -1,0 +1,83 @@
+"Version","Technique Added","Prompt","Output","Notes"
+"Water Bottle V1","Baseline (no techniques)","Write a product description for a water bottle.","Everyday Water Bottle
+Bring water along for your morning commute, your workout, or an afternoon outside. Fill it before you head out and top it up as you go. Keep it on your desk between meetings or take it along for a walk, so a sip is always close by.","Very generic. No features, specs, price, or specific customer, but that's because the LLM had no specs to work with. It didn't make up any specs though, which I thought it would."
+"Water Bottle V2","Role prompting","You are an expert e-commerce copywriter for outdoor and lifestyle brands. Write a product description for a water bottle.","Everyday Refillable Water Bottle
+Fill up before you head out. From the morning commute to an afternoon hike, this reusable water bottle keeps water close at hand. Toss it in your gym bag, set it beside your laptop, or bring it along when a quick walk turns into a few miles. When it's empty, refill it and keep going.","Pretty much the same length as V1, but it sounds more outdoorsy and has more energy, like ""Fill up before you head out."" The role changed the tone but not really the content. Still no features because I didn't give it any. The headline barely changed from V1, and it only added the word ""Refillable."""
+"Water Bottle V3","Context","You are an expert e-commerce copywriter for outdoor and lifestyle brands. Write a product description for our water bottle.
+Product: 24 oz stainless steel bottle, double-wall insulated (cold 24 hrs / hot 12 hrs), leak-proof lid, wide mouth, carry loop, fits car cup holders. Price: $38.
+Customer: active adults 25-40 who commute, hike, and go to the gym, and care about quality and reducing plastic waste.
+Where it appears: product page on our Shopify store.","24 oz Insulated Stainless Steel Water Bottle
+$38
+Hot coffee for the commute. Ice-cold water after the last mile. This 24 oz stainless steel bottle uses double-wall insulation to keep drinks cold for 24 hours or hot for 12 hours.
+The leak-proof lid lets you toss it into your gym bag, and the carry loop makes it easy to grab on your way out. The wide mouth leaves room for ice and makes refilling easy. It fits in car cup holders, so your drink stays within reach on the drive.
+Fill it before you head out, refill it when you can, and reach for fewer single-use plastic bottles along the way.","This was the biggest change. It used all the specs I gave it (24 oz, cold 24 hrs / hot 12 hrs, leak-proof lid, carry loop, wide mouth, cup holders, $38) and didn't make anything up. It also talked to the right people (commuters and gym-goers) and brought up plastic waste. However, it got longer and went up to 3 paragraphs. It also put the price on its own line even though I only listed it as a detail."
+"Water Bottle V4","Constraints","You are an expert e-commerce copywriter for outdoor and lifestyle brands. Write a product description for our water bottle.
+Product: 24 oz stainless steel bottle, double-wall insulated (cold 24 hrs / hot 12 hrs), leak-proof lid, wide mouth, carry loop, fits car cup holders. Price: $38.
+Customer: active adults 25-40 who commute, hike, and go to the gym, and care about quality and reducing plastic waste.
+Where it appears: product page on our Shopify store.
+Keep it under 120 words. Tone: confident and friendly, not salesy. Avoid clichés like ""game-changer,"" ""elevate,"" and ""must-have."" Must mention the 24-hour cold claim and the leak-proof lid.","24 oz Insulated Stainless Steel Bottle · $38
+Fill it before your commute, grab it by the carry loop at the trailhead, and toss it in your gym bag with the leak-proof lid secured. Double-wall insulation keeps drinks cold for 24 hours or hot for 12 hours. The wide mouth makes it easy to add ice, refill, and clean, and the bottle fits in your car's cup holder. It's an everyday bottle you can refill again and again to cut down on single-use plastic.","Way shorter, one paragraph and around 80 words, but it still had all the features and mentioned the 24 hour cold thing and the leak-proof lid like I asked. No cliche words and it sounds less salesy. It still picked its own structure since I didn't give it a format yet. This is the first version that put the price in the headline."
+"Water Bottle V5","Output format","You are an expert e-commerce copywriter for outdoor and lifestyle brands. Write a product description for our water bottle.
+Product: 24 oz stainless steel bottle, double-wall insulated (cold 24 hrs / hot 12 hrs), leak-proof lid, wide mouth, carry loop, fits car cup holders. Price: $38.
+Customer: active adults 25-40 who commute, hike, and go to the gym, and care about quality and reducing plastic waste.
+Where it appears: product page on our Shopify store.
+Keep it under 120 words. Tone: confident and friendly, not salesy. Avoid clichés like ""game-changer,"" ""elevate,"" and ""must-have."" Must mention the 24-hour cold claim and the leak-proof lid.
+Format: a headline of 6 words or fewer, a 2-3 sentence paragraph, then 4 bullet points of features.","Cold Water Beyond the Commute
+From the morning commute to the gym or trail, this 24 oz stainless steel bottle keeps drinks cold for 24 hours or hot for 12. It's $38 and easy to refill, so you can skip the single-use bottle.
+• Double-wall insulation keeps drinks at temperature for hours.
+• Leak-proof lid keeps spills out of your bag.
+• Wide mouth makes it easy to add ice and clean.
+• Carry loop and cup-holder fit make it easy to grab on your way out and stow in the car.","Followed the format exactly. 5 word headline, 2 sentences, and 4 bullets. Way easier to read and would look good on a product page. The headline is catchier too. However, the first bullet got kind of vague (""for hours"") because the exact numbers were already in the paragraph. The headline does not actually say what the product is though."
+"Water Bottle V6","Few-shot prompting","You are an experienced e-commerce copywriter for outdoor and lifestyle brands. Write a product description for our water bottle.
+Product: 24 oz stainless steel bottle, double-wall insulated (cold 24 hrs / hot 12 hrs), leak-proof lid, wide mouth, carry loop, fits car cup holders. Price: $38.
+Customer: active adults 25-40 who commute, hike, and go to the gym, and care about quality and reducing plastic waste.
+Where it appears: product page on our Shopify store.
+Keep it under 120 words. Tone: confident and friendly, not salesy. Avoid clichés like ""game-changer,"" ""elevate,"" and ""must-have."" Must mention the 24-hour cold claim and the leak-proof lid.
+Format: a headline of 6 words or fewer, a 2-3 sentence paragraph, then 4 bullet points of features.
+Match the style of this example for a different product:
+Pack Light. Go Far.
+Built for weekend escapes and daily commutes alike, the Trailmate 20L carries everything you need and nothing you don't. Water-resistant fabric shrugs off surprise showers, and padded straps keep it comfortable mile after mile.
+• Water-resistant ripstop nylon
+• Padded laptop sleeve fits up to 15""
+• Breathable mesh back panel
+• Weighs just 1.2 lbs","Fill Up. Head Out.
+From the morning commute to the trail or gym, this reusable stainless steel bottle is easy to take along and refill. Double-wall insulation keeps drinks cold for 24 hours or hot for 12, and the leak-proof lid keeps your bag dry.
+• 24 oz stainless steel bottle ($38)
+• Wide mouth for easy refills and ice
+• Carry loop for an easy grab
+• Fits car cup holders","Copied the example a lot. ""Fill Up. Head Out."" is basically the same as ""Pack Light. Go Far."" Also, the bullets turned into short phrases like in the example instead of full sentences. This one was shorter than V5 and sounded the most polished. So the example changed the style and rhythm, not just the format. It did lose the plastic waste point though, it only says ""reusable"" once."
+"Part 3: New products","","","",""
+"Backpack V1","Role, context, constraints, output format","You're a copywriter for a kids' gear brand and you write mainly for parents. Keep it friendly but practical.
+Write a product description for our kids' school backpack. It's going on our website's product page.
+Details: it's for kids ages 6-10, 15 inches tall, water-resistant, padded straps you can adjust, a chest clip, reflective strips, an insulated pocket for snacks, two side pockets for water bottles, and a name tag inside. It fits a folder and a lunch box. You can throw it in the washing machine and it has a 2 year warranty. 6 colors. It costs $45.
+The customers are parents of elementary school kids who want something comfy that lasts all year and that their kid actually likes.
+Rules: under 130 words. Talk to the parents, not the kids. You have to mention that it's durable (warranty + washable) and that mention the safety feature (reflective strips). Don't use words like ""perfect"" or ""ultimate"" and don't exaggerate. Keep the language simple.
+Format: short headline, then 2-3 sentences, then 5 bullet points for the features, and end with one line about the colors.","Ready for the School Day
+This $45 backpack is sized for kids ages 6-10, with room for a folder and lunch box. Built for daily use, it's machine washable for easy cleanup and backed by a 2-year warranty.
+• 15 inches tall with water-resistant fabric
+• Adjustable padded straps and a chest clip for a comfortable fit
+• Reflective strips to help your child stay visible in low light
+• Insulated snack pocket and two side pockets for water bottles
+• Inside name tag so it's easy to tell whose bag is whose
+Available in six colors so your child can pick a favorite.","It followed every rule. It has a headline, 2 sentences, 5 bullets, and the color line at the end. It mentioned the warranty, washing machine, and reflective strips like I asked and talked to parents the whole time which is practical. It mostly stuck to the details I gave it and only added small things like ""in low light."" It is way under 130 words, and the headline is kind of plain too."
+"Coffee Subscription V1","Role, context, constraints, few-shot","Pretend you're a social media manager for a small coffee roaster. The brand's vibe is chill and kind of funny.
+Write an Instagram caption for our new monthly coffee subscription.
+Details: you get two 12 oz bags every month, we roast them less than 48 hours before shipping. You can pick whole bean or ground. Every month is a different single-origin coffee and it comes with a card about the tasting notes. Shipping is free and you can skip or cancel whenever you want. It is $32 per month and the first box is 20% off with the promo code FIRSTSIP.
+It's for coffee lovers around 22-35 who are sick of stale coffee from the grocery store and would like trying new coffee but don't want to get stuck in a contract.
+Rules: under 80 words and up to 5 hashtags. #snackbox #smallbatch #treatyourself Casual and fun, you can use max 2 emojis. Make sure you mention that it's fresh, that there's no commitment, and the discount code. End by telling people to tap the link in bio.
+Here's an example of the style I want (it's for a different product):
+New month, new snacks. 
+Our Snack Drop box brings 10 small-batch treats from indie makers straight to your door, so your 3 p.m. slump never stands a chance. Swap flavors, skip a month, or cancel anytime. No strings, just snacks.
+First box 15% off with prompo code SNACKTIME. Tap the link in bio to start snacking.
+","New month, new beans. Your grocery store coffee can take a nap. ☕
+Get two 12 oz bags of a different single-origin coffee each month, roasted less than 48 hours before shipping. Pick whole bean or ground. Tasting notes card included.
+$32/month with free shipping. No commitment. Skip or cancel anytime.
+Get 20% off your first box with code FIRSTSIP.
+#CoffeeSubscription #SingleOrigin
+Tap the link in bio to get brewing.","This one followed all the rules. It's around 70 words, and it has 1 emoji and 2 hashtags which looks like something a real social media manager would post. It copied the example's opener (""New month, new beans.""), and the grocery store coffee joke fits the customer well. However, the middle reads more like a list of facts than the example did. It also never actually used the word ""fresh,"" it only said roasted less than 48 hours before shipping. Interestingly, it put the hashtags before ""Tap the link in bio"" and ended with that like I asked, even though the example had the hashtags last."
+"","","","",""
+"Analysis","","","",""
+"Techniques I used and where","For the water bottle I added one technique at a time. V2 added a role at the start (""You are an expert e-commerce copywriter...""). V3 added context like the product details, who the customer is, and that it goes on a Shopify page. V4 added constraints like under 120 words, the tone, words to avoid, and things it had to mention. V5 added an output format with a headline, a short paragraph, and 4 bullets. V6 added a few-shot example of a backpack description at the end. For the backpack I used role, context, constraints, and output format. For the coffee subscription I used role, context, constraints, and a few-shot example of a snack box caption.","","",""
+"How each technique changed the output","The role in V2 mostly changed the tone. It sounded more outdoorsy, but the content was about the same and the headline only added ""Refillable."" Context in V3 made the biggest jump because it used every spec I gave it, but it also got longer. Constraints in V4 cut it down to one paragraph around 80 words and it still kept all the features. The output format in V5 made it way easier to read. However, the first bullet got vague and the headline didn't say what the product was. The few-shot example in V6 changed the style the most. ""Fill Up. Head Out."" copied ""Pack Light. Go Far."" almost exactly. It did drop the plastic waste point though, so that part got a little worse.","","",""
+"When it ignored my prompt or made things up","It didn't really make things up, which surprised me. Even V1 said it had no specs to work with. The backpack added small things like ""in low light"" that I didn't give it. In V6 it skipped the plastic waste point even though that was in the customer info. For the coffee caption it never used the word ""fresh,"" but it showed it with the 48 hour roast detail. I didn't rerun these, but next time I would add a rule like ""mention reducing plastic waste."" Also, I had ChatGPT memory turned on for at least the first two versions, so that might have affected the results a little.","","",""
+"Biggest difference","Context made the biggest difference. Without details the model can only write something vague, and the role only changed how it sounded. Once it had real specs and a customer, the descriptions actually started sounding like something you'd see on a real store page. Few-shot was second because it changed the style more than any rule did.","","",""
