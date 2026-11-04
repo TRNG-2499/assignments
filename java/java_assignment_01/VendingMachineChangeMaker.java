@@ -1,5 +1,14 @@
 public class VendingMachineChangeMaker {
-    public static String makeTransation(double itemPrice, double moneyInserted){
+
+    public static void main(String[] args){
+        System.out.println(makeTransaction(1.50, 2.00));
+        System.out.println(makeTransaction(1.50, 1.00));
+        System.out.println(makeTransaction(1.50, 1.50));
+        System.out.println(makeTransaction(1.50, -1.00));
+        System.out.println(makeTransaction(-1.50, 2.00));
+    }
+
+    public static String makeTransaction(double itemPrice, double moneyInserted){
         if(itemPrice < 0){
             return "Invalid Input: item price cannot be negative.";
         } else if(moneyInserted < 0){
