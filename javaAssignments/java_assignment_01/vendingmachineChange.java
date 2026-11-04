@@ -26,7 +26,6 @@ public class vendingmachineChange {
 
         //all negative values for multiple items
         System.out.println(buyingMultiple(10.0, new double[]{-4.75, -2.25}));
-        */
 
         //return change denominations
         System.out.println(returnChangeDenoms(new BigDecimal("10.0"), new BigDecimal("4.75")));
@@ -42,6 +41,7 @@ public class vendingmachineChange {
 
         //change denoms funny rounding numbers
         System.out.println(returnChangeDenoms(new BigDecimal("10.0"), new BigDecimal("3.65")));
+        */
     }
         public static String calculateChange(double amountReceived, double itemPrice) {
 
