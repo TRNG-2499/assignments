@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "ElevatorChecker",
+            "request": "launch",
+            "mainClass": "ElevatorChecker",
+            "projectName": "assignments_9cfb4bb3"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        }
+    ]
+}
