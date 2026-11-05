@@ -1,4 +1,6 @@
 import java.util.Arrays;
+import java.util.LinkedHashMap;
+import java.util.ArrayList;
 
 public class Elevator {
 
@@ -107,6 +109,51 @@ public class Elevator {
     }
 
 
+    public static void multipleElevatorTrips(double maxWeight, double[] passengerWeights) {
+        // Hashmap mapping: trip number -> array list of passenger numbers
+        LinkedHashMap<Integer, ArrayList<Integer>> trips = new LinkedHashMap<Integer, ArrayList<Integer>>();
+
+        double currWeight = 0.0;    // running weight on the current trip
+        ArrayList<Integer> currTrip = new ArrayList<Integer>();     // list of passengers on the current trip
+        int tripNumber = 1;
+
+        for (int i = 0; i < passengerWeights.length; i++) {
+            // Handles case where one passenger alone exceeds the elevator weight limit
+            if (passengerWeights[i] >= maxWeight) {
+                System.out.println("This passenger alone exceeds max elevator weight. Cannot board on any trip.");
+                continue;
+            }
+
+            // If next passenger were to exceed the weight, snapshot the current
+            // trip and its list of passengers into a key-value pair inside trips
+            //
+            // Then start initializing the next trip with the current passenger that
+            // caused the weight overflow
+            if (currWeight + passengerWeights[i] >= maxWeight) {
+                trips.put(tripNumber, currTrip);
+                tripNumber += 1;
+
+                currWeight = passengerWeights[i];
+                currTrip = new ArrayList<Integer>();
+                currTrip.add(i + 1);
+                continue;
+            }
+
+            currWeight += passengerWeights[i];
+            currTrip.add(i + 1);
+        }
+
+        if (currTrip.size() != 0) {
+            trips.put(tripNumber, currTrip);
+        }
+
+        System.out.printf("Number of trips required: %d %n", trips.size());
+        for (var entry : trips.entrySet()) {
+            System.out.printf("Trip %d has the following passengers: %s %n", entry.getKey(), entry.getValue());
+        }
+    }
+
+
     public static void main(String[] args) {
         // Base features test cases
         //
@@ -122,5 +169,7 @@ public class Elevator {
         maxSafePassengerCount(100, new double[] {30, 40, 32});
         System.out.println('\n');
         getHeaviestAndLightest(1000, new double[] {150, 200, 300, 250, 180});
+        System.out.println('\n');
+        multipleElevatorTrips(100, new double[] {50, 30, 40, 60, 70, 20});
     }
 }
