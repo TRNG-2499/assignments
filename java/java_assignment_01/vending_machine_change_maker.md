@@ -42,14 +42,14 @@ Output: "Invalid input: amount inserted cannot be negative."
 
 ## Requirements Checklist
 
-- [ ] Method accepts item price and amount inserted as parameters (not hardcoded)
-- [ ] Negative item price is treated as invalid input, with a clear returned message
-- [ ] Negative amount inserted is treated as invalid input, with a clear returned message
-- [ ] Amount inserted less than price returns a message indicating how much more money is needed
-- [ ] Amount inserted exactly equal to price is treated as a successful purchase with $0.00 change
-- [ ] Amount inserted greater than price is treated as a successful purchase, with correct change calculated
-- [ ] Only one outcome (invalid, insufficient, or successful) is reported per call
-- [ ] Code is organized into at least one clearly named method (avoid putting all logic directly in `main`)
+- [x] Method accepts item price and amount inserted as parameters (not hardcoded)
+- [x] Negative item price is treated as invalid input, with a clear returned message
+- [x] Negative amount inserted is treated as invalid input, with a clear returned message
+- [x] Amount inserted less than price returns a message indicating how much more money is needed
+- [x] Amount inserted exactly equal to price is treated as a successful purchase with $0.00 change
+- [x] Amount inserted greater than price is treated as a successful purchase, with correct change calculated
+- [x] Only one outcome (invalid, insufficient, or successful) is reported per call
+- [x] Code is organized into at least one clearly named method (avoid putting all logic directly in `main`)
 
 ## Stretch Goals
 
