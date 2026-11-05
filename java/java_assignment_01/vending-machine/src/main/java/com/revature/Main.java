@@ -7,52 +7,67 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        double price = readDouble(scanner, "Enter item price: ");
-        double amount = readDouble(scanner, "Enter amount inserted: ");
+        System.out.print("Enter item price: ");
+        while (!scanner.hasNextDouble()) {
+            scanner.next();
+            System.out.print("Please enter a number: ");
+        }
+        double price = scanner.nextDouble();
+
+        System.out.print("Enter amount inserted: ");
+        while (!scanner.hasNextDouble()) {
+            scanner.next();
+            System.out.print("Please enter a number: ");
+        }
+        double amount = scanner.nextDouble();
 
         System.out.println(vendingMachineSolution(price, amount));
 
         // stretch goal 1
-        int itemCount = readItemCount(scanner, "\nHow many items? ");
-        double[] prices = new double[itemCount];
-        for (int i = 0; i < itemCount; i++) {
-            prices[i] = readDouble(scanner, "Enter price of item " + (i + 1) + ": ");
+        System.out.print("\nHow many items? ");
+        // the count sizes an array, so it has to be checked here instead of in a solution method
+        int itemCount = 0;
+        while (itemCount < 1) {
+            if (scanner.hasNextInt()) {
+                itemCount = scanner.nextInt();
+            } else {
+                scanner.next();
+            }
+            if (itemCount < 1) {
+                System.out.print("Please enter a whole number of 1 or more: ");
+            }
         }
 
-        double listAmount = readDouble(scanner, "Enter amount inserted: ");
+        double[] prices = new double[itemCount];
+        for (int i = 0; i < itemCount; i++) {
+            System.out.print("Enter price of item " + (i + 1) + ": ");
+            while (!scanner.hasNextDouble()) {
+                scanner.next();
+                System.out.print("Please enter a number: ");
+            }
+            prices[i] = scanner.nextDouble();
+        }
+
+        System.out.print("Enter amount inserted: ");
+        while (!scanner.hasNextDouble()) {
+            scanner.next();
+            System.out.print("Please enter a number: ");
+        }
+        double listAmount = scanner.nextDouble();
 
         System.out.println(vendingMachineList(prices, listAmount));
 
         // stretch goal 2
-        double changeAmount = readDouble(scanner, "\nEnter change amount to break down: ");
+        System.out.print("\nEnter change amount to break down: ");
+        while (!scanner.hasNextDouble()) {
+            scanner.next();
+            System.out.print("Please enter a number: ");
+        }
+        double changeAmount = scanner.nextDouble();
 
         System.out.println(makeChange(changeAmount));
 
         scanner.close();
-    }
-
-    public static double readDouble(Scanner scanner, String prompt) {
-        System.out.print(prompt);
-        while (!scanner.hasNextDouble()) {
-            scanner.next(); // Throw away the bad token.
-            System.out.print("Please enter a number: ");
-        }
-        return scanner.nextDouble();
-    }
-
-    public static int readItemCount(Scanner scanner, String prompt) {
-        System.out.print(prompt);
-        while (true) {
-            if (scanner.hasNextInt()) {
-                int count = scanner.nextInt();
-                if (count >= 1) {
-                    return count;
-                }
-            } else {
-                scanner.next();
-            }
-            System.out.print("Please enter a whole number of 1 or more: ");
-        }
     }
 
     // normal solution

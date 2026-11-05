@@ -8,11 +8,35 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        int weightLimit = readInt(scanner, "Enter weight limit (lbs): ", 1);
-        int passengerCount = readInt(scanner, "How many passengers? ", 0);
+        System.out.print("Enter weight limit (lbs): ");
+        while (!scanner.hasNextInt()) {
+            scanner.next();
+            System.out.print("Please enter a whole number: ");
+        }
+        int weightLimit = scanner.nextInt();
+
+        System.out.print("How many passengers? ");
+        // the count sizes an array, so it has to be checked here instead of in validateInputs
+        int passengerCount = -1;
+        while (passengerCount < 0) {
+            if (scanner.hasNextInt()) {
+                passengerCount = scanner.nextInt();
+            } else {
+                scanner.next();
+            }
+            if (passengerCount < 0) {
+                System.out.print("Please enter a whole number of 0 or more: ");
+            }
+        }
+
         int[] passengerWeights = new int[passengerCount];
         for (int i = 0; i < passengerCount; i++) {
-            passengerWeights[i] = readInt(scanner, "Enter weight of passenger " + (i + 1) + ": ", 0);
+            System.out.print("Enter weight of passenger " + (i + 1) + ": ");
+            while (!scanner.hasNextInt()) {
+                scanner.next();
+                System.out.print("Please enter a whole number: ");
+            }
+            passengerWeights[i] = scanner.nextInt();
         }
 
         System.out.println(elevatorCheck(weightLimit, passengerWeights));
@@ -27,21 +51,6 @@ public class Main {
         System.out.println(elevatorTrips(weightLimit, passengerWeights));
 
         scanner.close();
-    }
-
-    public static int readInt(Scanner scanner, String prompt, int min) {
-        System.out.print(prompt);
-        while (true) {
-            if (scanner.hasNextInt()) {
-                int value = scanner.nextInt();
-                if (value >= min) {
-                    return value;
-                }
-            } else {
-                scanner.next();
-            }
-            System.out.print("Please enter a whole number of " + min + " or more: ");
-        }
     }
 
     public static String validateInputs(int weightLimit, int[] passengerWeights) {
