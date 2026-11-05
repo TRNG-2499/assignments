@@ -1,6 +1,6 @@
 package assignment02.part02;
 
-public class Main {
+public class Solution {
 
     public static String weightTrack(int weightLimit, int[] passengerWeights){
         int total = 0;

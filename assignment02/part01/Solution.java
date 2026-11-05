@@ -1,6 +1,6 @@
 package assignment02.part01;
 import java.util.Scanner;
-public class Main {
+public class Solution {
 
     public static String calculateChange(double price, double amountInserted){
         double total = amountInserted - price;
@@ -15,7 +15,6 @@ public class Main {
             return String.format("Purchase successful. Change due: $%.2f%n", total);
         }
     }
-
     public static String testing(double payment){
         double total = 0;
         Scanner sc = new Scanner(System.in);
@@ -36,7 +35,6 @@ public class Main {
             }
         }
     }
-
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Input: ");
