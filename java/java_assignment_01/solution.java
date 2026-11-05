@@ -1,6 +1,6 @@
 import java.util.LinkedHashMap;
 
-public class VendingMachine {
+public class solution {
 
     public static String validateInput(double price, double moneyIn) {
         if (price < 0) {

@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class Solution {
+public class solution {
 
     public static void checkWeightLimit(double maxWeight, double[] passengerWeights) {
         double totalWeight = 0;
