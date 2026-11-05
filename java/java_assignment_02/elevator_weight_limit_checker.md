@@ -45,15 +45,15 @@ Output: "Passenger 1 caused an overload. Total weight at that point: 150 lbs."
 
 ## Requirements Checklist
 
-- [ ] Method accepts the weight limit and the passenger weight list as parameters (not hardcoded)
-- [ ] Running total is calculated one passenger at a time, in the order given
-- [ ] A running total that **meets or exceeds** the limit is treated as an overload (not just "greater than")
-- [ ] Loop stops as soon as overload is detected — later passengers are not processed or included in the total
-- [ ] Overload result clearly identifies which passenger caused it and the total weight at that point
-- [ ] Non-overload result clearly reports that all passengers boarded safely and the final total weight
-- [ ] Empty passenger list is handled gracefully (no crash, and a sensible result is returned/reported)
-- [ ] First-passenger-exceeds-limit case is handled correctly
-- [ ] Code is organized into at least one clearly named method (avoid putting all logic directly in `main`)
+- [x] Method accepts the weight limit and the passenger weight list as parameters (not hardcoded)
+- [x] Running total is calculated one passenger at a time, in the order given
+- [x] A running total that **meets or exceeds** the limit is treated as an overload (not just "greater than")
+- [x] Loop stops as soon as overload is detected — later passengers are not processed or included in the total
+- [x] Overload result clearly identifies which passenger caused it and the total weight at that point
+- [x] Non-overload result clearly reports that all passengers boarded safely and the final total weight
+- [x] Empty passenger list is handled gracefully (no crash, and a sensible result is returned/reported)
+- [x] First-passenger-exceeds-limit case is handled correctly
+- [x] Code is organized into at least one clearly named method (avoid putting all logic directly in `main`)
 
 ## Stretch Goals
 
