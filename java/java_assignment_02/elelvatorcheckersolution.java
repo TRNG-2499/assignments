@@ -21,7 +21,7 @@ public static String checkElevator(int wLimit, int[] pLimit) {
         }
     }
     if (overloaded > 0) {
-        return "overloaded at " + where + "holding " + wLimit;
+        return "overloaded at passenger " + where + ", holding " + total + " lbs";
     }
     else {
         return "all boarded, weight = " + total;
