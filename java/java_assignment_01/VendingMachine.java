@@ -50,30 +50,19 @@ public class VendingMachine {
 
 
     // Stretch goal method #2
-    // Wasn't sure what the parameters of this function were so I just assumed it
-    // takes an item price and money inserted amount.
-    //
-    // Also assumed that this function should only ever be called when there is non-zero
-    // change left-over so I made sure to add edge cases to convey that.
-    //
     // Created a LinkedHashMap to act as a frequency map to store the count per
     // denomination, while maintaining insertion order (just for easier readable)
     //
     // Looped through each denomination and ran an inner while loop to exhaust
     // the number of times each value can "go into" the current remaining change
-    public static void denominationBreakdown(double price, double moneyIn) {
-        if (moneyIn < price) {
-            System.out.println("Insufficient funds. Not applicable to this method.");
-            return;
-        }
-        if (price < 0) {
-            System.out.println("Invalid input. Item price in list cannot be negative.");
+    public static void denominationBreakdown(double changeDue) {
+        if (changeDue < 0) {
+            System.out.println("Invalid input. Change remaining cannot be negative.");
             return;
         }
 
         LinkedHashMap<String, Integer> frequencyMap = new LinkedHashMap<String, Integer>();
 
-        double changeDue = moneyIn - price;
         double remaining = changeDue;
         double[] denominations = new double[] {1.00, 0.25, 0.10, 0.05, 0.01};
         for (double v : denominations) {
@@ -110,6 +99,6 @@ public class VendingMachine {
 
         // Test case for stretch method #2
         // Expected: 1.00:2, 0.25:3, 0.10:0, 0.05:0, 0.01:2
-        denominationBreakdown(10, 12.77);
+        denominationBreakdown(2.77);
     }
 }
