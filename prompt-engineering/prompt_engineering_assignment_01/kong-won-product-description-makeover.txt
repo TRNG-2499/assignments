@@ -1,0 +1,170 @@
+water bottle - version 1
+
+## Stay Hydrated, Stay Ready – Premium Water Bottle
+
+Keep yourself refreshed wherever life takes you with our premium water bottle! Designed for everyday convenience, this stylish and durable bottle makes staying hydrated easier than ever. Whether you're heading to work, hitting the gym, traveling, or enjoying the outdoors, it's the perfect companion for your daily routine.
+
+**Key Features:**
+- **Durable Design:** Built with high-quality materials for long-lasting everyday use.
+- **Leak-Proof Lid:** Helps prevent spills and leaks while you're on the go.
+- **Portable & Lightweight:** Easy to carry in your backpack, gym bag, or by hand.
+- **Reusable & Eco-Friendly:** Reduce single-use plastic waste while staying hydrated.
+- **Easy to Clean:** Simple design makes cleaning and refilling convenient.
+
+Make hydration a habit! Grab your water bottle today and enjoy convenience, style, and refreshment wherever your day takes you.
+
+
+my response to part 1: A lot of the words seems generic. Such as "premium" water bottle, the key features shown are what you pretty much see on all other water bottle brands.
+Infomation missing includes the price, the brand name, a picture and how much liquid the bottle can hold. 
+This seems to be written for a general audiance of any age, any race, boys and girls.
+
+
+water bottle - version 2
+
+
+## Built for Strength. Made to Hydrate.
+
+Take your hydration game to the next level with our **32 oz Performance Water Bottle**. Designed with the active man in mind, this bottle holds plenty of water to keep you fueled and hydrated through intense workouts, heavy lifting sessions, and everyday activities.
+
+With its generous 32-fluid-ounce capacity, you can spend less time refilling and more time focusing on your fitness goals. Whether you're hitting the weights, running on the treadmill, or pushing through your final set, this bottle is ready to keep up.
+
+**Features:**
+- **32 oz Capacity:** Plenty of water to power through your workout.
+- **Gym-Ready Design:** Made for an active lifestyle.
+- **Everyday Convenience:** Great for the gym, work, sports, and outdoor activities.
+- **Stay Hydrated:** Keep water within reach and make every workout count.
+
+**Train Hard. Stay Hydrated. Get Stronger.**
+
+
+my response for part 2 with context: I used some context to gear this water bottle more towards men and the gym.
+
+
+water bottle - version 3
+
+## Premium Insulated Water Bottle – Black
+
+Stay hydrated throughout your day with our sleek and versatile insulated water bottle. Designed to keep your beverages at the perfect temperature, it maintains **hot drinks for up to 12 hours** and **cold drinks for up to 24 hours**, making it an ideal companion for workouts, workdays, and everyday use.
+
+Featuring a stylish all-black exterior, this bottle offers a clean, modern look that fits any lifestyle. While it does not have a built-in handle or grip, it comes with a convenient coffee-style sleeve that provides extra comfort and a more secure hold when carrying or drinking.
+
+**Key Features:**
+- **12-Hour Heat Retention:** Keeps coffee, tea, and other hot beverages warm.
+- **24-Hour Cold Retention:** Keeps water and other cold beverages refreshingly cool.
+- **Comfortable Sleeve:** Includes a coffee-style sleeve for improved grip and handling.
+- **Sleek Black Design:** Currently available exclusively in a classic black exterior.
+- **Everyday Versatility:** Great for the gym, office, travel, and daily hydration.
+
+Enjoy reliable temperature control, comfortable handling, and a timeless design wherever your day takes you!
+
+
+my response for part 2 with constraints and output format: longer response, looks more detailed and readable, more organized looking
+
+
+
+Phone Case - version 1
+
+# Premium Protective Phone Case
+
+Protect your phone without sacrificing style. Our Premium Protective Phone Case is designed for everyday life, combining a sleek, modern appearance with reliable protection against accidental drops, scratches, and daily wear and tear.
+
+Built for people who are always on the go, this case offers a comfortable grip, a lightweight feel, and a durable construction that keeps your phone protected without adding unnecessary bulk. Its precision-fit design provides easy access to buttons, ports, and cameras, so you can enjoy your phone without limitations.
+
+Whether you're heading to class, hanging out with friends, gaming, or simply scrolling throughout the day, this case is made to keep up with your lifestyle.
+
+### Key Features
+- **Drop Protection:** Helps absorb impact from accidental drops and bumps.
+- **Scratch Resistant:** Protects your phone from everyday scratches and scuffs.
+- **Slim & Lightweight:** Provides protection without making your phone bulky.
+- **Comfortable Grip:** Designed for a secure, comfortable hold.
+- **Precise Cutouts:** Easy access to charging ports, speakers, buttons, and cameras.
+- **Modern Design:** A clean, stylish look that complements your phone.
+
+**Protection meets personality.** Keep your phone looking fresh, feeling great, and ready for whatever the day brings.
+
+
+
+
+Phone Case - version 2
+
+prompt: Write a product description for a budget phone case. I am a college student that wants to start a business for phone cases. The material combines advanced durable plastics, naturally inspired elements, and engineered composite materials. This phone case is ultra thin and supports the newest iphone models. It has also been drop tested many times and can survive up to a 25 feet drop. 
+
+## Budget Phone Case – Slim Design. Extreme Protection.
+
+Protect your iPhone without the unnecessary bulk. The Budget Phone Case combines advanced durable plastics, naturally inspired elements, and engineered composite materials to deliver reliable impact resistance in a sleek, ultra-thin design.
+
+Built to support the newest iPhone models, this lightweight case offers a comfortable, streamlined fit while maintaining everyday functionality. Despite its slim profile, it has undergone repeated drop testing from heights of up to **25 feet**, demonstrating its ability to withstand demanding impact conditions.
+
+**Key Features:**
+- **Ultra-Thin Profile:** Sleek, lightweight construction that preserves your iPhone's original feel and appearance.
+- **25-Foot Drop-Tested Protection:** Tested to withstand multiple drops from heights of up to 25 feet.
+- **Advanced Material Construction:** Combines durable plastics and composite materials for dependable impact resistance.
+- **Modern iPhone Compatibility:** Designed to accommodate the newest iPhone models.
+- **Everyday Durability:** Built to help protect against accidental drops, bumps, and daily wear.
+
+**Premium protection doesn't have to come at a premium price.** Get the durability you need, the slim design you want, and the affordability you deserve.
+
+my response to part 3 (first product): I used role prompt, context and constraints. It definately improves the output a bit. Makes it more specific and gear towards a certain audiance.
+drop protection has a actual height now, what phone type the case supports. The technique that had the biggest difference I would say is adding in constraints but make up for it with context and the role prompt gives it a specific audiance I am targeting.
+
+
+
+
+Ergonomic Chair - version 1
+
+## Ergonomic Office Chair
+
+Experience comfort and support throughout your workday with our Ergonomic Office Chair. Designed with a focus on posture, flexibility, and long-lasting comfort, this chair is perfect for home offices, gaming setups, and professional workspaces.
+
+Featuring an adjustable design, breathable materials, and supportive cushioning, it helps reduce discomfort during extended periods of sitting. Customize your seating position with adjustable height, a supportive backrest, and smooth-rolling wheels for effortless mobility.
+
+**Key Features:**
+- **Ergonomic Design:** Supports proper posture and provides all-day comfort.
+- **Adjustable Height:** Easily customize your seating position.
+- **Breathable Material:** Promotes airflow to help keep you cool.
+- **Comfortable Cushioning:** Provides support during extended sitting sessions.
+- **Smooth Mobility:** Durable wheels allow easy movement across your workspace.
+- **Modern Style:** A sleek, professional design that complements any office or gaming setup.
+
+Upgrade your workspace with an ergonomic chair that combines comfort, functionality, and style!
+
+
+
+Ergonomic Chair - version 2
+
+prompt: Write a product description for a Ergonomic office chair. I am a gamer and i want this chair to be as good as gaming chairs. I want this product to be geared towards younger adults, people in college and high school. The chair can't be tilt back all the way but it can rock back and forth and sitting on it for long periods of time wont hurt your back
+
+response:
+# The Ultimate Ergonomic Chair – Built for Work, Designed for Play.
+
+Why choose between a gaming chair and an office chair when you can have the best of both worlds?
+
+Meet the ergonomic chair designed for students, gamers, and young adults who spend hours studying, working, or gaming. Whether you're grinding ranked matches, pulling an all-nighter for finals, or working from home, this chair is built to keep you comfortable and supported throughout your day.
+
+**Comfort That Keeps Up With You**
+
+Forget stiff seating and uncomfortable positions. Our ergonomic design focuses on supporting your back and promoting a comfortable sitting posture, even during extended sessions. With a supportive backrest and thoughtfully designed cushioning, you can focus on what matters without constantly shifting around to find a comfortable position.
+
+**Rock Back, Stay in Control**
+
+Need a moment to relax? Enjoy a smooth rocking motion that lets you lean back and unwind without reclining completely flat. Unlike traditional gaming chairs with aggressive reclining features, this chair offers controlled back-and-forth movement while keeping you supported and ready to get back to work or play.
+
+**Made for Your Lifestyle**
+
+From late-night gaming sessions to long study sessions, this chair fits right into your setup. It combines the clean, modern appearance of an office chair with the comfort and personality gamers expect from a gaming chair.
+
+**One Chair. Endless Possibilities.**
+
+- Ergonomic design focused on back support and sitting comfort.
+- Smooth rocking motion for controlled relaxation.
+- Supportive cushioning for extended sitting sessions.
+- Modern aesthetic that complements gaming and study setups.
+- Designed for students, gamers, and young professionals.
+
+**Study Hard. Game Harder. Sit Better.**
+
+Your desk setup deserves more than an ordinary chair. Upgrade your everyday comfort with a chair designed for the way you actually live.
+
+
+my response to part 3 (second product): I used role prompt, context and constraints here too. Since the product is bigger it seems to be more descriptive and makes it sound more enticing.
+My prompt gives the chair gear towards gamer but also regular office workers as well. It gives my chair a bigger audiance, sounds better, and could make people fear like they are missing out if they don't buy the chair.

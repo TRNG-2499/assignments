@@ -1,0 +1,341 @@
+product review version 1
+
+Result from basic prompt:
+The reviews are mixed overall, but lean negative.
+
+I analyzed all 110 reviews across 5 products and classified them by sentiment.
+
+Overall sentiment
+
+# 32
+
+Positive
+
+# 39
+
+Negative
+
+29.1% Positive
+
+35.5% Negative
+
+21.8% Mixed
+
+13.6% Neutral
+
+## Sentiment by product
+
+| Product                 | Positive | Negative | Overall        |
+| ----------------------- | -------- | -------- | -------------- |
+| Trailmark Backpack      | 7        | 8        | Mixed          |
+| Breeze Wireless Earbuds | 5        | 8        | Negative       |
+| Cozy Knit Throw Blanket | 8        | 6        | Mixed-positive |
+| Lumen Smart Bulbs       | 6        | 9        | Negative       |
+| Hearth Electric Kettle  | 6        | 8        | Negative       |
+
+## Key findings
+
+- Best-performing product: Cozy Knit Throw Blanket, with the most positive reviews.
+- Worst-performing product: Lumen Smart Bulbs, with 9 negative reviews.
+- Common complaints: Product durability, defective items, poor connectivity, and misleading product descriptions.
+- Positive themes: Good value, attractive designs, comfort, and ease of use.
+
+## Final conclusion
+
+Mixed, leaning negative
+
+There are more negative than positive reviews (39 vs. 32). However, 24 reviews contain both positive and negative feedback, suggesting that some customers like the products but have specific complaints.
+
+My recommendation: Focus on fixing product quality and reliability issues, particularly for the Lumen Smart Bulbs and Breeze Wireless Earbuds. These appear to have the greatest opportunities for improvement.
+
+Note: Sentiment classifications are based on the wording and context of each review. Sarcasm and mixed opinions are taken into account.
+
+
+My response part 1: It looks like the model summarize all the products and catorized them into positive, neg. and neutral. I can sort or count the results yes.
+ChatGPT used a mixed % to filter the ones that had positive and neg. in one review.
+
+
+product review version 2
+
+
+Part 2:
+My new prompt:I am a new buisness graduate and want to start a business with everyday products that makes people lives simpler. Could you see if these reviews positive or negative?
+
+Result:
+Absolutely! As a new business graduate looking to build a business around everyday products that make people's lives easier, analyzing customer reviews is a great starting point.
+
+The goal isn't just to find products people like. It's to identify what frustrates customers, what they wish products did better, and what problems a new business could solve.
+
+I reviewed your uploaded CSV containing 110 customer reviews across 5 everyday products.
+
+## Overall review sentiment
+
+# 32
+
+Positive reviews
+
+Positive
+
+32 (29.1%)
+
+Negative
+
+40 (36.4%)
+
+Mixed
+
+24 (21.8%)
+
+Neutral
+
+10 (9.1%)
+
+4 additional reviews (3.6%) are questions rather than actual product feedback.
+
+Initial takeaway: Negative reviews outnumber positive reviews. That's potentially valuable for a new business because customer complaints can reveal opportunities to improve existing products.
+
+## Sentiment by product
+
+Each product has 22 reviews.
+
+| Product          | Positive | Negative | Mixed |
+| ---------------- | -------- | -------- | ----- |
+| Hiking Backpack  | 7        | 8        | 4     |
+| Wireless Earbuds | 5        | 8        | 6     |
+| Knit Blanket     | 8        | 6        | 5     |
+| Smart Bulbs      | 5        | 9        | 5     |
+| Electric Kettle  | 7        | 9        | 4     |
+
+Neutral reviews and questions are excluded from these three columns.
+
+## What customers are complaining about
+
+Here are some of the most interesting patterns I found.
+
+[The Benefits of Choosing a Stainless Steel Electric Kettle](https://images.openai.com/static-rsc-4/XQtxHnbgCzD9ufe8z7ytbcysC9G6OMAdjqfFvUVWxUn-VTlCPHIicPBvKoMQkauxqQzVdYz4dMVpdHcJHx-6GkSrxXAjBCPJAgtYoz0-0RXlaDE5Ynl_gFKKouCVGd00MV6-jF2GstkBffqoMw0NGKFUEm6eOnwZsgxT-FH-dGY?purpose=inline)
+
+1\. Electric Kettle
+
+9 negative reviews
+
+- Handle gets dangerously hot.
+- Kettle leaks near electrical outlets.
+- Plastic taste in water.
+- Switch breaks after a short time.
+
+Business opportunity: A safer kettle with better insulation, durable components, and no plastic taste.
+
+[FLSNT 60-Watt Equivalent A19 LED Smart Bulbs That Work with Alexa and Google Home, 9-Watt, 2700K-6500K, E26 Base, (4-Pack) A60WIFIRGBCW-4 - The Home Depot](https://images.openai.com/static-rsc-4/hmiggtyqmNFXHgzgta3t1VSaxAGU48URszmC1p9CxffGugaA_LE-YGJPuNMoqEvL42CMfSxHGPUs3jmNn5pmALi_dPRguRTbpCGnH6dIKrJEjNpoIqPcN2esqBeVuX1HuHlyP__YXW6hN32ncRHVzhmFaUGvts9EeFQOXK86gDU?purpose=inline)
+
+2\. Smart Light Bulbs
+
+9 negative reviews
+
+- Wi-Fi disconnects frequently.
+- App crashes.
+- Bulbs stop working.
+- Requires unnecessary account and location permissions.
+
+Business opportunity: Reliable smart lighting with simple setup and minimal app requirements.
+
+[Wireless ear buds TWS BTH-F9-5](https://images.openai.com/static-rsc-4/4_PhTEkIa8fIhNNO6UwG5XsVH2qbO0-iOCau_z-amsXS_vVh82BJ4UWVDc8JCp7VicFk-pmOdzVm977SpQI9mwBp_QtY8JR39EP8e_vi96pi7g4a1jcArjM2LfzazGd6TMTSXJOC1VcnH-8le-3AwTCHRu7ozktNF-abYGJDIr4?purpose=inline)
+
+3\. Wireless Earbuds
+
+8 negative reviews
+
+- Charging problems.
+- Poor microphone quality.
+- Earbuds fall out.
+- Connection and static issues.
+
+Business opportunity: Comfortable earbuds with reliable charging, stable connectivity, and good call quality.
+
+[REI is selling a $100 hiking backpack for only $70 - TheStreet](https://images.openai.com/static-rsc-4/v5F_6WBwSg3-pFb7e0qMsmjvDCmwbu9BhCD3fah8PXbGFmtQI7hmEl69eycE1xvTrC-isCiMjYt1gdxoNAKRKes9kD_Rq25_bwHBxC9f4P6KSNSGb57ZdAB3eshTfRGZ_iw6a9oaFC99usKPK7hnVrrMmocnrCzqPfH2bqgjrOM?purpose=inline)
+
+4\. Hiking Backpack
+
+8 negative reviews
+
+- Broken zippers and buckles.
+- Uncomfortable straps.
+- Incorrect sizing.
+- Misleading waterproof claims.
+
+Business opportunity: A durable, comfortable everyday backpack with honest product specifications.
+
+[Jarah Oatmeal Throw Blanket](https://images.openai.com/static-rsc-4/oHC2I-FBeTe6rMbOuJ5lrWpFOrVxXyTwJYN75CRB6xM8O13TvEOQUcTEIx17FxJ2jv7YLPZGAc6l8cT0_fDOsTDyxNBGwFlHvf-NkT4NnnLEiE8k8P7KErIN5NoxjwWgMYdKGvFd3roGG2Z21VdLDYMCfOBdm4dzVz6KCqBIWks?purpose=inline)
+
+5\. Knit Blanket
+
+8 positive reviews
+
+- Some complaints about shedding.
+- Shrinking after washing.
+- Itchy material.
+- Smaller than expected.
+
+Business opportunity: A soft, machine-washable blanket that retains its size and texture.
+
+## My business recommendation
+
+If I were evaluating these products as a potential first-time business owner, I'd pay particular attention to these three opportunities:
+
+| Priority | Product opportunity | Why                                                                |
+| -------- | ------------------- | ------------------------------------------------------------------ |
+| 1        | Smart lighting      | Customers want simplicity but struggle with unreliable technology. |
+| 2        | Electric kettle     | Safety and product durability are major complaints.                |
+| 3        | Wireless earbuds    | Comfort, connectivity, and charging are recurring frustrations.    |
+
+### What I would do next
+
+I wouldn't immediately manufacture a product. I'd follow this process:
+
+1. Find a problem: Identify a complaint that appears repeatedly.
+2. Validate demand: Check whether customers across multiple brands complain about the same thing.
+3. Study competitors: Find products attempting to solve that problem.
+4. Find a differentiation: Figure out how your product could be noticeably better.
+5. Test demand: Get potential customers to try or preorder a prototype before investing heavily.
+
+One important caveat: These are only 22 reviews per product, so they're useful for identifying initial opportunities, not proving market demand. Sentiment classifications are also interpretive, particularly for sarcastic and mixed reviews.
+
+## One thing I'd like to help you with
+
+Rather than simply finding products to sell, I think you should approach this as building a brand around making everyday life easier.
+
+For example, instead of selling another electric kettle, build a kettle that solves three common frustrations: safety, cleaning, and durability.
+
+I can help you turn this review dataset into a product opportunity analysis, identifying specific customer pain points, potential product improvements, and which opportunities might be worth pursuing first.
+
+my response: By adding role prompting, the response I got from chatGPT was way better than the previous one. I like how the products were broken down and the neg. were focused on as business opportunities.
+
+
+
+Part 2 continued:
+product review version 3
+my prompt: The results should be structured into a pie chart. I want to visually see each color to determine the positive and negetive reviews. reviews such as "Fantastic. Just fantastic. Mine lasted a full week before the switch broke." would be considered a mized review
+
+result: 
+
+I'll classify all 110 product reviews into three sentiment categories:
+
+-
+
+  Positive
+
+  &#x20;Reviews expressing satisfaction, recommending the product, or highlighting good performance.
+
+
+-
+
+  Mixed
+
+  &#x20;Reviews containing both positive and negative feedback, sarcasm with conflicting sentiment, or neutral/uncertain opinions.
+
+
+-
+
+  Negative
+
+  &#x20;Reviews expressing dissatisfaction, defects, poor quality, or bad experiences.
+
+
+
+For example, "Fantastic. Just fantastic. Mine lasted a full week before the switch broke." is Mixed, because the initial praise is contradicted by the product failure.
+
+## Review sentiment breakdown
+
+# 110 reviews
+
+(a circle pie chart was generated here, green for positive, red for neg. and grey for mixed)
+
+Mixed / Neutral
+
+Negative
+
+Positive
+
+Positive
+
+36 reviews
+
+32.7%
+
+Mixed / Neutral
+
+34 reviews
+
+30.9%
+
+Negative
+
+40 reviews
+
+36.4%
+
+Key takeaway: Negative reviews are the largest category, but positive reviews are fairly close. Almost one-third of all reviews contain mixed or neutral sentiment.
+
+I recommend keeping these three categories separate in your review analysis rather than forcing every review into a positive or negative classification. This gives a more realistic picture of customer satisfaction.
+ 
+
+My response: I used few-shot prompting and output format to see the data in a pie chart. I listed a mixed review example to give a clearer idea of what a mixed review is like.
+
+
+PART 3:
+
+Based off the 10 I picked I label these as follows
+
+1. mixed
+2. neg.
+3. neg.
+4. pos.
+5. neg.
+6. pos.
+7. pos.
+8. pos.
+9. mixed
+10. mixed
+
+mixed: 3, pos.: 4, neg.:3
+
+Prompt into chatGPT: 1. R002,Breeze Wireless Earbuds,"Noise isolation is decent, but it's not true noise cancelling like the description implies. Still good for the gym." 2. R003,Breeze Wireless Earbuds,Left earbud stopped charging after two weeks. Contacted support and never heard back. 3.R019,Trailmark Hiking Backpack,Seller sent the wrong size. 4. R023,Lumen Smart Bulbs (4-Pack),Sunrise alarm feature has made my mornings so much easier. 5. R025,Lumen Smart Bulbs (4-Pack),Buzzes when dimmed below 30%. Very annoying in a quiet room. 6. R033,Breeze Wireless Earbuds,Best purchase I've made all year. My old $200 pair is collecting dust now. 7. R046,Cozy Knit Throw Blanket,So soft and warm. My cat has claimed it as hers. 8. R052,Breeze Wireless Earbuds,I was skeptical but these are fantastic. Would buy again. 9. R073,Lumen Smart Bulbs (4-Pack),Good enough for the price. I'd buy a better brand next time though. 10. R094,Breeze Wireless Earbuds,Bought these as a gift for my brother. He hasn't opened them yet. Label these 10 as positive, neg or mixed.
+
+result: 
+Here are the sentiment labels for all 10 reviews:
+
+| ID   | Product                    | Sentiment |
+| ---- | -------------------------- | --------- |
+| R002 | Breeze Wireless Earbuds    | Mixed     |
+| R003 | Breeze Wireless Earbuds    | Negative  |
+| R019 | Trailmark Hiking Backpack  | Negative  |
+| R023 | Lumen Smart Bulbs (4-Pack) | Positive  |
+| R025 | Lumen Smart Bulbs (4-Pack) | Negative  |
+| R033 | Breeze Wireless Earbuds    | Positive  |
+| R046 | Cozy Knit Throw Blanket    | Positive  |
+| R052 | Breeze Wireless Earbuds    | Positive  |
+| R073 | Lumen Smart Bulbs (4-Pack) | Mixed     |
+| R094 | Breeze Wireless Earbuds    | Mixed     |
+
+Summary:
+
+-
+
+  Positive: 4
+
+
+-
+
+  Negative: 3
+
+
+-
+
+  Mixed: 3
+
+
+
+Note: R094 is mixed because the reviewer hasn't actually tried the product yet, so there isn't enough information to determine whether the experience is positive or negative.
+
+
+My response: My prediction fully matches the generated response. 
+The model labeled every review weights out if overall it is pos., neg. or mixed. Unclear reviews, mixed opinions would always be in mixed category. sarcasm gets ignored just if the other review parts has pos. or neg. in it.
