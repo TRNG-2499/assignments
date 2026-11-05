@@ -16,17 +16,41 @@ public class java_assignment_01 {
         }
     }
 
-    public static void main(String[] args){
-        Scanner scanner = new Scanner(System.in);
+    // Stretch Goal 1: Multiple Items
+    public static double MultipleItems(double[] prices){
+        // Sum array of doubles
+        double sum_prices = 0;
+        for (int i = 0; i < prices.length; i++){
+            sum_prices = sum_prices + prices[i];
+        }
+        // Return sum
+        return sum_prices;
+    }
 
-        System.out.println("Enter item price: ");
-        double price = scanner.nextDouble();
+    public static void main(String[] args){
+        // Flag for switching between base requirements and stretch goal 1:
+        // True for single item; false for multiple items
+        Boolean Mode = false;
         
+        // Need to declare this out here
+        double price;
+        Scanner scanner = new Scanner(System.in);
+        
+        if (Mode == true){
+            // Base requirement
+            System.out.println("Enter item price: ");
+            price = scanner.nextDouble();
+        } else {
+            // Stretch Goal 1: Multiple Items
+            double[] prices = {10.00, 43.00, 80.00, 11.45};
+            price = MultipleItems(prices);
+        }
+
         System.out.println("Enter amount inserted: ");
         double paid = scanner.nextDouble();
 
         scanner.close();
-
+        
         makeChange(price, paid);
     }
 }
