@@ -13,6 +13,7 @@ public class java_assignment_01 {
         } else if (paid >= price) {
             double change = paid - price;
             System.out.printf("Purchase successful. Change due: $%.2f", change);
+            ChangeOptimizer(change);
         }
     }
 
@@ -25,6 +26,34 @@ public class java_assignment_01 {
         }
         // Return sum
         return sum_prices;
+    }
+
+    // Stretch Goal 2: Making Change
+    public static void ChangeOptimizer(double change){
+        double[] denominations = {100.00, 50.00, 20.00, 10, 5.00, 1.00, 0.25, 0.10, 0.05, 0.01};
+        
+        System.out.println(" in the following denominations:\n");
+
+        /* Bad approach. Didn't cast properly and used wrong printf placeholders.         
+        for (int i = 0; i < denominations.length; i++){
+            double bill_count = 0;
+            if (change >= denominations[i]) {
+                bill_count = change / denominations[i];
+                System.out.printf("(%d%x) $%d bills \n", bill_count, denominations[i]);
+                change = change - (bill_count * denominations[i]);
+            }
+        } */
+
+        int i = 0;
+        while (change > 0.01){
+            double bill_count;
+            if(change > denominations[i]){
+                bill_count = (int)(change / denominations[i]);
+                System.out.printf("(%d) $%.2f\n", (int)bill_count, denominations[i]);
+                change = change - (bill_count * denominations[i]);
+            }
+            i++;
+        }
     }
 
     public static void main(String[] args){
