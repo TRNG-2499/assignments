@@ -1,4 +1,4 @@
-public class solution{
+public class a1_solution {
     public void vending(double price, double money){
         // Invalid input clause, if money or price is negative
         if(price<0.00 || money <0.00){
@@ -73,7 +73,7 @@ public class solution{
     }
 
     public static void main(String[] args) {
-        solution s = new solution();
+        a1_solution s = new a1_solution();
         s.vending(-7.00, 10.00); // Negative Price
         s.vending(3.00, -12.00); // Negative Money
         s.vending(5.00, 1.00); // Money < Price
