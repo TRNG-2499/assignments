@@ -3,8 +3,8 @@ import java.util.LinkedHashMap;
 
 public class DuplicateCheck {
     public static void main(String[] args) {
-        dupeCounter("The time I went to the store I bought a watermelon");
-        dupeCounter("Every word here is unique");
+        // dupeCounter("The time I went to the store I bought a watermelon");
+        // dupeCounter("Every word here is unique");
     }
 
     public static void dupeCounter(String sentence) {
@@ -57,4 +57,6 @@ public class DuplicateCheck {
     //     }
 
     // }
+
+    
 }
