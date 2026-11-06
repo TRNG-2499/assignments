@@ -11,8 +11,8 @@ public class duplicate_words {
         // System.out.println(removeDupes("This is a test. This test is only a test."));
         // System.out.println(removeDupes("TEST TEST TEST TEST TEST"));
         // System.out.println(removeDupes("This is a test. This! test? is: only# a$ test."));
-        System.out.println(sentenceStats("This is a test. This test is only a test."));
-        System.out.println(sentenceStats("In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, filled with the ends of worms and an oozy smell, nor yet a dry, bare, sandy hole with nothing in it to sit down on or to eat: it was a hobbit-hole, and that means comfort."));
+        // System.out.println(sentenceStats("This is a test. This test is only a test."));
+        // System.out.println(sentenceStats("In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, filled with the ends of worms and an oozy smell, nor yet a dry, bare, sandy hole with nothing in it to sit down on or to eat: it was a hobbit-hole, and that means comfort."));
     }
     
     public static String countDupesString(String str) {
