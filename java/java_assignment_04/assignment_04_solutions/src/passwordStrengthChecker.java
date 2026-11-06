@@ -58,10 +58,10 @@ public class passwordStrengthChecker {
         return "\nPassword Strength: " + strength +
                 "\n-----------------------" +
                 "\nPassed and Failed Rules:\n" +
-                "Length >= 8: " + (sufficientLength != 0) +
-                " | Contains Digit 0-9: " + (containsDigits != 0) +
-                " | Contains Uppercase character: " + (containsUppercase != 0) +
-                " | Contains Special character: " + (containsSpecial != 0);
+                    "Length >= 8: " + (sufficientLength != 0) +
+                    " | Contains Digit 0-9: " + (containsDigits != 0) +
+                    " | Contains Uppercase character: " + (containsUppercase != 0) +
+                    " | Contains Special character: " + (containsSpecial != 0);
     }
 
     public String strengthCheckStretch(String password) {
