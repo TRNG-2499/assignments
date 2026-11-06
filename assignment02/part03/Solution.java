@@ -26,6 +26,6 @@ public class Solution {
         System.out.println("What is the tick count: ");
         int tick = sc.nextInt();
         System.out.println(tickCycle(color, tick));
+        sc.close();
     } 
-
 }
