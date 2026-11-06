@@ -15,7 +15,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        double ex_limit = 750;gi
+        double ex_limit = 750;
         double[] ex_weights = {
                 105.5, 120.3, 135.7, 150.2, 175.8,
                 200.4, 225.6, 250.1, 275.9, 300.5
