@@ -1,7 +1,7 @@
 public class AlgorithmSolution2 {
     public static void main(String[] args) {
         int [] test = {1, 2, 3, 4, 5, 6, 7};
-        test = minMemoryRotate(test, 0);
+        test = minMemoryRotate(test, 13);
         for(int num : test)
             System.out.print(num + " ");
     }
@@ -44,21 +44,8 @@ public class AlgorithmSolution2 {
     public static int [] negativeStepCount(int [] arr, int k){
         if(k < 0)
             return rotateLeft(arr, -k);
-
-        while(k >= arr.length)
-            k -= arr.length;
-        int split = arr.length - k;
-        int [] res = new int[arr.length];
-        int resIdx = 0;
-        for(int i = split; i < arr.length; i++){
-            res[resIdx] = arr[i];
-            resIdx++;
-        }
-        for(int i = 0; i < split; i++){
-            res[resIdx] = arr[i];
-            resIdx++;
-        }
-        return res;
+        else
+            return rotateArr(arr, k);
     }
 
     //Minimal Extra Memory
