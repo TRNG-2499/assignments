@@ -1,4 +1,5 @@
 import java.util.HashSet;
+import java.util.Set;
 
 // For the majority of the methods I used a simple for loop to manually check
 // each character. This method is arguably more lengthy to write than regex expressions
@@ -94,7 +95,199 @@ public class PasswordChecker {
         System.out.println(formattedString);
     }
 
+
+    // Stretch goal method #1
+    // Custom point system is out of 7
+    // Length: 2, Digit: 1, Uppercase: 1, Special char: 3
+    public static void customPointPasswordCheck(String password) {
+        if (password == null) {
+            password = "";
+        }
+
+        String lengthStr = "";
+        String digitStr = "";
+        String uppercaseStr = "";
+        String specialCharStr = "";
+        int passCount = 0;
+
+        // Password length check
+        if (password.length() < 8) {
+            lengthStr = "Fail";
+        } else {
+            lengthStr = "Pass";
+            passCount += 2;
+        }
+
+        // Contains a digit check
+        boolean containsDigit = false;
+        for (char c : password.toCharArray()) {
+            if (Character.isDigit(c)) {
+                containsDigit = true;
+                break;
+            }
+        }
+        if (containsDigit == false) {
+            digitStr = "Fail";
+        } else {
+            digitStr = "Pass";
+            passCount += 1;
+        }
+
+        // Upper case character check
+        boolean containsUpper = false;
+        for (char c : password.toCharArray()) {
+            if (Character.isUpperCase(c)) {
+                containsUpper = true;
+                break;
+            }
+        }
+        if (containsUpper == false) {
+            uppercaseStr = "Fail";
+        } else {
+            uppercaseStr = "Pass";
+            passCount += 1;
+        }
+
+        // Special character check
+        HashSet<Character> specialChars = new HashSet<Character>();
+        for (char c : "!@#$%^&*".toCharArray()) {
+            specialChars.add(c);
+        }
+        boolean containsSpecialChar = false;
+        for (char c : password.toCharArray()) {
+            if (specialChars.contains(c)) {
+                containsSpecialChar = true;
+                break;
+            }
+        }
+        if (containsSpecialChar == false) {
+            specialCharStr = "Fail";
+        } else {
+            specialCharStr = "Pass";
+            passCount += 3;
+        }
+
+        String strengthStr = "";
+        switch (passCount) {
+            case 1, 2, 3:
+                strengthStr = "Weak";
+                break;
+            case 4, 5, 6:
+                strengthStr = "Medium";
+                break;
+            case 7:
+                strengthStr = "Strong";
+                break;
+            default:
+                strengthStr = "Weak";
+        }
+
+        String formattedString = String.format("Length: %s | Digit: %s | Uppercase: %s | Special Character: %s -- Strength: %s", lengthStr, digitStr, uppercaseStr, specialCharStr, strengthStr);
+        System.out.println(formattedString);
+    }
+
+
+    // Stretch goal #3
+    public static void commonPasswordBlacklistCheck(String password) {
+        if (password == null) {
+            password = "";
+        }
+
+        String lengthStr = "";
+        String digitStr = "";
+        String uppercaseStr = "";
+        String specialCharStr = "";
+        int passCount = 0;
+
+        // Password length check
+        if (password.length() < 8) {
+            lengthStr = "Fail";
+        } else {
+            lengthStr = "Pass";
+            passCount += 2;
+        }
+
+        // Contains a digit check
+        boolean containsDigit = false;
+        for (char c : password.toCharArray()) {
+            if (Character.isDigit(c)) {
+                containsDigit = true;
+                break;
+            }
+        }
+        if (containsDigit == false) {
+            digitStr = "Fail";
+        } else {
+            digitStr = "Pass";
+            passCount += 1;
+        }
+
+        // Upper case character check
+        boolean containsUpper = false;
+        for (char c : password.toCharArray()) {
+            if (Character.isUpperCase(c)) {
+                containsUpper = true;
+                break;
+            }
+        }
+        if (containsUpper == false) {
+            uppercaseStr = "Fail";
+        } else {
+            uppercaseStr = "Pass";
+            passCount += 1;
+        }
+
+        // Special character check
+        HashSet<Character> specialChars = new HashSet<Character>();
+        for (char c : "!@#$%^&*".toCharArray()) {
+            specialChars.add(c);
+        }
+        boolean containsSpecialChar = false;
+        for (char c : password.toCharArray()) {
+            if (specialChars.contains(c)) {
+                containsSpecialChar = true;
+                break;
+            }
+        }
+        if (containsSpecialChar == false) {
+            specialCharStr = "Fail";
+        } else {
+            specialCharStr = "Pass";
+            passCount += 3;
+        }
+
+        String strengthStr = "";
+        switch (passCount) {
+            case 1, 2, 3:
+                strengthStr = "Weak";
+                break;
+            case 4, 5, 6:
+                strengthStr = "Medium";
+                break;
+            case 7:
+                strengthStr = "Strong";
+                break;
+            default:
+                strengthStr = "Weak";
+        }
+
+        // Set of common weak passwords that will be reported as Weak
+        // under any circumstances
+        HashSet<String> commonPasswords = new HashSet<String>(Set.of("password", "password123", "password123!", "12345678", "qwertyuiop"));
+        if (commonPasswords.contains(password.toLowerCase())) {
+            strengthStr = "Weak";
+        }
+
+        String formattedString = String.format("Length: %s | Digit: %s | Uppercase: %s | Special Character: %s -- Strength: %s", lengthStr, digitStr, uppercaseStr, specialCharStr, strengthStr);
+        System.out.println(formattedString);
+    }
+
+
     public static void main(String[] args) {
         checkPassword(null);
+
+        customPointPasswordCheck("Password1!");
+
+        commonPasswordBlacklistCheck("PasswOrD123");
     }
 }
