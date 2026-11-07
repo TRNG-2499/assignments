@@ -44,25 +44,29 @@ public class Main {
     }
 
     public static int[] find2Missing(int[] nums) {
-        int x = 1;
-        int y = 1;
+        int x = 0;
+        int y = 0;
         int n = nums.length + 2;
+        int xa = seriesAtN(n);
+        int ya = 0;
 
         int k = 0;
         for (int i = 1; i <= n; i++) {
-            x *= i;
+            x ^= i;
             if (k < nums.length) {
-                y *= nums[k++];
+                y ^= nums[k];
+                ya += nums[k++];
             }
         }
 
-        int z = x / y;
+        int z = x ^ y;
+        int za = xa - ya;
 
         int a = 1;
         int b = -1;
         while (a <= n) {
-            b = z / a;
-            if (y * a * b == x && b <= n) {
+            b = z ^ a;
+            if (a + b == za && b <= n) {
                 break;
             }
             a++;
@@ -73,28 +77,28 @@ public class Main {
 
     public static int[] findDupMissing(int[] nums) {
         int x = 0;
-        long xp = 1;
         int y = 0;
-        long yp = 1;
         int n = nums.length;
+        int xa = seriesAtN(n);
+        int ya = 0;
 
         int k = 0;
         for (int i = 1; i <= n; i++) {
             x ^= i;
-            xp *= i;
             if (k < nums.length) {
                 y ^= nums[k];
-                yp *= nums[k++];
+                ya += nums[k++];
             }
         }
 
         int z = x ^ y;
+        int za = xa - ya;
 
         int a = 1;
         int b = -1;
         while (a <= n) {
             b = z ^ a;
-            if (a != b && b >= 1 && b <= n && yp * b == xp * a) {
+            if (a != b && b >= 1 && b <= n && b - a == za) {
                 break;
             }
             a++;
