@@ -3,7 +3,7 @@ import java.util.Arrays;
 public class ArrayRotator {
     public static void main(String[] args) {
         for (int k = 0; k < 18; k++) {
-            System.out.println(Arrays.toString(rotateRight(new int[]{4, 2, 1, 6, 3, 5, 8, 7, 9}, k)));
+            System.out.println(Arrays.toString(rotateRight(new int[]{4, 2, 1, 6, 3, 5, 8, 7}, k)));
         }
     }
 
