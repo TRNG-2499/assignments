@@ -1,4 +1,4 @@
-import java.util.Arrays
+import java.util.Arrays;
 
 class Main {
 
@@ -17,16 +17,17 @@ class Main {
         }
     }
 
-    public boolean checkBlacklist(String[] blacklist, String target) {
-        return (target != null && blacklist.contains(target)
-                ? return true
-                : return false;
+    private static String getPasswordStrength(int count) {
+        return switch (count) {
+            case 0, 1 -> "Weak";
+            case 2, 3 -> "Medium";
+            case 4 -> "Strong";
+            default -> "Invalid input";
+        };
     }
 
-    private String foo(String password, String[] blacklist) {
+    protected String foo(String password) {
         String output = "", strength;
-        if(blacklist.contains(password)) { return "password is in our list of commonly used password, try again - weak"; }
-
         if (password != null) {
             boolean hasDigit = false, hasUpper = false, hasSpecial = false;
             int count = (password.length() > 0) ? 1 : 0;
@@ -51,27 +52,22 @@ class Main {
 
             Responses res = new Responses(lengthReq, hasDigit, hasUpper, hasSpecial);
             output = res.digit_req + " | " + res.len_req + " | " + res.special_req + " | " + res.uppercase_req + " | ";
-            strength = getPasswordStrength(count, strength);
+
+
+            strength = getPasswordStrength(count);
 
             output = (lengthReq) ? output + "Passes -> " + strength : output + "Fails -> " + strength;
         }
         return output;
     }
 
-    private static String getPasswordStrength(int count, String strength) {
-        strength = switch (count) {
-            case 0, 1 -> "Weak";
-            case 2, 3 -> "Medium";
-            case 4 -> "Strong";
-            default -> "Invalid input";
-        };
-        return strength;
-    }
-
-    protected String protect_foo(String password, String[] blacklist) {
+    public String protect_foo(String password, String[] blacklist) {
         boolean contains = Arrays.stream(blacklist).anyMatch(password::equals);
-        if(blacklist.contains(password)) {
+        if(contains != true) {
+            String answer = foo(password);
             return foo(password);
+        } else {
+            return "Common password, please enter a new one";
         }
     }
 
