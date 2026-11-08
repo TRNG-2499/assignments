@@ -31,6 +31,8 @@ public class Solution_05 {
       }
     }
     printResults(wordCount);
+    // added this so would quit seeing an issue in vscode
+    printWoDups(wordCount);
   }
 
   private static void printResults(LinkedHashMap<String, Integer> hashWords) {
