@@ -2,7 +2,6 @@ public class Main {
     String track_overload(double weight_limit, double[] arr) {
         if(arr.length <= 0) { return "exception: empty or negative passenger list size"; }
 
-
         double running_total = 0;
         for(int i = 0; i < arr.length; i++) {
             if(running_total + arr[i] >= weight_limit) {
@@ -15,7 +14,6 @@ public class Main {
     }
 
     public static void main(String[] args) {
-
         // current values are examples, edit freely
         double ex_limit = 750; 
         double[] ex_weights = {
