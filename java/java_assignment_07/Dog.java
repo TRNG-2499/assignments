@@ -1,3 +1,5 @@
+package assignments.java.java_assignment_07;
+
 public class Dog extends Animal {
     @Override
     public String makeSound() {

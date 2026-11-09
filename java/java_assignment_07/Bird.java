@@ -1,3 +1,5 @@
+package assignments.java.java_assignment_07;
+
 public class Bird extends Animal {
     @Override
     public String makeSound() {
