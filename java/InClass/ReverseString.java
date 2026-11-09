@@ -1,4 +1,4 @@
-package assignments.java;
+package assignments.java.InClass;
 
 public class ReverseString {
     public static void main(String[] args) {
