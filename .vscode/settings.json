@@ -1,6 +1,12 @@
 {
     "java.project.sourcePaths": [
         "java/java_assignment_01",
-        "java/java_assignment_02"
+        "java/java_assignment_02",
+        "java/java_assignment_03",
+        "java/java_assignment_04",
+        "java/java_assignment_05",
+        "java/java_assignment_06",
+        "java/java_algorithm_assignment_01",
+        "java/java_algorithm_assignment_02"
     ]
 }

@@ -3,6 +3,48 @@
     "configurations": [
         {
             "type": "java",
+            "name": "RotateArray",
+            "request": "launch",
+            "mainClass": "RotateArray",
+            "projectName": "assignments_9cfb4bb3"
+        },
+        {
+            "type": "java",
+            "name": "MissingNumberFinder",
+            "request": "launch",
+            "mainClass": "MissingNumberFinder",
+            "projectName": "assignments_9cfb4bb3"
+        },
+        {
+            "type": "java",
+            "name": "DuplicateWords",
+            "request": "launch",
+            "mainClass": "DuplicateWords",
+            "projectName": "assignments_9cfb4bb3"
+        },
+        {
+            "type": "java",
+            "name": "PasswordStrengthChecker",
+            "request": "launch",
+            "mainClass": "PasswordStrengthChecker",
+            "projectName": "assignments_9cfb4bb3"
+        },
+        {
+            "type": "java",
+            "name": "TrafficLightSimulator",
+            "request": "launch",
+            "mainClass": "TrafficLightSimulator",
+            "projectName": "assignments_9cfb4bb3"
+        },
+        {
+            "type": "java",
+            "name": "ReverseAlgo",
+            "request": "launch",
+            "mainClass": "ReverseAlgo",
+            "projectName": "assignments_9cfb4bb3"
+        },
+        {
+            "type": "java",
             "name": "ElevatorChecker",
             "request": "launch",
             "mainClass": "ElevatorChecker",
