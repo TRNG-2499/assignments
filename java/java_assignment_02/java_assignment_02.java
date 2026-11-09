@@ -55,7 +55,29 @@ public class java_assignment_02 {
             heaviest = subArray[subArray.length - 1];
         }
 
-        System.out.printf("Lightest: %d \nHeaviest: %d", lightest, heaviest);
+        System.out.printf("Lightest: %d \nHeaviest: %d\n", lightest, heaviest);
+    }
+
+    public static void group(int max_weight, int[] passengers){
+        int trips = 1;
+        int weight = 0; 
+        System.out.println("In-order passenger groupings:");
+        // Go through all passengers to get trip count
+        for (int i = 0; i < passengers.length; i++){
+            // Check if individual passenger alone meets or exceeds limit
+            if (passengers[i] >= max_weight){
+                weight = 0;
+                continue; // Skip
+            } else if (weight + passengers[i] >= max_weight){
+                trips++;
+                weight = 0; // Reset weight
+                System.out.println("\n");
+            } else {
+                weight += passengers[i]; // Add passenger's weight to load
+                System.out.printf("%d ", i);
+            }
+        }
+        System.out.printf("\n%d trips required.", trips);
     }
 
     public static void main(String[] args){
@@ -72,5 +94,8 @@ public class java_assignment_02 {
         CalcMaxPassengers(limit, passenger_weights);
         
         checkLimit(limit, passenger_weights);
+
+        // SG3
+        group(limit, passenger_weights);
     }
 }
