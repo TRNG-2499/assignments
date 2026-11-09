@@ -2,12 +2,12 @@ package assignments.java.java_assignment_07;
 
 public class Dog extends Animal {
     @Override
-    public String makeSound() {
-        return "Woof! Woof!";    
+    public void makeSound() {
+        System.out.println("Woof! Woof!");    
     }
 
     @Override
-    public String describe() {
-        return "The dog wags its tail excitedly and looks up at you.";
+    public void describe() {
+        System.out.println("The dog wags its tail excitedly and looks up at you.");
     }
 }

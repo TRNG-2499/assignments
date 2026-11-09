@@ -2,12 +2,12 @@ package assignments.java.java_assignment_07;
 
 public class Bird extends Animal {
     @Override
-    public String makeSound() {
-        return "Tweet! Tweet!";
+    public void makeSound() {
+        System.out.println("Tweet! Tweet!");
     }
 
     @Override
-    public String describe() {
-        return "The bird tilts its head and hops along its perch.";
+    public void describe() {
+        System.out.println("The bird tilts its head and hops along its perch.");
     }
 }
