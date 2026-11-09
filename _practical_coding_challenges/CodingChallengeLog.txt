@@ -1,0 +1,4 @@
+Coding Challenge Log
+
+1. Java If-Else - Easy - 2026-11-09 - Java - HackerRank
+2. Java Regex - Intermediate - 2026-11-09 - Java - HackerRank
