@@ -20,6 +20,7 @@ public static void main(String[] args){
 
     System.out.println("Rotated Array: " + Arrays.toString(ArrayRotate(k, array)));
 
+    scanner.close();
 }
 
 //Should splice the array at k and then shift the
