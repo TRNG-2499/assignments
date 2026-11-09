@@ -9,16 +9,19 @@ public class Main {
 
         Scanner myObj = new Scanner(System.in);
         String input = "";
-        String options = "1. Dog \n2. Cat \n3. Bird \n0. Exit \nEnter your selection";
+        String options = "1. Dog \n2. Cat \n3. Bird \n4. Random Animal \n0. Exit \nEnter your selection";
 
-        Animal Dog1 = new Dog();
-        Animal Cat1= new Cat();
-        Animal Bird1 = new Bird();
+        Animal Dog1 = new Dog("Husky");
+        Animal Cat1= new Cat(5);
+        Animal Bird1 = new Bird(true);
 
         while(true){
 
             System.out.println(options);
             input = myObj.nextLine();
+            if (input.equals("4")) {
+                input = String.valueOf((int) (Math.random() * 3) + 1);
+            }
 
             if(input.equals("0")){
                 System.out.println("Goodbye, thanks for visiting the zoo");
