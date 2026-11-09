@@ -45,7 +45,7 @@ public class rotate {
                 NegativeMode(arr, step);
                 break;
             case 4:
-                // MinimumMemoryMode(arr, step);
+                MinimumMemoryMode(arr, step);
                 break;
             default:
                 System.out.println("Invalid mode selected.");
@@ -108,5 +108,27 @@ public class rotate {
         }
 
         System.out.println("Rotated array: " + Arrays.toString(resultArr));
+    }
+
+    public static void MinimumMemoryMode(int[] arr, int step) {
+
+        int length = arr.length;
+        step = step % length;
+
+        step = length - step;
+
+        for (int i = 0; i < step; i++) {
+
+            int temp = arr[0];
+
+            for (int j = 0; j < length - 1; j++) {
+                arr[j] = arr[j + 1];
+            }
+
+            arr[length - 1] = temp;
+
+        }
+
+        System.out.println("Rotated array: " + Arrays.toString(arr));
     }
 }
