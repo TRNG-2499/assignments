@@ -1,0 +1,3 @@
+Name                                Difficulty  Date Completed  Programming Language    Coding Challenge Platform   How                             Test Cases Passed
+Simple Array Sum                    Easy        2026-11-9       Java                    HackerRank                  PseudoCode and Implementation   3/3
+Organizing Containers of Balls      Medium                      Java                    HackerRank                  ...                             ...
