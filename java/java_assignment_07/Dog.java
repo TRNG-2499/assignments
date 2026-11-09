@@ -8,6 +8,6 @@ public class Dog extends Animal {
 
     @Override
     public String describe() {
-        return "The dog wags its tail excitedly and looks up at you."
+        return "The dog wags its tail excitedly and looks up at you.";
     }
 }
