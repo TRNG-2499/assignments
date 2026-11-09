@@ -1,0 +1,4 @@
+challenge_name,difficulty,date_completed,language,platform
+Solve Me First,Easy,11-9-2026,Java,HackerRank
+Simple Array Sum,Easy,11-9-2026,Java,HackerRank
+A Very Big Sum,Easy,11-9-2026,Java,HackerRank
