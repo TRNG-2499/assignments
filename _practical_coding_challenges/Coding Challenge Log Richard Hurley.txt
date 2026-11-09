@@ -1,0 +1,3 @@
+Coding Challenge Log
+
+1. Lemonade Change - Easy, November 9 2026, Java, Leetcode
