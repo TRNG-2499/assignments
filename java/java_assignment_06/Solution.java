@@ -37,6 +37,7 @@ public class Solution {
             runningTotal = handleCommand(parts, runningTotal);
             System.out.println();
         }
+        scan.close();
     }
 
     private static int handleCommand(String[] parts, int runningTotal) {

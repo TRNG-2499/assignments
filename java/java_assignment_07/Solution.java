@@ -4,23 +4,23 @@ import java.util.Scanner;
 
 public class Solution {
     public static void main(String[] args) {
-        runZooSoundBoard();
+        Scanner scan = new Scanner(System.in);
+        runZooSoundBoard(scan);
+        scan.close();
     }
 
-    private static void runZooSoundBoard() {
-        Scanner scanner = new Scanner(System.in);
-
+    private static void runZooSoundBoard(Scanner scan) {
         while (true) {
             printMenu();
             System.out.print("Enter your selection: ");
 
-            if (!scanner.hasNextLine()) {
+            if (!scan.hasNextLine()) {
                 System.out.println();
                 System.out.println("Goodbye! Thanks for visiting the zoo.");
                 return;
             }
 
-            String selection = scanner.nextLine().trim();
+            String selection = scan.nextLine().trim();
             if (selection.equals("0")) {
                 System.out.println("Goodbye! Thanks for visiting the zoo.");
                 return;
@@ -36,6 +36,7 @@ public class Solution {
 
             System.out.println();
         }
+        
     }
 
     private static void printMenu() {
