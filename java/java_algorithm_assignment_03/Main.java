@@ -46,7 +46,7 @@ public class Main {
 
         //Test 4: Empty String
         System.out.println("input: ");
-        System.out.println(compressString("")); //expecting a4
+        System.out.println(compressString("")); //expecting ""
     }
 
 }
