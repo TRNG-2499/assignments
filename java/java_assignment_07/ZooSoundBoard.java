@@ -112,5 +112,6 @@ public class ZooSoundBoard {
             }
         }
 
+        scanner.close();
     }
 }
