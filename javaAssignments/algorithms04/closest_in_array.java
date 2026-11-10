@@ -11,10 +11,10 @@ public class closest_in_array {
         // System.out.println(furthest(new int[]{}, 3));
         // System.out.println(closestFlagged(new int[]{1, 2, 4, 5}, 3, true));
         // System.out.println(closestFlagged(new int[]{1, 2, 4, 5}, 3, false));
-        System.out.println(java.util.Arrays.toString(closestK(new int[]{1, 2, 3, 4, 5}, 3, 2)));
-        System.out.println(java.util.Arrays.toString(closestK(new int[]{1, 2, 3, 4, 5}, 3, 3)));
-        System.out.println(java.util.Arrays.toString(closestK(new int[]{1, 2, 3, 4, 5}, 3, 5)));
-        System.out.println(java.util.Arrays.toString(closestK(new int[]{}, 3, 1)));
+        // System.out.println(java.util.Arrays.toString(closestK(new int[]{1, 2, 3, 4, 5}, 3, 2)));
+        // System.out.println(java.util.Arrays.toString(closestK(new int[]{1, 2, 3, 4, 5}, 3, 3)));
+        // System.out.println(java.util.Arrays.toString(closestK(new int[]{1, 2, 3, 4, 5}, 3, 5)));
+        // System.out.println(java.util.Arrays.toString(closestK(new int[]{}, 3, 1)));
     }
     
     public static int closest(int[] arr, int target) {
