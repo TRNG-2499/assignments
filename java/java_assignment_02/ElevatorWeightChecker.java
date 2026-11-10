@@ -39,5 +39,4 @@ public class ElevatorWeightChecker {
         double[] passengerWeights4 = {400.0};
         System.out.println(checkElevatorWeight(400.0, passengerWeights4));
     }
-    
 }
