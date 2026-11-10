@@ -1,0 +1,11 @@
+# Coding Challenges - Kabir Maharjan
+
+Every entry must include, at minimum:
+The name of the challenge
+The difficulty of the challenge, using the difficulty label shown on the platform (for example, Easy, Medium, or Hard)
+The date completed, recorded in a consistent date format (for example, 2026-11-06)
+The programming language you used to solve the challenge (for example, Java or Python)
+The Coding Challenge platform you used (HackerRank, LeetCode, etc...)
+
+11/10/2026 - Flood Fill - Easy - Java - LeetCode
+11/10/2026 - Two Sums - Easy - Java - LeetCode
