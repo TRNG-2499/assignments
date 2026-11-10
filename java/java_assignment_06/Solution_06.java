@@ -24,6 +24,7 @@ public class Solution_06 {
             
             runningValue = paraseCommand(input, runningValue);
         }
+        sc.close();
     }
 
     public static int paraseCommand(String input, int currentTotal) {
