@@ -47,3 +47,4 @@ Coding Challenge Log
   - Ideally, you will complete 5 per week - one per workday.
 - Upload your log to this directory under your branch on this repository
 - Logs will be checked each Friday.
+
