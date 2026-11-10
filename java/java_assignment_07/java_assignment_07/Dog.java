@@ -1,13 +1,13 @@
-package assignments.java.java_assignment_07;
+package java.java_assignment_07.java_assignment_07;
 
 public class Dog extends Animal {
-
-    public void makeSound(){
-        System.out.println("arf");
+    @Override 
+    public String makeSound() {
+        return "woof wooof!";
     }
 
-    public void describe(){
-        System.out.println("This is a dog");
+    @Override 
+    public String describe() {
+        return "This is a dog, and it barks, and barks!";
     }
-
 }

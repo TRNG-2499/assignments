@@ -1,14 +1,13 @@
-package assignments.java.java_assignment_07;
+package java.java_assignment_07.java_assignment_07;
 
 public class Cat extends Animal {
-
-    public void makeSound(){
-        System.out.println("Meow");
+    @Override 
+    public String makeSound() {
+        return "meow";
     }
 
-    public void describe(){
-        System.out.println("This is a cat");
+    @Override 
+    public String describe() {
+        return "This is a cat, and it loves to hang out with people and chill";
     }
-
-
 }

@@ -1,48 +1,50 @@
-package assignments.java.java_assignment_07;
+package assignments.java_assignment_07;
+
 import java.util.Scanner;
 
-
 public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        boolean running = true;
 
-    public static void main(String args[]){
+        while (running) {
+            System.out.println("1. Dog");
+            System.out.println("2. Cat");
+            System.out.println("3. Bird");
+            System.out.println("0. Exit");
 
-
-        Scanner myObj = new Scanner(System.in);
-        String input = "";
-        String options = "1. Dog \n2. Cat \n3. Bird \n0. Exit \nEnter your selection";
-
-        Animal Dog1 = new Dog();
-        Animal Cat1= new Cat();
-        Animal Bird1 = new Bird();
-
-        while(true){
-
-            System.out.println(options);
-            input = myObj.nextLine();
-
-            if(input.equals("0")){
-                System.out.println("Goodbye, thanks for visiting the zoo");
-                break;
+            if (!scanner.hasNextInt()) {
+                String input = scanner.next();
+                System.out.println("" + input + "' is not a number. Please try again. \n");
+                continue;
             }
-            else if(input.equals("1")){
-                Dog1.makeSound();
-                Dog1.describe();
-            }
-            else if(input.equals("2")){
-                Cat1.makeSound();
-                Cat1.describe();
-            }
-            else if(input.equals("3")){
-                Bird1.makeSound();
-                Bird1.describe();
-            }
-            else{
-                System.out.println("Invalid number.");
-            }
+            int selection = scanner.nextInt();
+            Animal animal = null;
+
+            switch (selection) {
+                case 1:
+                    animal = new Dog();
+                    break;
+                case 2:
+                    animal = new Cat();
+                    break;
+                case 3:
+                    animal = new Bird();
+                    break;
+                case 0:
+                    System.out.println("Goodbye! Thanks for visiting the Zoo!");
+                    running = false;
+                    break;
+                default:
+                    System.out.println("Invalid selection. Please try again.");
+                    break;
         }
 
-        myObj.close();
-
+        if (animal != null) {
+            System.out.println(animal.makeSound());
+            System.out.println(animal.describe() + "\n");
+        }
     }
-    
+
+    scanner.close();
 }

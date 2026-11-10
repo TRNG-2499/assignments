@@ -1,15 +1,12 @@
-package assignments.java.java_assignment_07;
+package java.java_assignment_07.java_assignment_07;
 
 public class Bird extends Animal {
-
-    public void makeSound(){
-        System.out.println("tweet");
+    @Override 
+    public String makeSound() {
+        return "tweet";
     }
-
-    public void describe(){
-        System.out.println("I'm a bird");
+    @Override 
+    public String describe() {
+        return "This is a bird, and it flies up high in the sky!";
     }
-
-
-    
 }
