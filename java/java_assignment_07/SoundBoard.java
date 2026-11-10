@@ -42,14 +42,14 @@ public class SoundBoard {
                 case -1 -> {}
                 default -> {
                     System.out.printf("'%d' is not a valid selection. Please choose a number from the menu.\n",sel);
-                    sel = -1;
+                    //sel = -1;
                 }            
             }
             System.out.print("\n\n1. Dog\n2. Snake\n3. Fish\n4. Bird\n5. Frog\n6. Surprise Me!\n0. Exit\nEnter your selection: ");
 
             try {
                 sel = Integer.parseInt(in.nextLine().strip());
-            } catch (Exception e) {
+            } catch (NumberFormatException e) {
                 System.out.println("That's not a valid number. Please choose a number from the menu.");
                 sel = -1;
             }
@@ -182,7 +182,7 @@ public class SoundBoard {
     }
 
     public static class Frog extends Animal {
-        private boolean isPoisonous;
+        private final boolean isPoisonous;
 
         public Frog(boolean isPoisonous){
             this.isPoisonous = isPoisonous;
