@@ -53,7 +53,7 @@ Output: "Invalid input: amount inserted cannot be negative."
 
 ## Stretch Goals
 
-Each stretch goal should be implemented as its own separate method — do not modify your original method to accommodate these. Your original solution should remain intact and callable on its own.
+Each stretch goal should be implemented as its own separate method — do not modify your original method to accommodate these. Your original a1_solution should remain intact and callable on its own.
 
 - **Multiple Items / Running Total** — Accept a list of item prices being purchased together, along with a single amount inserted, and determine whether the total was fully covered. Report either the change owed or how much more is needed, based on the sum of all item prices.
 - **Making Change in Denominations** — Given a change amount owed, break it down into the fewest number of standard bills and coins ($1.00, $0.25, $0.10, $0.05, $0.01) needed to make that amount, and report the count of each denomination used.
