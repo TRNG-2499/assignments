@@ -21,8 +21,8 @@ public class close {
         // int target = scanner.nextInt();
 
         // This is hard coded array for efficient testing
-        int[] array = { 4, 9, 1, 8, 15 };
-        int target = 2;
+        int[] array = { 4, 9, 1, 8, 15, 7, 20, 21, 3, 12, 16 };
+        int target = 10;
 
         System.out.println("Enter program mode");
         System.out.println("1 for default");
@@ -47,6 +47,7 @@ public class close {
 
         if (array == null || array.length == 0) {
             System.out.println("-1");
+            return;
         }
 
         int difference = Integer.MAX_VALUE;
@@ -68,11 +69,12 @@ public class close {
 
         if (array == null || array.length == 0) {
             System.out.println("-1");
+            return;
         }
 
         Map<Integer, Integer> result = new HashMap<>();
 
-        int maxDifference = 0;
+        int maxDifference = -1;
         int key = -1;
         int i;
 
@@ -83,7 +85,8 @@ public class close {
 
         // loop to find maximum difference
         for (Map.Entry<Integer, Integer> entry : result.entrySet()) {
-            if (entry.getValue() > maxDifference) {
+            if (entry.getValue() > maxDifference
+                    || (entry.getValue() == maxDifference && entry.getKey() > key)) {
                 maxDifference = entry.getValue();
                 key = entry.getKey();
             }
@@ -93,18 +96,24 @@ public class close {
 
         for (i = k; i < array.length; i++) {
 
-            if (Math.abs(target - array[i]) < difference) {
+            int currentDifference = Math.abs(target - array[i]);
+
+            if (currentDifference < difference
+                    || (currentDifference == difference && array[i] < key)) {
                 result.put(array[i], Math.abs(target - array[i]));
                 result.remove(key);
-                difference = Math.abs(target - array[i]);
-                key = array[i];
+
+                maxDifference = -1;
 
                 for (Map.Entry<Integer, Integer> entry : result.entrySet()) {
-                    if (entry.getValue() > maxDifference) {
+                    if (entry.getValue() > maxDifference
+                            || (entry.getValue() == maxDifference && entry.getKey() > key)) {
                         maxDifference = entry.getValue();
                         key = entry.getKey();
                     }
                 }
+
+                difference = maxDifference;
             }
 
         }
