@@ -12,10 +12,11 @@ public class Main {
             System.out.println("2. Cat");
             System.out.println("3. Bird");
             System.out.println("0. Exit");
+            System.out.print("Enter your selection: ");
 
             if (!scanner.hasNextInt()) {
                 String input = scanner.next();
-                System.out.println("" + input + "' is not a number. Please try again. \n");
+                System.out.println("'" + input + "' is not a number. Please try again. \n");
                 continue;
             }
             int selection = scanner.nextInt();
@@ -46,5 +47,6 @@ public class Main {
         }
     }
 
-    scanner.close();
+        scanner.close();
+    }
 }

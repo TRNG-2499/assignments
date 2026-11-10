@@ -1,4 +1,4 @@
-package java.java_assignment_07.java_assignment_07;
+package java_assignment_07.java_assignment_07;
 
 public class Bird extends Animal {
     @Override 
