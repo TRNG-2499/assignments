@@ -26,13 +26,13 @@ public class RotateArray {
         Stretch test
          */
         System.out.println("Stretch test:");
-        int[] a5 = {1,2,3,4,5};
+        int[] a5 = {1,2,3,4,5,6};
         k = 2;
         System.out.println(Arrays.toString(inst.rotateLeft(a5, k)));
-        k = -2;
+        k = -7;
         System.out.println(Arrays.toString(inst.negativeStepRotate(a5, k)));
-        k = 7;
-        System.out.println(Arrays.toString(inst.negativeStepRotate(a5, k)));
+        k = 2;
+        System.out.println(Arrays.toString(inst.rotateLowMem(a5, k)));
     }
 
     public int[] rotate(int[] iArr, int rotateSteps) {
@@ -90,12 +90,21 @@ public class RotateArray {
         int arrLen = iArr.length;
         int idx = 0;
         int curCopy = iArr[idx];
+        int startIdx = 0;
         for (int i = 0; i < arrLen; i++) {
+            // Swap elements & jump to next index
             int placement = (idx + rotateSteps) % arrLen;
             int placementCopy = iArr[placement];
             iArr[placement] = curCopy;
             curCopy = placementCopy;
-            idx += rotateSteps;
+            idx = (idx + rotateSteps) % arrLen;
+
+            // Catch loop
+            if (i > 0 && idx == startIdx) {
+                idx = (idx + 1) % arrLen;
+                startIdx = idx;
+                curCopy = iArr[idx];
+            }
         }
         return iArr;
     }
