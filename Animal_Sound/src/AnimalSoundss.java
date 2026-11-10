@@ -1,12 +1,14 @@
+import java.util.Random;
 import java.util.Scanner;
 
+//With Stretch Goals 1 and 2
 public class AnimalSoundss {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int selection = -1;
 
         while(selection != 0){
-            System.out.print("Press 1 for Dog, \nPress 2 for Cat, \npress 3 for Bird.");
+            System.out.print("Press 1 for Dog, \nPress 2 for Cat, \nPress 3 for Bird, \nPress 4 for 'Surprise Me'");
             System.out.println("\nPlease enter your selection: ");
 
             if(scanner.hasNext()){
@@ -24,6 +26,9 @@ public class AnimalSoundss {
 
                     case 3:
                         animal = new Bird();
+                        break;
+                    case 4:
+                        animal = getRandomAnimal();
                         break;
 
                     case 0:
@@ -47,5 +52,20 @@ public class AnimalSoundss {
 
         }
     scanner.close();
+    }
+
+
+    public static Animal getRandomAnimal(){
+        Random random = new Random();
+
+        int number = random.nextInt(3) + 1;
+
+        if(number == 1){
+            return  new Dog("Golden Retriever");
+        } else if (number == 2){
+            return  new Cat("Orange");
+        } else {
+            return new Bird("Yes can fly.");
+        }
     }
 }
