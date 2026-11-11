@@ -46,13 +46,13 @@ Output: ""
 
 ## Requirements Checklist
 
-- [ ] Method accepts the string as a parameter (not hardcoded)
-- [ ] Correctly identifies runs of consecutive identical characters
-- [ ] Runs are identified case-insensitively (e.g., `"aA"` counts as one run)
-- [ ] The character used in the output for each run matches the casing of that run's first character
-- [ ] Correctly appends the character followed by its run count for every run, including runs of length 1
-- [ ] Empty string input is handled without crashing, and returns an empty string
-- [ ] Code is organized into at least one clearly named method (avoid putting all logic directly in `main`)
+- [x] Method accepts the string as a parameter (not hardcoded)
+- [x] Correctly identifies runs of consecutive identical characters
+- [x] Runs are identified case-insensitively (e.g., `"aA"` counts as one run)
+- [x] The character used in the output for each run matches the casing of that run's first character
+- [x] Correctly appends the character followed by its run count for every run, including runs of length 1
+- [x] Empty string input is handled without crashing, and returns an empty string
+- [x] Code is organized into at least one clearly named method (avoid putting all logic directly in `main`)
 
 ## Stretch Goals
 
