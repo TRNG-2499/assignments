@@ -33,11 +33,11 @@ Output: [1, 2, 3, 4]
 
 ## Requirements Checklist
 
-- [ ] Method accepts the array and `k` as parameters (not hardcoded)
-- [ ] Correctly rotates the array to the right by `k` positions
-- [ ] Correctly handles a `k` value larger than the array's length
-- [ ] Correctly handles a `k` value of `0`, returning the array unchanged
-- [ ] Code is organized into at least one clearly named method (avoid putting all logic directly in `main`)
+- [x] Method accepts the array and `k` as parameters (not hardcoded)
+- [x] Correctly rotates the array to the right by `k` positions
+- [x] Correctly handles a `k` value larger than the array's length
+- [x] Correctly handles a `k` value of `0`, returning the array unchanged
+- [x] Code is organized into at least one clearly named method (avoid putting all logic directly in `main`)
 
 ## Stretch Goals
 
