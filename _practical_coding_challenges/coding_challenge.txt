@@ -1,3 +1,5 @@
 1. Sqrt(x) - Easy - 2026-11-09 - Java - LeetCode
 2. Simplify Path - Medium - 2026-11-09- java - LeetCode
 3. Add Two Numbers - Medium - 2026-11-09- java- LeetCode
+4. Longest Substring Without Repeating Characters - Medum - 2026-11-11- Java - LeetCode
+5. median-of-two-sorted-arrays - Hard - 2026-11-11 - Java - leetcode
