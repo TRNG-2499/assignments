@@ -20,7 +20,7 @@ public class ClosestValue {
         int closest = arr[0];
         int minDiff = Math.abs(arr[0] - target);
         for (int i = 1; i < arr.length; i++) {
-            int diff  = Math.abs(arr[i] - target);
+            int diff = Math.abs(arr[i] - target);
             if (diff < minDiff) {
                 minDiff = diff;
                 closest = arr[i];
