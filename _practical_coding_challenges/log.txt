@@ -3,3 +3,4 @@ Simple Array Sum                    Easy        2026-11-9       Java 15         
 Organizing Containers of Balls      Medium                      Java 15                 HackerRank                  ...                             1/2
 Number Line Jumps                   Easy        2026-11-9       Java 15                 HackerRank                  PseudoCode and Implementation   30/30
 Staircase                           Easy        2026-11-10      Java 15                 HackerRank                  PseudoCode and Implementation   1/1
+A Very Big Sum                      Easy        2026-11-11      Java 15                 HackerRank                  PseudoCode and Implementation   2/2
