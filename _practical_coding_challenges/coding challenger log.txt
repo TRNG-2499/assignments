@@ -2,3 +2,4 @@ Coding Challenge Log
 
 1. Compare the Triplets - Easy - 11/09/2026 - Java - HackerRank
 2. Mini-Max Sum - Easy - 11/10/2026 - Java - HackerRank
+3. Number Line Jump - Easy - 11/11/2026 - Java - HackerRank
