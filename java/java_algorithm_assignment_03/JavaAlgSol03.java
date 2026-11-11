@@ -44,6 +44,7 @@ public class JavaAlgSol03 {
         return result.toString();
     }
 
+    // stretch
     private static String compressWhenShorter(String input) {
         if (input == null || input.isEmpty())
             return "";
@@ -54,6 +55,7 @@ public class JavaAlgSol03 {
                 : input;
     }
 
+    // stretch
     public static String decompress(String input) {
         if (input == null || input.isEmpty())
             return "";
