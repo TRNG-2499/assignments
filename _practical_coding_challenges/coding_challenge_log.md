@@ -46,4 +46,8 @@ Coding Challenge Log
 - You are expected to complete at least 2 coding challenges per week throughout this course 
   - Ideally, you will complete 5 per week - one per workday.
 - Upload your log to this directory under your branch on this repository
+<<<<<<< HEAD
 - Logs will be checked each Friday.
+=======
+- Logs will be checked each Friday.
+>>>>>>> origin/main
