@@ -59,15 +59,15 @@ Goodbye! Thanks for visiting the zoo.
 
 ## Requirements Checklist
 
-- [ ] `Animal` is defined as an abstract class with at least `makeSound()` and `describe()` as abstract methods
-- [ ] At least three subclasses of `Animal` are implemented, each overriding both methods with animal-specific behavior
-- [ ] A number-based menu is displayed, listing each animal option and an exit option (`0`)
-- [ ] The loop continues showing the menu and accepting selections until the user chooses to exit
-- [ ] A valid selection correctly instantiates the corresponding subclass and displays its sound and description
-- [ ] An invalid selection (out-of-range number or non-numeric input) is handled gracefully, with a clear message, and does not crash the program
-- [ ] Entering `0` ends the program with a farewell message
-- [ ] Shared logic between subclasses is placed in the abstract `Animal` class rather than duplicated
-- [ ] Code is organized into separate classes for `Animal` and each subclass, rather than combining all class logic into `main`
+- [x] `Animal` is defined as an abstract class with at least `makeSound()` and `describe()` as abstract methods
+- [x] At least three subclasses of `Animal` are implemented, each overriding both methods with animal-specific behavior
+- [x] A number-based menu is displayed, listing each animal option and an exit option (`0`)
+- [x] The loop continues showing the menu and accepting selections until the user chooses to exit
+- [x] A valid selection correctly instantiates the corresponding subclass and displays its sound and description
+- [x] An invalid selection (out-of-range number or non-numeric input) is handled gracefully, with a clear message, and does not crash the program
+- [x] Entering `0` ends the program with a farewell message
+- [x] Shared logic between subclasses is placed in the abstract `Animal` class rather than duplicated
+- [x] Code is organized into separate classes for `Animal` and each subclass, rather than combining all class logic into `main`
 
 ## Stretch Goals
 
