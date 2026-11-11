@@ -1,4 +1,4 @@
-package java.java_algorithm_assignment_02;
+package java_algorithm_assignment_02;
 
 public class RotateArraySolution {
     public static int[] rotateArray(int[] arr, int k) {

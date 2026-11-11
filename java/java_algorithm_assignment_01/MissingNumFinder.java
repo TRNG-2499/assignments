@@ -1,4 +1,4 @@
-package java.java_algorithm_assignment_01;
+package java_algorithm_assignment_01;
 
 public class MissingNumFinder {
     public static int findMissingNum(int[] num) {
