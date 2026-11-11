@@ -1,35 +1,36 @@
 import java.util.Vector;
 
-class main {
+class Main {
+    private static String count_letters(String str) {
+        String lc_str = str.toLowerCase();
+        StringBuilder sb = new StringBuilder("");
+        char[] arr = lc_str.toCharArray();
+        int count = 1;
+        char curr = arr[0];
 
-    private static void foo(String str) {
-        str = str;
+        for(int i = 0; i <= str.length() - 1; i++) {
+            if(i == str.length() - 1 && arr[i] != curr) {
+                sb.append(Character.toString(arr[i]) + count);
+            }
+            curr = arr[i];
+            if(i < str.length() - 1)
+                if (arr[i + 1] == curr) {
+                    count++;
+                    System.out.println(sb.toString());
+                } else {
+                    sb.append(Character.toString(arr[i]) + count);
+                    count = 1;
+                }
+
+        }
+
+        return sb.toString();
     }
 
     public static void main(String[] args) {
-        String str = "aaAaBbbcccdDDeeeEffF";
-        String lc_str = str.toLowerCase();
-        StringBuilder sb = new StringBuilder("");
-        char[] arr;
-        int size, count = 1;
-        char curr;
-
-        //take the size, str.split with the current letter,
-        //compare the change in size, and append to the new string
-        // "(current_letter)(difference in size)", and continue the loop;
-
-        arr = lc_str.toCharArray();
-        curr = arr[0];
-        for(int i = 0; i < str.length() - 1; i++) {
-            curr = arr[i];
-            if(arr[i+1] == curr) {
-                count++;
-                System.out.println(sb.toString());
-            } else {
-                sb.append(Character.toString(arr[i]) + count);
-                count = 1;
-            }
-        }
-        System.out.println("New String: " + sb.toString());
+        String str = "aaAaBbbcccdDDeeeEffFuuiIioOossShhg";
+        String answer_str = count_letters(str);
+        System.out.println("New String: " + answer_str);
     }
+
 }
