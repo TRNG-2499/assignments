@@ -1,30 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e8273a6-18bd-4c78-9223-c4a9240aa603" name="Changes" comment="" />
+    <list default="true" id="5e8273a6-18bd-4c78-9223-c4a9240aa603" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/ArrayIterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3,
-  "fromUser": false
-}]]></component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0273654650948476" />
+      <entry key="MS500" value="2.280002160029152" />
+      <entry key="S2" value="4.029039807929404" />
+      <entry key="S5" value="4.85339957040625" />
+      <entry key="S10" value="5.317716760479766" />
+      <entry key="S30" value="5.919614293564955" />
+      <entry key="S60" value="7.776350762074268" />
+      <entry key="M2" value="15.499857264621733" />
+      <entry key="M5" value="39.303814830094694" />
+      <entry key="M10" value="59.68313515271112" />
+      <entry key="M15" value="69.62161091883189" />
+      <entry key="M30" value="82.70351878231244" />
+      <entry key="H1" value="91.63493624263091" />
+      <entry key="H2" value="97.2329555893427" />
+      <entry key="H4" value="100.44360242368387" />
+      <entry key="D1" value="103.38052774091832" />
+      <entry key="W1" value="103.9108099371153" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="3.260436751624695E-13" />
+      <entry key="MS500" value="0.0031816701682430754" />
+      <entry key="S2" value="0.23762967142062852" />
+      <entry key="S5" value="0.60464009655139" />
+      <entry key="S10" value="1.0394754237094865" />
+      <entry key="S30" value="1.9588840943688848" />
+      <entry key="S60" value="2.441322379191549" />
+      <entry key="M2" value="3.087535921514102" />
+      <entry key="M5" value="4.8202597401890275" />
+      <entry key="M10" value="6.329368937269305" />
+      <entry key="M15" value="7.0538721557909385" />
+      <entry key="M30" value="7.93231638374942" />
+      <entry key="H1" value="8.439990567250598" />
+      <entry key="H2" value="8.713109120320485" />
+      <entry key="H4" value="8.854787943325334" />
+      <entry key="D1" value="8.975548702080788" />
+      <entry key="W1" value="8.996500800552873" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.7773813951547542" />
+      <entry key="MS500" value="1.9992475278979083" />
+      <entry key="S2" value="4.041963011770888" />
+      <entry key="S5" value="5.27502963094875" />
+      <entry key="S10" value="6.211822213982286" />
+      <entry key="S30" value="7.795775719214961" />
+      <entry key="S60" value="10.155069182567473" />
+      <entry key="M2" value="18.519309274839525" />
+      <entry key="M5" value="44.04914333507522" />
+      <entry key="M10" value="65.95186998475663" />
+      <entry key="M15" value="76.6230245681629" />
+      <entry key="M30" value="90.59291281032561" />
+      <entry key="H1" value="100.04283391556397" />
+      <entry key="H2" value="105.92553191013255" />
+      <entry key="H4" value="109.28665057994564" />
+      <entry key="D1" value="112.35387706842391" />
+      <entry key="W1" value="112.9069900326737" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3,
+  &quot;fromUser&quot;: false
+}</component>
   <component name="ProjectId" id="3LvlzRf3p9eS2Ug0wdYUJ8RttFd" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.ArrayIterator.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "git-widget-placeholder": "andrew-litcofsky",
     "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm"
   }
 }]]></component>
