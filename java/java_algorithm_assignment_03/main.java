@@ -2,35 +2,39 @@ import java.util.Vector;
 
 class Main {
     private static String count_letters(String str) {
-        String lc_str = str.toLowerCase();
         StringBuilder sb = new StringBuilder("");
-        char[] arr = lc_str.toCharArray();
-        int count = 1;
+        char[] arr = str.toLowerCase().toCharArray();
+        int count = 1, i;
         char curr = arr[0];
 
-        for(int i = 0; i <= str.length() - 1; i++) {
-            if(i == str.length() - 1 && arr[i] != curr) {
-                sb.append(Character.toString(arr[i]) + count);
-            }
+        for(i = 0; i <= str.length() - 1; i++) {
             curr = arr[i];
-            if(i < str.length() - 1)
+            if(i < str.length() - 1) {
                 if (arr[i + 1] == curr) {
                     count++;
-                    System.out.println(sb.toString());
                 } else {
                     sb.append(Character.toString(arr[i]) + count);
                     count = 1;
                 }
-
+            } else {
+                sb.append(Character.toString(arr[i]) + count);
+            }
         }
 
         return sb.toString();
     }
 
-    public static void main(String[] args) {
-        String str = "aaAaBbbcccdDDeeeEffFuuiIioOossShhg";
-        String answer_str = count_letters(str);
-        System.out.println("New String: " + answer_str);
+    public static String check_length(String str) {
+        String tmp = count_letters(str);
+        if(tmp.length() < str.length()) {
+            return tmp;
+        }
+        return str;
     }
 
+    public static void main(String[] args) {
+        String str = "aaAaBbbcccdDDeeeEffFuuiIioOossShhqqqqqqqqqqqqqq";
+        String answer_str = check_length(str);
+        System.out.println("New String: " + answer_str);
+    }
 }
