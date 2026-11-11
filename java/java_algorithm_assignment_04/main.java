@@ -1,33 +1,21 @@
 import java.util.Arrays;
 
 class Main {
-    public static int foo(int[] arr, int target) {
+    public static int findClosestElementInArray(int[] arr, int target) {
+        if(arr == null) return -1;
+
         int closest_element = Integer.MAX_VALUE, distance = Integer.MAX_VALUE;
-        int i = 0;
         for(int curr : arr) {
-            if(curr < target) {
-                if(target - curr <= distance) {
-                    if(target - curr == distance) {
-                        closest_element = (curr < closest_element) ? curr : closest_element;
-                    } else {
-                        closest_element = curr;
-                        distance = target - curr;
-                    }
-                }
-            } else if(curr > target) {
-                if(curr - target <= distance) {
-                    if(curr - target == distance) {
-                        closest_element = (curr < closest_element) ? curr : closest_element;
-                    } else {
-                        closest_element = curr;
-                        distance = curr - target;
-                    }
-                }
-                // curr is closer to target than the previous array member
-            } else {
-                return arr[i];
+            if(curr == target) return curr;
+            int currDistance = Math.abs(target - curr);
+
+            if(currDistance < distance) {
+                closest_element = curr;
+                distance = currDistance;
             }
-            i++;
+            if(currDistance == distance) {
+                closest_element = (closest_element < curr) ? closest_element : curr;
+            }
         }
 
         return (closest_element == Integer.MAX_VALUE) ? -1 : closest_element;
@@ -37,12 +25,17 @@ class Main {
         System.out.println(
                 "Array: " + Arrays.toString(arr) + "\n" +
                 "Target: " + target + "\n" +
-                "Closest element: " + foo(arr, target) + "\n");
+                "Closest element: " + findClosestElementInArray(arr, target) + "\n");
     }
 
     public static void main(String[] args) {
         int[] arr = {4, 9, 1, 15, 8};
-        run_cases(arr, 3);
-        run_cases(arr, 6);
+        int[] arr2 = {5, 15};
+        int[] null_arr = {};
+        run_cases(arr, 10);
+        run_cases(arr,1);
+        run_cases(arr2, 10);
+        run_cases(null_arr, 10);
+
     }
 }
