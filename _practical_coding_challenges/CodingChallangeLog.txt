@@ -1,0 +1,11 @@
+Name of challenge: Welcome to Java!
+Difficulty of challenge: easy
+Date completed: 11/10/2026
+Programming Language used: java
+Coding challenge platform: HackerRank
+
+Name of challenge: Java Stdin and Stdout 1
+Difficulty of challenge: easy
+Date completed: 11/10/2026
+Programming Language used: java
+Coding challenge platform: HackerRank
