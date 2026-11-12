@@ -1,0 +1,4 @@
+Coding Challenge Log
+
+1. Two Sum - Easy - 2026-10-11 - Java - LeetCode
+2. Longest Substring Without Repeating Characters - Medium - 2026-11-11 - Java - LeetCode
