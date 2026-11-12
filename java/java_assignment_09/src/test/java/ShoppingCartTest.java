@@ -5,6 +5,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertAll;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 
 public class ShoppingCartTest {
 
@@ -164,4 +167,58 @@ public class ShoppingCartTest {
 
         assertEquals(0.891, cart.getTotal(), 0.000001);
     }
+
+    // Stretch 1
+    @ParameterizedTest
+    @CsvSource({
+            "SAVE10, 9.0",
+            "SAVE20, 8.0",
+            "HALFOFF, 5.0"
+    })
+    void applyDiscountParameterized(String code, double expectedTotal) {
+        cart.addItem("Apple", 2.0, 5);
+        cart.applyDiscountCode(code);
+        assertEquals(expectedTotal, cart.getTotal(), 0.001);
+    }
+
+    @ParameterizedTest
+    @CsvSource({
+            "2, Apple | Banana",
+            "3, Apple | Banana | Cherry",
+            "0, '' "
+    })
+    void cartQuantityParameterized(int quantity, String items) {
+
+        if (!items.isEmpty()) {
+            for (String item : items.split("\\|")) {
+                cart.addItem(item, 2.0, 1);
+            }
+            assertEquals(quantity, cart.getItemCount());
+        }
+        assertEquals(quantity, cart.getItemCount());
+
+    }
+
+    // Stretch 2: Test multiple items with different quantities
+    @Test
+    void itemCountAndSubtotal() {
+        cart.addItem("Apple", 2.0, 3);
+        cart.addItem("Banana", 1.5, 2);
+
+        assertAll(
+                () -> assertEquals(2, cart.getItemCount()),
+                () -> assertEquals(9.0, cart.getTotal(), 0.001));
+    }
+
+    @Test
+    void getDifferentPrice() {
+        cart.addItem("Apple", 2.0, 5);
+        cart.applyDiscountCode("HALFOFF");
+
+        assertAll(
+                () -> assertEquals(10, cart.getSubtotal()),
+                () -> assertEquals(5, cart.getTotal()));
+
+    }
+
 }
