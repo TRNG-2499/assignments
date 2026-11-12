@@ -1,0 +1,34 @@
+plugins {
+    id 'java'
+}
+
+group = 'assignments'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.2'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher:1.10.2'
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['.']
+            include 'ShoppingCart.java'
+        }
+    }
+    test {
+        java {
+            srcDirs = ['.']
+            include 'ShoppingCartTest.java'
+        }
+    }
+}
+
+test {
+    useJUnitPlatform()
+}
