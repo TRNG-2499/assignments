@@ -4,7 +4,7 @@
 
 Practice designing a custom exception hierarchy — two top-level custom exceptions, each with more specific subclasses beneath them — and using that hierarchy to catch errors at different levels of specificity: catching a specific subtype versus catching its broader parent type.
 
-## Instructions
+## Instructions 
 
 - Define two top-level custom exception classes, both extending `Exception`:
   - `InventoryException`
