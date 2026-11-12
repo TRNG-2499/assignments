@@ -40,11 +40,11 @@ Output: -1
 
 ## Requirements Checklist
 
-- [ ] Method accepts the array and target as parameters (not hardcoded)
-- [ ] Correctly finds the closest value via linear comparison, without assuming the array is sorted
-- [ ] Ties are broken consistently, returning the smaller of the two tied values
-- [ ] Empty array input returns `-1`
-- [ ] Code is organized into at least one clearly named method (avoid putting all logic directly in `main`)
+- [x] Method accepts the array and target as parameters (not hardcoded)
+- [x] Correctly finds the closest value via linear comparison, without assuming the array is sorted
+- [x] Ties are broken consistently, returning the smaller of the two tied values
+- [x] Empty array input returns `-1`
+- [x] Code is organized into at least one clearly named method (avoid putting all logic directly in `main`)
 
 ## Stretch Goals
 
