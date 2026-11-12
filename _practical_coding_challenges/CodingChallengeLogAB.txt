@@ -1,0 +1,3 @@
+ex: challenge_name,difficulty,date_completed,language,platform
+Java Output Formatting, Easy, 2026-11-12, Java, HackerRank
+Java Int to String, Easy, 2026-11-12, Java, HackerRank
