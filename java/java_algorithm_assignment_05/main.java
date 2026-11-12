@@ -3,10 +3,9 @@ import java.util.Deque;
 
 class Main {
     public static boolean foo(String str) {
-        boolean answer = false, blocker = false;
+        boolean answer = false;
         Deque<Character> stack = new ArrayDeque<>();
         char[] charArr = str.toCharArray();
-        String validChars = "(){}[]<>";
 
         if(str == "") return true;
 
