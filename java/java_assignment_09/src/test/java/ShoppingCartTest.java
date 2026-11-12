@@ -1,3 +1,11 @@
+/**
+ * I believe the getItemCount() method is incorrect. It returns the size of the cart
+ * by checking how many keys are in the map instead of checking the values to get the actual
+ * item counts.
+ */
+
+
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
