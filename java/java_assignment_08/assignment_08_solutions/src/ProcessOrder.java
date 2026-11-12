@@ -1,5 +1,8 @@
 import Exceptions.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class ProcessOrder {
     static void main() {
         ProcessOrder instance = new ProcessOrder();
@@ -62,6 +65,14 @@ public class ProcessOrder {
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
+
+        List<String[]> orders = new ArrayList<>();
+        orders.add(new String[]{"carrot", "11", "10", "10", "10", "false"});
+        orders.add(new String[]{"carrot", "10", "10", "10", "100", "false"});
+        orders.add(new String[]{"carrot", "0", "10", "10", "10", "false"});
+        orders.add(new String[]{"carrot", "10", "10", "10", "10", "true"});
+        orders.add(new String[]{"carrot", "10", "10", "10", "10", "false"});
+        System.out.println(instance.processMultipleOrders(orders));
     }
     public String processSingleOrder(
             String itemName, int quantity,
@@ -95,5 +106,34 @@ public class ProcessOrder {
             throw new PaymentDeclinedException();
         }
         return "Successful Order! Item name: " + itemName + " Quantity ordered: " + quantity;
+    }
+
+    public String processMultipleOrders(List<String[]> orderList) {
+        StringBuffer sb = new StringBuffer("\nMulti-Order Summary\n--------------");
+        int orderNum = 1;
+        for (String[] order : orderList) {
+            sb.append("\n");
+            sb.append("Order ");
+            sb.append(orderNum);
+            sb.append(": ");
+            if (order.length != 6) {
+                // Invalid order
+                sb.append("Invalid order entry: Missing fields");
+                continue;
+            }
+            try {
+                String s = processSingleOrder(
+                        order[0], Integer.parseInt(order[1]), Integer.parseInt(order[2]),
+                        Integer.parseInt(order[3]), Integer.parseInt(order[4]), Boolean.parseBoolean(order[5])
+                );
+                sb.append(s);
+            } catch (InvalidQuantityException | OutOfStockException | PaymentDeclinedException | PaymentExpiredException e) {
+                sb.append(e.getMessage());
+            } catch (Exception e) {
+                sb.append("Unspecified Exception");
+            }
+            orderNum++;
+        }
+        return sb.toString();
     }
 }
