@@ -10,7 +10,7 @@ public class Solution_03 {
     System.out.println(lightSim("Blue", 2)); // invalid
     System.out.println(lightSim("Green", -1)); // invalid
 
-    //strech test
+    //stretch test
     System.out.println(Arrays.toString(lightSimFullCycleLog("Green", 4)));
     System.out.println(Arrays.toString(lightSimFullCycleLog("Yellow", 3)));
     System.out.println(Arrays.toString(lightSimFullCycleLog("Red", 0)));
@@ -18,7 +18,7 @@ public class Solution_03 {
 
     // todo
     // input norm GREEN Green and green are all Green;
-    // other two strech goals
+    // other two stretch goals
   }
 
   public static String lightSim(String color, int ticks) {

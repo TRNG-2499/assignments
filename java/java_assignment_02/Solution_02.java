@@ -23,7 +23,7 @@ public class Solution_02 {
     // first passenger exceeds weight limit
     if (weightLimit <= weight[0]) {
       return (
-        "Passener 1 meets or exceeds the weight limit please try again without that passenger. Total weight of " +
+        "Passenger 1 meets or exceeds the weight limit please try again without that passenger. Total weight of " +
         weight[0]
       );
     }

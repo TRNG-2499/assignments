@@ -11,7 +11,7 @@ public class Solution_05 {
   }
 
   public static void dupWords(String sentence) {
-    //seperate words
+    //separate words
     String[] words = sentence.split(" ");
 
     // create hash map
@@ -19,7 +19,7 @@ public class Solution_05 {
 
     // loop through array of words
     for (int i = 0; i < words.length; i++) {
-      // normialize to lower case
+      // normalize to lower case
       words[i] = words[i].toLowerCase();
 
       // if word in array is in wordcount hash get its value and add 1

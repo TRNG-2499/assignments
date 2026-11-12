@@ -119,7 +119,7 @@ public class Solution_04 {
       "password",
       "123456",
       "qwerty",
-      "pasword1",
+      "password1",
       "8675309",
     };
 

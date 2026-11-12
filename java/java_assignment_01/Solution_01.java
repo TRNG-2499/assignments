@@ -23,10 +23,10 @@ public class Solution_01 {
 
   public static String transaction(double cost, double availMoney) {
     if (cost < 0) {
-      return "Invalid input - Cost cannot be negitive";
+      return "Invalid input - Cost cannot be negative";
     }
     if (availMoney < 0) {
-      return "Invalid input - Availible funds, cannot be negitive";
+      return "Invalid input - Available funds, cannot be negative";
     }
 
     if (cost > availMoney) {
@@ -52,7 +52,7 @@ public class Solution_01 {
     return transaction(itemTotals, availMoney);
   }
 
-  // without changing my transaction method i did not know how to impliment this
+  // without changing my transaction method i did not know how to implement this
   public static String makeChange(double changeToGive) {
     int dollar = 0;
     int quarter = 0;
