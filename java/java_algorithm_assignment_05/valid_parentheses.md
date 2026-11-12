@@ -59,11 +59,11 @@ Output: true
 
 ## Requirements Checklist
 
-- [ ] Method accepts the string as a parameter (not hardcoded)
-- [ ] Correctly identifies balanced strings as `true`, including strings using all four bracket types
-- [ ] Correctly identifies unbalanced strings (wrong type, wrong order, or unmatched brackets) as `false`
-- [ ] Empty string is treated as valid/balanced
-- [ ] Code is organized into at least one clearly named method (avoid putting all logic directly in `main`)
+- [x] Method accepts the string as a parameter (not hardcoded)
+- [x] Correctly identifies balanced strings as `true`, including strings using all four bracket types
+- [x] Correctly identifies unbalanced strings (wrong type, wrong order, or unmatched brackets) as `false`
+- [x] Empty string is treated as valid/balanced
+- [x] Code is organized into at least one clearly named method (avoid putting all logic directly in `main`)
 
 ## Stretch Goals
 
