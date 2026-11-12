@@ -11,9 +11,22 @@ class PaymentException extends Exception {
     }
 }
 
-class OutofStockException extends InventoryException {
-    public OutofStockException(String message) {
-        super(message);
+class OutOfStockException extends InventoryException {
+    private final int qty;
+    private final int stock;
+
+    public OutOfStockException(int qty, int stock) {
+        super("Out of stock");
+        this.qty = qty;
+        this.stock = stock;
+    }
+
+    public int getQty() {
+        return qty;
+    }
+
+    public int getStock() {
+        return stock;
     }
 }
 
@@ -39,6 +52,8 @@ public class Main {
     public static void main(String[] args) {
         try {
             processOrder("Widget", 5, 2, 50.00, 50.00, false);
+        } catch (OutOfStockException e) {
+            System.out.println("Order failed: Out of stock. Requested " + e.getQty() + ", but only " + e.getStock() + " available.");
         } catch (InventoryException e) {
             System.out.println(e.getMessage());
         } catch (PaymentException e) {
@@ -83,7 +98,7 @@ public class Main {
             throw new InvalidQuantityException("Order failed: Invalid quantity. Quantity must be greater than 0.");
         }
         if (qty > stock) {
-            throw new OutofStockException("Order failed: Out of stock. Requested " + qty + ", but only " + stock + " available.");
+            throw new OutOfStockException(qty, stock);
         }
 
         if (expiration) {
