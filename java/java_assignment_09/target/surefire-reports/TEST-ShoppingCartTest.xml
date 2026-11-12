@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="ShoppingCartTest" time="0.12" tests="35" errors="0" skipped="0" failures="4">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\vince\Downloads\Revature\assignments\java\java_assignment_09\target\test-classes;C:\Users\vince\Downloads\Revature\assignments\java\java_assignment_09\target\classes;C:\Users\vince\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;C:\Users\vince\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\vince\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\vince\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\vince\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\vince\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\vince\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\vince\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.18.8-hotspot\bin"/>
+    <property name="sun.java.command" value="C:\Users\vince\AppData\Local\Temp\surefire12650531501030474738\surefirebooter-20261112182150047_3.jar C:\Users\vince\AppData\Local\Temp\surefire12650531501030474738 2026-11-12T18-21-49_898-jvmRun1 surefire-20261112182150047_1tmp surefire_0-20261112182150047_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\vince\Downloads\Revature\assignments\java\java_assignment_09\target\test-classes;C:\Users\vince\Downloads\Revature\assignments\java\java_assignment_09\target\classes;C:\Users\vince\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;C:\Users\vince\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\vince\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\vince\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\vince\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\vince\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\vince\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\vince\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\vince"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-01-20"/>
+    <property name="java.home" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.18.8-hotspot"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\vince\Downloads\Revature\assignments\java\java_assignment_09"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\vince\AppData\Local\Temp\surefire12650531501030474738\surefirebooter-20261112182150047_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.18+8"/>
+    <property name="user.name" value="vince"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-17.0.18+8"/>
+    <property name="localRepository" value="C:\Users\vince\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\vince\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.18"/>
+    <property name="user.dir" value="C:\Users\vince\Downloads\Revature\assignments\java\java_assignment_09"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.18.8-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Eclipse Adoptium\jdk-17.0.18.8-hotspot\bin;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\apache-maven-3.9.16-bin\apache-maven-3.9.16\bin;C:\Users\vince\AppData\Local\Microsoft\WindowsApps;C:\Users\vince\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\vince\AppData\Roaming\npm;c:\Users\vince\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;C:\Users\vince\AppData\Local\Programs\Microsoft VS Code\bin\copilot-shim;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="17.0.18+8"/>
+    <property name="java.specification.maintenance.version" value="1"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="getSubtotalCountsCorrectly" classname="ShoppingCartTest" time="0.019"/>
+  <testcase name="getItemCountCorrectAfterRemoval" classname="ShoppingCartTest" time="0.006">
+    <failure message="expected: &lt;101&gt; but was: &lt;1&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <101> but was: <1>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)
+	at ShoppingCartTest.getItemCountCorrectAfterRemoval(ShoppingCartTest.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+]]></failure>
+  </testcase>
+  <testcase name="addsNewItemCorrectly" classname="ShoppingCartTest" time="0.0"/>
+  <testcase name="getItemCountsCorrectly" classname="ShoppingCartTest" time="0.001">
+    <failure message="expected: &lt;201&gt; but was: &lt;2&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <201> but was: <2>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)
+	at ShoppingCartTest.getItemCountsCorrectly(ShoppingCartTest.java:96)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+]]></failure>
+  </testcase>
+  <testcase name="addsInvalidQuantityThrowsException" classname="ShoppingCartTest" time="0.002"/>
+  <testcase name="getSubtotalEmptyCartIsZero" classname="ShoppingCartTest" time="0.001"/>
+  <testcase name="addsItemWithDifferentCasingCorrectly" classname="ShoppingCartTest" time="0.0"/>
+  <testcase name="getTotalOnEmptyCartIsZero" classname="ShoppingCartTest" time="0.0"/>
+  <testcase name="applyDiscountHalfOffReturnsCorrectTotal" classname="ShoppingCartTest" time="0.001"/>
+  <testcase name="applyDiscountWithInvalidCodeThrowsException" classname="ShoppingCartTest" time="0.002"/>
+  <testcase name="applyDiscountWithInvalidCodeThrowsException(String)[1]" classname="ShoppingCartTest" time="0.013"/>
+  <testcase name="applyDiscountWithInvalidCodeThrowsException(String)[2]" classname="ShoppingCartTest" time="0.0"/>
+  <testcase name="applyDiscountWithInvalidCodeThrowsException(String)[3]" classname="ShoppingCartTest" time="0.001"/>
+  <testcase name="applyDiscountWithInvalidCodeThrowsException(String)[4]" classname="ShoppingCartTest" time="0.001"/>
+  <testcase name="applyDiscountWithInvalidCodeThrowsException(String)[5]" classname="ShoppingCartTest" time="0.001"/>
+  <testcase name="applyDiscountWithInvalidCodeThrowsException(String)[6]" classname="ShoppingCartTest" time="0.001"/>
+  <testcase name="applyDiscountAcceptsCode" classname="ShoppingCartTest" time="0.002"/>
+  <testcase name="removesItemSuccessfully" classname="ShoppingCartTest" time="0.001"/>
+  <testcase name="getSubtotalCorrectAfterRemoval" classname="ShoppingCartTest" time="0.0"/>
+  <testcase name="applyDiscountSetsDiscountCorrectlyAssertAllVersion" classname="ShoppingCartTest" time="0.001"/>
+  <testcase name="addsInvalidNameThrowsException" classname="ShoppingCartTest" time="0.001"/>
+  <testcase name="addsInvalidNameThrowsException(String)[1]" classname="ShoppingCartTest" time="0.001"/>
+  <testcase name="addsInvalidNameThrowsException(String)[2]" classname="ShoppingCartTest" time="0.001"/>
+  <testcase name="addsInvalidNameThrowsException(String)[3]" classname="ShoppingCartTest" time="0.0"/>
+  <testcase name="addsInvalidNameThrowsException(String)[4]" classname="ShoppingCartTest" time="0.001"/>
+  <testcase name="addsDuplicateItemCorrectly" classname="ShoppingCartTest" time="0.0">
+    <failure message="expected: &lt;2&gt; but was: &lt;1&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <2> but was: <1>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)
+	at ShoppingCartTest.addsDuplicateItemCorrectly(ShoppingCartTest.java:28)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+]]></failure>
+  </testcase>
+  <testcase name="removesDoesntRemoveDifferentCasingName" classname="ShoppingCartTest" time="0.0"/>
+  <testcase name="getItemOnEmptyCartIsZero" classname="ShoppingCartTest" time="0.001"/>
+  <testcase name="getTotalWithDiscount" classname="ShoppingCartTest" time="0.0"/>
+  <testcase name="removesItemNotInCartReturnsFalse" classname="ShoppingCartTest" time="0.001"/>
+  <testcase name="combinedTest" classname="ShoppingCartTest" time="0.001">
+    <failure message="Result: (1 failure)&#10;	org.opentest4j.AssertionFailedError: expected: &lt;10&gt; but was: &lt;1&gt;" type="org.opentest4j.MultipleFailuresError"><![CDATA[org.opentest4j.MultipleFailuresError: 
+Result: (1 failure)
+	org.opentest4j.AssertionFailedError: expected: <10> but was: <1>
+	at org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:80)
+	at org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:44)
+	at org.junit.jupiter.api.Assertions.assertAll(Assertions.java:2961)
+	at ShoppingCartTest.combinedTest(ShoppingCartTest.java:223)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	Suppressed: org.opentest4j.AssertionFailedError: expected: <10> but was: <1>
+		at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+		at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+		at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+		at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+		at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+		at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)
+		at ShoppingCartTest.lambda$combinedTest$21(ShoppingCartTest.java:224)
+		at org.junit.jupiter.api.AssertAll.lambda$assertAll$0(AssertAll.java:68)
+		at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+		at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+		at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+		at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+		at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+		at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+		at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+		at org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:77)
+		... 6 more
+]]></failure>
+  </testcase>
+  <testcase name="addsNegativePriceThrowsException" classname="ShoppingCartTest" time="0.001"/>
+  <testcase name="applyDiscountSave10ReturnsCorrectTotal" classname="ShoppingCartTest" time="0.001"/>
+  <testcase name="applyDiscountSave20ReturnsCorrectTotal" classname="ShoppingCartTest" time="0.0"/>
+  <testcase name="getTotalWithoutDiscount" classname="ShoppingCartTest" time="0.0"/>
+</testsuite>
