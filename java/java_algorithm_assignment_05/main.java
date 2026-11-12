@@ -10,10 +10,6 @@ class Main {
 
         if(str == "") return true;
 
-
-        // you cant open a bracket outside another bracket and close it inside that other bracket
-        //push all chars in str to the stack
-
         for (char curr : charArr) {
             if ("({[<".contains(String.valueOf(curr))) {
                 stack.push(curr);
@@ -34,6 +30,8 @@ class Main {
                 stack.pop();
             }
         }
+
+        if(!stack.isEmpty()) answer = false;
         return answer;
     }
 
