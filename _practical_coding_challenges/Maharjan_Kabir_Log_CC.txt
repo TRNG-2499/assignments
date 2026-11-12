@@ -9,3 +9,4 @@ The Coding Challenge platform you used (HackerRank, LeetCode, etc...)
 
 11/10/2026 - Flood Fill - Easy - Java - LeetCode
 11/10/2026 - Two Sums - Easy - Java - LeetCode
+11/11/2026 - Diameter of a Binary Tree - Easy (apparently) - Java - LeetCode
