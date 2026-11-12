@@ -5,7 +5,5 @@ public class InvalidQuantityException extends InventoryException {
     public InvalidQuantityException(int quantity) {
         super("Invalid Quantity — The order requests a zero or negative quantity of an item. Current quantity: "
                 + quantity);
-        // TODO Auto-generated constructor stub
     }
-
 }

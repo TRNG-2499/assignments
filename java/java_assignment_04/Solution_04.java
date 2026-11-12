@@ -9,7 +9,7 @@ public class Solution_04 {
     passChecker("P@ssw0rd");
     passChecker("");
 
-    // streach test
+    // stretch test
     System.out.println(isBlacklisted("password"));
     System.out.println(isBlacklisted("123456"));
     System.out.println(isBlacklisted("qwerty"));

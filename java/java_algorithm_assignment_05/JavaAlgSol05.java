@@ -5,6 +5,20 @@ import java.util.Map;
 
 public class JavaAlgSol05 {
 
+    public static void main(String[] args) {
+        // Basic
+        System.out.println(validParentheses("()")); // true
+        System.out.println(validParentheses("<[]>")); // true
+        System.out.println(validParentheses("([)]")); // false
+        System.out.println(validParentheses("")); // true
+
+        // Stretch
+        System.out.println(invalidBracketIndexes("()")); // []
+        System.out.println(invalidBracketIndexes(")")); // [0]
+        System.out.println(invalidBracketIndexes("(")); // [0]
+        System.out.println(invalidBracketIndexes("(]")); // [0, 1]
+    }
+
     private static Map<Character, Character> pairs = Map.of(
             '(', ')',
             '{', '}',

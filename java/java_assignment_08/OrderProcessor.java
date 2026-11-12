@@ -11,7 +11,6 @@ import assignments.java.java_assignment_08.exceptions.PaymentExpiredException;
 
 public class OrderProcessor {
 
-    // TODO make a order class
     public void processOrder(Order order) throws InventoryException, PaymentException {
 
         if (validateInventory(order.getQuantity(), order.getStock())

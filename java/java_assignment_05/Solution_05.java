@@ -22,11 +22,11 @@ public class Solution_05 {
       // normalize to lower case
       words[i] = words[i].toLowerCase();
 
-      // if word in array is in wordcount hash get its value and add 1
+      // if word in array is in wordCount hash get its value and add 1
       if (wordCount.containsKey(words[i])) {
         wordCount.put(words[i], wordCount.get(words[i]) + 1);
       } else {
-        // else put the word in wordcount and set a value to 1
+        // else put the word in wordCount and set a value to 1
         wordCount.put(words[i], 1);
       }
     }
@@ -46,7 +46,7 @@ public class Solution_05 {
     System.out.println(stringResult);
   }
 
-  //could be added to printResults or dupwords
+  //could be added to printResults or dupWords
   private static void printWoDups(LinkedHashMap<String, Integer> hashWords) {
     String stringResult = "";
     for (String word : hashWords.keySet()) {
