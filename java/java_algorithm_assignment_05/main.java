@@ -19,6 +19,10 @@ class Main {
                 stack.push(curr);
             }
             if(")}]>".contains(String.valueOf(curr))) {
+                if(stack.isEmpty()) {
+                    answer = false;
+                    break;
+                }
                 char top_char = stack.peek();
                 answer = switch(top_char) {
                     case '(' -> curr == ')';
@@ -27,6 +31,7 @@ class Main {
                     case '<' -> curr == '>';
                     default -> false;
                 };
+                stack.pop();
             }
         }
         return answer;
@@ -40,9 +45,12 @@ class Main {
 
     public static void main(String[] args) {
         Main main = new Main();
-        main.run_cases("<{[]}>"); //balanced
+        main.run_cases("()"); //balanced
+        main.run_cases("()[]{}<>"); //balanced
+        main.run_cases("(]"); //not balanced
         main.run_cases("([)]"); //not balanced
-        main.run_cases("{}([])"); //balanced
+        main.run_cases("<{[]}>"); //balanced
+        main.run_cases("(<>"); //not balanced
         main.run_cases(""); //balanced
     }
 }
