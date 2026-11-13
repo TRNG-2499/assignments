@@ -1,0 +1,5 @@
+Coding Challenge Log
+
+1. Valid Anagrams - Easy - 2026-11-12 - Java - NeetCode
+2. Two Sum - Easy - 2026-11-13 - Java - NeetCode
+3. Group Anagrams - Medium - 2026-11-13 - Java - NeetCode
