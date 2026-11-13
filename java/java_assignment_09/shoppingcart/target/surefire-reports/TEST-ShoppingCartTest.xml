@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="ShoppingCartTest" time="0.265" tests="0" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="25"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/sijidoherty/Documents/cvstuff/Revature Training/repos/assignments/java/java_assignment_09/shoppingcart/target/test-classes:/Users/sijidoherty/Documents/cvstuff/Revature Training/repos/assignments/java/java_assignment_09/shoppingcart/target/classes:/Users/sijidoherty/.m2/repository/org/junit/jupiter/junit-jupiter-api/6.1.3/junit-jupiter-api-6.1.3.jar:/Users/sijidoherty/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/sijidoherty/.m2/repository/org/junit/platform/junit-platform-commons/6.1.3/junit-platform-commons-6.1.3.jar:/Users/sijidoherty/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/sijidoherty/.m2/repository/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar:/Users/sijidoherty/.m2/repository/org/junit/jupiter/junit-jupiter-params/6.1.3/junit-jupiter-params-6.1.3.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="25"/>
+    <property name="user.country" value="NG"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-25.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/sijidoherty/Documents/cvstuff/Revature Training/repos/assignments/java/java_assignment_09/shoppingcart/target/surefire/surefirebooter-20261113105926874_3.jar /Users/sijidoherty/Documents/cvstuff/Revature Training/repos/assignments/java/java_assignment_09/shoppingcart/target/surefire 2026-11-13T10-59-25_979-jvmRun1 surefire-20261113105926874_1tmp surefire_0-20261113105926874_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="test" value="ShoppingCartTest"/>
+    <property name="surefire.test.class.path" value="/Users/sijidoherty/Documents/cvstuff/Revature Training/repos/assignments/java/java_assignment_09/shoppingcart/target/test-classes:/Users/sijidoherty/Documents/cvstuff/Revature Training/repos/assignments/java/java_assignment_09/shoppingcart/target/classes:/Users/sijidoherty/.m2/repository/org/junit/jupiter/junit-jupiter-api/6.1.3/junit-jupiter-api-6.1.3.jar:/Users/sijidoherty/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/sijidoherty/.m2/repository/org/junit/platform/junit-platform-commons/6.1.3/junit-platform-commons-6.1.3.jar:/Users/sijidoherty/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/sijidoherty/.m2/repository/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar:/Users/sijidoherty/.m2/repository/org/junit/jupiter/junit-jupiter-params/6.1.3/junit-jupiter-params-6.1.3.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/sijidoherty"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-10-21"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-25.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/sijidoherty/Documents/cvstuff/Revature Training/repos/assignments/java/java_assignment_09/shoppingcart"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/sijidoherty/Documents/cvstuff/Revature Training/repos/assignments/java/java_assignment_09/shoppingcart/target/surefire/surefirebooter-20261113105926874_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="25.0.1+8-LTS-27"/>
+    <property name="user.name" value="sijidoherty"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="15.2"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="maven.ext.class.path" value="/Users/sijidoherty/.vscode/extensions/oracle.oracle-java-27.0.0/nbcode/java/maven-nblib/netbeans-eventspy.jar"/>
+    <property name="localRepository" value="/Users/sijidoherty/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/kn/8vyyt7yx1kv_zpld_3kxf_v40000gp/T/"/>
+    <property name="java.version" value="25.0.1"/>
+    <property name="user.dir" value="/Users/sijidoherty/Documents/cvstuff/Revature Training/repos/assignments/java/java_assignment_09/shoppingcart"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/sijidoherty/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.0.1+8-LTS-27"/>
+    <property name="stdin.encoding" value="UTF-8"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="69.0"/>
+  </properties>
+  <testcase name="multipleDistinctItemsCountsSumOfQuantities" classname="getItemCount tests" time="0.023">
+    <failure message="expected: &lt;10&gt; but was: &lt;3&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <10> but was: <3>
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:569)
+	at ShoppingCartTest$getItemCountTests.multipleDistinctItemsCountsSumOfQuantities(ShoppingCartTest.java:291)
+]]></failure>
+  </testcase>
+  <testcase name="countAndSubtotalAfterSeveralAddsGroupedAssertions" classname="getItemCount tests" time="0.009">
+    <failure message="Multiple Failures (1 failure)&#10;	org.opentest4j.AssertionFailedError: 3 + 2 potatoes + 4 apples ==&gt; expected: &lt;9&gt; but was: &lt;2&gt;" type="org.opentest4j.MultipleFailuresError"><![CDATA[org.opentest4j.MultipleFailuresError: 
+Multiple Failures (1 failure)
+	org.opentest4j.AssertionFailedError: 3 + 2 potatoes + 4 apples ==> expected: <9> but was: <2>
+	at org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:80)
+	at org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:44)
+	at org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:38)
+	at org.junit.jupiter.api.Assertions.assertAll(Assertions.java:3048)
+	at ShoppingCartTest$getItemCountTests.countAndSubtotalAfterSeveralAddsGroupedAssertions(ShoppingCartTest.java:327)
+	Suppressed: org.opentest4j.AssertionFailedError: 3 + 2 potatoes + 4 apples ==> expected: <9> but was: <2>
+		... 2 more
+]]></failure>
+  </testcase>
+  <testcase name="emptyCartHasCountZero" classname="getItemCount tests" time="0.001"/>
+  <testcase name="singleItemWithLargeQuantityCountsFullQuantity" classname="getItemCount tests" time="0.001">
+    <failure message="expected: &lt;25&gt; but was: &lt;1&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <25> but was: <1>
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:569)
+	at ShoppingCartTest$getItemCountTests.singleItemWithLargeQuantityCountsFullQuantity(ShoppingCartTest.java:278)
+]]></failure>
+  </testcase>
+  <testcase name="sameItemAddedTwiceCountsCombinedQuantity" classname="getItemCount tests" time="0.001">
+    <failure message="expected: &lt;8&gt; but was: &lt;1&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <8> but was: <1>
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:569)
+	at ShoppingCartTest$getItemCountTests.sameItemAddedTwiceCountsCombinedQuantity(ShoppingCartTest.java:303)
+]]></failure>
+  </testcase>
+  <testcase name="countAfterRemovingOneItemExcludesRemovedQuantity" classname="getItemCount tests" time="0.001">
+    <failure message="expected: &lt;7&gt; but was: &lt;1&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <7> but was: <1>
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:569)
+	at ShoppingCartTest$getItemCountTests.countAfterRemovingOneItemExcludesRemovedQuantity(ShoppingCartTest.java:316)
+]]></failure>
+  </testcase>
+  <testcase name="singleItemWithQuantityOneCountsOne" classname="getItemCount tests" time="0.0"/>
+  <testcase name="applyLowercaseCodeThrows" classname="applyDiscountCode tests" time="0.001"/>
+  <testcase name="invalidCodeDoesNotClearExistingDiscount" classname="applyDiscountCode tests" time="0.001"/>
+  <testcase name="applySave10TakesTenPercentOff" classname="applyDiscountCode tests" time="0.001"/>
+  <testcase name="applyNullCodeThrows" classname="applyDiscountCode tests" time="0.001"/>
+  <testcase name="applyUnknownCodeThrows" classname="applyDiscountCode tests" time="0.001"/>
+  <testcase name="applyingSecondCodeReplacesFirst" classname="applyDiscountCode tests" time="0.001"/>
+  <testcase name="invalidCodesThrow(String)[1]" classname="applyDiscountCode tests" time="0.006"/>
+  <testcase name="invalidCodesThrow(String)[2]" classname="applyDiscountCode tests" time="0.0"/>
+  <testcase name="invalidCodesThrow(String)[3]" classname="applyDiscountCode tests" time="0.001"/>
+  <testcase name="invalidCodesThrow(String)[4]" classname="applyDiscountCode tests" time="0.001"/>
+  <testcase name="invalidCodesThrow(String)[5]" classname="applyDiscountCode tests" time="0.001"/>
+  <testcase name="invalidCodesThrow(String)[6]" classname="applyDiscountCode tests" time="0.001"/>
+  <testcase name="invalidCodesThrow(String)[7]" classname="applyDiscountCode tests" time="0.001"/>
+  <testcase name="invalidCodesThrow(String)[8]" classname="applyDiscountCode tests" time="0.0"/>
+  <testcase name="invalidCodesThrow(String)[9]" classname="applyDiscountCode tests" time="0.0"/>
+  <testcase name="invalidCodesThrow(String)[10]" classname="applyDiscountCode tests" time="0.001"/>
+  <testcase name="invalidCodesThrow(String)[11]" classname="applyDiscountCode tests" time="0.0"/>
+  <testcase name="validCodesProduceExpectedTotal(String, double)[1]" classname="applyDiscountCode tests" time="0.012"/>
+  <testcase name="validCodesProduceExpectedTotal(String, double)[2]" classname="applyDiscountCode tests" time="0.001"/>
+  <testcase name="validCodesProduceExpectedTotal(String, double)[3]" classname="applyDiscountCode tests" time="0.0"/>
+  <testcase name="totalAcrossPricesAndCodes(double, int, String, double)[1]" classname="getTotal tests" time="0.01"/>
+  <testcase name="totalAcrossPricesAndCodes(double, int, String, double)[2]" classname="getTotal tests" time="0.001"/>
+  <testcase name="totalAcrossPricesAndCodes(double, int, String, double)[3]" classname="getTotal tests" time="0.0"/>
+  <testcase name="totalAcrossPricesAndCodes(double, int, String, double)[4]" classname="getTotal tests" time="0.002"/>
+  <testcase name="totalAcrossPricesAndCodes(double, int, String, double)[5]" classname="getTotal tests" time="0.001"/>
+  <testcase name="totalAcrossPricesAndCodes(double, int, String, double)[6]" classname="getTotal tests" time="0.0"/>
+  <testcase name="totalWithSave10IsNinetyPercentOfSubtotal" classname="getTotal tests" time="0.0"/>
+  <testcase name="emptyCartHasTotalZero" classname="getTotal tests" time="0.001"/>
+  <testcase name="totalReflectsItemsRemovedAfterDiscount" classname="getTotal tests" time="0.0"/>
+  <testcase name="mixedCartSubtotalAndTotalGroupedAssertions" classname="getTotal tests" time="0.001"/>
+  <testcase name="totalWithoutDiscountEqualsSubtotal" classname="getTotal tests" time="0.001"/>
+  <testcase name="totalWithHalfOffIsHalfOfSubtotal" classname="getTotal tests" time="0.0"/>
+  <testcase name="totalReflectsItemsAddedAfterDiscount" classname="getTotal tests" time="0.0"/>
+  <testcase name="addZeroItemsToCart" classname="addItem tests" time="0.001"/>
+  <testcase name="addNegativePriceToCart" classname="addItem tests" time="0.001"/>
+  <testcase name="addFreeItemsToCart" classname="addItem tests" time="0.002">
+    <failure message="Multiple Failures (1 failure)&#10;	org.opentest4j.AssertionFailedError: item count accurate ==&gt; expected: &lt;30&gt; but was: &lt;1&gt;" type="org.opentest4j.MultipleFailuresError"><![CDATA[org.opentest4j.MultipleFailuresError: 
+Multiple Failures (1 failure)
+	org.opentest4j.AssertionFailedError: item count accurate ==> expected: <30> but was: <1>
+	at org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:80)
+	at org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:44)
+	at org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:38)
+	at org.junit.jupiter.api.Assertions.assertAll(Assertions.java:3048)
+	at ShoppingCartTest$addItemTests.addFreeItemsToCart(ShoppingCartTest.java:85)
+	Suppressed: org.opentest4j.AssertionFailedError: item count accurate ==> expected: <30> but was: <1>
+		... 2 more
+]]></failure>
+  </testcase>
+  <testcase name="addInvalidArgumentsThrows(String, double, int)[1]" classname="addItem tests" time="0.003"/>
+  <testcase name="addInvalidArgumentsThrows(String, double, int)[2]" classname="addItem tests" time="0.001"/>
+  <testcase name="addInvalidArgumentsThrows(String, double, int)[3]" classname="addItem tests" time="0.0"/>
+  <testcase name="addInvalidArgumentsThrows(String, double, int)[4]" classname="addItem tests" time="0.0"/>
+  <testcase name="addInvalidArgumentsThrows(String, double, int)[5]" classname="addItem tests" time="0.0"/>
+  <testcase name="addInvalidArgumentsThrows(String, double, int)[6]" classname="addItem tests" time="0.001"/>
+  <testcase name="addInvalidArgumentsThrows(String, double, int)[7]" classname="addItem tests" time="0.001"/>
+  <testcase name="addManyItemsToCart" classname="addItem tests" time="0.001">
+    <failure message="Multiple Failures (1 failure)&#10;	org.opentest4j.AssertionFailedError: item count accurate ==&gt; expected: &lt;5&gt; but was: &lt;1&gt;" type="org.opentest4j.MultipleFailuresError"><![CDATA[org.opentest4j.MultipleFailuresError: 
+Multiple Failures (1 failure)
+	org.opentest4j.AssertionFailedError: item count accurate ==> expected: <5> but was: <1>
+	at org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:80)
+	at org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:44)
+	at org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:38)
+	at org.junit.jupiter.api.Assertions.assertAll(Assertions.java:3048)
+	at ShoppingCartTest$addItemTests.addManyItemsToCart(ShoppingCartTest.java:59)
+	Suppressed: org.opentest4j.AssertionFailedError: item count accurate ==> expected: <5> but was: <1>
+		... 2 more
+]]></failure>
+  </testcase>
+  <testcase name="addSeveralItemsGroupedAssertions" classname="addItem tests" time="0.001">
+    <failure message="Multiple Failures (1 failure)&#10;	org.opentest4j.AssertionFailedError: total quantity is 4 + 2 + 1 ==&gt; expected: &lt;7&gt; but was: &lt;3&gt;" type="org.opentest4j.MultipleFailuresError"><![CDATA[org.opentest4j.MultipleFailuresError: 
+Multiple Failures (1 failure)
+	org.opentest4j.AssertionFailedError: total quantity is 4 + 2 + 1 ==> expected: <7> but was: <3>
+	at org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:80)
+	at org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:44)
+	at org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:38)
+	at org.junit.jupiter.api.Assertions.assertAll(Assertions.java:3048)
+	at ShoppingCartTest$addItemTests.addSeveralItemsGroupedAssertions(ShoppingCartTest.java:125)
+	Suppressed: org.opentest4j.AssertionFailedError: total quantity is 4 + 2 + 1 ==> expected: <7> but was: <3>
+		... 2 more
+]]></failure>
+  </testcase>
+  <testcase name="addItemToEmptyCart" classname="addItem tests" time="0.001">
+    <failure message="Multiple Failures (1 failure)&#10;	org.opentest4j.AssertionFailedError: item count accurate ==&gt; expected: &lt;15&gt; but was: &lt;1&gt;" type="org.opentest4j.MultipleFailuresError"><![CDATA[org.opentest4j.MultipleFailuresError: 
+Multiple Failures (1 failure)
+	org.opentest4j.AssertionFailedError: item count accurate ==> expected: <15> but was: <1>
+	at org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:80)
+	at org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:44)
+	at org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:38)
+	at org.junit.jupiter.api.Assertions.assertAll(Assertions.java:3048)
+	at ShoppingCartTest$addItemTests.addItemToEmptyCart(ShoppingCartTest.java:45)
+	Suppressed: org.opentest4j.AssertionFailedError: item count accurate ==> expected: <15> but was: <1>
+		... 2 more
+]]></failure>
+  </testcase>
+  <testcase name="addNullToCart" classname="addItem tests" time="0.0"/>
+  <testcase name="removeItemNotInCart" classname="removeItem tests" time="0.001"/>
+  <testcase name="removeSameItemTwice" classname="removeItem tests" time="0.001"/>
+  <testcase name="removeItemWithDifferentCasing" classname="removeItem tests" time="0.001"/>
+  <testcase name="removeAllItemsFromCart" classname="removeItem tests" time="0.001"/>
+  <testcase name="removeNullFromCart" classname="removeItem tests" time="0.001"/>
+  <testcase name="removeItemFromCart" classname="removeItem tests" time="0.0"/>
+  <testcase name="freeItemsContributeNothingToSubtotal" classname="getSubtotal tests" time="0.003"/>
+  <testcase name="subtotalIsNotAffectedByDiscount" classname="getSubtotal tests" time="0.001"/>
+  <testcase name="subtotalAfterSeveralAddsGroupedAssertions" classname="getSubtotal tests" time="0.006"/>
+  <testcase name="multipleItemsSubtotalIsSumOfLines" classname="getSubtotal tests" time="0.001"/>
+  <testcase name="emptyCartHasSubtotalZero" classname="getSubtotal tests" time="0.001"/>
+  <testcase name="singleItemSubtotalIsPriceTimesQuantity" classname="getSubtotal tests" time="0.002"/>
+  <testcase name="subtotalAfterRemovingItemExcludesIt" classname="getSubtotal tests" time="0.001"/>
+</testsuite>
