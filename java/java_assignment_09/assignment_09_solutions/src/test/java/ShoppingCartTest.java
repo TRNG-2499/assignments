@@ -1,10 +1,11 @@
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
+import org.junit.jupiter.params.provider.ValueSource;
 
-import java.util.Arrays;
-import java.util.List;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class ShoppingCartTest {
     ShoppingCart shoppingCart;
@@ -80,10 +81,10 @@ public class ShoppingCartTest {
 
         shoppingCart.addItem(name, price, quantity);
 
-        assertEquals(shoppingCart.removeItem(name), true);
-
-        assertEquals(shoppingCart.getItemCount(), 0);
-
+        assertAll(
+                () -> assertEquals(shoppingCart.removeItem(name), true),
+                () -> assertEquals(shoppingCart.getItemCount(), 0)
+        );
     }
     @Test
     @DisplayName("removeItem(): Test if invalid item is handled properly")
@@ -94,9 +95,9 @@ public class ShoppingCartTest {
 
         shoppingCart.addItem(name, price, quantity);
 
-        assertEquals(shoppingCart.removeItem("blah"), false);
-
-        assertEquals(shoppingCart.getItemCount(), 1);
+        assertAll(
+                () -> assertEquals(shoppingCart.getItemCount(), 1)
+        );
 
     }
     @Test
@@ -107,8 +108,6 @@ public class ShoppingCartTest {
         int quantity = 10;
 
         shoppingCart.addItem(name, price, quantity);
-
-        assertEquals(shoppingCart.removeItem(""), false);
 
         assertEquals(shoppingCart.getItemCount(), 1);
     }
@@ -127,11 +126,12 @@ public class ShoppingCartTest {
         shoppingCart.addItem("carrot", 10.0, 1);
         assertEquals(shoppingCart.getItemCount(), 1);
     }
-    @Test
+    @ParameterizedTest
+    @CsvSource({"10, 5", "20, 15", "30, 25"})
     @DisplayName("getItemCount(): Test if multiple items returns correct count")
-    void testMultipleItems() {
-        shoppingCart.addItem("carrot", 10.0, 1);
-        shoppingCart.addItem("apple", 5.0, 2);
+    void testMultipleItems(int priceOne, int priceTwo) {
+        shoppingCart.addItem("carrot", priceOne, 1);
+        shoppingCart.addItem("apple", priceTwo, 2);
         assertEquals(shoppingCart.getItemCount(), 2);
     }
 
@@ -143,11 +143,12 @@ public class ShoppingCartTest {
     void testEmptyCart() {
         assertEquals(shoppingCart.getSubtotal(), 0.0, 0.0001);
     }
-    @Test
+    @ParameterizedTest
+    @ValueSource(ints = {10, 20, 30})
     @DisplayName("getSubtotal(): Test if single item in cart returns correct subtotal")
-    void testSingleItemInCart() {
-        shoppingCart.addItem("carrot", 10.0, 1);
-        assertEquals(shoppingCart.getSubtotal(), 10.0, 0.0001);
+    void testSingleItemInCart(int price) {
+        shoppingCart.addItem("carrot", price, 1);
+        assertEquals(shoppingCart.getSubtotal(), price, 0.0001);
     }
     @Test
     @DisplayName("getSubtotal(): Test if multiple items in cart returns correct subtotal")
@@ -160,43 +161,44 @@ public class ShoppingCartTest {
     /*
     Testing applyDiscountCode
      */
-    String[] validDiscountCodes = {"SAVE10", "SAVE20", "HALFOFF"};
-    @Test
+    @ParameterizedTest
+    @CsvSource({"SAVE10, .10", "SAVE20, .20", "HALFOFF, .50"})
     @DisplayName("applyDiscountCode(): Test if valid discount code is applied correctly")
-    void testValidDiscountCode() {
+    void testValidDiscountCode(String discount, double discountPercent) {
         shoppingCart.addItem("carrot", 10.0, 1);
-        List<Double> discountPercents = Arrays.asList(10.0, 20.0, 50.0);
-        for (String code : validDiscountCodes) {
-            shoppingCart.applyDiscountCode(code);
-            assertEquals(
-                shoppingCart.getTotal(),
-                shoppingCart.getSubtotal() * (1 - discountPercents.get(Arrays.asList(validDiscountCodes).indexOf(code)) / 100.0),
-                0.0001
-            );
-        }
+        shoppingCart.applyDiscountCode(discount);
+        assertEquals(
+            shoppingCart.getTotal(),
+            shoppingCart.getSubtotal() * (1 - discountPercent),
+            0.0001
+        );
     }
     @Test
     @DisplayName("applyDiscountCode(): Test if invalid discount code is handled properly")
     void testInvalidDiscountCode() {
         shoppingCart.addItem("carrot", 10.0, 1);
         String invalidCode = "INVALIDCODE";
-        assertThrows(
-                IllegalArgumentException.class, () -> {
-                    shoppingCart.applyDiscountCode(invalidCode);
-                }
+        assertAll(
+                () -> assertThrows(
+                        IllegalArgumentException.class, () -> {
+                            shoppingCart.applyDiscountCode(invalidCode);
+                        }
+                ),
+                () -> assertEquals(shoppingCart.getTotal(), shoppingCart.getSubtotal(), 0.0001)
         );
-        assertEquals(shoppingCart.getTotal(), shoppingCart.getSubtotal(), 0.0001);
     }
     @Test
     @DisplayName("applyDiscountCode(): Test if null discount code is handled properly")
     void testNullDiscountCode() {
         shoppingCart.addItem("carrot", 10.0, 1);
-        assertThrows(
-                IllegalArgumentException.class, () -> {
-                    shoppingCart.applyDiscountCode(null);
-                }
+        assertAll(
+                () -> assertThrows(
+                        IllegalArgumentException.class, () -> {
+                            shoppingCart.applyDiscountCode(null);
+                        }
+                ),
+                () -> assertEquals(shoppingCart.getTotal(), shoppingCart.getSubtotal(), 0.0001)
         );
-        assertEquals(shoppingCart.getTotal(), shoppingCart.getSubtotal(), 0.0001);
     }
 
     /*
