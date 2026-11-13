@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="ShoppingCartTest" time="0.136" tests="39" errors="0" skipped="0" failures="6">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\Meetkumar\Downloads\assignments\java\java_assignment_09\target\test-classes;C:\Users\Meetkumar\Downloads\assignments\java\java_assignment_09\target\classes;C:\Users\Meetkumar\.m2\repository\org\junit\jupiter\junit-jupiter\5.12.2\junit-jupiter-5.12.2.jar;C:\Users\Meetkumar\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.12.2\junit-jupiter-api-5.12.2.jar;C:\Users\Meetkumar\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Meetkumar\.m2\repository\org\junit\platform\junit-platform-commons\1.12.2\junit-platform-commons-1.12.2.jar;C:\Users\Meetkumar\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Meetkumar\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.12.2\junit-jupiter-params-5.12.2.jar;C:\Users\Meetkumar\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.12.2\junit-jupiter-engine-5.12.2.jar;C:\Users\Meetkumar\.m2\repository\org\junit\platform\junit-platform-engine\1.12.2\junit-platform-engine-1.12.2.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-21.0.13.9-hotspot\bin"/>
+    <property name="sun.java.command" value="C:\Users\Meetkumar\AppData\Local\Temp\surefire14310899758176722030\surefirebooter-20261112193624217_3.jar C:\Users\Meetkumar\AppData\Local\Temp\surefire14310899758176722030 2026-11-12T19-36-24_098-jvmRun1 surefire-20261112193624217_1tmp surefire_0-20261112193624217_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\Meetkumar\Downloads\assignments\java\java_assignment_09\target\test-classes;C:\Users\Meetkumar\Downloads\assignments\java\java_assignment_09\target\classes;C:\Users\Meetkumar\.m2\repository\org\junit\jupiter\junit-jupiter\5.12.2\junit-jupiter-5.12.2.jar;C:\Users\Meetkumar\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.12.2\junit-jupiter-api-5.12.2.jar;C:\Users\Meetkumar\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Meetkumar\.m2\repository\org\junit\platform\junit-platform-commons\1.12.2\junit-platform-commons-1.12.2.jar;C:\Users\Meetkumar\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Meetkumar\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.12.2\junit-jupiter-params-5.12.2.jar;C:\Users\Meetkumar\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.12.2\junit-jupiter-engine-5.12.2.jar;C:\Users\Meetkumar\.m2\repository\org\junit\platform\junit-platform-engine\1.12.2\junit-platform-engine-1.12.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Meetkumar"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-10-20"/>
+    <property name="java.home" value="C:\Program Files\Eclipse Adoptium\jdk-21.0.13.9-hotspot"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\Meetkumar\Downloads\assignments\java\java_assignment_09"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\Meetkumar\AppData\Local\Temp\surefire14310899758176722030\surefirebooter-20261112193624217_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.13+9-LTS"/>
+    <property name="user.name" value="Meetkumar"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-21.0.13+9"/>
+    <property name="localRepository" value="C:\Users\Meetkumar\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\MEETKU~1\AppData\Local\Temp\"/>
+    <property name="java.version" value="21.0.13"/>
+    <property name="user.dir" value="C:\Users\Meetkumar\Downloads\assignments\java\java_assignment_09"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-21.0.13.9-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Eclipse Adoptium\jdk-21.0.13.9-hotspot\bin;C:\Program Files (x86)\Razer Chroma SDK\bin;C:\Program Files\Razer Chroma SDK\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\dotnet\;C:\WINDOWS\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Users\Meetkumar\AppData\Local\Microsoft\WindowsApps;C:\Users\Meetkumar\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Meetkumar\AppData\Roaming\npm;C:\Tools\apache-maven-3.10.0\bin;C:\Users\Meetkumar\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Meetkumar\AppData\Roaming\npm;C:\Users\Meetkumar\.lmstudio\bin;;c:\Users\Meetkumar\.vscode\extensions\vscjava.vscode-java-debug-0.60.0\bundled\scripts\noConfigScripts;c:\Users\Meetkumar\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;C:\Users\Meetkumar\AppData\Local\Programs\Microsoft VS Code\bin\copilot-shim;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="21.0.13+9-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="removeItemExistingItemReturnsTrue" classname="ShoppingCartTest" time="0.018"/>
+  <testcase name="getTotalWithDiscountCalculatesCorrectAmount" classname="ShoppingCartTest" time="0.002"/>
+  <testcase name="applyDiscountCodeSave20ReducesTotalByTwentyPercent" classname="ShoppingCartTest" time="0.001"/>
+  <testcase name="getItemCountSingleItemReturnsQuantity" classname="ShoppingCartTest" time="0.005">
+    <failure message="expected: &lt;4&gt; but was: &lt;1&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <4> but was: <1>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)
+	at ShoppingCartTest.getItemCountSingleItemReturnsQuantity(ShoppingCartTest.java:162)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+]]></failure>
+  </testcase>
+  <testcase name="getSubtotalMultipleItemsReturnsCorrectSum" classname="ShoppingCartTest" time="0.002"/>
+  <testcase name="addingMultipleItemsUpdatesCountAndSubtotal" classname="ShoppingCartTest" time="0.003">
+    <failure message="Multiple Failures (1 failure)&#10;	org.opentest4j.AssertionFailedError: expected: &lt;5&gt; but was: &lt;2&gt;" type="org.opentest4j.MultipleFailuresError"><![CDATA[org.opentest4j.MultipleFailuresError: 
+Multiple Failures (1 failure)
+	org.opentest4j.AssertionFailedError: expected: <5> but was: <2>
+	at org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:80)
+	at org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:44)
+	at org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:38)
+	at org.junit.jupiter.api.Assertions.assertAll(Assertions.java:2944)
+	at ShoppingCartTest.addingMultipleItemsUpdatesCountAndSubtotal(ShoppingCartTest.java:402)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	Suppressed: org.opentest4j.AssertionFailedError: expected: <5> but was: <2>
+		at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+		at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+		at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+		at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+		at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+		at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)
+		at ShoppingCartTest.lambda$addingMultipleItemsUpdatesCountAndSubtotal$7(ShoppingCartTest.java:403)
+		at org.junit.jupiter.api.AssertAll.lambda$assertAll$0(AssertAll.java:68)
+		at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+		at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+		at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+		at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+		at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+		at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+		at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+		at org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:77)
+		... 7 more
+]]></failure>
+  </testcase>
+  <testcase name="applyDiscountCodeNullThrowsException" classname="ShoppingCartTest" time="0.001"/>
+  <testcase name="getTotalAfterRemovingItemRecalculatesDiscount" classname="ShoppingCartTest" time="0.002"/>
+  <testcase name="validDiscountCodesProduceCorrectTotal(String, double)[1]" classname="ShoppingCartTest" time="0.016"/>
+  <testcase name="validDiscountCodesProduceCorrectTotal(String, double)[2]" classname="ShoppingCartTest" time="0.001"/>
+  <testcase name="validDiscountCodesProduceCorrectTotal(String, double)[3]" classname="ShoppingCartTest" time="0.001"/>
+  <testcase name="getSubtotalAfterDiscountRemainsUnchanged" classname="ShoppingCartTest" time="0.001"/>
+  <testcase name="removeItemRemovesEntireQuantity" classname="ShoppingCartTest" time="0.001"/>
+  <testcase name="getTotalEmptyCartReturnsZero" classname="ShoppingCartTest" time="0.001"/>
+  <testcase name="addItemNegativePriceThrowsException" classname="ShoppingCartTest" time="0.001"/>
+  <testcase name="getItemCountNewCartReturnsZero" classname="ShoppingCartTest" time="0.001"/>
+  <testcase name="getItemCountMultipleItemsReturnsTotalQuantity" classname="ShoppingCartTest" time="0.001">
+    <failure message="expected: &lt;5&gt; but was: &lt;2&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <5> but was: <2>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)
+	at ShoppingCartTest.getItemCountMultipleItemsReturnsTotalQuantity(ShoppingCartTest.java:175)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+]]></failure>
+  </testcase>
+  <testcase name="addItemSameNameIncreasesExistingQuantity" classname="ShoppingCartTest" time="0.001">
+    <failure message="expected: &lt;5&gt; but was: &lt;1&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <5> but was: <1>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)
+	at ShoppingCartTest.addItemSameNameIncreasesExistingQuantity(ShoppingCartTest.java:56)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+]]></failure>
+  </testcase>
+  <testcase name="addItemValidItemIncreasesItemCount" classname="ShoppingCartTest" time="0.0">
+    <failure message="expected: &lt;3&gt; but was: &lt;1&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <3> but was: <1>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)
+	at ShoppingCartTest.addItemValidItemIncreasesItemCount(ShoppingCartTest.java:30)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+]]></failure>
+  </testcase>
+  <testcase name="getTotalWithoutDiscountEqualsSubtotal" classname="ShoppingCartTest" time="0.0"/>
+  <testcase name="applyDiscountCodeReplacesPreviousDiscount" classname="ShoppingCartTest" time="0.0"/>
+  <testcase name="applyDiscountCodeSave10ReducesTotalByTenPercent" classname="ShoppingCartTest" time="0.0"/>
+  <testcase name="addItemOneItemUpdatesSubtotal" classname="ShoppingCartTest" time="0.001"/>
+  <testcase name="applyDiscountCodeInvalidCodeThrowsException" classname="ShoppingCartTest" time="0.001"/>
+  <testcase name="applyDiscountCodeHalfOffReducesTotalByFiftyPercent" classname="ShoppingCartTest" time="0.0"/>
+  <testcase name="getSubtotalSingleItemCalculatesPriceTimesQuantity" classname="ShoppingCartTest" time="0.0"/>
+  <testcase name="addItemNullNameThrowsException" classname="ShoppingCartTest" time="0.002"/>
+  <testcase name="removeItemMissingItemReturnsFalse" classname="ShoppingCartTest" time="0.001"/>
+  <testcase name="invalidDiscountCodesThrowException(String)[1]" classname="ShoppingCartTest" time="0.003"/>
+  <testcase name="invalidDiscountCodesThrowException(String)[2]" classname="ShoppingCartTest" time="0.0"/>
+  <testcase name="invalidDiscountCodesThrowException(String)[3]" classname="ShoppingCartTest" time="0.0"/>
+  <testcase name="invalidDiscountCodesThrowException(String)[4]" classname="ShoppingCartTest" time="0.001"/>
+  <testcase name="invalidDiscountCodesThrowException(String)[5]" classname="ShoppingCartTest" time="0.001"/>
+  <testcase name="getItemCountAfterRemovingItemReturnsRemainingQuantity" classname="ShoppingCartTest" time="0.001">
+    <failure message="expected: &lt;2&gt; but was: &lt;1&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <2> but was: <1>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)
+	at ShoppingCartTest.getItemCountAfterRemovingItemReturnsRemainingQuantity(ShoppingCartTest.java:189)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+]]></failure>
+  </testcase>
+  <testcase name="addItemZeroQuantityThrowsException" classname="ShoppingCartTest" time="0.0"/>
+  <testcase name="removeItemTwiceReturnsFalseSecondTime" classname="ShoppingCartTest" time="0.0"/>
+  <testcase name="applyingDiscountChangesTotalButNotSubtotal" classname="ShoppingCartTest" time="0.001"/>
+  <testcase name="getSubtotalEmptyCartReturnsZero" classname="ShoppingCartTest" time="0.001"/>
+  <testcase name="addItemBlankNameThrowsException" classname="ShoppingCartTest" time="0.001"/>
+</testsuite>
