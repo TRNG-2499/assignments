@@ -1,3 +1,9 @@
+/**
+     * @param args the command line arguments
+     * Java algorithm assignment 09 - Shopping Cart
+     * Objective: Practice writing JUnit 5 unit tests that validate an existing class, covering normal behavior, edge cases, and exception handling, and using tests to discover incorrect logic.
+*/
+
 import java.util.LinkedHashMap;
 import java.util.Map;
 

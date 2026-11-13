@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/java_assignment_09/ShoppingCartProject.iml" filepath="$PROJECT_DIR$/java_assignment_09/ShoppingCartProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java_algorithm_assignment_01/java_algorithm_assignment_01.iml" filepath="$PROJECT_DIR$/java_algorithm_assignment_01/java_algorithm_assignment_01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java_algorithm_assignment_02/java_algorithm_assignment_02.iml" filepath="$PROJECT_DIR$/java_algorithm_assignment_02/java_algorithm_assignment_02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java_algorithm_assignment_03/java_algorithm_assignment_03.iml" filepath="$PROJECT_DIR$/java_algorithm_assignment_03/java_algorithm_assignment_03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java_algorithm_assignment_04/java_algorithm_assignment_04.iml" filepath="$PROJECT_DIR$/java_algorithm_assignment_04/java_algorithm_assignment_04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java_algorithm_assignment_05/java_algorithm_assignment_05.iml" filepath="$PROJECT_DIR$/java_algorithm_assignment_05/java_algorithm_assignment_05.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java_assignment_01/java_assignment_01.iml" filepath="$PROJECT_DIR$/java_assignment_01/java_assignment_01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java_assignment_02/java_assignment_02.iml" filepath="$PROJECT_DIR$/java_assignment_02/java_assignment_02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java_assignment_03/java_assignment_03.iml" filepath="$PROJECT_DIR$/java_assignment_03/java_assignment_03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java_assignment_04/java_assignment_04.iml" filepath="$PROJECT_DIR$/java_assignment_04/java_assignment_04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java_assignment_05/java_assignment_05.iml" filepath="$PROJECT_DIR$/java_assignment_05/java_assignment_05.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java_assignment_06/java_assignment_06.iml" filepath="$PROJECT_DIR$/java_assignment_06/java_assignment_06.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java_assignment_07/java_assignment_07.iml" filepath="$PROJECT_DIR$/java_assignment_07/java_assignment_07.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java_assignment_08/java_assignment_08.iml" filepath="$PROJECT_DIR$/java_assignment_08/java_assignment_08.iml" />
+    </modules>
+  </component>
+</project>
