@@ -1,3 +1,8 @@
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+
 import org.junit.jupiter.api.ClassOrderer;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
@@ -9,9 +14,7 @@ import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.NullAndEmptySource;
 import org.junit.jupiter.params.provider.ValueSource;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertThrows;
+import com.lmgb.RomanNumeralConverter;
 
 /**
  * Provided test suite for RomanNumeralConverter. DO NOT MODIFY.
@@ -171,34 +174,67 @@ class RomanNumeralConverterTest {
     @Order(7)
     @DisplayName("7. Invalid input")
     class InvalidInput {
-
+        
         @ParameterizedTest(name = "toRoman({0}) throws")
         @ValueSource(ints = {0, -1, -100, 4000, 10000, Integer.MIN_VALUE, Integer.MAX_VALUE})
         void toRoman_outOfRange_throwsIllegalArgumentException(int number) {
             assertThrows(IllegalArgumentException.class, () -> RomanNumeralConverter.toRoman(number));
         }
-
+        
         @ParameterizedTest(name = "toInteger(\"{0}\") throws")
         @NullAndEmptySource
         @ValueSource(strings = {"   ", "ABC", "XIZ", "123", "X I", "IV!", "hello"})
         void toInteger_invalidInput_throwsIllegalArgumentException(String roman) {
             assertThrows(IllegalArgumentException.class, () -> RomanNumeralConverter.toInteger(roman));
         }
-
+        
         @Test
         void toRoman_outOfRange_hasClearMessage() {
             IllegalArgumentException exception =
-                    assertThrows(IllegalArgumentException.class, () -> RomanNumeralConverter.toRoman(0));
+            assertThrows(IllegalArgumentException.class, () -> RomanNumeralConverter.toRoman(0));
             assertFalse(exception.getMessage() == null || exception.getMessage().isBlank(),
-                    "The exception should include a clear message.");
+            "The exception should include a clear message.");
         }
-
+        
         @Test
         void toInteger_invalidInput_hasClearMessage() {
             IllegalArgumentException exception =
-                    assertThrows(IllegalArgumentException.class, () -> RomanNumeralConverter.toInteger("ABC"));
+            assertThrows(IllegalArgumentException.class, () -> RomanNumeralConverter.toInteger("ABC"));
             assertFalse(exception.getMessage() == null || exception.getMessage().isBlank(),
-                    "The exception should include a clear message.");
+            "The exception should include a clear message.");
+        }
+    }
+    
+    // ------------------------------------------------------------------
+    // Group 8: Stretch goals
+    // ------------------------------------------------------------------
+    @Nested
+    @Order(8)
+    @DisplayName("8. Stretch goals")
+    class StretchGoals {
+
+        @ParameterizedTest(name = "toInteger(\"{0}\") throws")
+        @ValueSource(strings = {"IIII", "VV", "IC", "VX"})
+        void toInteger_invalidRoman_throwsIllegalArgumentException(String roman) {
+            assertThrows(IllegalArgumentException.class, () -> RomanNumeralConverter.toInteger(roman));
+        }
+
+        @ParameterizedTest(name = "add(\"{0}\" \"{1}\") returns \"{2}\"")
+        @CsvSource({"III, I, IV", "IX, I, X", "L, I, LI", "CIII, I, CIV"})
+        void add_returnsCorrectRomanSums(String a, String b, String e) {
+            assertEquals(e, RomanNumeralConverter.add(a, b));
+        }
+
+        @ParameterizedTest(name = "add(\"{0}\" \"{1}\") throws")
+        @CsvSource({"IIII, I", "I, IIII", "IIX, I", "IC, I"})
+        void add_invalidAOrB_throwsIllegalArgumentException(String a, String b) {
+            assertThrows(IllegalArgumentException.class, () -> RomanNumeralConverter.add(a, b));
+        }
+
+        @ParameterizedTest(name = "add(\"{0}\" \"{1}\") throws")
+        @CsvSource({"MMMCMXCIX, I", "I, MMMCMXCIX"})
+        void add_resultOutOfRange_throwsIllegalArgumentException(String a, String b) {
+            assertThrows(IllegalArgumentException.class, () -> RomanNumeralConverter.add(a, b));
         }
     }
 }
