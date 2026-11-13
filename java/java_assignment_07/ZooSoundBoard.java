@@ -5,20 +5,13 @@ import java.util.function.Supplier;
 
 /**
  * Zoo Animal Sound Board.
- *
- * Run with no arguments to use the full sound board, which includes the
- * stretch goals (animals with extra attributes and a "Surprise Me" option).
- * Run with the argument "basic" to use only the original menu and animals.
- *
- * Compile and run from this folder:
- *   javac ZooSoundBoard.java
- *   java ZooSoundBoard          (full version)
- *   java ZooSoundBoard basic    (base activity only)
+ * 
  */
 public class ZooSoundBoard {
 
     // One menu entry: the label shown to the user and how to create the animal.
-    private record MenuOption(String label, Supplier<Animal> factory) { }
+    private record MenuOption(String label, Supplier<Animal> factory) {
+    }
 
     // ---------- Base activity animals ----------
     private static final List<MenuOption> BASIC_ANIMALS = List.of(
@@ -119,8 +112,6 @@ public class ZooSoundBoard {
 
 /**
  * Base class for every animal on the sound board.
- * Subclasses only supply their own sound and description; the shared logic
- * (holding the name and displaying output) lives here.
  */
 abstract class Animal {
 
@@ -256,7 +247,8 @@ class HouseCat extends Cat {
 
 /**
  * Stretch goal: Additional Animal Attributes.
- * Extends Bird (instead of changing it) to add a species and whether it can fly.
+ * Extends Bird (instead of changing it) to add a species and whether it can
+ * fly.
  */
 class ExoticBird extends Bird {
 
@@ -279,7 +271,7 @@ class ExoticBird extends Bird {
     @Override
     public String describe() {
         String flight = canFly ? "It flaps its wings, ready to take off."
-                               : "It cannot fly, so it waddles around instead.";
+                : "It cannot fly, so it waddles around instead.";
         return super.describe() + " It is a " + species + ". " + flight;
     }
 }

@@ -42,7 +42,7 @@ public class CompressConsecutiveCharacters {
             return "";
         }
         String compressed = compress(input);
-        return compressed.length() < input.length() ? compressed : input;
+        return (compressed.length() < input.length()) ? compressed : input;
     }
 
     // ---------- Stretch 2: Decompression ----------
@@ -89,25 +89,25 @@ public class CompressConsecutiveCharacters {
     public static void main(String[] args) {
         System.out.println("=== Base activity: compress ===");
         printCompress("aaabbbccd"); // a3b3c2d1
-        printCompress("abcd");      // a1b1c1d1
-        printCompress("aaaaaa");    // a6
-        printCompress("aAaA");      // a4
-        printCompress("Aa");        // A2
-        printCompress("");          // ""
+        printCompress("abcd"); // a1b1c1d1
+        printCompress("aaaaaa"); // a6
+        printCompress("aAaA"); // a4
+        printCompress("Aa"); // A2
+        printCompress(""); // ""
 
         System.out.println("\n=== Stretch 1: Only Compress When Shorter ===");
         printCompressIfShorter("aaabbbccd"); // a3b3c2d1 (8 < 9)
-        printCompressIfShorter("abcd");      // abcd (a1b1c1d1 is longer)
-        printCompressIfShorter("aabb");      // aabb (a2b2 is the same length)
-        printCompressIfShorter("aaaaaa");    // a6
+        printCompressIfShorter("abcd"); // abcd (a1b1c1d1 is longer)
+        printCompressIfShorter("aabb"); // aabb (a2b2 is the same length)
+        printCompressIfShorter("aaaaaa"); // a6
 
         System.out.println("\n=== Stretch 2: Decompression ===");
         printDecompress("a3b3c2d1"); // aaabbbccd
-        printDecompress("a4");       // aaaa
-        printDecompress("A2b1");     // AAb
-        printDecompress("x12");      // xxxxxxxxxxxx
-        printDecompress("");         // ""
-        printDecompress("ab2");      // error: missing count after 'a'
+        printDecompress("a4"); // aaaa
+        printDecompress("A2b1"); // AAb
+        printDecompress("x12"); // xxxxxxxxxxxx
+        printDecompress(""); // ""
+        printDecompress("ab2"); // error: missing count after 'a'
 
         System.out.println("\n=== Round trip: decompress(compress(x)) ===");
         String original = "aAaAbBBc";
