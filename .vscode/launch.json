@@ -1,0 +1,105 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "missing_number",
+            "request": "launch",
+            "mainClass": "javaAssignments.algorithms01.missing_number",
+            "projectName": "assignments_19c9091a"
+        },
+        {
+            "type": "java",
+            "name": "rotate_array",
+            "request": "launch",
+            "mainClass": "javaAssignments.algorithms02.rotate_array",
+            "projectName": "assignments_19c9091a"
+        },
+        {
+            "type": "java",
+            "name": "compressConsecutive",
+            "request": "launch",
+            "mainClass": "javaAssignments.algorithms03.compressConsecutive",
+            "projectName": "assignments_19c9091a"
+        },
+        {
+            "type": "java",
+            "name": "closest_in_array",
+            "request": "launch",
+            "mainClass": "javaAssignments.algorithms04.closest_in_array",
+            "projectName": "assignments_19c9091a"
+        },
+        {
+            "type": "java",
+            "name": "valid_parens",
+            "request": "launch",
+            "mainClass": "javaAssignments.algorithms05.valid_parens",
+            "projectName": "assignments_19c9091a"
+        },
+        {
+            "type": "java",
+            "name": "vendingmachineChange",
+            "request": "launch",
+            "mainClass": "javaAssignments.java_assignment_01.vendingmachineChange",
+            "projectName": "assignments_19c9091a"
+        },
+        {
+            "type": "java",
+            "name": "weightLimit",
+            "request": "launch",
+            "mainClass": "javaAssignments.java_assignment_02.weightLimit",
+            "projectName": "assignments_19c9091a"
+        },
+        {
+            "type": "java",
+            "name": "traffic_light_sim",
+            "request": "launch",
+            "mainClass": "javaAssignments.java_assignment_03.traffic_light_sim",
+            "projectName": "assignments_19c9091a"
+        },
+        {
+            "type": "java",
+            "name": "password_strength_checker_assignent",
+            "request": "launch",
+            "mainClass": "javaAssignments.java_assignment_04.password_strength_checker_assignent",
+            "projectName": "assignments_19c9091a"
+        },
+        {
+            "type": "java",
+            "name": "duplicate_words",
+            "request": "launch",
+            "mainClass": "javaAssignments.java_assignment_05.duplicate_words",
+            "projectName": "assignments_19c9091a"
+        },
+        {
+            "type": "java",
+            "name": "command_calculator_assignment",
+            "request": "launch",
+            "mainClass": "javaAssignments.java_assignment_06.command_calculator_assignment",
+            "projectName": "assignments_19c9091a"
+        },
+        {
+            "type": "java",
+            "name": "zoo_soundboard",
+            "request": "launch",
+            "mainClass": "javaAssignments.java_assignment_07.zoo_soundboard",
+            "projectName": "assignments_19c9091a"
+        },
+        {
+            "type": "java",
+            "name": "order_processing",
+            "request": "launch",
+            "mainClass": "javaAssignments.java_assignment_08.order_processing",
+            "projectName": "assignments_19c9091a"
+        }
+    ]
+}
