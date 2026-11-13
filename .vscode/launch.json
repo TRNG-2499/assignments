@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "homeTour",
+            "request": "launch",
+            "mainClass": "homeTour",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "RomanNumeralConverter",
+            "request": "launch",
+            "mainClass": "RomanNumeralConverter",
+            "projectName": "my-existing-project"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
