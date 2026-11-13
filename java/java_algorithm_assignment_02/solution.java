@@ -4,39 +4,39 @@ import java.util.Arrays;
 
 public class solution {
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(rotateMethod(new int[]{1, 2, 3, 4, 5}, 2)));  // [4, 5, 1, 2, 3]
-        System.out.println(Arrays.toString(rotateMethod(new int[]{1, 2, 3}, 4)));        // [3, 1, 2]
-        System.out.println(Arrays.toString(rotateMethod(new int[]{1, 2, 3, 4}, 0)));     // [1, 2, 3, 4]
+        System.out.println(Arrays.toString(rotateMethod(new int[]{1, 2, 3, 4, 5}, 2)));
+        System.out.println(Arrays.toString(rotateMethod(new int[]{1, 2, 3}, 4)));
+        System.out.println(Arrays.toString(rotateMethod(new int[]{1, 2, 3, 4}, 0)));
 
         System.out.println();
 
         // rotate left tests
-        System.out.println(Arrays.toString(rotateLeft(new int[]{1, 2, 3, 4, 5}, 2)));    // [3, 4, 5, 1, 2]
-        System.out.println(Arrays.toString(rotateLeft(new int[]{1, 2, 3}, 4)));          // [2, 3, 1]
-        System.out.println(Arrays.toString(rotateLeft(new int[]{1, 2, 3, 4}, 0)));       // [1, 2, 3, 4]
+        System.out.println(Arrays.toString(rotateLeft(new int[]{1, 2, 3, 4, 5}, 2)));
+        System.out.println(Arrays.toString(rotateLeft(new int[]{1, 2, 3}, 4)));
+        System.out.println(Arrays.toString(rotateLeft(new int[]{1, 2, 3, 4}, 0)));
 
         System.out.println();
 
         // negative k tests
-        System.out.println(Arrays.toString(rotateWithDirection(new int[]{1, 2, 3, 4, 5}, 2)));   // [4, 5, 1, 2, 3]
-        System.out.println(Arrays.toString(rotateWithDirection(new int[]{1, 2, 3, 4, 5}, -2)));  // [3, 4, 5, 1, 2]
-        System.out.println(Arrays.toString(rotateWithDirection(new int[]{1, 2, 3, 4, 5}, -7)));  // [3, 4, 5, 1, 2]
-        System.out.println(Arrays.toString(rotateWithDirection(new int[]{1, 2, 3, 4, 5}, 0)));   // [1, 2, 3, 4, 5]
+        System.out.println(Arrays.toString(rotateWithDirection(new int[]{1, 2, 3, 4, 5}, 2)));
+        System.out.println(Arrays.toString(rotateWithDirection(new int[]{1, 2, 3, 4, 5}, -2)));
+        System.out.println(Arrays.toString(rotateWithDirection(new int[]{1, 2, 3, 4, 5}, -7)));
+        System.out.println(Arrays.toString(rotateWithDirection(new int[]{1, 2, 3, 4, 5}, 0)));
 
         System.out.println();
 
         // in place tests, the array itself gets changed so it's printed after
         int[] inPlace1 = {1, 2, 3, 4, 5};
         rotateInPlace(inPlace1, 2);
-        System.out.println(Arrays.toString(inPlace1));                                   // [4, 5, 1, 2, 3]
+        System.out.println(Arrays.toString(inPlace1));
 
         int[] inPlace2 = {1, 2, 3};
         rotateInPlace(inPlace2, 4);
-        System.out.println(Arrays.toString(inPlace2));                                   // [3, 1, 2]
+        System.out.println(Arrays.toString(inPlace2));
 
         int[] inPlace3 = {1, 2, 3, 4};
         rotateInPlace(inPlace3, 0);
-        System.out.println(Arrays.toString(inPlace3));                                   // [1, 2, 3, 4]
+        System.out.println(Arrays.toString(inPlace3));
     }
 
     public static int[] rotateMethod(int[] input, int k) {
@@ -101,8 +101,8 @@ public class solution {
 
         int steps = k % input.length;
 
-        reverseSection(input, 0, input.length - 1);     // reverse whole array
-        reverseSection(input, 0, steps - 1);            // reverse first k
+        reverseSection(input, 0, input.length - 1); // reverse whole array
+        reverseSection(input, 0, steps - 1); // reverse first k
         reverseSection(input, steps, input.length - 1); // reverse the rest
     }
 
