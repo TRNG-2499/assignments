@@ -4,3 +4,4 @@ Coding Challenge Log
 2. Palindrome Number - Easy, November 10 2026, Java, Leetcode
 3. Minimum Operations to Make Median of Array Equal to K - Medium, November 11, Java, Leetcode
 4. Two Sum - Easy, November 12 2026, Leetcode
+5. Search Insert Position, Easy, November 13 2026, Leetcode
