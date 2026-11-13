@@ -32,12 +32,12 @@ public class solution {
         System.out.println();
 
         // matching given symbols tests
-        System.out.println(validCheckForSymbols("([)]", new char[]{'['}));       // true, only [ ] checked
-        System.out.println(validCheckForSymbols("([)]", new char[]{')'}));       // true, only ( ) checked
-        System.out.println(validCheckForSymbols("([)]", new char[]{'(', ']'}));  // false, both pairs checked
-        System.out.println(validCheckForSymbols("(<]", new char[]{'<'}));        // false, < never closed
-        System.out.println(validCheckForSymbols("{(}", new char[]{'{'}));        // true, ( ignored
-        System.out.println(validCheckForSymbols("", new char[]{'('}));           // true
+        System.out.println(validCheckForSymbols("([)]", new char[]{'['}));
+        System.out.println(validCheckForSymbols("([)]", new char[]{')'}));
+        System.out.println(validCheckForSymbols("([)]", new char[]{'(', ']'}));
+        System.out.println(validCheckForSymbols("(<]", new char[]{'<'}));
+        System.out.println(validCheckForSymbols("{(}", new char[]{'{'}));
+        System.out.println(validCheckForSymbols("", new char[]{'('}));
 
     }
 

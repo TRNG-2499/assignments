@@ -1,6 +1,6 @@
-import java.util.Arrays;
+import java.util.Arrays; 
 
-// Author: Tyler Pyrzenski
+// Author: Tyler Pyrzenski 
 
 public class solution {
     public static void main(String[] args) {
@@ -13,30 +13,30 @@ public class solution {
         System.out.println();
 
         // stretch goal 1 test cases using findMissingNumberFromStart
-        System.out.println(findMissingNumberFromStart(new int[]{5, 6, 8, 9}, 5));          // 7
-        System.out.println(findMissingNumberFromStart(new int[]{22, 20, 24, 21}, 20));     // 23
-        System.out.println(findMissingNumberFromStart(new int[]{3, 7, 1, 2, 8, 4, 5}, 1)); // 6, same as the original
+        System.out.println(findMissingNumberFromStart(new int[]{5, 6, 8, 9}, 5));
+        System.out.println(findMissingNumberFromStart(new int[]{22, 20, 24, 21}, 20));
+        System.out.println(findMissingNumberFromStart(new int[]{3, 7, 1, 2, 8, 4, 5}, 1));
 
         System.out.println();
 
         // stretch goal 2 test cases using findTwoMissingNumbers
         // Arrays.toString is used so the array prints its values instead of its memory address
-        System.out.println(Arrays.toString(findTwoMissingNumbers(new int[]{1, 2, 4, 6})));           // [3, 5]
-        System.out.println(Arrays.toString(findTwoMissingNumbers(new int[]{7, 3, 1, 5, 6})));        // [2, 4]
-        System.out.println(Arrays.toString(findTwoMissingNumbers(new int[]{2, 3, 4, 5})));           // [1, 6]
+        System.out.println(Arrays.toString(findTwoMissingNumbers(new int[]{1, 2, 4, 6})));
+        System.out.println(Arrays.toString(findTwoMissingNumbers(new int[]{7, 3, 1, 5, 6})));
+        System.out.println(Arrays.toString(findTwoMissingNumbers(new int[]{2, 3, 4, 5})));
 
         System.out.println();
 
         // stretch goal 3 test cases using findMissingAndDuplicate
         // the returned array holds the duplicate first, then the missing value
         int[] result1 = findMissingAndDuplicate(new int[]{1, 2, 2, 4});
-        System.out.println("Duplicate: " + result1[0] + ", Missing: " + result1[1]); // 2, 3
+        System.out.println("Duplicate: " + result1[0] + ", Missing: " + result1[1]);
 
         int[] result2 = findMissingAndDuplicate(new int[]{3, 1, 5, 5, 2});
-        System.out.println("Duplicate: " + result2[0] + ", Missing: " + result2[1]); // 5, 4
+        System.out.println("Duplicate: " + result2[0] + ", Missing: " + result2[1]);
 
         int[] result3 = findMissingAndDuplicate(new int[]{2, 2});
-        System.out.println("Duplicate: " + result3[0] + ", Missing: " + result3[1]); // 2, 1
+        System.out.println("Duplicate: " + result3[0] + ", Missing: " + result3[1]);
     }
 
     public static int findMissingNumber(int[] input) {
