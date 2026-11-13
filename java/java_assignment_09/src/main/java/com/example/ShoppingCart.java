@@ -1,5 +1,7 @@
+package com.example;
 import java.util.LinkedHashMap;
 import java.util.Map;
+
 
 /**
  * A simple shopping cart that tracks items, quantities, and an optional
@@ -125,3 +127,5 @@ public class ShoppingCart {
         return items.isEmpty();
     }
 }
+
+
