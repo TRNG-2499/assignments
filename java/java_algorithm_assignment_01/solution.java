@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-// Author: Tyler Pyrzenski
+// Author: Tyler Pyrzenski 
 
 public class solution {
     public static void main(String[] args) {
