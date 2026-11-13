@@ -1,3 +1,5 @@
+package com.java.assignment9;
+
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -5,6 +7,15 @@ import java.util.Map;
  * A simple shopping cart that tracks items, quantities, and an optional
  * percentage discount.
  */
+
+
+// The incorrect method is getItemCount()
+// My test void getItemCountHappyPath() fails it because
+// it expects a total quantity of 6 amongst all items added to the cart
+// but since the method calls size(), it incorrectly gets the count of
+// all unique items in the cart.
+
+
 public class ShoppingCart {
 
     /** Valid discount codes (case-sensitive). */
