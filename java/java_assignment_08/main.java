@@ -1,9 +1,12 @@
 public class Main {
+
+
+    /// a simple order object to test exceptions with
     static class Order {
-        final String itemName;
-        final int requestedQty, availableQty;
-        final double paymentAmt, totalAmt;
-        final boolean isExpired;
+        private final String itemName;
+        private final int requestedQty, availableQty;
+        private final double paymentAmt, totalAmt;
+        private final boolean isExpired;
 
         Order(String itemName, int requestedQty, int availableQty,
               double paymentAmt, double totalAmt, boolean isExpired) {
