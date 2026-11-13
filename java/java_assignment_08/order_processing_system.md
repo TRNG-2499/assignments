@@ -65,17 +65,17 @@ Output: "Order successful! 2 x Widget confirmed."
 
 ## Requirements Checklist
 
-- [ ] `InventoryException` and `PaymentException` are defined as top-level custom exceptions, extending `Exception`
-- [ ] `OutOfStockException` and `InvalidQuantityException` both extend `InventoryException`
-- [ ] `PaymentDeclinedException` and `PaymentExpiredException` both extend `PaymentException`
-- [ ] Each custom exception provides a clear, descriptive message
-- [ ] Order processing method correctly validates inventory rules before payment rules
-- [ ] Each validation failure throws the correct, specific exception subclass
-- [ ] A successful order (passing all validations) is clearly reported
-- [ ] Driving code calls the order method with inputs that trigger each of the four exception types, plus at least one successful order
-- [ ] Driving code includes at least one `catch` block for a specific exception subclass, with tailored handling
-- [ ] Driving code includes at least one `catch` block for a broader parent exception type, with generic handling
-- [ ] Catch blocks are ordered correctly within any `try` statement that catches both a subclass and its parent (subclass first)
+- [x] `InventoryException` and `PaymentException` are defined as top-level custom exceptions, extending `Exception`
+- [x] `OutOfStockException` and `InvalidQuantityException` both extend `InventoryException`
+- [x] `PaymentDeclinedException` and `PaymentExpiredException` both extend `PaymentException`
+- [x] Each custom exception provides a clear, descriptive message
+- [x] Order processing method correctly validates inventory rules before payment rules
+- [x] Each validation failure throws the correct, specific exception subclass
+- [x] A successful order (passing all validations) is clearly reported
+- [x] Driving code calls the order method with inputs that trigger each of the four exception types, plus at least one successful order
+- [x] Driving code includes at least one `catch` block for a specific exception subclass, with tailored handling
+- [x] Driving code includes at least one `catch` block for a broader parent exception type, with generic handling
+- [x] Catch blocks are ordered correctly within any `try` statement that catches both a subclass and its parent (subclass first)
 
 ## Stretch Goals
 
