@@ -58,17 +58,17 @@ void isEmpty_newCart_returnsTrue() {
 
 ## Requirements Checklist
 
-- [ ] A `ShoppingCartTest` class exists and uses JUnit 5 (Jupiter)
-- [ ] The provided `ShoppingCart` class has not been modified
-- [ ] At least three tests are written for each of `addItem`, `removeItem`, `getItemCount`, `getSubtotal`, `applyDiscountCode`, and `getTotal` (18 or more tests total)
-- [ ] Tests cover typical usage, edge cases, and invalid input across the methods
-- [ ] `assertThrows` is used to verify the expected exceptions
-- [ ] Each test starts from a fresh cart, and tests do not depend on one another or on execution order
-- [ ] Test names clearly describe the scenario and expected outcome
-- [ ] `double` comparisons use a delta
-- [ ] Tests follow a clear Arrange / Act / Assert structure
-- [ ] A code comment at the top of `ShoppingCartTest` identifies the method containing incorrect logic, the failing test(s), and what the method does wrong
-- [ ] The incorrect method has been identified only — it has not been fixed
+- [x] A `ShoppingCartTest` class exists and uses JUnit 5 (Jupiter)
+- [x] The provided `ShoppingCart` class has not been modified
+- [x] At least three tests are written for each of `addItem`, `removeItem`, `getItemCount`, `getSubtotal`, `applyDiscountCode`, and `getTotal` (18 or more tests total)
+- [x] Tests cover typical usage, edge cases, and invalid input across the methods
+- [x] `assertThrows` is used to verify the expected exceptions
+- [x] Each test starts from a fresh cart, and tests do not depend on one another or on execution order
+- [x] Test names clearly describe the scenario and expected outcome
+- [x] `double` comparisons use a delta
+- [x] Tests follow a clear Arrange / Act / Assert structure
+- [x] A code comment at the top of `ShoppingCartTest` identifies the method containing incorrect logic, the failing test(s), and what the method does wrong
+- [x] The incorrect method has been identified only — it has not been fixed
 
 ## Stretch Goals
 
