@@ -1,11 +1,14 @@
 package com.revature;
 
+import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 
 //Incorrect Method: getItemCount()
 
@@ -212,5 +215,49 @@ public class ShoppingCartTest {
         cart.addItem("Raspberry Pi Zero", 19.99, 1);
         cart.applyDiscountCode("SAVE20");
         assertEquals(19.99 * .8, cart.getTotal(), 0.001);
+    }
+
+    // ************************************************************
+    // stretch 1 applyDiscountCode()
+    // ************************************************************
+
+    // tests all valid discount codes
+    @ParameterizedTest
+    @CsvSource({
+            "SAVE10, 0.90",
+            "SAVE20, 0.80",
+            "HALFOFF, 0.50"
+    })
+    void applyDiscountCode_validCodes_appliesCorrectDiscount(String code, double multiplier) {
+        cart.addItem("Raspberry Pi Zero", 19.99, 1);
+        cart.applyDiscountCode(code);
+        assertEquals(19.99 * multiplier, cart.getTotal(), 0.001);
+    }
+
+    // ************************************************************
+    // stretch 2 addItem() and getItemCount()
+    // ************************************************************
+
+    // verifies item count and subtotal after adding multiple items
+    @Test
+    void addItem_multipleItems_updatesCountAndSubtotal() {
+        cart.addItem("Raspberry Pi", 49.99, 2);
+        cart.addItem("Raspberry Pi Zero", 19.99, 3);
+
+        assertAll(
+                () -> assertEquals(5, cart.getItemCount()),
+                () -> assertEquals(159.95, cart.getSubtotal(), 0.001));
+    }
+
+    @Test
+    void removeItem_existingItem_updatesCountAndSubtotal() {
+        cart.addItem("Raspberry Pi", 49.99, 2);
+        cart.addItem("Raspberry Pi Zero", 19.99, 3);
+
+        cart.removeItem("Raspberry Pi");
+
+        assertAll(
+                () -> assertEquals(3, cart.getItemCount()),
+                () -> assertEquals(59.97, cart.getSubtotal(), 0.001));
     }
 }
