@@ -259,51 +259,44 @@ class ShoppingCartTest {
             }
         }
 
-        /// Tests for
-        /// double getTotal()
-        @Test
-        void test_getTotalWithOneItem() {
-            cart = new ShoppingCart();
-            cart.addItem("name", 25.33, 10);
-            System.out.println(cart.getTotal());
-            assertEquals(25.33 * 10, cart.getTotal());
+    /// Tests for
+    /// double getTotal()
+    @Test
+    void test_getTotalWithOneItem() {
+        cart = new ShoppingCart();
+        cart.addItem("name", 25.33, 10);
+        System.out.println(cart.getTotal());
+        assertEquals(25.33 * 10, cart.getTotal());
+    }
+
+    @Test
+    void test_getTotalWithRepeatedCalls() {
+        cart = new ShoppingCart();
+        String[] names  = {"deskLamp", "waterBottle", "notebook", "phoneStand", "mousePad"};
+        double[] prices = {24.99, 18.50, 6.75, 12.49, 9.99};
+        int[]    qtys   = {2, 1, 4, 3, 5};
+        double expected = 0.0;
+
+        for (int i = 0; i < names.length; i++) {
+            cart.addItem(names[i], prices[i], qtys[i]);
+            expected += prices[i] * qtys[i];          // add only the new item
+            assertEquals(expected, cart.getTotal(), DELTA);   // no discount yet
         }
 
-        @Test
-        void test_getTotalWithRepeatedCalls() {
-            cart = new ShoppingCart();
-            String[] names = {
-                    "exampleName",
-                    "deskLamp", "waterBottle", "notebook", "phoneStand", "mousePad",
-                    "chargingCable", "coffeeMug", "penSet", "deskOrganizer", "laptopSleeve",
-                    "usbHub", "wirelessMouse", "keyboardCover", "bookLight", "travelPouch",
-                    "stickyNotes", "screenCloth", "cableClips", "headphoneStand", "monitorRiser"
-            };
-            double[] prices = {
-                    29.22,
-                    24.99, 18.50, 6.75, 12.49, 9.99,
-                    14.25, 11.50, 8.95, 19.99, 27.50,
-                    22.95, 34.99, 13.75, 16.49, 10.25,
-                    4.99, 5.50, 7.49, 21.75, 45.99
-            };
-            int[] quantities = {
-                    10, 22, 3, 4, 55, 11, 1, 2
-            };
-            int qty = 0, curr;
-            double price = 0.0, totalPrice = 0.0;
-            for(int i = 0; i < prices.length; i++) {
-                curr = quantities[ThreadLocalRandom.current().nextInt(0, 7 + 1)];
-                price = prices[ThreadLocalRandom.current().nextInt(0, 20 + 1)];
-                qty = quantities[ThreadLocalRandom.current().nextInt(0, 7 + 1)];
+        cart.applyDiscountCode("SAVE20");
+        assertEquals(expected * 0.80, cart.getTotal(), DELTA);
+    }
 
+    @Test
+    void test_getTotalWithDiscountAppliedBeforeItems() {
+        cart = new ShoppingCart();
 
-                cart.addItem(names[ThreadLocalRandom.current().nextInt(0, 20 + 1)], price, curr);
-                totalPrice += cart.getSubtotal() - (cart.getSubtotal() / 100);
+        cart.applyDiscountCode("HALFOFF");
+        assertEquals(0.0, cart.getTotal(), DELTA);      // empty cart, discount active
 
-                System.out.println(totalPrice + " " + cart.getTotal());
-                assertEquals(totalPrice, cart.getTotal());
-            }
-        }
+        cart.addItem("coffeeMug", 11.50, 2);            // subtotal 23.00
+        assertEquals(11.50, cart.getTotal(), DELTA);    // 50% off still applies
+    }
 
 
 
