@@ -1,0 +1,5 @@
+# Created at 2026-11-13T19:09:59.578
+Boot Manifest-JAR contains absolute paths in classpath 'E:\Revature\assignments\java\java_assignment_10\roman\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+'other' has different root
+
