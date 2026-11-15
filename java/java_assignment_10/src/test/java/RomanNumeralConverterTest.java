@@ -30,7 +30,6 @@ class RomanNumeralConverterTest {
     @Order(1)
     @DisplayName("1. Single symbols")
     class SingleSymbols {
-
         @ParameterizedTest(name = "toRoman({0}) = {1}")
         @CsvSource({"1,I", "5,V", "10,X", "50,L", "100,C", "500,D", "1000,M"})
         void toRoman_singleSymbolValues_returnsSymbol(int number, String expected) {
@@ -51,7 +50,6 @@ class RomanNumeralConverterTest {
     @Order(2)
     @DisplayName("2. Additive numerals")
     class Additive {
-
         @ParameterizedTest(name = "toRoman({0}) = {1}")
         @CsvSource({"2,II", "3,III", "6,VI", "8,VIII", "11,XI", "15,XV", "27,XXVII",
                 "30,XXX", "75,LXXV", "200,CC", "1003,MIII", "2000,MM", "3000,MMM"})

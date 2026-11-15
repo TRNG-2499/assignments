@@ -39,7 +39,6 @@ class ShoppingCartTest {
         cart = new ShoppingCart();
         String name = "null'null''return'whatdoiputhere?'qwertyuiop[]asdfghjkl;'zxcvbnm,./1234567890-=`~!@#$%^&*()_+QWERTYUIOP{}|ASDFGHJKL:ZXCVBNM<>?///////";
         cart.addItem(name, Integer.MAX_VALUE, Integer.MAX_VALUE);
-
         assertEquals(cart.getItemCount(), 1);
     }
 
@@ -259,44 +258,44 @@ class ShoppingCartTest {
             }
         }
 
-    /// Tests for
-    /// double getTotal()
-    @Test
-    void test_getTotalWithOneItem() {
-        cart = new ShoppingCart();
-        cart.addItem("name", 25.33, 10);
-        System.out.println(cart.getTotal());
-        assertEquals(25.33 * 10, cart.getTotal());
-    }
-
-    @Test
-    void test_getTotalWithRepeatedCalls() {
-        cart = new ShoppingCart();
-        String[] names  = {"deskLamp", "waterBottle", "notebook", "phoneStand", "mousePad"};
-        double[] prices = {24.99, 18.50, 6.75, 12.49, 9.99};
-        int[]    qtys   = {2, 1, 4, 3, 5};
-        double expected = 0.0;
-
-        for (int i = 0; i < names.length; i++) {
-            cart.addItem(names[i], prices[i], qtys[i]);
-            expected += prices[i] * qtys[i];          // add only the new item
-            assertEquals(expected, cart.getTotal(), DELTA);   // no discount yet
+        /// Tests for
+        /// double getTotal()
+        @Test
+        void test_getTotalWithOneItem() {
+            cart = new ShoppingCart();
+            cart.addItem("name", 25.33, 10);
+            System.out.println(cart.getTotal());
+            assertEquals(25.33 * 10, cart.getTotal());
         }
 
-        cart.applyDiscountCode("SAVE20");
-        assertEquals(expected * 0.80, cart.getTotal(), DELTA);
-    }
+        @Test
+        void test_getTotalWithRepeatedCalls() {
+            cart = new ShoppingCart();
+            String[] names  = {"deskLamp", "waterBottle", "notebook", "phoneStand", "mousePad"};
+            double[] prices = {24.99, 18.50, 6.75, 12.49, 9.99};
+            int[] qtys = {2, 1, 4, 3, 5};
+            double expected = 0.0;
 
-    @Test
-    void test_getTotalWithDiscountAppliedBeforeItems() {
-        cart = new ShoppingCart();
+            for (int i = 0; i < names.length; i++) {
+                cart.addItem(names[i], prices[i], qtys[i]);
+                expected += prices[i] * qtys[i];          // add only the new item
+                assertEquals(expected, cart.getTotal(), DELTA);   // no discount yet
+            }
 
-        cart.applyDiscountCode("HALFOFF");
-        assertEquals(0.0, cart.getTotal(), DELTA);      // empty cart, discount active
+            cart.applyDiscountCode("SAVE20");
+            assertEquals(expected * 0.80, cart.getTotal(), DELTA);
+        }
 
-        cart.addItem("coffeeMug", 11.50, 2);            // subtotal 23.00
-        assertEquals(11.50, cart.getTotal(), DELTA);    // 50% off still applies
-    }
+        @Test
+        void test_getTotalWithDiscountAppliedBeforeItems() {
+            cart = new ShoppingCart();
+
+            cart.applyDiscountCode("HALFOFF");
+            assertEquals(0.0, cart.getTotal(), DELTA);      // empty cart, discount active
+
+            cart.addItem("coffeeMug", 11.50, 2);            // subtotal 23.00
+            assertEquals(11.50, cart.getTotal(), DELTA);    // 50% off still applies
+        }
 
 
 
