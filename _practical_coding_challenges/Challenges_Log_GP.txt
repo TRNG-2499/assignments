@@ -1,0 +1,2 @@
+1) Solve Me First - Easy - 11/15/2026 - Java - HackerRank
+2) Simple Array Sum - Easy - 11/15/2026 - Java - HackerRank
