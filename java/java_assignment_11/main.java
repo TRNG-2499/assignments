@@ -32,30 +32,60 @@ public class main {
         living_room.addEntity(tv);
         bedroom.addEntity(bed);
         dining_room.addEntity(table);
+        Room currentRoom = foyer;
         System.out.println("Welcome to the house");
-        String input = scan.nextLine();
-        String [] s = input.split(" ");
-        while(true) {
-        if (input.equalsIgnoreCase("look") ){
+        currentRoom.displayRoom();
 
-        }
-        else if (input.equalsIgnoreCase("exit")) {
-            System.out.println("Thanks for visiting! Goodbye.");
-            break;
-        }
-        switch(input) {
-            case "move":
-                if (input.length() > 1) {
-                    String dir = s[1];
+        while (true) {
+            System.out.print("\nEnter a command: ");
+            String input = scan.nextLine().trim();
+            if (input.isEmpty()) {
+                continue;
+            }
 
+            String[] s = input.split("\\s+", 2);
+            String command = s[0].toLowerCase();
+            String arg = s.length > 1 ? s[1] : "";
+
+            try {
+                switch (command) {
+                    case "look":
+                        currentRoom.displayRoom();
+                        break;
+
+                    case "move":
+                        if (arg.isEmpty()) {
+                            System.out.println("Move where? Try: move north");
+                            break;
+                        }
+                        currentRoom = currentRoom.move(arg);
+                        currentRoom.displayRoom();
+                        break;
+
+                    case "interact":
+                        if (arg.isEmpty()) {
+                            System.out.println("Interact with what? Try: interact tv");
+                            break;
+                        }
+                        Entity entity = currentRoom.findEntity(arg);
+                        System.out.println(entity.interact());
+                        break;
+
+                    case "exit":
+                    case "quit":
+                        System.out.println("Thanks for visiting! Goodbye.");
+                        scan.close();
+                        return;
+
+                    default:
+                        System.out.println("Unknown command. Try: move, look, interact, exit");
                 }
-            case "interact":
-
-
-            
+            }
+            catch (Exception e) {
+                System.out.println("Error: " + e.getMessage());
+            }
         }
-        input = scan.nextLine();
-        }
+    
 
     }
 }
@@ -82,6 +112,22 @@ class Room {
 
     public void addEntity(Entity entity) {
         entities.add(entity);
+    }
+     public Room move(String direction) {
+        Room next = exit.get(direction.toLowerCase());
+        if (next == null) {
+            throw new Error("There is no exit to the " + direction + " from here.");
+        }
+        return next;
+    }
+
+    public Entity findEntity(String entityName)  {
+        for (Entity e : entities) {
+            if (e.getName().equalsIgnoreCase(entityName)) {
+                return e;
+            }
+        }
+        throw new Error("There is no '" + entityName + "' here to interact with.");
     }
 
     public void displayRoom() {
@@ -113,5 +159,8 @@ class Entity {
 
     public String getName() {
         return name;
+    }
+    public String getDescription() {
+        return description;
     }
 }

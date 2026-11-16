@@ -3,4 +3,8 @@ challenge_name,difficulty,date_completed,language,platform
 167. Two Sum II, Medium, 11/9/26, Java, Leetcode
 9. Palindrome Number, easy, 11/10/26, Java, Leetcode
 13. Roman to Integer, easy, 11/10/26, Java, Leetcode
-Valid Palindrome, easy, 11/11/26, Java, Leetcode
+20. Valid Palindrome, easy, 11/11/26, Java, Leetcode
+21. Merge two sorted Linked Lists, 11/12/26, Java, Leetcode
+26. Remove Duplicates from Sorted Array, 11/12/26, Java, Leetcode
+27. Remove Element, 11/14/26, Java, LeetCode
+28. Find the index of the first occurence in a string, 11/15/26, Python, LeetCode
