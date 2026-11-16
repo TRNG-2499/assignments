@@ -1,0 +1,8 @@
+RomanNumeralConverterTest$Additive.class
+RomanNumeralConverterTest$CaseHandling.class
+RomanNumeralConverterTest$RoundTrips.class
+RomanNumeralConverterTest$LargerValues.class
+RomanNumeralConverterTest$Subtractive.class
+RomanNumeralConverterTest$InvalidInput.class
+RomanNumeralConverterTest.class
+RomanNumeralConverterTest$SingleSymbols.class

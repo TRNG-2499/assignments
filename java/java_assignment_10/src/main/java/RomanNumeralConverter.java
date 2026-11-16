@@ -1,133 +1,89 @@
-package src.main.java; /**
-     * @param args the command line arguments
-     * Java algorithm assignment 09 - Shopping Cart
-     * Objective: Practice writing JUnit 5 unit tests that validate an existing class, covering normal behavior, edge cases, and exception handling, and using tests to discover incorrect logic.
-*/
 
-import java.util.LinkedHashMap;
-import java.util.Map;
+public class RomanNumeralConverter {
+    //roman numeral values and their corresponding symbols
+    private static final int[] VALUES = {
+            1000, 900, 500, 400, 100, 90,
+            50, 40, 10, 9, 5, 4, 1
+    };
+    private static final String[] SYMBOLS = {
+            "M", "CM", "D", "CD", "C", "XC",
+            "L", "XL", "X", "IX", "V", "IV", "I"
+    };
 
-/**
- * A simple shopping cart that tracks items, quantities, and an optional
- * percentage discount.
- */
-public class ShoppingCart {
-
-    /** Valid discount codes (case-sensitive). */
-    public static final String CODE_SAVE10 = "SAVE10";
-    public static final String CODE_SAVE20 = "SAVE20";
-    public static final String CODE_HALF_OFF = "HALFOFF";
-
-    /** Represents a single line in the cart. */
-    private static class CartItem {
-        private final double price;
-        private int quantity;
-
-        private CartItem(double price, int quantity) {
-            this.price = price;
-            this.quantity = quantity;
+    //convert a integer into a Roman numeral
+    public static String toRoman(int number) {
+        if (number < 1 || number > 3999) {
+            throw new IllegalArgumentException(
+                    "Number must be between 1 and 3999."
+            );
         }
+
+        StringBuilder result = new StringBuilder();
+
+        for (int i = 0; i < VALUES.length; i++) {
+            while (number >= VALUES[i]) {
+                result.append(SYMBOLS[i]);
+                number -= VALUES[i];
+            }
+        }
+        return result.toString();
     }
 
-    private final Map<String, CartItem> items = new LinkedHashMap<>();
-
-    // Percentage discount currently applied (0 means no discount).
-    private double discountPercent = 0.0;
-
-    /**
-     * Adds an item to the cart. If an item with the same name (matched exactly,
-     * including casing) is already in the cart, its quantity is increased instead.
-     *
-     * @throws IllegalArgumentException if the name is null or blank, the price is
-     *                                  negative, or the quantity is less than 1
-     */
-    public void addItem(String name, double price, int quantity) {
-        if (name == null || name.isBlank()) {
-            throw new IllegalArgumentException("Item name must not be null or blank.");
-        }
-        if (price < 0) {
-            throw new IllegalArgumentException("Price must not be negative.");
-        }
-        if (quantity < 1) {
-            throw new IllegalArgumentException("Quantity must be at least 1.");
+    //convert a Roman numeral into an integer
+    public static int toInteger(String roman) {
+        if (roman == null || roman.isBlank()) {
+            throw new IllegalArgumentException(
+                    "Roman numeral cannot be null or empty."
+            );
         }
 
-        CartItem existing = items.get(name);
-        if (existing != null) {
-            existing.quantity += quantity;
-        } else {
-            items.put(name, new CartItem(price, quantity));
+        roman = roman.toUpperCase();
+        int total = 0;
+
+        for (int i = 0; i < roman.length(); i++) {
+            int current = getValue(roman.charAt(i));
+            if (i + 1 < roman.length()) {
+                int next = getValue(roman.charAt(i + 1));
+                if (current < next) {
+                    total -= current;
+                } else {
+                    total += current;
+                }
+            } else {
+                total += current;
+            }
         }
+
+        if (total < 1 || total > 3999 ||
+                !toRoman(total).equals(roman)) {
+            throw new IllegalArgumentException(
+                    "Invalid Roman numeral: " + roman
+            );
+        }
+        return total;
     }
 
-    /**
-     * Removes the item with the given name from the cart entirely.
-     *
-     * @return true if the item was in the cart, false otherwise
-     */
-    public boolean removeItem(String name) {
-        return items.remove(name) != null;
-    }
-
-    /**
-     * Returns the total quantity of all items in the cart.
-     */
-    public int getItemCount() {
-        return items.size();
-    }
-
-    /**
-     * Returns the sum of price multiplied by quantity for every item in the
-     * cart, before any discount. An empty cart has a subtotal of 0.0.
-     */
-    public double getSubtotal() {
-        double subtotal = 0.0;
-        for (CartItem item : items.values()) {
-            subtotal += item.price * item.quantity;
-        }
-        return subtotal;
-    }
-
-    /**
-     * Applies a percentage discount to the cart. Only one discount can be active
-     * at a time; applying a new valid code replaces any previously applied code.
-     *
-     * @throws IllegalArgumentException if the code is null or not a valid code
-     */
-    public void applyDiscountCode(String code) {
-        if (code == null) {
-            throw new IllegalArgumentException("Discount code must not be null.");
-        }
-
-        switch (code) {
-            case CODE_SAVE10:
-                discountPercent = 10.0;
-                break;
-            case CODE_SAVE20:
-                discountPercent = 20.0;
-                break;
-            case CODE_HALF_OFF:
-                discountPercent = 50.0;
-                break;
+    //get the integer value of an individual Roman symbol
+    private static int getValue(char symbol) {
+        switch (symbol) {
+            case 'I':
+                return 1;
+            case 'V':
+                return 5;
+            case 'X':
+                return 10;
+            case 'L':
+                return 50;
+            case 'C':
+                return 100;
+            case 'D':
+                return 500;
+            case 'M':
+                return 1000;
             default:
-                throw new IllegalArgumentException("Invalid discount code: " + code);
+                throw new IllegalArgumentException(
+                        "Invalid Roman numeral character: " + symbol
+                );
         }
-    }
-
-    /**
-     * Returns the subtotal with the currently applied discount (if any) taken
-     * off. If no discount has been applied, returns the subtotal. No rounding
-     * is applied.
-     */
-    public double getTotal() {
-        double subtotal = getSubtotal();
-        return subtotal - (subtotal * discountPercent / 100.0);
-    }
-
-    /**
-     * Returns whether the cart contains no items.
-     */
-    public boolean isEmpty() {
-        return items.isEmpty();
     }
 }

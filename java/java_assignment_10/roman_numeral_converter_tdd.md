@@ -6,7 +6,7 @@ Practice test-driven development (TDD) with JUnit 5: reading a test suite as a s
 
 ## Instructions
 
-- You will be provided with a complete JUnit 5 (Jupiter) test class named `RomanNumeralConverterTest`. **Do not modify or remove any of the provided tests.** Your job is to write the code that makes every one of them pass.
+- You will be provided with a complete JUnit 5 (Jupiter) test class named `src.test.java.RomanNumeralConverterTest`. **Do not modify or remove any of the provided tests.** Your job is to write the code that makes every one of them pass.
 - Create a class named `RomanNumeralConverter` containing two `static` methods:
   - `toRoman(int number)` — converts an integer to a Roman numeral `String`
   - `toInteger(String roman)` — converts a Roman numeral `String` to an `int`
@@ -68,7 +68,7 @@ Final run:
 
 - [ ] A class named exactly `RomanNumeralConverter` exists, in a file named exactly `RomanNumeralConverter.java`
 - [ ] The class contains `static` methods `toRoman(int)` and `toInteger(String)`
-- [ ] Every test in the provided `RomanNumeralConverterTest` class passes
+- [ ] Every test in the provided `src.test.java.RomanNumeralConverterTest` class passes
 - [ ] The provided test class has not been modified
 - [ ] `toRoman` always returns uppercase output
 - [ ] `toInteger` accepts uppercase, lowercase, and mixed-case input
