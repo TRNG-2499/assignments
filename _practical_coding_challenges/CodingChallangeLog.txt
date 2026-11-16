@@ -9,3 +9,21 @@ Difficulty of challenge: easy
 Date completed: 11/10/2026
 Programming Language used: java
 Coding challenge platform: HackerRank
+
+Name of challenge: Java If-Else
+Difficulty of challenge: easy
+Date completed: 11/16/2026
+Programming Language used: java
+Coding challenge platform: HackerRank
+
+Name of challenge: Java Stdin and Stdout 2
+Difficulty of challenge: easy
+Date completed: 11/16/2026
+Programming Language used: java
+Coding challenge platform: HackerRank
+
+Name of challenge: Java Regex
+Difficulty of challenge: medium
+Date completed: 11/16/2026
+Programming Language used: java
+Coding challenge platform: HackerRank
