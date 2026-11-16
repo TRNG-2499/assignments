@@ -1,14 +1,17 @@
 package com.revature;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Map;
 
 public class RomanNumeralConverter {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+
     }
 
     public static String toRoman(int number) {
         if (number < 1 || number > 3999) {
-            return "";
+            throw new IllegalArgumentException("Please enter a valid argument between the range of 1 an 3999");
         }
         int[] potentialNumbers = {
                 1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1
@@ -37,7 +40,7 @@ public class RomanNumeralConverter {
 
     public static int toInteger(String roman) {
         if (roman == null || roman.isEmpty()) {
-            return -1;
+            throw new IllegalArgumentException("Please enter a valid roman string.");
         }
         roman = roman.toUpperCase();
 
@@ -52,13 +55,18 @@ public class RomanNumeralConverter {
             'D', 500,
             'M', 1000
         );
+        List<Character> arabicValueStrings = new ArrayList<>(
+                Arrays.asList('I', 'V', 'X', 'L', 'C', 'D', 'M')
+        );
 
         // Iterate right to left through roman string
-        int toSubtract = 0;
         int prevValue = 0;
 
         for (int i = roman.length() - 1; i >= 0; i--) {
             char c = roman.charAt(i);
+            if (!arabicValueStrings.contains(c)) {
+               throw new IllegalArgumentException("Please enter a valid roman string.");
+            }
             int cValue = arabicValue.get(c);
 
             if (cValue < prevValue) {
