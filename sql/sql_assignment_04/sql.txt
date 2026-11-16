@@ -1,0 +1,49 @@
+CREATE TABLE Department (
+    department_id SERIAL PRIMARY KEY,
+    department_name TEXT,
+    location TEXT
+);
+
+CREATE TABLE Doctor (
+    doctor_id SERIAL PRIMARY KEY,
+    department_id INTEGER REFERENCES Department(department_id),
+    first_name TEXT,
+    last_name TEXT,
+    specialty TEXT,
+    phone TEXT
+);
+
+CREATE TABLE Room (
+    room_id SERIAL PRIMARY KEY,
+    department_id INTEGER REFERENCES Department(department_id),
+    room_number TEXT,
+    room_type TEXT,
+    is_available BOOLEAN
+);
+
+CREATE TABLE Patient (
+    patient_id SERIAL PRIMARY KEY,
+    first_name TEXT,
+    last_name TEXT,
+    date_of_birth DATE,
+    phone TEXT,
+    address TEXT
+);
+
+CREATE TABLE Appointment (
+    appointment_id SERIAL PRIMARY KEY,
+    patient_id INTEGER REFERENCES Patient(patient_id),
+    doctor_id INTEGER REFERENCES Doctor(doctor_id),
+    appointment_date DATE,
+    appointment_time TIME,
+    reason TEXT,
+    status TEXT
+);
+
+CREATE TABLE Prescription (
+    prescription_id SERIAL PRIMARY KEY,
+    appointment_id INTEGER REFERENCES Appointment(appointment_id),
+    medication_name TEXT,
+    dosage TEXT,
+    instructions TEXT
+);

@@ -1,0 +1,18 @@
+CREATE TABLE Principle (
+    name TEXT PRIMARY KEY,
+    hire_date DATE,
+    salary DECIMAL(9, 2)
+);
+
+CREATE TABLE School (
+    name TEXT PRIMARY KEY,
+    principle TEXT UNIQUE NOT NULL REFERENCES Principle(name)
+);
+
+CREATE TABLE Student (
+    name TEXT PRIMARY KEY,
+    school TEXT NOT NULL REFERENCES School(name),
+    grade_level TEXT,
+    home_address TEXT,
+    phone TEXT
+);

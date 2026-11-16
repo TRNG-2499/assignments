@@ -1,0 +1,12 @@
+CREATE TABLE Writer (
+    writer_id SERIAL PRIMARY KEY,
+    writer_name TEXT NOT NULL
+);
+
+CREATE TABLE Books(
+    book_id SERIAL PRIMARY KEY,
+    title TEXT NOT NULL,
+    author INTEGER REFERENCES Writer(writer_id),
+    publication INTEGER NOT NULL,
+    page_count INTEGER NOT NULL
+);
