@@ -1,0 +1,54 @@
+This block of text is here to fight with VSCode about defining this as a sql file
+
+Initialize a database
+CREATE DATABASE hospital;
+
+CREATE TABLE department (
+    department_id INT PRIMARY KEY,
+    department_name VARCHAR(50),
+    location VARCHAR (50)
+)
+
+CREATE TABLE doctor (
+    doctor_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    specialty VARCHAR(50),
+    phone VARCHAR(10),
+    department_id INT REFERENCES department(department_id)
+)
+
+CREATE TABLE patient (
+    patient_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    date_of_birth DATE,
+    phone VARCHAR(10),
+    address VARCHAR(50)
+)
+
+CREATE TABLE appointment (
+    appointment_id INT PRIMARY KEY,
+    appointment_date DATE,
+    appointment_time TIME,
+    reason VARCHAR(255),
+    status VARCHAR(50),
+    patient_id INT REFERENCES patient(patient_id),
+    doctor_id INT REFERENCES doctor(doctor_id)
+)
+
+CREATE TABLE prescription (
+    prescription_id INT PRIMARY KEY,
+    medication_name VARCHAR(255),
+    dosage VARCHAR(255),
+    instructions VARCHAR(255),
+    appointment_id INT REFERENCES appointment(appointment_id)
+)
+
+CREATE TABLE room (
+    room_id INT PRIMARY KEY,
+    room_number VARCHAR(5),
+    room_type VARCHAR(20),
+    is_available BOOLEAN,
+    department_id INT REFERENCES department(department_id)
+)
