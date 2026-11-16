@@ -2,54 +2,59 @@ package assignments.java.java_assignment_08;
 
 public class OrderProcessing {
     public static void main(String[] args) {
-        /*sentenceTokenizer("The time I went to the store I bought a watermelon");
-        sentenceTokenizer("Every word here is unique");
-        sentenceTokenizer(" Every word here is unique");
-        sentenceTokenizer("The earth is the best");
-        sentenceTokenizer("The earth is the earth");
-        sentenceTokenizer("Password1");*/
+        try {
+            takeOrder("Widget", 5, 2, 50.00, 50.00, false);
+        } catch (OutOfStockException | InvalidQuantityException | PaymentDeclinedException | PaymentExpiredException e) {
+            System.err.println(e.getMessage());
+        } catch (InventoryException | PaymentException e) {
+            System.err.println(e.getMessage());
+        }
+        try {
+            takeOrder("Widget", -1, 10, 50.00, 50.00, false);
+        } catch (OutOfStockException | InvalidQuantityException | PaymentDeclinedException | PaymentExpiredException e) {
+            System.err.println(e.getMessage());
+        } catch (InventoryException | PaymentException e) {
+            System.err.println(e.getMessage());
+        }
+        try {
+            takeOrder("Widget", 2, 10, 10.00, 50.00, false);
+        } catch (OutOfStockException | InvalidQuantityException | PaymentDeclinedException | PaymentExpiredException e) {
+            System.err.println(e.getMessage());
+        } catch (InventoryException | PaymentException e) {
+            System.err.println(e.getMessage());
+        }
+        try {
+            takeOrder("Widget", 2, 10, 50.00, 50.00, true);
+        } catch (OutOfStockException | InvalidQuantityException | PaymentDeclinedException | PaymentExpiredException e) {
+            System.err.println(e.getMessage());
+        } catch (InventoryException | PaymentException e) {
+            System.err.println(e.getMessage());
+        }
+        try {
+            takeOrder("Widget", 2, 10, 50.00, 50.00, false);
+        } catch (OutOfStockException | InvalidQuantityException | PaymentDeclinedException | PaymentExpiredException e) {
+            System.err.println(e.getMessage());
+        } catch (InventoryException | PaymentException e) {
+            System.err.println(e.getMessage());
+        }
     }
 
-    public static void takeOrder(String item, int request, int stock, double payment, double cost, boolean expired) {
+    public static void takeOrder(String item, int request, int stock, double payment, double cost, boolean expired) throws InventoryException, PaymentException {
         
-        /*if (){
-                //do nothing
-        }else if (words.containsKey(temp)) {
-            count = words.get(temp);
-            words.put(temp, count+1);
-        }else {
-            words.put(temp, 1);
-        }*/
+        if (item == null || item.equals("")){
+                throw new InventoryException("Order failed: Item name cannot be empty.");
+        }
+        if (request <= 0){
+            throw new InvalidQuantityException(" Quantity must be greater than 0.");
+        }else if (request > stock){
+            throw new OutOfStockException(" Requested "+ request +", but only "+ stock +" available.");
+        }
+        if (payment < cost){
+            throw new PaymentDeclinedException(" Insufficient funds.");
+        }else if (expired){
+            throw new PaymentExpiredException();
+        }
         
-        /*Map<String, Integer> words = new HashMap<>();
-        sentence = sentence.toLowerCase();
-        int space = sentence.indexOf(' ');
-        String temp;
-        int count;
-
-        while(space >= 0) {
-            temp = sentence.substring(0, space+1);
-            
-            if (temp.equals(" ")){
-                //do nothing
-            }else if (words.containsKey(temp)) {
-                count = words.get(temp);
-                words.put(temp, count+1);
-            }else {
-                words.put(temp, 1);
-            }
-
-            sentence = sentence.substring(space+1, sentence.length());
-            space = sentence.indexOf(' ');
-        }
-        if (words.containsKey(sentence)) {
-            count = words.get(sentence);
-            words.put(sentence, count+1);  
-        }else {
-            words.put(sentence, 1);
-        }
-
-        words.forEach((word, c) -> System.out.print(word +" - "+ c +", "));
-        System.out.println();*/
+        System.out.println("Order successful! "+ request +" x "+ item +" confirmed.");
     }
 }
