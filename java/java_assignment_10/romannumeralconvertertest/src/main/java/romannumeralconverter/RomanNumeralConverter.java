@@ -1,18 +1,10 @@
+package romannumeralconverter;
 public class RomanNumeralConverter {
 
-    public static void main(String[] args) {
-        /*System.out.println(toRoman(4));
-        System.out.println(toRoman(1994));
-        System.out.println(toRoman(3872));*/
-        System.out.println(toInteger("Iv"));
-        System.out.println(toInteger("McMXCiv"));
-        System.out.println(toInteger("mmmDCccLXXii"));
-    }
-
-    private static String toRoman(int number){
+    public static String toRoman(int number){
         String roman = "";
 
-        if(number >= 1000) {
+        if(number >= 1000 && number < 4000) {
             roman += "M";
             number -= 1000;
             if(number > 0) {
@@ -91,13 +83,13 @@ public class RomanNumeralConverter {
                 roman += toRoman(number);
             }
         }else {
-            roman += "0";
+            throw new IllegalArgumentException("Number must be between 1 and 3999.");
         }
 
         return roman;
     }
 
-    private static int toInteger(String roman){
+    public static int toInteger(String roman){
         int number = 0;
         roman = roman.toUpperCase();
 
@@ -145,9 +137,9 @@ public class RomanNumeralConverter {
                     number += toInteger(roman);
                 }
             }else {
-                //error
+                throw new IllegalArgumentException();
             }
-        }else {
+        }else if(roman.length() > 1) {
             if(roman.charAt(0) == 'M') {
                 number += 1000;
                 roman = roman.substring(1, roman.length());
@@ -226,7 +218,11 @@ public class RomanNumeralConverter {
                 if(roman.length() > 0) {
                     number += toInteger(roman);
                 }
+            }else {
+                throw new IllegalArgumentException();
             }
+        }else {
+            throw new IllegalArgumentException();
         }
 
         return number;
