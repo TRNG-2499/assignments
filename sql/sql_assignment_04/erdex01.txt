@@ -1,7 +1,7 @@
 This block of text is here to fight with VSCode about defining this as a sql file
 
 Initialize a database
-CREATE DATABASE hospital;
+CREATE SCHEMA hospital;
 
 CREATE TABLE department (
     department_id INT PRIMARY KEY,

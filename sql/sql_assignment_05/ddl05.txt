@@ -1,5 +1,4 @@
 
-Principles have a name, hire date, and salary.
 CREATE TABLE principle (
     principle_id INT PRIMARY KEY,
     name VARCHAR(255),
@@ -7,14 +6,12 @@ CREATE TABLE principle (
     SALARY int
 )
 
-Schools have a name, and a single principle
 CREATE TABLE school (
     school_id INT PRIMARY KEY,
     name VARCHAR(255),
     principle_id INT REFERENCES principle(principle_id)
 )
 
-Students have a name, a grade level (7th, 8th, 9th, etc...), a home address, an emergency contact phone number, and a school
 CREATE TABLE students (
     student_id INT PRIMARY KEY,
     name VARCHAR(100),
