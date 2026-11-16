@@ -1,0 +1,12 @@
+CREATE TABLE writer (
+    writer_id   INTEGER,
+    writer_name VARCHAR(100)
+);
+
+CREATE TABLE books (
+    book_id     INTEGER,
+    title       VARCHAR(255),
+    author      INTEGER,
+    publication INTEGER,
+    page_count  INTEGER
+);

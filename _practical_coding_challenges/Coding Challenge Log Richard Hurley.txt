@@ -5,3 +5,4 @@ Coding Challenge Log
 3. Minimum Operations to Make Median of Array Equal to K - Medium, November 11, Java, Leetcode
 4. Two Sum - Easy, November 12 2026, Leetcode
 5. Search Insert Position, Easy, November 13 2026, Leetcode
+6. Plus One - Easy, November 16 2026, Leetcode

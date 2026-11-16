@@ -1,0 +1,23 @@
+CREATE TABLE principles (
+    principle_id INTEGER       PRIMARY KEY,
+    name         VARCHAR(50),
+    hire_date    DATE,
+    salary       DECIMAL(10,2)
+);
+
+CREATE TABLE schools (
+    school_id    INTEGER       PRIMARY KEY,
+    name         VARCHAR(50),
+    principle_id INTEGER,
+    FOREIGN KEY (principle_id) REFERENCES principles (principle_id)
+);
+
+CREATE TABLE students (
+    student_id        INTEGER       PRIMARY KEY,
+    name              VARCHAR(50),
+    grade_level       INTEGER,
+    home_address      VARCHAR(100),
+    emergency_contact VARCHAR(20),
+    school_id         INTEGER,
+    FOREIGN KEY (school_id) REFERENCES schools (school_id)
+);

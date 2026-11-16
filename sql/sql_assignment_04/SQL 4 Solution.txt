@@ -1,0 +1,54 @@
+CREATE TABLE department (
+    department_id   INTEGER      PRIMARY KEY,
+    department_name VARCHAR(100) NOT NULL,
+    location        VARCHAR(100)
+);
+
+CREATE TABLE doctor (
+    doctor_id     INTEGER      PRIMARY KEY,
+    department_id INTEGER      NOT NULL,
+    first_name    VARCHAR(50)  NOT NULL,
+    last_name     VARCHAR(50)  NOT NULL,
+    specialty     VARCHAR(100),
+    phone         VARCHAR(20),
+    FOREIGN KEY (department_id) REFERENCES department (department_id)
+);
+
+CREATE TABLE patient (
+    patient_id    INTEGER      PRIMARY KEY,
+    first_name    VARCHAR(50)  NOT NULL,
+    last_name     VARCHAR(50)  NOT NULL,
+    date_of_birth DATE,
+    phone         VARCHAR(20),
+    address       VARCHAR(255)
+);
+
+CREATE TABLE room (
+    room_id       INTEGER      PRIMARY KEY,
+    department_id INTEGER      NOT NULL,
+    room_number   VARCHAR(10)  NOT NULL,
+    room_type     VARCHAR(50),
+    is_available  BOOLEAN,
+    FOREIGN KEY (department_id) REFERENCES department (department_id)
+);
+
+CREATE TABLE appointment (
+    appointment_id   INTEGER      PRIMARY KEY,
+    patient_id       INTEGER      NOT NULL,
+    doctor_id        INTEGER      NOT NULL,
+    appointment_date DATE         NOT NULL,
+    appointment_time TIME,
+    reason           VARCHAR(255),
+    status           VARCHAR(20),
+    FOREIGN KEY (patient_id) REFERENCES patient (patient_id),
+    FOREIGN KEY (doctor_id) REFERENCES doctor (doctor_id)
+);
+
+CREATE TABLE prescription (
+    prescription_id INTEGER      PRIMARY KEY,
+    appointment_id  INTEGER      NOT NULL,
+    medication_name VARCHAR(100) NOT NULL,
+    dosage          VARCHAR(50),
+    instructions    VARCHAR(255),
+    FOREIGN KEY (appointment_id) REFERENCES appointment (appointment_id)
+);
