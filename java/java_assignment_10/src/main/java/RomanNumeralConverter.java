@@ -1,8 +1,5 @@
 import java.util.Locale;
 
-/**
- * Converts between integers (1 to 3999) and standard Roman numerals.
- */
 public class RomanNumeralConverter {
 
     private static final int MIN_VALUE = 1;
@@ -19,11 +16,6 @@ public class RomanNumeralConverter {
         // Utility class; not meant to be instantiated.
     }
 
-    /**
-     * Converts a number to an uppercase Roman numeral.
-     *
-     * @throws IllegalArgumentException if the number is outside 1 to 3999
-     */
     public static String toRoman(int number) {
         if (number < MIN_VALUE || number > MAX_VALUE) {
             throw new IllegalArgumentException(
@@ -41,13 +33,6 @@ public class RomanNumeralConverter {
         return roman.toString();
     }
 
-    /**
-     * Converts a Roman numeral (in any letter case) to its integer value.
-     *
-     * @throws IllegalArgumentException if the input is null, blank, contains a character
-     *                                  that is not a Roman numeral letter, or is not a
-     *                                  standard numeral (for example "IIII" or "IC")
-     */
     public static int toInteger(String roman) {
         if (roman == null || roman.isBlank()) {
             throw new IllegalArgumentException("Roman numeral must not be null or empty.");
@@ -73,11 +58,6 @@ public class RomanNumeralConverter {
         return total;
     }
 
-    /**
-     * Adds two Roman numerals and returns the sum as an uppercase Roman numeral.
-     *
-     * @throws IllegalArgumentException if either numeral is invalid or the sum exceeds 3999
-     */
     public static String add(String a, String b) {
         int sum = toInteger(a) + toInteger(b);
         if (sum > MAX_VALUE) {
