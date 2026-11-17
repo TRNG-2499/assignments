@@ -1,0 +1,1 @@
+INSERT INTO Books VALUES (DEFAULT, 'New Book', 1002, 2026, 150);
