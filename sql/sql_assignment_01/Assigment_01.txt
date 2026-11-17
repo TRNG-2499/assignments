@@ -1,0 +1,13 @@
+Create Table Writer (
+    writer_id INT PRIMARY KEY,
+    writer_name VARCHAR(100)
+);
+
+Create Table Books (
+    book_id Int PRIMARY KEY,
+    title VARCHAR(255),
+    author INT, 
+    publication INT, 
+    page_count INT, 
+    FOREIGN KEY (author) REFERENCES Writer(writer_id)
+);
