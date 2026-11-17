@@ -1,2 +1,3 @@
 id,challenge_name,difficulty,date_completed,language,platform
 1,Two Sum,Easy,2026-11-10,Java,LeetCode
+2,Number of 1 Bits,Easy,2026-11-17,Java,LeetCode
