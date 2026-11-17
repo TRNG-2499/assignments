@@ -40,22 +40,22 @@ public class Room {
     public void connectRoom(Room otherRoom, Direction dir) {
         try {
             this.processConnection(otherRoom, dir);
-        } catch (directionTakenException e) {
+        } catch (DirectionExceptions.directionTakenException e) {
             System.out.println("directionTakenException: " + e.getMessage());
-        } catch (directionException e) {
+        } catch (DirectionExceptions.directionException e) {
             System.out.println("directionException: " + e.getMessage());
         }
     }
 
-    private void processConnection(Room otherRoom, Direction direction) throws directionException {
+    private void processConnection(Room otherRoom, Direction direction) throws DirectionExceptions.directionException {
         if(this.exits.containsKey(direction)) {
-            throw new directionTakenException(direction);
+            throw new DirectionExceptions.directionTakenException(direction);
         }
         if (Arrays.stream(Direction.values()).anyMatch(direction::equals) != true) {
-            throw new invalidDirectionException(direction);
+            throw new DirectionExceptions.invalidDirectionException(direction);
         }
         if (direction == null) {
-            throw new nullDirectionException(direction);
+            throw new DirectionExceptions.nullDirectionException();
         }
             exits.put(direction, otherRoom);
             otherRoom.exits.put(oppositeDir(direction), this);
@@ -73,28 +73,36 @@ public class Room {
             System.out.println(getName() + " connects " + dir.name().toLowerCase() + " to " + otherRoom.getName());
         }
     }
-}
 
-class directionException extends Exception {
-    directionException(String msg) {
-        super(msg);
+    /// returns the room through the given exit
+    /// @throws noExitException if this room has no exit that way
+    Room move(Direction dir) throws DirectionExceptions.noExitException {
+        Room next = exits.get(dir);
+        if (next == null) {
+            throw new DirectionExceptions.noExitException(dir);
+        }
+        return next;
     }
-}
 
-class directionTakenException extends directionException {
-    directionTakenException(Direction dir) {
-        super("Direction '" + dir.name() + "' already leads to another Room.class instance");
+    /// finds an entity in this room by name, ignoring case
+    /// @throws entityNotFoundException if no entity has that name
+    Entity findEntity(String name) throws RoomExceptions.entityNotFoundException {
+        for (Entity entity : entities) {
+            if (entity.getName().equalsIgnoreCase(name)) {
+                return entity;
+            }
+        }
+        throw new RoomExceptions.entityNotFoundException(name);
     }
-}
 
-class invalidDirectionException extends directionException {
-    invalidDirectionException(Direction dir) {
-        super("Specified direction '" + dir.name() + "' is not a valid Direction.enum value");
-    }
-}
-
-class nullDirectionException extends directionException {
-    nullDirectionException(Direction dir) {
-        super("Specified direction cannot be null");
+    /// the text shown whenever the player enters or looks around this room
+    String describe() {
+        ArrayList<String> names = new ArrayList<>();
+        for (Entity entity : entities) {
+            names.add(entity.getName());
+        }
+        return "You are in the " + Name + ".\n"
+             + Description + "\n"
+             + "Interactable entities: " + (names.isEmpty() ? "none" : String.join(", ", names));
     }
 }

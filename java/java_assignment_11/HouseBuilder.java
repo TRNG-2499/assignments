@@ -37,7 +37,7 @@ class HouseBuilder {
         try {
             checkRoom(firstRoom);
             roomArrayList.add(firstRoom);
-        } catch (roomException e) {
+        } catch (RoomExceptions.roomException e) {
             System.out.println(e.getClass().getSimpleName() + ": " + e.getMessage());
         }
     }
@@ -51,10 +51,10 @@ class HouseBuilder {
     public void addRoom(Room room) {
         try {
             if (startingRoom.getExits().containsKey(defaultExit)) {
-                throw new houseOccupiedException();
+                throw new HouseExceptions.houseOccupiedException();
             }
             addRoom(room, startingRoom, defaultExit);
-        } catch (houseException e) {
+        } catch (HouseExceptions.houseException e) {
             System.out.println(e.getClass().getSimpleName() + ": " + e.getMessage());
         }
     }
@@ -68,17 +68,17 @@ class HouseBuilder {
             checkRoom(room);
             roomArrayList.add(room);
             connectedRoom.connectRoom(room, dir);
-        } catch (roomException e) {
+        } catch (RoomExceptions.roomException e) {
             System.out.println(e.getClass().getSimpleName() + ": " + e.getMessage());
         }
     }
 
-    private void checkRoom(Room room) throws roomException {
+    private void checkRoom(Room room) throws RoomExceptions.roomException {
         if (room == null) {
-            throw new nullRoomException();
+            throw new RoomExceptions.nullRoomException();
         }
         if (roomArrayList.contains(room)) {
-            throw new takenRoomException(room);
+            throw new RoomExceptions.takenRoomException(room);
         }
     }
 
@@ -112,35 +112,11 @@ class HouseBuilder {
             room.getExits().forEach((direction, otherRoom) ->
                 System.out.println("  " + direction.name().toLowerCase() + " -> " + otherRoom.getName())
             );
+            ArrayList<String> names = new ArrayList<>();
+            for (Entity entity : room.getEntities()) {
+                names.add(entity.getName());
+            }
+            System.out.println("  items: " + (names.isEmpty() ? "(none)" : String.join(", ", names)));
         }
-    }
-}
-
-
-class roomException extends Exception {
-    roomException(String msg) {
-        super(msg);
-    }
-}
-
-class houseException extends Exception {
-    houseException(String msg) { super(msg); }
-}
-
-class houseOccupiedException extends houseException {
-    houseOccupiedException() {
-        super("The starting room's default exit is already connected to a room");
-    }
-}
-
-class nullRoomException extends roomException {
-    nullRoomException() {
-        super("Given instance of Room.class cannot be null");
-    }
-}
-
-class takenRoomException extends roomException {
-    takenRoomException(Room room) {
-        super("Room.class object '" + room.getName() + "' already exists within collection");
     }
 }
