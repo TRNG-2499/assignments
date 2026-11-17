@@ -120,7 +120,7 @@ public class RomanNumeralConverter {
         throw new IllegalArgumentException("Invalid range.");
     }
 
-    // Convert integer back to canonical Roman numeral
+    // Convert integer back to Roman numeral to see if it's valid
     String[] numerals = {"M", "CM", "D", "CD", "C", "XC", "L","XL", "X", "IX", "V", "IV", "I"};
 
     int[] numeralValues = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
