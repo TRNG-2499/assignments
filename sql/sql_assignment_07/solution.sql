@@ -1,0 +1,1 @@
+INSERT INTO Books (title, author, publication, page_count) VALUES ('Some Book', 1002, 1234, 67);
