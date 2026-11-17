@@ -1,5 +1,6 @@
 /**
- * An interactable object in a room. Names must be a single word (e.g. "CoatRack").
+ * An interactable object in a room. Names must be a single word (e.g.
+ * "CoatRack").
  */
 public class Entity {
 
@@ -8,7 +9,13 @@ public class Entity {
     private final String interactResponse;
 
     public Entity(String name, String description, String interactResponse) {
-        // TODO: consider rejecting names that contain spaces
+        if (name == null || name.isBlank()) {
+            throw new IllegalArgumentException("This Entity cannot be empty");
+        }
+        if (name.contains(" ")) {
+            throw new IllegalArgumentException("The Entity must be a single word \"" + name + "\"");
+        }
+
         this.name = name;
         this.description = description;
         this.interactResponse = interactResponse;
@@ -24,7 +31,6 @@ public class Entity {
 
     /** Returns the text shown when the player interacts with this entity. */
     public String interact() {
-        // TODO: return the interaction response (or something more dynamic)
         return interactResponse;
     }
 

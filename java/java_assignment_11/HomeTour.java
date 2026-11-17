@@ -32,7 +32,7 @@ public class HomeTour {
                 }
 
                 // Split into command word and the rest (argument), case-insensitive
-                String[] parts = line.split("\s+", 2);
+                String[] parts = line.split("\\s+", 2);
                 String command = parts[0].toLowerCase();
                 String argument = parts.length > 1 ? parts[1].trim() : "";
 
@@ -46,7 +46,7 @@ public class HomeTour {
                         default -> System.out.println("Unknown command: " + command);
                     }
                 } catch (InvalidDirectionException | EntityNotFoundException e) {
-                    System.out.println("Error: " + e.getMessage());
+                    System.out.println(e.getMessage());
                 }
             }
         }
@@ -55,16 +55,24 @@ public class HomeTour {
     }
 
     private void move(String direction) throws InvalidDirectionException {
-        // TODO: handle a missing direction argument
-        // TODO: currentRoom = currentRoom.getExit(direction); then print the new room's description
+        if (direction.isEmpty()) {
+            System.out.println("Move where? Usage: move [direction]");
+            return;
+        }
+        currentRoom = currentRoom.getExit(direction);
+        System.out.println(currentRoom.describe());
     }
 
     private void look() {
-        // TODO: print currentRoom.describe()
+        System.out.println(currentRoom.describe());
     }
 
     private void interact(String entityName) throws EntityNotFoundException {
-        // TODO: handle a missing entity argument
-        // TODO: find the entity in currentRoom and print entity.interact()
+        if (entityName.isEmpty()) {
+            System.out.println("Interact with what? Usage: interact [entity name]");
+            return;
+        }
+        Entity entity = currentRoom.findEntity(entityName);
+        System.out.println(entity.interact());
     }
 }

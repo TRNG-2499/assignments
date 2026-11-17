@@ -28,7 +28,8 @@ public class Room {
     }
 
     public void addEntity(Entity entity) {
-        // TODO: add the entity to this room
+        entities.add(entity);
+
     }
 
     /**
@@ -36,33 +37,53 @@ public class Room {
      * other room back in the opposite direction so exits are always two-way.
      */
     public void connect(String direction, Room other) {
-        // TODO: put other in exits under direction (lowercase)
-        // TODO: put this in other's exits under opposite(direction)
+        this.exits.put(direction.toLowerCase(), other);
+        other.exits.put(opposite(direction).toLowerCase(), this);
     }
 
     /** Returns the room in the given direction (case-insensitive). */
     public Room getExit(String direction) throws InvalidDirectionException {
-        // TODO: look up direction.toLowerCase(); throw InvalidDirectionException if missing
-        return null;
+        Room next = exits.get(direction.toLowerCase());
+        if (next == null) {
+            throw new InvalidDirectionException(direction);
+        }
+        return next;
+
     }
 
     /** Finds an entity in this room by name (case-insensitive). */
     public Entity findEntity(String entityName) throws EntityNotFoundException {
-        // TODO: loop over entities, compare with equalsIgnoreCase; throw if not found
-        return null;
+        for (Entity e : entities) {
+            if (e.getName().equalsIgnoreCase(entityName)) {
+                return e;
+            }
+        }
+        throw new EntityNotFoundException(entityName);
     }
 
     /** Builds the text shown when entering the room or using "look". */
     public String describe() {
-        // TODO: return something like:
-        //   You are in the <name>.
-        //   <description>
-        //   Interactable entities: A, B, C
-        return "";
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < entities.size(); i++) {
+            if (i > 0) {
+                sb.append(", ");
+            }
+            sb.append(entities.get(i).getName());
+        }
+        return "You are in the " + name + ".\n" + description + "\n" + "Interactable Entities: " + sb;
     }
 
     private static String opposite(String direction) {
-        // TODO: north<->south, east<->west, up<->down
-        return "";
+
+        return switch (direction.toLowerCase()) {
+            case "north" -> "south";
+            case "south" -> "north";
+            case "west" -> "east";
+            case "east" -> "west";
+            case "up" -> "down";
+            case "down" -> "up";
+            default -> throw new IllegalArgumentException(
+                    "This direction " + direction + " doesn't exist. Choose a value direction.");
+        };
     }
 }
