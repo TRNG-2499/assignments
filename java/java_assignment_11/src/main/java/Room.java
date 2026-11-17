@@ -36,7 +36,6 @@ public class Room {
     }
 
     //connects one room to another
-
     public void connectRoom(Room otherRoom, Direction dir) {
         try {
             this.processConnection(otherRoom, dir);
