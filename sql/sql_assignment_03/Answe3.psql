@@ -1,0 +1,4 @@
+
+ALTER Table Writer RENAME TO Author;
+ALTER Table Author  Rename Column Writer_ID to Author_ID;
+ALTER Table Author  Rename Column Writer_Name to Author_Name;

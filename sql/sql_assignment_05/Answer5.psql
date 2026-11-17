@@ -1,0 +1,24 @@
+Create Table Principle(
+    principle_id int PRIMARY KEY,
+    principle_name VARCHAR NOT NULL,
+    hire_date DATE NOT NULL,
+    salary int NOT NULL
+);
+
+Create Table School(
+    school_id int PRIMARY KEY,
+    school_name VARCHAR NOT NULL,
+    principle_id int NOT NULL,
+    FOREIGN KEY (principle_id) References Principle(principle_id)
+);
+
+Create Table Student(
+    student_id int PRIMARY KEY,
+    student_name VARCHAR NOT NULL,
+    grade_level VARCHAR NOT NULL,
+    home_address VARCHAR NOT NULL,
+    emergency_contact_name VARCHAR NOT NULL,
+    emergency_contact_phone_number VARCHAR NOT NULL,
+    school_id int NOT NULL,
+    FOREIGN KEY (school_id) References School(school_id)
+);

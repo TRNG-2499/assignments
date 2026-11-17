@@ -1,0 +1,15 @@
+Create Table Writer (
+    Writer_ID Int PRIMARY KEY,
+    Writer_Name VARCHAR(100) NOT NULL
+);
+
+
+
+Create Table Books (
+    Book_ID Int PRIMARY KEY,
+    Title VARCHAR(100) NOT NULL,
+    author Int NOT NUll,
+    Publication INT,
+    Page_Count Int,
+    FOREIGN KEY (Author) References Writer(Writer_ID)
+);

@@ -1,0 +1,60 @@
+CREATE TABLE Department(
+    department_id int PRIMARY KEY,
+    department_name VARCHAR NOT NULL,
+    location VARCHAR NOT NULL
+);
+
+CREATE TABLE Doctor(
+    doctor_id int PRIMARY KEY,
+    department_id int NOT NULL,
+    first_name VARCHAR NOT NULL,
+    last_name VARCHAR NOT NULL,
+    specialty VARCHAR NOT NULL,
+    phone VARCHAR NOT NULL,
+    FOREIGN KEY (department_id) References Department(department_id)
+);
+
+
+CREATE TABLE Patient(
+    patient_id int PRIMARY KEY,
+    first_name VARCHAR NOT NULL,
+    last_name VARCHAR NOT NULL,
+    date_of_birth Date NOT NULL,
+    phone VARCHAR NOT NULL,
+    address VARCHAR NOT NULL
+);
+
+
+Create TABLE Appointment(
+    appointment_id int PRIMARY KEY,
+    patient_id int NOT NULL,
+    doctor_id int NOT NULL,
+    appointment_date Date NOT NULL,
+    appointment_time time NOT NULL,
+    reason VARCHAR NOT NULL,
+    status VARCHAR NOT NULL,
+    FOREIGN KEY (patient_id) References Patient(patient_id),
+    FOREIGN KEY (doctor_id) References Doctor(doctor_id)
+);
+
+CREATE TABLE Prescription(
+    prescription_id int PRIMARY KEY,
+    appointment_id int NOT NULL,
+    medication_name VARCHAR NOT NULL,
+    dosage VARCHAR NOT NULL,
+    instructions VARCHAR NOT NULL,
+    FOREIGN KEY (appointment_id) References Appointment(appointment_id)
+);
+
+CREATE TABLE Room(
+    room_id int PRIMARY KEY,
+    department_id int NOT NULL,
+    room_number VARCHAR NOT NULL,
+    room_type VARCHAR NOT NULL,
+    is_available BOOLEAN,
+    FOREIGN KEY (department_id) References Department(department_id)
+);
+
+
+
+
