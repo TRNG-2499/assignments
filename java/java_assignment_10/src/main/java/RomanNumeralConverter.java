@@ -36,18 +36,27 @@ public class RomanNumeralConverter {
     } */
 
     public static String toRoman(int number){
-        String roman = "";
+        if(number < 1 || number > 3999){
+            throw new IllegalArgumentException("Invalid input: " + number + " Number must be 1-3999.\n");
+        }
+
+        StringBuilder roman = new StringBuilder();
 
         for(int i = 0; i < romanValues.length; i++){
             while(number >= romanValues[i]){
-                roman += subtractives[i];
+                roman.append(subtractives[i]);
                 number -= romanValues[i];
             }
         }
-        return roman;
+        return roman.toString();
     }
 
     public static int toInteger(String roman){
+        if(roman == null || roman.length() == 0){
+            throw new IllegalArgumentException("Invalid input: " + roman + " Roman numeral must be comprised of chars [MDCLXVI].\n");
+        }
+
+        String upperRoman = roman.toUpperCase();
         int num = 0;
 
         /* for (int i = 0; i < roman.length(); i++){
@@ -82,13 +91,18 @@ public class RomanNumeralConverter {
 
         int index = 0;
 
-        while (index < roman.length()) {
+        while (index < upperRoman.length()) {
+            boolean matched = false;
             for (int i = 0; i < subtractives.length; i++) {
-                if (roman.startsWith(subtractives[i], index)) {
+                if (upperRoman.startsWith(subtractives[i], index)) {
                     num += romanValues[i];
                     index += subtractives[i].length();
+                    matched = true;
                     break;
                 }
+            }
+            if (!matched) {
+                throw new IllegalArgumentException("Invalid input: " + roman + " Roman numeral must be comprised of chars [MDCLXVI].\n");
             }
         }
 
