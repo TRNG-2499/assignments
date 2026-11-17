@@ -1,3 +1,2 @@
-
 ALTER TABLE book 
 RENAME COLUMN book_id TO isbn_13

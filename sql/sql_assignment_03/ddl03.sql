@@ -1,10 +1,8 @@
-
-Statement 1
 ALTER TABLE writer
 RENAME TO author
-Statement 2
+
 ALTER TABLE author
 RENAME COLUMN writer_id TO author_id
-Statement 3
+
 ALTER TABLE author
 RENAME COLUMN writer_name TO author_name

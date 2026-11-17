@@ -1,6 +1,3 @@
-This block of text is here to fight with VSCode about defining this as a sql file
-
-Initialize a database
 CREATE SCHEMA hospital;
 
 CREATE TABLE department (
