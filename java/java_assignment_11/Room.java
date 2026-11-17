@@ -1,17 +1,22 @@
 import java.util.ArrayList;
 import java.util.Map;
 import java.util.EnumMap;
-
-//The base class for the 'Room' class hierarchy
-enum Direction {
-    NORTH, SOUTH, EAST, WEST, UP, DOWN;
-}
+import java.util.Arrays;
 
 public class Room {
-    private static String Name = "room name";
-    private static String Description = "room description";
-    private static ArrayList<Entity> entities = new ArrayList<>();
+    private String Name = "room name";
+    private String Description = "room description";
+    private ArrayList<Entity> entities = new ArrayList<>();
     private final Map<Direction, Room> exits = new EnumMap<>(Direction.class);
+
+    public String getName() { return Name; }
+    public String getDescription() { return Description; }
+    public ArrayList<Entity> getEntities() { return entities; }
+
+    public Map<Direction, Room> getExits() { return exits; }
+
+    public void addEntityList(ArrayList<Entity> entities_) { entities = entities_; }
+    public void addEntities(Entity obj) { entities.add(obj); }
 
     public Room(String name, String description) {
         this.Name = name;
@@ -31,9 +36,29 @@ public class Room {
     }
 
     //connects one room to another
-    public void connectRoom(Room otherRoom, Direction direction) {
-        exits.put(direction, otherRoom);
-        otherRoom.exits.put(direction, this);
+
+    public void connectRoom(Room otherRoom, Direction dir) {
+        try {
+            this.processConnection(otherRoom, dir);
+        } catch (directionTakenException e) {
+            System.out.println("directionTakenException: " + e.getMessage());
+        } catch (directionException e) {
+            System.out.println("directionException: " + e.getMessage());
+        }
+    }
+
+    private void processConnection(Room otherRoom, Direction direction) throws directionException {
+        if(this.exits.containsKey(direction)) {
+            throw new directionTakenException(direction);
+        }
+        if (Arrays.stream(Direction.values()).anyMatch(direction::equals) != true) {
+            throw new invalidDirectionException(direction);
+        }
+        if (direction == null) {
+            throw new nullDirectionException(direction);
+        }
+            exits.put(direction, otherRoom);
+            otherRoom.exits.put(oppositeDir(direction), this);
     }
 
     //prints every exit from this room and the room it leads to
@@ -48,24 +73,28 @@ public class Room {
             System.out.println(getName() + " connects " + dir.name().toLowerCase() + " to " + otherRoom.getName());
         }
     }
+}
 
-    public static String getName() {
-        return Name;
+class directionException extends Exception {
+    directionException(String msg) {
+        super(msg);
     }
+}
 
-    public static String getDescription() {
-        return Description;
+class directionTakenException extends directionException {
+    directionTakenException(Direction dir) {
+        super("Direction '" + dir.name() + "' already leads to another Room.class instance");
     }
+}
 
-    public static ArrayList<Entity> getEntities() {
-        return entities;
+class invalidDirectionException extends directionException {
+    invalidDirectionException(Direction dir) {
+        super("Specified direction '" + dir.name() + "' is not a valid Direction.enum value");
     }
+}
 
-    public static void addEntityList(ArrayList<Entity> entities_) {
-        entities = entities_;
-    }
-
-    public static void addEntities(Entity obj) {
-        entities.add(obj);
+class nullDirectionException extends directionException {
+    nullDirectionException(Direction dir) {
+        super("Specified direction cannot be null");
     }
 }
