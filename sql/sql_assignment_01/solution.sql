@@ -1,0 +1,2 @@
+CREATE TABLE Writer;
+CREATE TABLE Books;

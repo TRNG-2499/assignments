@@ -1,0 +1,1 @@
+https://docs.junit.org/6.1.3/writing-tests/parameterized-classes-and-tests.html

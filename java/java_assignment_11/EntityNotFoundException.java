@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 public class EntityNotFoundException extends Exception {
-    public EntityNotFoundException(){
-        super("Entity not present");
+    public EntityNotFoundException(String entityName){
+        super(String.format("There is no \'%s\' here to interact with!", entityName));
     }
 }

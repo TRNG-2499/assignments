@@ -3,7 +3,7 @@ import java.util.*;
 
 public abstract class Room {
 
-    private List<Entity> entities;
+    private HashMap<String, Entity> entities;
 
     private Room northRoom;
     private Room southRoom;
@@ -14,10 +14,10 @@ public abstract class Room {
 
 
     public Room(Room from, String exitDirection){
-        this.entities = new ArrayList<>();
+        this.entities = new HashMap<>();
 
         for(Entity e : this.initEntities()){
-            this.entities.add(e);
+            this.entities.put(e.getName(), e);
         }
 
         this.northRoom = initNorthRoom();
@@ -44,6 +44,19 @@ public abstract class Room {
 
     public abstract String name();
     public abstract String description();
+
+    public Entity getEntity(String name) throws EntityNotFoundException {
+        Entity e = this.entities.get(name);
+        if(e == null){
+            throw new EntityNotFoundException(name);
+        }
+
+        return e;
+    }
+
+    public Iterable<Entity> getEntities(){
+        return this.entities.values();
+    }
 
     public Room enter(String direction) throws InvalidDirectionException {
         try {

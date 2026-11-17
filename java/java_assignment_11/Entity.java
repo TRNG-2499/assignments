@@ -1,17 +1,22 @@
 import java.io.*;
 import java.util.*;
 
-public class Entity {
+public abstract class Entity {
     private String name;
-    private String description;
-    
+    protected String description;
 
     public Entity(String name, String description){
         this.name = name;
         this.description = description;
     }
 
-    public String interact(){
-        return "";
+    public String getName(){
+        return this.name;
     }
+
+    public String getDescription(){
+        return this.description;
+    }
+
+    public abstract String interact();
 }
