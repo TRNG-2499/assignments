@@ -1,0 +1,1 @@
+INSERT INTO author (title, author, publication, page count) VALUES (Coming Up for Air, 1002, 1939, 256);

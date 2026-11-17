@@ -1,0 +1,1 @@
+SELECT MIN(avg_page_count) FROM (SELECT author, AVG(page_count) AS avg_page_count FROM books GROUP BY author);
