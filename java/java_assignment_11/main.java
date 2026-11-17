@@ -66,7 +66,7 @@ class Main {
             try {
                 command = Commands.valueOf(word);   // enum constants are lowercase, so this matches the lowercased input
             } catch (IllegalArgumentException e) {
-                System.out.println("Unknown command '" + word + "'. Try: move, look, interact, exit or quit.");
+                System.out.println("Unknown command '" + word + "'. Try: move, look, interact, listrooms, exit or quit.");
                 continue;
             }
 
@@ -89,6 +89,7 @@ class Main {
                         System.out.println(currentRoom.findEntity(argument).interact());
                     }
                     case exit, quit -> running = false;
+                    case listrooms -> houseBuilder.printRooms();
                 }
             } catch (DirectionExceptions.directionException | RoomExceptions.entityNotFoundException e) {
                 // the game keeps running after a bad action
