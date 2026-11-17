@@ -27,3 +27,9 @@ Books
 |3060|The Shining|1005|1977|447|
 |3061|Salem's Lot|1005|1975|439|
 |3062|Cat's Cradle|1003|1963|304|
+
+Select Sum(b.page_count) from 
+    Author AS a JOIN Books as b 
+        ON a.author_id = b.author
+    WHERE author_id = 1005
+    GROUP BY author_id;
