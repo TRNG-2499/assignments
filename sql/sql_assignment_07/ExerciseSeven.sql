@@ -1,0 +1,1 @@
+INSERT INTO books (title, author, publication, page_count) VALUES ('The Java Chronicles', 1002, 1930, 6767);
