@@ -1,3 +1,15 @@
+<<<<<<< HEAD
+=======
+// Write a method that accepts a single parameter: a String.
+// The method should return a new String where runs of consecutive, identical characters are replaced with the character followed by 
+// the count of how many times it repeated in that run (for example, "aaabbbccd" becomes "a3b3c2d1").
+// A character that does not repeat (a run of length 1) should still be followed by a 1 in the output, as shown in the example.
+// Runs should be identified case-insensitively — for example, "aA" should be treated as a single run of length 2, 
+// not two separate runs. The character used in the compressed output for a given run should match the casing of the first character 
+// in that run (for example, "aA" compresses to "a2", while "Aa" compresses to "A2").
+// Consider how your method should handle an empty string as input.
+
+>>>>>>> 5857ffd (Complete compressed characters assignment)
 public class CompressConsCharacters {
     public static String compress(String input) {
         if (input == null || input.isEmpty()) {
@@ -23,6 +35,7 @@ public class CompressConsCharacters {
         return result.toString();
     }
 
+<<<<<<< HEAD
     // method to return compressed string only if shorter than original
     public static String compressIfShorter(String input) {
         if (input == null || input.isEmpty()) {
@@ -68,5 +81,10 @@ public class CompressConsCharacters {
         System.out.println(decompress("a3b3c2d1"));
         System.out.println(decompress("a12"));
         System.out.println(decompress("a3b2"));
+=======
+    public static void main(String[] args) {
+        System.out.println(compress("aaabbbccd"));
+        System.out.println(compress("aAaA"));
+>>>>>>> 5857ffd (Complete compressed characters assignment)
     }
 }
