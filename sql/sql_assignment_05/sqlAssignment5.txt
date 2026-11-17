@@ -1,0 +1,24 @@
+CREATE TABLE principle(
+    principle_id INTEGER,
+    principle_name VARCHAR (50),
+    hire_date DATE,
+    salary INTEGER,
+    PRIMARY KEY(principle_id)
+);
+
+CREATE TABLE school(
+    school_id INTEGER,
+    school_name VARCHAR (50),
+    principle_id INTEGER UNIQUE REFERENCES principle(principle_id),
+    PRIMARY KEY(school_id)
+);
+
+CREATE TABLE student(
+    student_id INTEGER,
+    student_name VARCHAR (50),
+    grade_level VARCHAR (15),
+    home_address VARCHAR (50),
+    phone_number VARCHAR (9),
+    student_id INTEGER REFERENCES student(student_id),
+    PRIMARY KEY(student_id)
+);

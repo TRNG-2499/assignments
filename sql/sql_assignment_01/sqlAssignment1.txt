@@ -1,0 +1,14 @@
+CREATE TABLE writer(
+    writer_id INTEGER,
+    writer_name VARCHAR (50),
+    PRIMARY KEY(writer_id)
+);
+
+CREATE TABLE books(
+    book_id INTEGER,
+    title VARCHAR (100),
+    author INTEGER REFERENCES writer(writer_id),
+    publication INTEGER,
+    page_count INTEGER,
+    PRIMARY KEY(book_id)
+);
