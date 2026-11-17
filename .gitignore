@@ -2,4 +2,4 @@
 /in_class
 *.class
 *.vscode
-*/target
+/*/target/

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="RomanNumeralStrictValidationTest" time="0.121" tests="60" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="25"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/sijidoherty/Documents/cvstuff/Revature Training/repos/assignments/java/java_assignment_10/romannumeralconverter/target/test-classes:/Users/sijidoherty/Documents/cvstuff/Revature Training/repos/assignments/java/java_assignment_10/romannumeralconverter/target/classes:/Users/sijidoherty/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.14.4/junit-jupiter-api-5.14.4.jar:/Users/sijidoherty/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/sijidoherty/.m2/repository/org/junit/platform/junit-platform-commons/1.14.4/junit-platform-commons-1.14.4.jar:/Users/sijidoherty/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/sijidoherty/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.14.4/junit-jupiter-params-5.14.4.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="25"/>
+    <property name="user.country" value="NG"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-25.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/sijidoherty/Documents/cvstuff/Revature Training/repos/assignments/java/java_assignment_10/romannumeralconverter/target/surefire/surefirebooter-20261115170429783_3.jar /Users/sijidoherty/Documents/cvstuff/Revature Training/repos/assignments/java/java_assignment_10/romannumeralconverter/target/surefire 2026-11-15T17-04-29_729-jvmRun1 surefire-20261115170429783_1tmp surefire_0-20261115170429783_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="test" value="RomanNumeralStrictValidationTest"/>
+    <property name="surefire.test.class.path" value="/Users/sijidoherty/Documents/cvstuff/Revature Training/repos/assignments/java/java_assignment_10/romannumeralconverter/target/test-classes:/Users/sijidoherty/Documents/cvstuff/Revature Training/repos/assignments/java/java_assignment_10/romannumeralconverter/target/classes:/Users/sijidoherty/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.14.4/junit-jupiter-api-5.14.4.jar:/Users/sijidoherty/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/sijidoherty/.m2/repository/org/junit/platform/junit-platform-commons/1.14.4/junit-platform-commons-1.14.4.jar:/Users/sijidoherty/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/sijidoherty/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.14.4/junit-jupiter-params-5.14.4.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/sijidoherty"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-10-21"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-25.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/sijidoherty/Documents/cvstuff/Revature Training/repos/assignments/java/java_assignment_10/romannumeralconverter"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/sijidoherty/Documents/cvstuff/Revature Training/repos/assignments/java/java_assignment_10/romannumeralconverter/target/surefire/surefirebooter-20261115170429783_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="25.0.1+8-LTS-27"/>
+    <property name="user.name" value="sijidoherty"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="15.2"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="maven.ext.class.path" value="/Users/sijidoherty/.vscode/extensions/oracle.oracle-java-27.0.0/nbcode/java/maven-nblib/netbeans-eventspy.jar"/>
+    <property name="localRepository" value="/Users/sijidoherty/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/kn/8vyyt7yx1kv_zpld_3kxf_v40000gp/T/"/>
+    <property name="java.version" value="25.0.1"/>
+    <property name="user.dir" value="/Users/sijidoherty/Documents/cvstuff/Revature Training/repos/assignments/java/java_assignment_10/romannumeralconverter"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/sijidoherty/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.0.1+8-LTS-27"/>
+    <property name="stdin.encoding" value="UTF-8"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="69.0"/>
+  </properties>
+  <testcase name="validNumeralsConvert(String, int)[1]" classname="Strict Validation Tests" time="0.019"/>
+  <testcase name="validNumeralsConvert(String, int)[2]" classname="Strict Validation Tests" time="0.001"/>
+  <testcase name="validNumeralsConvert(String, int)[3]" classname="Strict Validation Tests" time="0.001"/>
+  <testcase name="validNumeralsConvert(String, int)[4]" classname="Strict Validation Tests" time="0.001"/>
+  <testcase name="validNumeralsConvert(String, int)[5]" classname="Strict Validation Tests" time="0.001"/>
+  <testcase name="validNumeralsConvert(String, int)[6]" classname="Strict Validation Tests" time="0.001"/>
+  <testcase name="validNumeralsConvert(String, int)[7]" classname="Strict Validation Tests" time="0.001"/>
+  <testcase name="validNumeralsConvert(String, int)[8]" classname="Strict Validation Tests" time="0.001"/>
+  <testcase name="validNumeralsConvert(String, int)[9]" classname="Strict Validation Tests" time="0.001"/>
+  <testcase name="validNumeralsConvert(String, int)[10]" classname="Strict Validation Tests" time="0.001"/>
+  <testcase name="validNumeralsConvert(String, int)[11]" classname="Strict Validation Tests" time="0.001"/>
+  <testcase name="validNumeralsConvert(String, int)[12]" classname="Strict Validation Tests" time="0.001"/>
+  <testcase name="validNumeralsConvert(String, int)[13]" classname="Strict Validation Tests" time="0.0"/>
+  <testcase name="validNumeralsConvert(String, int)[14]" classname="Strict Validation Tests" time="0.001"/>
+  <testcase name="validNumeralsConvert(String, int)[15]" classname="Strict Validation Tests" time="0.001"/>
+  <testcase name="validNumeralsConvert(String, int)[16]" classname="Strict Validation Tests" time="0.001"/>
+  <testcase name="validNumeralsConvert(String, int)[17]" classname="Strict Validation Tests" time="0.001"/>
+  <testcase name="illegalSubtractivePairsThrows(String)[1]" classname="Strict Validation Tests" time="0.002"/>
+  <testcase name="illegalSubtractivePairsThrows(String)[2]" classname="Strict Validation Tests" time="0.001"/>
+  <testcase name="illegalSubtractivePairsThrows(String)[3]" classname="Strict Validation Tests" time="0.001"/>
+  <testcase name="illegalSubtractivePairsThrows(String)[4]" classname="Strict Validation Tests" time="0.001"/>
+  <testcase name="illegalSubtractivePairsThrows(String)[5]" classname="Strict Validation Tests" time="0.001"/>
+  <testcase name="illegalSubtractivePairsThrows(String)[6]" classname="Strict Validation Tests" time="0.0"/>
+  <testcase name="illegalSubtractivePairsThrows(String)[7]" classname="Strict Validation Tests" time="0.001"/>
+  <testcase name="illegalSubtractivePairsThrows(String)[8]" classname="Strict Validation Tests" time="0.001"/>
+  <testcase name="illegalSubtractivePairsThrows(String)[9]" classname="Strict Validation Tests" time="0.001"/>
+  <testcase name="illegalSubtractivePairsThrows(String)[10]" classname="Strict Validation Tests" time="0.001"/>
+  <testcase name="illegalSubtractivePairsThrows(String)[11]" classname="Strict Validation Tests" time="0.001"/>
+  <testcase name="illegalSubtractivePairsThrows(String)[12]" classname="Strict Validation Tests" time="0.001"/>
+  <testcase name="illegalSubtractivePairsThrows(String)[13]" classname="Strict Validation Tests" time="0.001"/>
+  <testcase name="illegalSubtractivePairsThrows(String)[14]" classname="Strict Validation Tests" time="0.0"/>
+  <testcase name="illegalSubtractivePairsThrows(String)[15]" classname="Strict Validation Tests" time="0.001"/>
+  <testcase name="tooManyRepeatsThrows(String)[1]" classname="Strict Validation Tests" time="0.001"/>
+  <testcase name="tooManyRepeatsThrows(String)[2]" classname="Strict Validation Tests" time="0.0"/>
+  <testcase name="tooManyRepeatsThrows(String)[3]" classname="Strict Validation Tests" time="0.0"/>
+  <testcase name="tooManyRepeatsThrows(String)[4]" classname="Strict Validation Tests" time="0.0"/>
+  <testcase name="tooManyRepeatsThrows(String)[5]" classname="Strict Validation Tests" time="0.001"/>
+  <testcase name="tooManyRepeatsThrows(String)[6]" classname="Strict Validation Tests" time="0.0"/>
+  <testcase name="tooManyRepeatsThrows(String)[7]" classname="Strict Validation Tests" time="0.0"/>
+  <testcase name="tooManyRepeatsThrows(String)[8]" classname="Strict Validation Tests" time="0.0"/>
+  <testcase name="tooManyRepeatsThrows(String)[9]" classname="Strict Validation Tests" time="0.001"/>
+  <testcase name="tooManyRepeatsThrows(String)[10]" classname="Strict Validation Tests" time="0.0"/>
+  <testcase name="tooManyRepeatsThrows(String)[11]" classname="Strict Validation Tests" time="0.001"/>
+  <testcase name="tooManyRepeatsThrows(String)[12]" classname="Strict Validation Tests" time="0.001"/>
+  <testcase name="malformedOrderingThrows(String)[1]" classname="Strict Validation Tests" time="0.0"/>
+  <testcase name="malformedOrderingThrows(String)[2]" classname="Strict Validation Tests" time="0.0"/>
+  <testcase name="malformedOrderingThrows(String)[3]" classname="Strict Validation Tests" time="0.001"/>
+  <testcase name="malformedOrderingThrows(String)[4]" classname="Strict Validation Tests" time="0.001"/>
+  <testcase name="malformedOrderingThrows(String)[5]" classname="Strict Validation Tests" time="0.0"/>
+  <testcase name="malformedOrderingThrows(String)[6]" classname="Strict Validation Tests" time="0.0"/>
+  <testcase name="malformedOrderingThrows(String)[7]" classname="Strict Validation Tests" time="0.0"/>
+  <testcase name="malformedOrderingThrows(String)[8]" classname="Strict Validation Tests" time="0.0"/>
+  <testcase name="malformedOrderingThrows(String)[9]" classname="Strict Validation Tests" time="0.0"/>
+  <testcase name="malformedOrderingThrows(String)[10]" classname="Strict Validation Tests" time="0.001"/>
+  <testcase name="malformedOrderingThrows(String)[11]" classname="Strict Validation Tests" time="0.001"/>
+  <testcase name="malformedOrderingThrows(String)[12]" classname="Strict Validation Tests" time="0.001"/>
+  <testcase name="malformedOrderingThrows(String)[13]" classname="Strict Validation Tests" time="0.0"/>
+  <testcase name="malformedOrderingThrows(String)[14]" classname="Strict Validation Tests" time="0.0"/>
+  <testcase name="malformedOrderingThrows(String)[15]" classname="Strict Validation Tests" time="0.001"/>
+  <testcase name="malformedOrderingThrows(String)[16]" classname="Strict Validation Tests" time="0.0"/>
+</testsuite>
