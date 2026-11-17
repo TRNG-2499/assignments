@@ -1,0 +1,2 @@
+INSERT INTO Books (title, author, publication, page_count)
+VALUES ('Tales of a Revature Trainee', 1002, 2026, 352);
