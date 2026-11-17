@@ -1,7 +1,7 @@
 public class LivingRoom extends Room{
     
-    public LivingRoom(Room from, String exitDirection){
-        super(from, exitDirection);
+    public LivingRoom(){
+        super();
     }
 
     @Override
@@ -16,12 +16,14 @@ public class LivingRoom extends Room{
 
     @Override 
     protected Entity[] initEntities(){
-        return new Entity[] {};
+        return new Entity[] {
+            new FlaggedEntity("TV", "This TV is off", "This TV is off", "This TV is on", "You turned off the TV!", "You turned on the TV!")
+        };
     }
 
     @Override
     protected Room initNorthRoom(){
-        return new Bedroom(this, "north");
+        return null;
     }
 
     @Override
@@ -41,7 +43,7 @@ public class LivingRoom extends Room{
 
     @Override 
     protected Room initUpRoom(){
-        return null;
+        return new Bedroom(this, "up");
     }
 
     @Override 

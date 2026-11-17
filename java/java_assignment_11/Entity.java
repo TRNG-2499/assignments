@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public abstract class Entity {
+public class Entity {
     private String name;
     protected String description;
 
@@ -18,5 +18,7 @@ public abstract class Entity {
         return this.description;
     }
 
-    public abstract String interact();
+    public String interact() {
+        return String.format("You touched %s", this.name);
+    }
 }

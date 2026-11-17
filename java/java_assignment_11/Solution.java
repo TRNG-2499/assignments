@@ -6,7 +6,7 @@ public class Solution {
     public static void main(String... args){
         Scanner user = new Scanner(System.in);
 
-        Room currentRoom = new LivingRoom(null, "down");
+        Room currentRoom = new LivingRoom();
         printRoomDescription(currentRoom);
         while(true){
             System.out.println();
@@ -24,7 +24,7 @@ public class Solution {
                 printRoomDescription(currentRoom);
             } else if(input.equals("interact")){
                 try {
-                    currentRoom.getEntity(user.next()).interact();
+                    System.out.println(currentRoom.getEntity(user.next()).interact());
                 } catch(EntityNotFoundException e){
                     System.out.println(e.getMessage());
                 }
@@ -32,7 +32,7 @@ public class Solution {
                 System.out.println("Thanks for visiting! Goodbye!");
                 break;
             } else {
-                System.out.println("%s is not a valid command");
+                System.out.printf("%s is not a valid command\n", input);
             }
         }
 
@@ -43,8 +43,18 @@ public class Solution {
         System.out.printf("You are in the %s\n", room.name());
         System.out.println(room.description());
         System.out.print("Interactable entities: ");
-        for(Entity e : room.getEntities()){
-            System.out.printf("%s, ");
+        if(room.getEntityCount() <= 0){
+            System.out.print("None");
+        } else {
+            int i = 0;
+            for(Entity e : room.getEntities()){
+                if(i >= (room.getEntityCount() - 1)){
+                    System.out.print(e.getName());
+                } else {
+                    System.out.printf("%s, ", e.getName());
+                }
+                i++;
+            }
         }
         System.out.println();
     }

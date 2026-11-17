@@ -18,9 +18,7 @@ public class Bathroom extends Room {
     
     @Override
     protected Entity[] initEntities(){
-        return new Entity[] {
-            new FlaggedEntity("Lamp", "The bedroom lamp is off", "The bedroom lamp is off", "The bedroom lamp is on", "You turned off the bedroom lamp", "You turned on the bedroom lamp")
-        };
+        return new Entity[] { };
     }
 
     @Override

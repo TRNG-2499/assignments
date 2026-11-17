@@ -19,7 +19,10 @@ public class Kitchen extends Room {
 
     @Override
     public Entity[] initEntities(){
-        return new Entity[] {};
+        return new Entity[] {
+            new Entity("Stove", "This is where you can cook your meals"),
+            new Entity("Table", "This is where you can eat your meals")
+        };
     }
 
     @Override 
