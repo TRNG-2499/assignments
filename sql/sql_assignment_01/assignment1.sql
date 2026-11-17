@@ -1,15 +1,15 @@
-DROP TABLE IF EXISTS books;
-DROP TABLE IF EXISTS writers;
+DROP TABLE IF EXISTS Books;
+DROP TABLE IF EXISTS Writer;
 
-CREATE TABLE writers (
+CREATE TABLE Writer (
     writer_id BIGINT PRIMARY KEY,
     writer_name TEXT
 );
 
-CREATE TABLE books (
+CREATE TABLE Books (
     book_id BIGINT PRIMARY KEY,
     title TEXT,
-    author BIGINT REFERENCES writers(writer_id),
+    author BIGINT REFERENCES Writer(writer_id),
     publication BIGINT,
     page_count BIGINT
 );
