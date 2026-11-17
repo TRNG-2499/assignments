@@ -1,0 +1,7 @@
+SELECT author_name
+FROM Author
+JOIN Books
+ON Books.author = Author.author_id
+GROUP BY Author.author_id, Author.author_name
+ORDER BY AVG(Books.page_count) ASC
+LIMIT 1;
