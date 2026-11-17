@@ -1,0 +1,1 @@
+INSERT INTO assignment.books VALUES (DEFAULT, '1984', 1002, 1949, 328);

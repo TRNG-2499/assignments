@@ -1,0 +1,1 @@
+INSERT INTO assignment.author VALUES (1006, 'Dr. Seuss');
