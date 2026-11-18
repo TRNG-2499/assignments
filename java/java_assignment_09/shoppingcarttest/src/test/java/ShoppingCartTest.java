@@ -82,6 +82,7 @@ public class ShoppingCartTest {
 
         shoppingCart.addItem(param1, param2, param3);
 
+        //fails because of getItemCount() being incorrect
         assertEquals(2, shoppingCart.getItemCount());
     }
 
@@ -94,6 +95,7 @@ public class ShoppingCartTest {
 
         shoppingCart.addItem(param1, param2, param3);
 
+        //fails because of getItemCount() being incorrect
         assertEquals(3, shoppingCart.getItemCount());
     }
 
@@ -176,6 +178,7 @@ public class ShoppingCartTest {
         
         int result = shoppingCart.getItemCount();
 
+        //fails because getItemCount() is incorrect
         assertEquals(4, result);
     }
 
@@ -234,7 +237,7 @@ public class ShoppingCartTest {
 
     @Test
     void applyDiscountCode_properCode_appliesDiscount() {
-        String param1 = "CODE_SAVE20";
+        String param1 = "SAVE20";
 
         assertDoesNotThrow(() -> shoppingCart.applyDiscountCode(param1));
     }
@@ -243,7 +246,7 @@ public class ShoppingCartTest {
 
     @Test
     void getTotal_emptyCart_with20PercentOff() {
-        shoppingCart.applyDiscountCode("CODE_SAVE20");
+        shoppingCart.applyDiscountCode("SAVE20");
 
         double result = shoppingCart.getSubtotal();
 
@@ -264,9 +267,9 @@ public class ShoppingCartTest {
     @Test
     void getTotal_oneItemInCart_with20PercentOff() {
         shoppingCart.addItem("testItem", 10.00, 1);
-        shoppingCart.applyDiscountCode("CODE_SAVE20");
+        shoppingCart.applyDiscountCode("SAVE20");
 
-        double result = shoppingCart.getSubtotal();
+        double result = shoppingCart.getTotal();
 
         assertEquals(8.00, result);
     }
@@ -276,9 +279,9 @@ public class ShoppingCartTest {
         shoppingCart.addItem("testItem", 5.00, 1);
         shoppingCart.addItem("testItem2", 2.00, 1);
         shoppingCart.addItem("testItem3", 3.00, 1);
-        shoppingCart.applyDiscountCode("CODE_SAVE20");
+        shoppingCart.applyDiscountCode("SAVE20");
 
-        double result = shoppingCart.getSubtotal();
+        double result = shoppingCart.getTotal();
 
         assertEquals(8.00, result, 0.001);
     }

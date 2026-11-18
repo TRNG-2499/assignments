@@ -91,7 +91,12 @@ public class RomanNumeralConverter {
 
     public static int toInteger(String roman){
         int number = 0;
+        
+        if(roman == null || roman.isEmpty()) {
+            throw new IllegalArgumentException("Input cannot be null or empty.");
+        }
         roman = roman.toUpperCase();
+        
 
         if(roman.length() == 1) {
             if(roman.charAt(0) == 'M') {
@@ -137,7 +142,7 @@ public class RomanNumeralConverter {
                     number += toInteger(roman);
                 }
             }else {
-                throw new IllegalArgumentException();
+                throw new IllegalArgumentException("Invalid Roman numeral.");
             }
         }else if(roman.length() > 1) {
             if(roman.charAt(0) == 'M') {
@@ -219,10 +224,8 @@ public class RomanNumeralConverter {
                     number += toInteger(roman);
                 }
             }else {
-                throw new IllegalArgumentException();
+                throw new IllegalArgumentException("Invalid Roman numeral.");
             }
-        }else {
-            throw new IllegalArgumentException();
         }
 
         return number;
