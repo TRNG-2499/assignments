@@ -1,0 +1,1 @@
+SELECT player_name FROM Player WHERE 'player Salary' > 200000;
