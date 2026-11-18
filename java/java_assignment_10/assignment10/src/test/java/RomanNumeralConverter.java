@@ -209,48 +209,67 @@ public class RomanNumeralConverter {
         if(roman == null || roman.isEmpty()){
             throw new IllegalArgumentException("Roman Numeral is null");
         }
+        if(roman.length() == 1){
+            return romanCharacterValue(roman.charAt(0));
+        }
+        
         int number = 0;
 
         char prevC = roman.charAt(0);
         int romanDigitValue = 0;
         int romanCharacterNumber = 0;
-        int romanCharacterLevel = romanCharacterLevel(roman.charAt(0));
+        int romanCharacterL = romanCharacterLevel(roman.charAt(0));
 
         for(int i = 0; i < roman.length(); i++){
             if(romanCharacterNumber > 3){
-                throw new IllegalArgumentException("Roman Numeral is null");
+                System.out.println("exception thrown");
+                throw new IllegalArgumentException("Roman numeral is invalid");
             }
 
             char c = roman.charAt(i);
+            int cValue = romanCharacterValue(c);
+            int cLevel = romanCharacterLevel(c);
             int prevComparison = compareRomanCharacterRanks(c, prevC);
             
-            if(isInRomanCharacterLevel(c, romanCharacterLevel - 1)){
+            if(prevComparison < 0 && (romanCharacterL - cLevel) > 0){
                 number += romanDigitValue;
-                System.out.println(number);
-                romanCharacterLevel--;
+
+                romanCharacterL--;
                 romanCharacterNumber = 0;
+                romanDigitValue = 0;
+                System.out.println("break: " + number);
             }
+
             switch(romanCharacterNumber){
                 case 1:
-                    if(prevComparison > 0 && prevComparison <= 2 && isInRomanCharacterLevel(c, romanCharacterLevel)){
-                        romanDigitValue += (romanCharacterValue(c) - romanDigitValue);
+                    if(prevComparison > 0 && prevComparison <= 2 && isInRomanCharacterLevel(c, romanCharacterL)){
+                        romanDigitValue = (cValue - romanDigitValue);
+                        System.out.println(-cValue + " -> " + romanDigitValue);
+
                         number += romanDigitValue;
-                        System.out.println(number);
-                        romanCharacterLevel--;
+
+                        romanCharacterL--;
                         romanCharacterNumber = 0;
+                        romanDigitValue = 0;
+                        System.out.println("break: " + number);
                     } else {
-                        romanDigitValue += romanCharacterValue(c);
+                        romanDigitValue += cValue;
+                        System.out.println(cValue + " -> " + romanDigitValue);
+
                         romanCharacterNumber++;
                     }
                     break;
                 default:
-                    romanDigitValue += romanCharacterValue(c);
+                    romanDigitValue += cValue;
+                    System.out.println(cValue + " -> " + romanDigitValue);
+
                     romanCharacterNumber++;
                     break;
             }
             prevC = c;
         }
-        
+
+        System.out.println("result: " + number);
         return number;
     }
 
@@ -262,7 +281,7 @@ public class RomanNumeralConverter {
 
     private static int romanCharacterRank(char c){
         switch(c){
-            case 'I': 
+            case 'I':
             case 'i':
                 return 1;
             case 'V':
