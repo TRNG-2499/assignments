@@ -7,6 +7,6 @@ CREATE TABLE Writer
 CREATE TABLE Books
 (
     book_id int PRIMARY KEY,
-    title   varchar(50),
-    author  int;
+    title  varchar(50) NOT NULL,
+    author int NOT NULL
 );
