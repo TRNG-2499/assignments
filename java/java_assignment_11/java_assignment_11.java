@@ -120,7 +120,7 @@ public class java_assignment_11 {
 
     public static void receiveCommand(){
         while(true){
-            System.out.println("Enter a command: ");
+            System.out.print("Enter a command: ");
             String command = scanner.nextLine();
             try {
                 processCommand(command);
@@ -142,6 +142,8 @@ public class java_assignment_11 {
                 System.out.println("Thanks for visiting! Goodbye.");
                 scanner.close();
                 System.exit(0);
+            } else {
+                System.out.println("Invalid input.");
             }
         } else if (words.length == 2){
             if(words[0].equals("interact")){
