@@ -32,3 +32,10 @@ Musician
 |6|4|Jordan Hale|Bass|
 |7|5|Mia Sorrel|Acoustic Guitar|
 |8|5|Finn Calloway|Violin|
+
+Select m.musician_name, b.band_name, g.genre_name 
+    FROM 
+        Musician as m JOIN Band as b ON m.band_id = b.band_id
+        JOIN Genre as g ON g.genre_id = b.genre_id;
+    Where g.genre_id = 1;
+

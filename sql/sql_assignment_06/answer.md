@@ -1,0 +1,1 @@
+Insert into Author Values (1006, 'Joshua Pierce')

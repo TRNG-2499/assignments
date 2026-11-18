@@ -31,10 +31,3 @@ Books
 |3060|The Shining|1005|1977|447|
 |3061|Salem's Lot|1005|1975|439|
 |3062|Cat's Cradle|1003|1963|304|
-
-Select a.author_name, AVG(b.page_count) AS avg_page 
-    FROM Author AS a JOIN Books as b 
-        ON a.author_id = b.author
-    GROUP BY author_id 
-    ORDER BY avg_page ASC
-    LIMIT 1;

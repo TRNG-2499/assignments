@@ -27,7 +27,11 @@ Team
 |20009|Miami Heat|10004|40002|
 |20010|Buffalo Bills|10001|40001|
 
+Select player_name from Player
+    Where player_name LIKE 'jo%';
 
+Select player_name from Player
+    Where player_name LIKE '%a%e%';
 
 Player
 |player_id|team_id|player_name|player Salary|

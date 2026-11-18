@@ -1,0 +1,1 @@
+Insert into Books (title, author, publication, page_count) Values ('Example book', 1002, 2026, 1156);
