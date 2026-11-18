@@ -1,0 +1,7 @@
+SELECT author_name, AVG(page_count) AS lowest_avg_pc
+FROM Books
+JOIN Author 
+ON Books.author = Author.author_id
+GROUP BY author_name
+ORDER BY lowest_avg_pc ASC
+limit 1;
