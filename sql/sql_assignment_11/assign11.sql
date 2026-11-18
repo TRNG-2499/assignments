@@ -1,0 +1,3 @@
+SELECT *
+FROM Books
+WHERE publication BETWEEN 1900 and 1950;
