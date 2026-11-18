@@ -1,0 +1,1 @@
+ALTER TABLE 'Writer' RENAME TABLE TO 'Author';
