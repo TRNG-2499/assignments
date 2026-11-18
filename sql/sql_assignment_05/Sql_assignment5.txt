@@ -1,0 +1,22 @@
+CREATE TABLE Principal(
+principal_name VARCHAR(200) PRIMARY KEY,
+hire_date DATE,
+salary INTEGER
+);
+
+CREATE TABLE Schools(
+school_name VARCHAR(100) PRIMARY KEY,
+principal_name VARCHAR(100),
+
+CONSTRAINT principal_name_fk FOREIGN KEY (principal_name) REFERENCES Principal(principal_name)
+);
+
+CREATE TABLE Students(
+Student_name VARCHAR(100) PRIMARY KEY,
+grade_level CHAR(3),
+home_address VARCHAR(100),
+emergency_contact INTEGER,
+school_name VARCHAR(100),
+
+CONSTRAINT school_name_fk FOREIGN KEY (school_name) REFERENCES Schools(school_name)
+);
