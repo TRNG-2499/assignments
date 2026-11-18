@@ -1,0 +1,1 @@
+delete from part.books where author = 1004;

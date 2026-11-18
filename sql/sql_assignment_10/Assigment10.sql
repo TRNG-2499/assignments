@@ -1,0 +1,1 @@
+select sum(page_count) as total_pages from part.books where author=1005; 

@@ -1,0 +1,1 @@
+alter table part.books rename column book_id to isbn_13;

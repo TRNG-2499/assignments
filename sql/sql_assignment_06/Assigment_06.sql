@@ -1,0 +1,1 @@
+insert into part.author values (1001, 'Agatha Christie');
