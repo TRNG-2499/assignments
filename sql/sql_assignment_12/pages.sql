@@ -1,0 +1,1 @@
+select author, avg(page_count) from books group by author order by avg(page_count) asc limit 1;
