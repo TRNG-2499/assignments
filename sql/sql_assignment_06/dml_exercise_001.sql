@@ -1,1 +1,1 @@
-INSERT INTO Author (author_id, author_name) VALUES(1006, 'Edward Cullen');
+INSERT INTO Author (author_id, author_name) VALUES (1006, 'Edward Cullen');
