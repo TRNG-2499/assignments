@@ -55,20 +55,20 @@ Thanks for visiting! Goodbye.
 
 ## Requirements Checklist
 
-- [ ] `Entity` class is defined with at least a name, a description, and an interaction response
-- [ ] Entity names are single words, with no spaces
-- [ ] `Room` class (or class hierarchy) is defined with a name, description, exits, and entities, using either Pattern A or Pattern B
-- [ ] At least 4 rooms exist and are connected consistently (exits go both ways between connected rooms)
-- [ ] `move [direction]` correctly moves the player between connected rooms
-- [ ] `look` correctly re-displays the current room's description and entities
-- [ ] `interact [entity name]` correctly triggers the named entity's interaction response
-- [ ] `exit` / `quit` correctly ends the program with a farewell message
-- [ ] All commands, directions, and entity name arguments are handled case-insensitively
-- [ ] At least two custom exception classes are defined (for example, `InvalidDirectionException` and `EntityNotFoundException`)
-- [ ] Custom exceptions are thrown from appropriate logic, rather than only checked with `if` statements and printed directly
-- [ ] Custom exceptions are caught within the command loop, displaying a clear message, without crashing or exiting the program
-- [ ] Entering a new room (including the starting room) always displays its name, description, and entities
-- [ ] Code is organized into separate classes (`Entity`, `Room`, and any others needed) rather than crammed into `main`
+- [x] `Entity` class is defined with at least a name, a description, and an interaction response
+- [x] Entity names are single words, with no spaces
+- [x] `Room` class (or class hierarchy) is defined with a name, description, exits, and entities, using either Pattern A or Pattern B
+- [x] At least 4 rooms exist and are connected consistently (exits go both ways between connected rooms)
+- [x] `move [direction]` correctly moves the player between connected rooms
+- [x] `look` correctly re-displays the current room's description and entities
+- [x] `interact [entity name]` correctly triggers the named entity's interaction response
+- [x] `exit` / `quit` correctly ends the program with a farewell message
+- [x] All commands, directions, and entity name arguments are handled case-insensitively
+- [x] At least two custom exception classes are defined (for example, `InvalidDirectionException` and `EntityNotFoundException`)
+- [x] Custom exceptions are thrown from appropriate logic, rather than only checked with `if` statements and printed directly
+- [x] Custom exceptions are caught within the command loop, displaying a clear message, without crashing or exiting the program
+- [x] Entering a new room (including the starting room) always displays its name, description, and entities
+- [x] Code is organized into separate classes (`Entity`, `Room`, and any others needed) rather than crammed into `main`
 
 ## Stretch Goals
 
