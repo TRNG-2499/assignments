@@ -46,6 +46,6 @@ CREATE TABLE hospital.prescription (
 	prescription_id INT PRIMARY KEY,
 	medication_name VARCHAR(100),
 	dosage VARCHAR(100),
-	instructions VARCHAR(100,
+	instructions VARCHAR(100),
 	appointment_id INT REFERENCES hospital.appointment(appointment_id)
 );
