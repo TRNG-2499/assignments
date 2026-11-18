@@ -1,0 +1,13 @@
+SELECT b.band_name, g.genre_name, m.musician_name
+FROM Band b
+JOIN Genre g ON b.genre_id = g.genre_id
+JOIN Musician m ON b.band_id = m.band_id;
+
+
+-- Stretch Goal:
+
+SELECT b.band_name, g.genre_name, m.musician_name
+FROM Band b
+JOIN Genre g ON b.genre_id = g.genre_id
+JOIN Musician m ON b.band_id = m.band_id
+WHERE g.genre_name = 'Rock';
