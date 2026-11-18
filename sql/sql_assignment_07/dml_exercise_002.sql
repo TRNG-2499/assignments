@@ -1,0 +1,1 @@
+INSERT INTO Books (title, author, publication, page_count) VALUES ('Scary Stuff', 1002, 1901, 100);
