@@ -1,0 +1,3 @@
+SELECT title
+FROM Books
+WHERE publication >= 1900 AND publication <= 1950
