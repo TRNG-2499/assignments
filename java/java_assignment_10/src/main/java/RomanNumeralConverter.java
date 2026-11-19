@@ -5,46 +5,13 @@ public class RomanNumeralConverter {
         else if(num > 3999)
             throw new IllegalArgumentException("Argument can't be greater than 3999");
         StringBuilder builder = new StringBuilder();
-        int m = 0, d = 0, c = 0, l = 0, x = 0, v = 0, i = 0;
-        int cm = 0, cd = 0, xc = 0, xl = 0, ix = 0, iv = 0;
-        m = num/1000;
-        num = num % 1000;
-        cm = num /900;
-        num = num % 900;
-        d = num / 500;
-        num = num % 500;
-        cd = num / 400;
-        num = num % 400;
-        c = num / 100;
-        num = num % 100;
-        xc = num / 90;
-        num = num % 90;
-        l = num / 50;
-        num = num % 50;
-        xl = num / 40;
-        num = num % 40;
-        x = num / 10;
-        num = num % 10;
-        ix = num / 9;
-        num = num % 9;
-        v = num / 5;
-        num = num % 5;
-        iv = num / 4;
-        num = num % 4;
-        i = num;
-        builder.append("M".repeat(m));
-        builder.append("CM".repeat(cm));
-        builder.append("D".repeat(d));
-        builder.append("CD".repeat(cd));
-        builder.append("C".repeat(c));
-        builder.append("XC".repeat(xc));
-        builder.append("L".repeat(l));
-        builder.append("XL".repeat(xl));
-        builder.append("X".repeat(x));
-        builder.append("IX".repeat(ix));
-        builder.append("V".repeat(v));
-        builder.append("IV".repeat(iv));
-        builder.append("I".repeat(i));
+        String [] symb = {"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
+        int [] symbDividend = {1000, 900, 500, 400 ,100, 90, 50, 40, 10, 9, 5, 4, 1};
+        
+        for(int i = 0; i < symbDividend.length; i++){
+            builder.append(symb[i].repeat(num/symbDividend[i]));
+            num = num % symbDividend[i];
+        }
 
         return builder.toString();
     }
