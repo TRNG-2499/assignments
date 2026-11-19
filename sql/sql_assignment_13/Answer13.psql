@@ -1,0 +1,13 @@
+Select Player.player_id
+FROM(
+    Select team_id
+    FROM TEAM
+    WHERE sport_id = (
+        SELECT sport_id
+        FROM sport_id
+        WHERE sport_name = 'Foot Ball'
+    )
+) as Football_team
+join Player ON Football_team.team_id = Player.team_id
+WHERE Player."player Salary" > 200000;
+

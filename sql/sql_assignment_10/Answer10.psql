@@ -1,0 +1,4 @@
+SELECT sum(page_count) as total_pages
+from Books
+WHERE author = 1005;
+

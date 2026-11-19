@@ -1,0 +1,5 @@
+SELECT author, AVG(page_count) AS avg_pages
+FROM Books
+GROUP BY author
+ORDER BY AVG(page_count)
+Limit 1;
