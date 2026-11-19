@@ -1,0 +1,1 @@
+SELECT * FROM Books b WHERE b.publication >= 1900 AND b.publication <= 1950;
