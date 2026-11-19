@@ -1,3 +1,4 @@
 challenge_name,difficulty,date_completed,language,platform,attempts
-Top K Frequent Elements,Medium,20261113,Python,Neetcode,https://github.com/schectma/neetcode-submissions/tree/main/Data%20Structures%20%26%20Algorithms/top-k-elements-in-list
-Valid Palindrome, Easy, 20261114,Java,Neetcode,https://github.com/schectma/neetcode-submissions/tree/main/Data%20Structures%20%26%20Algorithms/is-palindrome
+Top K Frequent Elements,Medium,20261113,Python,NeetCode,https://github.com/schectma/NeetCode-submissions/tree/main/Data%20Structures%20%26%20Algorithms/top-k-elements-in-list
+Valid Palindrome,Easy,20261114,Java,NeetCode,https://github.com/schectma/NeetCode-submissions/tree/main/Data%20Structures%20%26%20Algorithms/is-palindrome
+Best Time to Buy and Sell Stock,Easy,20261119,Java,NeetCode,https://github.com/schectma/neetcode-submissions/tree/main/Data%20Structures%20%26%20Algorithms/buy-and-sell-crypto
