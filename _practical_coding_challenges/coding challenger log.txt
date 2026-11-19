@@ -3,5 +3,6 @@ Coding Challenge Log
 1. Compare the Triplets - Easy - 11/09/2026 - Java - HackerRank
 2. Mini-Max Sum - Easy - 11/10/2026 - Java - HackerRank
 3. Number Line Jump - Easy - 11/11/2026 - Java - HackerRank
-4. Count Elements Greater Than Previous Average - Easy - 11/12/2026 - HackerRank
-5. Merge and Sort Intervals - Medium - 11/17/2026 - HackerRank
+4. Count Elements Greater Than Previous Average - Easy - 11/12/2026 - Java - HackerRank
+5. Merge and Sort Intervals - Medium - 11/17/2026 - Java - HackerRank
+6. Check Palindrome by Filtering Non-Letters - Easy - 11/19/2026 - Java - HackerRank
