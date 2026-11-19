@@ -4,3 +4,4 @@ JOIN Band as b
 ON g.genre_id = b.genre_id
 JOIN Musician as m
 ON m.band_id = b.band_id
+WHERE g.genre_name = 'Rock';
