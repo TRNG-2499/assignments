@@ -1,2 +1,6 @@
-challeng_name,difficulty,date_completed,language,platofrm
+challenge_name,difficulty,date_completed,language,platform
 Java_Output_Formatting, Easy, 11-10-2026, Java, HackerRank
+Java End Of File, Easy, 11-17-2026, Java, HackerRank
+Java Regex, Intermediate, 11-17-2026, Java, HackerRank
+Java Initializer Block, Easy, 11-17-2026, Java, HackerRank
+Java Date and Time, Easy, 11-20-2026, Java, HackerRank
