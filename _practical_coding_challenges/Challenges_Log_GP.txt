@@ -1,2 +1,5 @@
 1) Solve Me First - Easy - 11/15/2026 - Java - HackerRank
 2) Simple Array Sum - Easy - 11/15/2026 - Java - HackerRank
+3) Arrays DS - Easy - 11/20/2026 - Java - HackerRank
+4) 2D Array DS - Easy - 11/20/2026 - Java - HackerRank
+5) Dynamic Array - Easy - 11/20/2026 - Java - HackerRank
