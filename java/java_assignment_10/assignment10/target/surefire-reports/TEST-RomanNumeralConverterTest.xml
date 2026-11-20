@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="RomanNumeralConverterTest" time="0.723" tests="118" errors="1" skipped="0" failures="19" flakes="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="RomanNumeralConverterTest" time="1.398" tests="118" errors="2" skipped="0" failures="2" flakes="0">
   <properties>
     <property name="java.specification.version" value="25"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-25.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/gabrielpayne/Documents/training/assignments/java/java_assignment_10/assignment10/target/surefire/surefirebooter-20261118154531592_3.jar /Users/gabrielpayne/Documents/training/assignments/java/java_assignment_10/assignment10/target/surefire 2026-11-18T15-45-31_472-jvmRun1 surefire-20261118154531592_1tmp surefire_0-20261118154531592_2tmp"/>
+    <property name="sun.java.command" value="/Users/gabrielpayne/Documents/training/assignments/java/java_assignment_10/assignment10/target/surefire/surefirebooter-20261120000927143_3.jar /Users/gabrielpayne/Documents/training/assignments/java/java_assignment_10/assignment10/target/surefire 2026-11-20T00-09-26_975-jvmRun1 surefire-20261120000927143_1tmp surefire_0-20261120000927143_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/gabrielpayne/Documents/training/assignments/java/java_assignment_10/assignment10/target/test-classes:/Users/gabrielpayne/Documents/training/assignments/java/java_assignment_10/assignment10/target/classes:/Users/gabrielpayne/.m2/repository/org/junit/jupiter/junit-jupiter-api/6.1.3/junit-jupiter-api-6.1.3.jar:/Users/gabrielpayne/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/gabrielpayne/.m2/repository/org/junit/platform/junit-platform-commons/6.1.3/junit-platform-commons-6.1.3.jar:/Users/gabrielpayne/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/gabrielpayne/.m2/repository/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar:/Users/gabrielpayne/.m2/repository/org/junit/jupiter/junit-jupiter-params/6.1.3/junit-jupiter-params-6.1.3.jar"/>
@@ -29,7 +29,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/gabrielpayne/Documents/training/assignments/java/java_assignment_10/assignment10/target/surefire/surefirebooter-20261118154531592_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/gabrielpayne/Documents/training/assignments/java/java_assignment_10/assignment10/target/surefire/surefirebooter-20261120000927143_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="25.0.5.0.3+1-LTS-2"/>
@@ -58,11 +58,11 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="69.0"/>
   </properties>
-  <testcase name="toInteger_singleSymbols_returnsValue(int, String)[1]" classname="RomanNumeralConverterTest$SingleSymbols" time="0.06">
+  <testcase name="toInteger_singleSymbols_returnsValue(int, String)[1]" classname="RomanNumeralConverterTest$SingleSymbols" time="0.101">
     <system-out><![CDATA[I
 ]]></system-out>
   </testcase>
-  <testcase name="toInteger_singleSymbols_returnsValue(int, String)[2]" classname="RomanNumeralConverterTest$SingleSymbols" time="0.002">
+  <testcase name="toInteger_singleSymbols_returnsValue(int, String)[2]" classname="RomanNumeralConverterTest$SingleSymbols" time="0.005">
     <system-out><![CDATA[V
 ]]></system-out>
   </testcase>
@@ -70,7 +70,7 @@
     <system-out><![CDATA[X
 ]]></system-out>
   </testcase>
-  <testcase name="toInteger_singleSymbols_returnsValue(int, String)[4]" classname="RomanNumeralConverterTest$SingleSymbols" time="0.004">
+  <testcase name="toInteger_singleSymbols_returnsValue(int, String)[4]" classname="RomanNumeralConverterTest$SingleSymbols" time="0.007">
     <system-out><![CDATA[L
 ]]></system-out>
   </testcase>
@@ -78,110 +78,82 @@
     <system-out><![CDATA[C
 ]]></system-out>
   </testcase>
-  <testcase name="toInteger_singleSymbols_returnsValue(int, String)[6]" classname="RomanNumeralConverterTest$SingleSymbols" time="0.002">
+  <testcase name="toInteger_singleSymbols_returnsValue(int, String)[6]" classname="RomanNumeralConverterTest$SingleSymbols" time="0.004">
     <system-out><![CDATA[D
 ]]></system-out>
   </testcase>
-  <testcase name="toInteger_singleSymbols_returnsValue(int, String)[7]" classname="RomanNumeralConverterTest$SingleSymbols" time="0.002">
+  <testcase name="toInteger_singleSymbols_returnsValue(int, String)[7]" classname="RomanNumeralConverterTest$SingleSymbols" time="0.006">
     <system-out><![CDATA[M
 ]]></system-out>
   </testcase>
-  <testcase name="toRoman_singleSymbolValues_returnsSymbol(int, String)[1]" classname="RomanNumeralConverterTest$SingleSymbols" time="0.002"/>
-  <testcase name="toRoman_singleSymbolValues_returnsSymbol(int, String)[2]" classname="RomanNumeralConverterTest$SingleSymbols" time="0.001"/>
-  <testcase name="toRoman_singleSymbolValues_returnsSymbol(int, String)[3]" classname="RomanNumeralConverterTest$SingleSymbols" time="0.001"/>
-  <testcase name="toRoman_singleSymbolValues_returnsSymbol(int, String)[4]" classname="RomanNumeralConverterTest$SingleSymbols" time="0.001"/>
-  <testcase name="toRoman_singleSymbolValues_returnsSymbol(int, String)[5]" classname="RomanNumeralConverterTest$SingleSymbols" time="0.001"/>
-  <testcase name="toRoman_singleSymbolValues_returnsSymbol(int, String)[6]" classname="RomanNumeralConverterTest$SingleSymbols" time="0.001"/>
+  <testcase name="toRoman_singleSymbolValues_returnsSymbol(int, String)[1]" classname="RomanNumeralConverterTest$SingleSymbols" time="0.004"/>
+  <testcase name="toRoman_singleSymbolValues_returnsSymbol(int, String)[2]" classname="RomanNumeralConverterTest$SingleSymbols" time="0.002"/>
+  <testcase name="toRoman_singleSymbolValues_returnsSymbol(int, String)[3]" classname="RomanNumeralConverterTest$SingleSymbols" time="0.003"/>
+  <testcase name="toRoman_singleSymbolValues_returnsSymbol(int, String)[4]" classname="RomanNumeralConverterTest$SingleSymbols" time="0.002"/>
+  <testcase name="toRoman_singleSymbolValues_returnsSymbol(int, String)[5]" classname="RomanNumeralConverterTest$SingleSymbols" time="0.002"/>
+  <testcase name="toRoman_singleSymbolValues_returnsSymbol(int, String)[6]" classname="RomanNumeralConverterTest$SingleSymbols" time="0.002"/>
   <testcase name="toRoman_singleSymbolValues_returnsSymbol(int, String)[7]" classname="RomanNumeralConverterTest$SingleSymbols" time="0.002"/>
-  <testcase name="toRoman_additiveValues_returnsNumeral(int, String)[1]" classname="RomanNumeralConverterTest$Additive" time="0.001"/>
-  <testcase name="toRoman_additiveValues_returnsNumeral(int, String)[2]" classname="RomanNumeralConverterTest$Additive" time="0.002"/>
-  <testcase name="toRoman_additiveValues_returnsNumeral(int, String)[3]" classname="RomanNumeralConverterTest$Additive" time="0.001"/>
-  <testcase name="toRoman_additiveValues_returnsNumeral(int, String)[4]" classname="RomanNumeralConverterTest$Additive" time="0.002"/>
-  <testcase name="toRoman_additiveValues_returnsNumeral(int, String)[5]" classname="RomanNumeralConverterTest$Additive" time="0.001"/>
+  <testcase name="toRoman_additiveValues_returnsNumeral(int, String)[1]" classname="RomanNumeralConverterTest$Additive" time="0.003"/>
+  <testcase name="toRoman_additiveValues_returnsNumeral(int, String)[2]" classname="RomanNumeralConverterTest$Additive" time="0.004"/>
+  <testcase name="toRoman_additiveValues_returnsNumeral(int, String)[3]" classname="RomanNumeralConverterTest$Additive" time="0.002"/>
+  <testcase name="toRoman_additiveValues_returnsNumeral(int, String)[4]" classname="RomanNumeralConverterTest$Additive" time="0.001"/>
+  <testcase name="toRoman_additiveValues_returnsNumeral(int, String)[5]" classname="RomanNumeralConverterTest$Additive" time="0.002"/>
   <testcase name="toRoman_additiveValues_returnsNumeral(int, String)[6]" classname="RomanNumeralConverterTest$Additive" time="0.001"/>
   <testcase name="toRoman_additiveValues_returnsNumeral(int, String)[7]" classname="RomanNumeralConverterTest$Additive" time="0.002"/>
-  <testcase name="toRoman_additiveValues_returnsNumeral(int, String)[8]" classname="RomanNumeralConverterTest$Additive" time="0.001"/>
+  <testcase name="toRoman_additiveValues_returnsNumeral(int, String)[8]" classname="RomanNumeralConverterTest$Additive" time="0.002"/>
   <testcase name="toRoman_additiveValues_returnsNumeral(int, String)[9]" classname="RomanNumeralConverterTest$Additive" time="0.002"/>
-  <testcase name="toRoman_additiveValues_returnsNumeral(int, String)[10]" classname="RomanNumeralConverterTest$Additive" time="0.001"/>
-  <testcase name="toRoman_additiveValues_returnsNumeral(int, String)[11]" classname="RomanNumeralConverterTest$Additive" time="0.002"/>
-  <testcase name="toRoman_additiveValues_returnsNumeral(int, String)[12]" classname="RomanNumeralConverterTest$Additive" time="0.001"/>
-  <testcase name="toRoman_additiveValues_returnsNumeral(int, String)[13]" classname="RomanNumeralConverterTest$Additive" time="0.001"/>
-  <testcase name="toInteger_additiveNumerals_returnsValue(int, String)[1]" classname="RomanNumeralConverterTest$Additive" time="0.016">
-    <failure message="expected: &lt;2&gt; but was: &lt;0&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <2> but was: <0>
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:569)
-	at RomanNumeralConverterTest$Additive.toInteger_additiveNumerals_returnsValue(RomanNumeralConverterTest.java:66)
-]]></failure>
+  <testcase name="toRoman_additiveValues_returnsNumeral(int, String)[10]" classname="RomanNumeralConverterTest$Additive" time="0.002"/>
+  <testcase name="toRoman_additiveValues_returnsNumeral(int, String)[11]" classname="RomanNumeralConverterTest$Additive" time="0.003"/>
+  <testcase name="toRoman_additiveValues_returnsNumeral(int, String)[12]" classname="RomanNumeralConverterTest$Additive" time="0.005"/>
+  <testcase name="toRoman_additiveValues_returnsNumeral(int, String)[13]" classname="RomanNumeralConverterTest$Additive" time="0.002"/>
+  <testcase name="toInteger_additiveNumerals_returnsValue(int, String)[1]" classname="RomanNumeralConverterTest$Additive" time="0.013">
     <system-out><![CDATA[II
 1 -> 1
 1 -> 2
-result: 0
+result: 2
 ]]></system-out>
   </testcase>
-  <testcase name="toInteger_additiveNumerals_returnsValue(int, String)[2]" classname="RomanNumeralConverterTest$Additive" time="0.009">
-    <failure message="expected: &lt;3&gt; but was: &lt;0&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <3> but was: <0>
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:569)
-	at RomanNumeralConverterTest$Additive.toInteger_additiveNumerals_returnsValue(RomanNumeralConverterTest.java:66)
-]]></failure>
+  <testcase name="toInteger_additiveNumerals_returnsValue(int, String)[2]" classname="RomanNumeralConverterTest$Additive" time="0.014">
     <system-out><![CDATA[III
 1 -> 1
 1 -> 2
 1 -> 3
-result: 0
+result: 3
 ]]></system-out>
   </testcase>
-  <testcase name="toInteger_additiveNumerals_returnsValue(int, String)[3]" classname="RomanNumeralConverterTest$Additive" time="0.009">
-    <failure message="expected: &lt;6&gt; but was: &lt;0&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <6> but was: <0>
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:569)
-	at RomanNumeralConverterTest$Additive.toInteger_additiveNumerals_returnsValue(RomanNumeralConverterTest.java:66)
-]]></failure>
+  <testcase name="toInteger_additiveNumerals_returnsValue(int, String)[3]" classname="RomanNumeralConverterTest$Additive" time="0.006">
     <system-out><![CDATA[VI
 5 -> 5
 1 -> 6
-result: 0
+result: 6
 ]]></system-out>
   </testcase>
-  <testcase name="toInteger_additiveNumerals_returnsValue(int, String)[4]" classname="RomanNumeralConverterTest$Additive" time="0.005">
-    <failure message="expected: &lt;8&gt; but was: &lt;0&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <8> but was: <0>
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:569)
-	at RomanNumeralConverterTest$Additive.toInteger_additiveNumerals_returnsValue(RomanNumeralConverterTest.java:66)
-]]></failure>
+  <testcase name="toInteger_additiveNumerals_returnsValue(int, String)[4]" classname="RomanNumeralConverterTest$Additive" time="0.011">
     <system-out><![CDATA[VIII
 5 -> 5
 1 -> 6
 1 -> 7
 1 -> 8
-result: 0
+result: 8
 ]]></system-out>
   </testcase>
-  <testcase name="toInteger_additiveNumerals_returnsValue(int, String)[5]" classname="RomanNumeralConverterTest$Additive" time="0.004">
-    <failure message="expected: &lt;11&gt; but was: &lt;10&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <11> but was: <10>
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:569)
-	at RomanNumeralConverterTest$Additive.toInteger_additiveNumerals_returnsValue(RomanNumeralConverterTest.java:66)
-]]></failure>
+  <testcase name="toInteger_additiveNumerals_returnsValue(int, String)[5]" classname="RomanNumeralConverterTest$Additive" time="0.01">
     <system-out><![CDATA[XI
 10 -> 10
 break: 10
 1 -> 1
-result: 10
+result: 11
 ]]></system-out>
   </testcase>
-  <testcase name="toInteger_additiveNumerals_returnsValue(int, String)[6]" classname="RomanNumeralConverterTest$Additive" time="0.004">
-    <failure message="expected: &lt;15&gt; but was: &lt;10&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <15> but was: <10>
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:569)
-	at RomanNumeralConverterTest$Additive.toInteger_additiveNumerals_returnsValue(RomanNumeralConverterTest.java:66)
-]]></failure>
+  <testcase name="toInteger_additiveNumerals_returnsValue(int, String)[6]" classname="RomanNumeralConverterTest$Additive" time="0.005">
     <system-out><![CDATA[XV
 10 -> 10
 break: 10
 5 -> 5
-result: 10
+result: 15
 ]]></system-out>
   </testcase>
-  <testcase name="toInteger_additiveNumerals_returnsValue(int, String)[7]" classname="RomanNumeralConverterTest$Additive" time="0.006">
-    <failure message="expected: &lt;27&gt; but was: &lt;20&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <27> but was: <20>
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:569)
-	at RomanNumeralConverterTest$Additive.toInteger_additiveNumerals_returnsValue(RomanNumeralConverterTest.java:66)
-]]></failure>
+  <testcase name="toInteger_additiveNumerals_returnsValue(int, String)[7]" classname="RomanNumeralConverterTest$Additive" time="0.009">
     <system-out><![CDATA[XXVII
 10 -> 10
 10 -> 20
@@ -189,81 +161,57 @@ break: 20
 5 -> 5
 1 -> 6
 1 -> 7
-result: 20
+result: 27
 ]]></system-out>
   </testcase>
-  <testcase name="toInteger_additiveNumerals_returnsValue(int, String)[8]" classname="RomanNumeralConverterTest$Additive" time="0.004">
-    <failure message="expected: &lt;30&gt; but was: &lt;0&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <30> but was: <0>
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:569)
-	at RomanNumeralConverterTest$Additive.toInteger_additiveNumerals_returnsValue(RomanNumeralConverterTest.java:66)
-]]></failure>
+  <testcase name="toInteger_additiveNumerals_returnsValue(int, String)[8]" classname="RomanNumeralConverterTest$Additive" time="0.008">
     <system-out><![CDATA[XXX
 10 -> 10
 10 -> 20
 10 -> 30
-result: 0
+result: 30
 ]]></system-out>
   </testcase>
-  <testcase name="toInteger_additiveNumerals_returnsValue(int, String)[9]" classname="RomanNumeralConverterTest$Additive" time="0.003">
-    <failure message="expected: &lt;75&gt; but was: &lt;70&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <75> but was: <70>
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:569)
-	at RomanNumeralConverterTest$Additive.toInteger_additiveNumerals_returnsValue(RomanNumeralConverterTest.java:66)
-]]></failure>
+  <testcase name="toInteger_additiveNumerals_returnsValue(int, String)[9]" classname="RomanNumeralConverterTest$Additive" time="0.006">
     <system-out><![CDATA[LXXV
 50 -> 50
 10 -> 60
 10 -> 70
 break: 70
 5 -> 5
-result: 70
+result: 75
 ]]></system-out>
   </testcase>
-  <testcase name="toInteger_additiveNumerals_returnsValue(int, String)[10]" classname="RomanNumeralConverterTest$Additive" time="0.004">
-    <failure message="expected: &lt;200&gt; but was: &lt;0&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <200> but was: <0>
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:569)
-	at RomanNumeralConverterTest$Additive.toInteger_additiveNumerals_returnsValue(RomanNumeralConverterTest.java:66)
-]]></failure>
+  <testcase name="toInteger_additiveNumerals_returnsValue(int, String)[10]" classname="RomanNumeralConverterTest$Additive" time="0.006">
     <system-out><![CDATA[CC
 100 -> 100
 100 -> 200
-result: 0
+result: 200
 ]]></system-out>
   </testcase>
-  <testcase name="toInteger_additiveNumerals_returnsValue(int, String)[11]" classname="RomanNumeralConverterTest$Additive" time="0.006">
-    <failure message="expected: &lt;1003&gt; but was: &lt;1000&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <1003> but was: <1000>
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:569)
-	at RomanNumeralConverterTest$Additive.toInteger_additiveNumerals_returnsValue(RomanNumeralConverterTest.java:66)
-]]></failure>
+  <testcase name="toInteger_additiveNumerals_returnsValue(int, String)[11]" classname="RomanNumeralConverterTest$Additive" time="0.013">
     <system-out><![CDATA[MIII
 1000 -> 1000
 break: 1000
 1 -> 1
 1 -> 2
 1 -> 3
-result: 1000
+result: 1003
 ]]></system-out>
   </testcase>
-  <testcase name="toInteger_additiveNumerals_returnsValue(int, String)[12]" classname="RomanNumeralConverterTest$Additive" time="0.002">
-    <failure message="expected: &lt;2000&gt; but was: &lt;0&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <2000> but was: <0>
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:569)
-	at RomanNumeralConverterTest$Additive.toInteger_additiveNumerals_returnsValue(RomanNumeralConverterTest.java:66)
-]]></failure>
+  <testcase name="toInteger_additiveNumerals_returnsValue(int, String)[12]" classname="RomanNumeralConverterTest$Additive" time="0.004">
     <system-out><![CDATA[MM
 1000 -> 1000
 1000 -> 2000
-result: 0
+result: 2000
 ]]></system-out>
   </testcase>
-  <testcase name="toInteger_additiveNumerals_returnsValue(int, String)[13]" classname="RomanNumeralConverterTest$Additive" time="0.003">
-    <failure message="expected: &lt;3000&gt; but was: &lt;0&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <3000> but was: <0>
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:569)
-	at RomanNumeralConverterTest$Additive.toInteger_additiveNumerals_returnsValue(RomanNumeralConverterTest.java:66)
-]]></failure>
+  <testcase name="toInteger_additiveNumerals_returnsValue(int, String)[13]" classname="RomanNumeralConverterTest$Additive" time="0.004">
     <system-out><![CDATA[MMM
 1000 -> 1000
 1000 -> 2000
 1000 -> 3000
-result: 0
+result: 3000
 ]]></system-out>
   </testcase>
   <testcase name="toInteger_subtractiveNumerals_returnsValue(int, String)[1]" classname="RomanNumeralConverterTest$Subtractive" time="0.004">
@@ -274,7 +222,7 @@ break: 4
 result: 4
 ]]></system-out>
   </testcase>
-  <testcase name="toInteger_subtractiveNumerals_returnsValue(int, String)[2]" classname="RomanNumeralConverterTest$Subtractive" time="0.004">
+  <testcase name="toInteger_subtractiveNumerals_returnsValue(int, String)[2]" classname="RomanNumeralConverterTest$Subtractive" time="0.009">
     <system-out><![CDATA[IX
 1 -> 1
 -10 -> 9
@@ -282,7 +230,7 @@ break: 9
 result: 9
 ]]></system-out>
   </testcase>
-  <testcase name="toInteger_subtractiveNumerals_returnsValue(int, String)[3]" classname="RomanNumeralConverterTest$Subtractive" time="0.004">
+  <testcase name="toInteger_subtractiveNumerals_returnsValue(int, String)[3]" classname="RomanNumeralConverterTest$Subtractive" time="0.005">
     <system-out><![CDATA[XIV
 10 -> 10
 break: 10
@@ -292,7 +240,7 @@ break: 14
 result: 14
 ]]></system-out>
   </testcase>
-  <testcase name="toInteger_subtractiveNumerals_returnsValue(int, String)[4]" classname="RomanNumeralConverterTest$Subtractive" time="0.004">
+  <testcase name="toInteger_subtractiveNumerals_returnsValue(int, String)[4]" classname="RomanNumeralConverterTest$Subtractive" time="0.012">
     <system-out><![CDATA[XIX
 10 -> 10
 break: 10
@@ -302,7 +250,7 @@ break: 19
 result: 19
 ]]></system-out>
   </testcase>
-  <testcase name="toInteger_subtractiveNumerals_returnsValue(int, String)[5]" classname="RomanNumeralConverterTest$Subtractive" time="0.003">
+  <testcase name="toInteger_subtractiveNumerals_returnsValue(int, String)[5]" classname="RomanNumeralConverterTest$Subtractive" time="0.006">
     <system-out><![CDATA[XL
 10 -> 10
 -50 -> 40
@@ -321,7 +269,7 @@ break: 49
 result: 49
 ]]></system-out>
   </testcase>
-  <testcase name="toInteger_subtractiveNumerals_returnsValue(int, String)[7]" classname="RomanNumeralConverterTest$Subtractive" time="0.003">
+  <testcase name="toInteger_subtractiveNumerals_returnsValue(int, String)[7]" classname="RomanNumeralConverterTest$Subtractive" time="0.007">
     <system-out><![CDATA[XC
 10 -> 10
 -100 -> 90
@@ -329,7 +277,7 @@ break: 90
 result: 90
 ]]></system-out>
   </testcase>
-  <testcase name="toInteger_subtractiveNumerals_returnsValue(int, String)[8]" classname="RomanNumeralConverterTest$Subtractive" time="0.002">
+  <testcase name="toInteger_subtractiveNumerals_returnsValue(int, String)[8]" classname="RomanNumeralConverterTest$Subtractive" time="0.012">
     <system-out><![CDATA[XCIV
 10 -> 10
 -100 -> 90
@@ -340,7 +288,7 @@ break: 94
 result: 94
 ]]></system-out>
   </testcase>
-  <testcase name="toInteger_subtractiveNumerals_returnsValue(int, String)[9]" classname="RomanNumeralConverterTest$Subtractive" time="0.003">
+  <testcase name="toInteger_subtractiveNumerals_returnsValue(int, String)[9]" classname="RomanNumeralConverterTest$Subtractive" time="0.008">
     <system-out><![CDATA[CD
 100 -> 100
 -500 -> 400
@@ -348,7 +296,7 @@ break: 400
 result: 400
 ]]></system-out>
   </testcase>
-  <testcase name="toInteger_subtractiveNumerals_returnsValue(int, String)[10]" classname="RomanNumeralConverterTest$Subtractive" time="0.002">
+  <testcase name="toInteger_subtractiveNumerals_returnsValue(int, String)[10]" classname="RomanNumeralConverterTest$Subtractive" time="0.005">
     <system-out><![CDATA[CM
 100 -> 100
 -1000 -> 900
@@ -356,7 +304,7 @@ break: 900
 result: 900
 ]]></system-out>
   </testcase>
-  <testcase name="toInteger_subtractiveNumerals_returnsValue(int, String)[11]" classname="RomanNumeralConverterTest$Subtractive" time="0.004">
+  <testcase name="toInteger_subtractiveNumerals_returnsValue(int, String)[11]" classname="RomanNumeralConverterTest$Subtractive" time="0.011">
     <system-out><![CDATA[CMXLIX
 100 -> 100
 -1000 -> 900
@@ -370,29 +318,25 @@ break: 949
 result: 949
 ]]></system-out>
   </testcase>
-  <testcase name="toRoman_subtractiveValues_returnsNumeral(int, String)[1]" classname="RomanNumeralConverterTest$Subtractive" time="0.001"/>
+  <testcase name="toRoman_subtractiveValues_returnsNumeral(int, String)[1]" classname="RomanNumeralConverterTest$Subtractive" time="0.003"/>
   <testcase name="toRoman_subtractiveValues_returnsNumeral(int, String)[2]" classname="RomanNumeralConverterTest$Subtractive" time="0.001"/>
   <testcase name="toRoman_subtractiveValues_returnsNumeral(int, String)[3]" classname="RomanNumeralConverterTest$Subtractive" time="0.001"/>
-  <testcase name="toRoman_subtractiveValues_returnsNumeral(int, String)[4]" classname="RomanNumeralConverterTest$Subtractive" time="0.001"/>
-  <testcase name="toRoman_subtractiveValues_returnsNumeral(int, String)[5]" classname="RomanNumeralConverterTest$Subtractive" time="0.001"/>
+  <testcase name="toRoman_subtractiveValues_returnsNumeral(int, String)[4]" classname="RomanNumeralConverterTest$Subtractive" time="0.004"/>
+  <testcase name="toRoman_subtractiveValues_returnsNumeral(int, String)[5]" classname="RomanNumeralConverterTest$Subtractive" time="0.002"/>
   <testcase name="toRoman_subtractiveValues_returnsNumeral(int, String)[6]" classname="RomanNumeralConverterTest$Subtractive" time="0.001"/>
   <testcase name="toRoman_subtractiveValues_returnsNumeral(int, String)[7]" classname="RomanNumeralConverterTest$Subtractive" time="0.001"/>
-  <testcase name="toRoman_subtractiveValues_returnsNumeral(int, String)[8]" classname="RomanNumeralConverterTest$Subtractive" time="0.001"/>
+  <testcase name="toRoman_subtractiveValues_returnsNumeral(int, String)[8]" classname="RomanNumeralConverterTest$Subtractive" time="0.002"/>
   <testcase name="toRoman_subtractiveValues_returnsNumeral(int, String)[9]" classname="RomanNumeralConverterTest$Subtractive" time="0.001"/>
   <testcase name="toRoman_subtractiveValues_returnsNumeral(int, String)[10]" classname="RomanNumeralConverterTest$Subtractive" time="0.001"/>
   <testcase name="toRoman_subtractiveValues_returnsNumeral(int, String)[11]" classname="RomanNumeralConverterTest$Subtractive" time="0.001"/>
-  <testcase name="toRoman_largeValues_returnsNumeral(int, String)[1]" classname="RomanNumeralConverterTest$LargerValues" time="0.003"/>
-  <testcase name="toRoman_largeValues_returnsNumeral(int, String)[2]" classname="RomanNumeralConverterTest$LargerValues" time="0.001"/>
-  <testcase name="toRoman_largeValues_returnsNumeral(int, String)[3]" classname="RomanNumeralConverterTest$LargerValues" time="0.0"/>
+  <testcase name="toRoman_largeValues_returnsNumeral(int, String)[1]" classname="RomanNumeralConverterTest$LargerValues" time="0.011"/>
+  <testcase name="toRoman_largeValues_returnsNumeral(int, String)[2]" classname="RomanNumeralConverterTest$LargerValues" time="0.003"/>
+  <testcase name="toRoman_largeValues_returnsNumeral(int, String)[3]" classname="RomanNumeralConverterTest$LargerValues" time="0.002"/>
   <testcase name="toRoman_largeValues_returnsNumeral(int, String)[4]" classname="RomanNumeralConverterTest$LargerValues" time="0.001"/>
   <testcase name="toRoman_largeValues_returnsNumeral(int, String)[5]" classname="RomanNumeralConverterTest$LargerValues" time="0.001"/>
-  <testcase name="toRoman_largeValues_returnsNumeral(int, String)[6]" classname="RomanNumeralConverterTest$LargerValues" time="0.0"/>
+  <testcase name="toRoman_largeValues_returnsNumeral(int, String)[6]" classname="RomanNumeralConverterTest$LargerValues" time="0.002"/>
   <testcase name="toRoman_largeValues_returnsNumeral(int, String)[7]" classname="RomanNumeralConverterTest$LargerValues" time="0.001"/>
-  <testcase name="toInteger_largeNumerals_returnsValue(int, String)[1]" classname="RomanNumeralConverterTest$LargerValues" time="0.004">
-    <failure message="expected: &lt;58&gt; but was: &lt;50&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <58> but was: <50>
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:569)
-	at RomanNumeralConverterTest$LargerValues.toInteger_largeNumerals_returnsValue(RomanNumeralConverterTest.java:112)
-]]></failure>
+  <testcase name="toInteger_largeNumerals_returnsValue(int, String)[1]" classname="RomanNumeralConverterTest$LargerValues" time="0.009">
     <system-out><![CDATA[LVIII
 50 -> 50
 break: 50
@@ -400,10 +344,10 @@ break: 50
 1 -> 6
 1 -> 7
 1 -> 8
-result: 50
+result: 58
 ]]></system-out>
   </testcase>
-  <testcase name="toInteger_largeNumerals_returnsValue(int, String)[2]" classname="RomanNumeralConverterTest$LargerValues" time="0.005">
+  <testcase name="toInteger_largeNumerals_returnsValue(int, String)[2]" classname="RomanNumeralConverterTest$LargerValues" time="0.012">
     <system-out><![CDATA[CDXLIV
 100 -> 100
 -500 -> 400
@@ -417,11 +361,7 @@ break: 444
 result: 444
 ]]></system-out>
   </testcase>
-  <testcase name="toInteger_largeNumerals_returnsValue(int, String)[3]" classname="RomanNumeralConverterTest$LargerValues" time="0.005">
-    <failure message="expected: &lt;1666&gt; but was: &lt;1660&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <1666> but was: <1660>
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:569)
-	at RomanNumeralConverterTest$LargerValues.toInteger_largeNumerals_returnsValue(RomanNumeralConverterTest.java:112)
-]]></failure>
+  <testcase name="toInteger_largeNumerals_returnsValue(int, String)[3]" classname="RomanNumeralConverterTest$LargerValues" time="0.007">
     <system-out><![CDATA[MDCLXVI
 1000 -> 1000
 break: 1000
@@ -433,10 +373,10 @@ break: 1600
 break: 1660
 5 -> 5
 1 -> 6
-result: 1660
+result: 1666
 ]]></system-out>
   </testcase>
-  <testcase name="toInteger_largeNumerals_returnsValue(int, String)[4]" classname="RomanNumeralConverterTest$LargerValues" time="0.006">
+  <testcase name="toInteger_largeNumerals_returnsValue(int, String)[4]" classname="RomanNumeralConverterTest$LargerValues" time="0.011">
     <system-out><![CDATA[MCMXCIV
 1000 -> 1000
 break: 1000
@@ -452,8 +392,8 @@ break: 1994
 result: 1994
 ]]></system-out>
   </testcase>
-  <testcase name="toInteger_largeNumerals_returnsValue(int, String)[5]" classname="RomanNumeralConverterTest$LargerValues" time="0.004">
-    <failure message="expected: &lt;2024&gt; but was: &lt;2020&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <2024> but was: <2020>
+  <testcase name="toInteger_largeNumerals_returnsValue(int, String)[5]" classname="RomanNumeralConverterTest$LargerValues" time="0.038">
+    <failure message="expected: &lt;2024&gt; but was: &lt;2026&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <2024> but was: <2026>
 	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:569)
 	at RomanNumeralConverterTest$LargerValues.toInteger_largeNumerals_returnsValue(RomanNumeralConverterTest.java:112)
 ]]></failure>
@@ -466,10 +406,10 @@ break: 2000
 break: 2020
 1 -> 1
 5 -> 6
-result: 2020
+result: 2026
 ]]></system-out>
   </testcase>
-  <testcase name="toInteger_largeNumerals_returnsValue(int, String)[6]" classname="RomanNumeralConverterTest$LargerValues" time="0.004">
+  <testcase name="toInteger_largeNumerals_returnsValue(int, String)[6]" classname="RomanNumeralConverterTest$LargerValues" time="0.021">
     <error message="Roman numeral is invalid" type="java.lang.IllegalArgumentException"><![CDATA[java.lang.IllegalArgumentException: Roman numeral is invalid
 	at RomanNumeralConverter.toInteger(RomanNumeralConverter.java:226)
 	at RomanNumeralConverterTest$LargerValues.toInteger_largeNumerals_returnsValue(RomanNumeralConverterTest.java:112)
@@ -486,7 +426,7 @@ break: 3000
 exception thrown
 ]]></system-out>
   </testcase>
-  <testcase name="toInteger_largeNumerals_returnsValue(int, String)[7]" classname="RomanNumeralConverterTest$LargerValues" time="0.006">
+  <testcase name="toInteger_largeNumerals_returnsValue(int, String)[7]" classname="RomanNumeralConverterTest$LargerValues" time="0.014">
     <system-out><![CDATA[MMMCMXCIX
 1000 -> 1000
 1000 -> 2000
@@ -504,13 +444,13 @@ break: 3999
 result: 3999
 ]]></system-out>
   </testcase>
-  <testcase name="toRoman_alwaysReturnsUpperCase(int)[1]" classname="RomanNumeralConverterTest$CaseHandling" time="0.01"/>
+  <testcase name="toRoman_alwaysReturnsUpperCase(int)[1]" classname="RomanNumeralConverterTest$CaseHandling" time="0.007"/>
   <testcase name="toRoman_alwaysReturnsUpperCase(int)[2]" classname="RomanNumeralConverterTest$CaseHandling" time="0.001"/>
-  <testcase name="toRoman_alwaysReturnsUpperCase(int)[3]" classname="RomanNumeralConverterTest$CaseHandling" time="0.0"/>
+  <testcase name="toRoman_alwaysReturnsUpperCase(int)[3]" classname="RomanNumeralConverterTest$CaseHandling" time="0.002"/>
   <testcase name="toRoman_alwaysReturnsUpperCase(int)[4]" classname="RomanNumeralConverterTest$CaseHandling" time="0.001"/>
   <testcase name="toRoman_alwaysReturnsUpperCase(int)[5]" classname="RomanNumeralConverterTest$CaseHandling" time="0.001"/>
-  <testcase name="toRoman_alwaysReturnsUpperCase(int)[6]" classname="RomanNumeralConverterTest$CaseHandling" time="0.002"/>
-  <testcase name="toInteger_mixedCaseMatchesUpperCase" classname="RomanNumeralConverterTest$CaseHandling" time="0.01">
+  <testcase name="toRoman_alwaysReturnsUpperCase(int)[6]" classname="RomanNumeralConverterTest$CaseHandling" time="0.001"/>
+  <testcase name="toInteger_mixedCaseMatchesUpperCase" classname="RomanNumeralConverterTest$CaseHandling" time="0.021">
     <system-out><![CDATA[MCMXCIV
 1000 -> 1000
 break: 1000
@@ -539,7 +479,7 @@ break: 1994
 result: 1994
 ]]></system-out>
   </testcase>
-  <testcase name="toInteger_lowerOrMixedCase_returnsValue(int, String)[1]" classname="RomanNumeralConverterTest$CaseHandling" time="0.004">
+  <testcase name="toInteger_lowerOrMixedCase_returnsValue(int, String)[1]" classname="RomanNumeralConverterTest$CaseHandling" time="0.008">
     <system-out><![CDATA[xiv
 10 -> 10
 break: 10
@@ -549,7 +489,7 @@ break: 14
 result: 14
 ]]></system-out>
   </testcase>
-  <testcase name="toInteger_lowerOrMixedCase_returnsValue(int, String)[2]" classname="RomanNumeralConverterTest$CaseHandling" time="0.007">
+  <testcase name="toInteger_lowerOrMixedCase_returnsValue(int, String)[2]" classname="RomanNumeralConverterTest$CaseHandling" time="0.01">
     <system-out><![CDATA[mcmxciv
 1000 -> 1000
 break: 1000
@@ -565,7 +505,7 @@ break: 1994
 result: 1994
 ]]></system-out>
   </testcase>
-  <testcase name="toInteger_lowerOrMixedCase_returnsValue(int, String)[3]" classname="RomanNumeralConverterTest$CaseHandling" time="0.002">
+  <testcase name="toInteger_lowerOrMixedCase_returnsValue(int, String)[3]" classname="RomanNumeralConverterTest$CaseHandling" time="0.004">
     <system-out><![CDATA[iv
 1 -> 1
 -5 -> 4
@@ -573,7 +513,7 @@ break: 4
 result: 4
 ]]></system-out>
   </testcase>
-  <testcase name="toInteger_lowerOrMixedCase_returnsValue(int, String)[4]" classname="RomanNumeralConverterTest$CaseHandling" time="0.006">
+  <testcase name="toInteger_lowerOrMixedCase_returnsValue(int, String)[4]" classname="RomanNumeralConverterTest$CaseHandling" time="0.01">
     <system-out><![CDATA[mmmcmxcix
 1000 -> 1000
 1000 -> 2000
@@ -591,25 +531,21 @@ break: 3999
 result: 3999
 ]]></system-out>
   </testcase>
-  <testcase name="toInteger_lowerOrMixedCase_returnsValue(int, String)[5]" classname="RomanNumeralConverterTest$CaseHandling" time="0.008">
-    <failure message="expected: &lt;42&gt; but was: &lt;40&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <42> but was: <40>
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:569)
-	at RomanNumeralConverterTest$CaseHandling.toInteger_lowerOrMixedCase_returnsValue(RomanNumeralConverterTest.java:127)
-]]></failure>
+  <testcase name="toInteger_lowerOrMixedCase_returnsValue(int, String)[5]" classname="RomanNumeralConverterTest$CaseHandling" time="0.004">
     <system-out><![CDATA[xLii
 10 -> 10
 -50 -> 40
 break: 40
 1 -> 1
 1 -> 2
-result: 40
+result: 42
 ]]></system-out>
   </testcase>
   <testcase name="roundTrip_selectedValues_returnsOriginal(int)[1]" classname="RomanNumeralConverterTest$RoundTrips" time="0.004">
     <system-out><![CDATA[I
 ]]></system-out>
   </testcase>
-  <testcase name="roundTrip_selectedValues_returnsOriginal(int)[2]" classname="RomanNumeralConverterTest$RoundTrips" time="0.003">
+  <testcase name="roundTrip_selectedValues_returnsOriginal(int)[2]" classname="RomanNumeralConverterTest$RoundTrips" time="0.008">
     <system-out><![CDATA[IV
 1 -> 1
 -5 -> 4
@@ -625,7 +561,7 @@ break: 9
 result: 9
 ]]></system-out>
   </testcase>
-  <testcase name="roundTrip_selectedValues_returnsOriginal(int)[4]" classname="RomanNumeralConverterTest$RoundTrips" time="0.002">
+  <testcase name="roundTrip_selectedValues_returnsOriginal(int)[4]" classname="RomanNumeralConverterTest$RoundTrips" time="0.004">
     <system-out><![CDATA[XIV
 10 -> 10
 break: 10
@@ -635,7 +571,7 @@ break: 14
 result: 14
 ]]></system-out>
   </testcase>
-  <testcase name="roundTrip_selectedValues_returnsOriginal(int)[5]" classname="RomanNumeralConverterTest$RoundTrips" time="0.002">
+  <testcase name="roundTrip_selectedValues_returnsOriginal(int)[5]" classname="RomanNumeralConverterTest$RoundTrips" time="0.005">
     <system-out><![CDATA[XL
 10 -> 10
 -50 -> 40
@@ -643,7 +579,7 @@ break: 40
 result: 40
 ]]></system-out>
   </testcase>
-  <testcase name="roundTrip_selectedValues_returnsOriginal(int)[6]" classname="RomanNumeralConverterTest$RoundTrips" time="0.002">
+  <testcase name="roundTrip_selectedValues_returnsOriginal(int)[6]" classname="RomanNumeralConverterTest$RoundTrips" time="0.004">
     <system-out><![CDATA[XC
 10 -> 10
 -100 -> 90
@@ -659,7 +595,7 @@ break: 400
 result: 400
 ]]></system-out>
   </testcase>
-  <testcase name="roundTrip_selectedValues_returnsOriginal(int)[8]" classname="RomanNumeralConverterTest$RoundTrips" time="0.003">
+  <testcase name="roundTrip_selectedValues_returnsOriginal(int)[8]" classname="RomanNumeralConverterTest$RoundTrips" time="0.004">
     <system-out><![CDATA[CMXCIX
 100 -> 100
 -1000 -> 900
@@ -673,7 +609,7 @@ break: 999
 result: 999
 ]]></system-out>
   </testcase>
-  <testcase name="roundTrip_selectedValues_returnsOriginal(int)[9]" classname="RomanNumeralConverterTest$RoundTrips" time="0.001">
+  <testcase name="roundTrip_selectedValues_returnsOriginal(int)[9]" classname="RomanNumeralConverterTest$RoundTrips" time="0.004">
     <system-out><![CDATA[MCMXCIV
 1000 -> 1000
 break: 1000
@@ -689,8 +625,8 @@ break: 1994
 result: 1994
 ]]></system-out>
   </testcase>
-  <testcase name="roundTrip_selectedValues_returnsOriginal(int)[10]" classname="RomanNumeralConverterTest$RoundTrips" time="0.003">
-    <failure message="expected: &lt;2024&gt; but was: &lt;2020&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <2024> but was: <2020>
+  <testcase name="roundTrip_selectedValues_returnsOriginal(int)[10]" classname="RomanNumeralConverterTest$RoundTrips" time="0.006">
+    <failure message="expected: &lt;2024&gt; but was: &lt;2026&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <2024> but was: <2026>
 	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:569)
 	at RomanNumeralConverterTest$RoundTrips.roundTrip_selectedValues_returnsOriginal(RomanNumeralConverterTest.java:155)
 ]]></failure>
@@ -703,10 +639,10 @@ break: 2000
 break: 2020
 1 -> 1
 5 -> 6
-result: 2020
+result: 2026
 ]]></system-out>
   </testcase>
-  <testcase name="roundTrip_selectedValues_returnsOriginal(int)[11]" classname="RomanNumeralConverterTest$RoundTrips" time="0.002">
+  <testcase name="roundTrip_selectedValues_returnsOriginal(int)[11]" classname="RomanNumeralConverterTest$RoundTrips" time="0.004">
     <system-out><![CDATA[MMMCMXCIX
 1000 -> 1000
 1000 -> 2000
@@ -724,32 +660,569 @@ break: 3999
 result: 3999
 ]]></system-out>
   </testcase>
-  <testcase name="roundTrip_everyValidNumber_returnsOriginal" classname="RomanNumeralConverterTest$RoundTrips" time="0.006">
-    <failure message="Round trip failed for 2 ==&gt; expected: &lt;2&gt; but was: &lt;0&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Round trip failed for 2 ==> expected: <2> but was: <0>
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:601)
-	at RomanNumeralConverterTest$RoundTrips.roundTrip_everyValidNumber_returnsOriginal(RomanNumeralConverterTest.java:162)
-]]></failure>
+  <testcase name="roundTrip_everyValidNumber_returnsOriginal" classname="RomanNumeralConverterTest$RoundTrips" time="0.141">
+    <error message="Roman numeral is invalid" type="java.lang.IllegalArgumentException"><![CDATA[java.lang.IllegalArgumentException: Roman numeral is invalid
+	at RomanNumeralConverter.toInteger(RomanNumeralConverter.java:226)
+	at RomanNumeralConverterTest$RoundTrips.roundTrip_everyValidNumber_returnsOriginal(RomanNumeralConverterTest.java:161)
+]]></error>
     <system-out><![CDATA[I
 II
 1 -> 1
 1 -> 2
-result: 0
+result: 2
+III
+1 -> 1
+1 -> 2
+1 -> 3
+result: 3
+IV
+1 -> 1
+-5 -> 4
+break: 4
+result: 4
+V
+VI
+5 -> 5
+1 -> 6
+result: 6
+VII
+5 -> 5
+1 -> 6
+1 -> 7
+result: 7
+VIII
+5 -> 5
+1 -> 6
+1 -> 7
+1 -> 8
+result: 8
+IX
+1 -> 1
+-10 -> 9
+break: 9
+result: 9
+X
+XI
+10 -> 10
+break: 10
+1 -> 1
+result: 11
+XII
+10 -> 10
+break: 10
+1 -> 1
+1 -> 2
+result: 12
+XIII
+10 -> 10
+break: 10
+1 -> 1
+1 -> 2
+1 -> 3
+result: 13
+XIV
+10 -> 10
+break: 10
+1 -> 1
+-5 -> 4
+break: 14
+result: 14
+XV
+10 -> 10
+break: 10
+5 -> 5
+result: 15
+XVI
+10 -> 10
+break: 10
+5 -> 5
+1 -> 6
+result: 16
+XVII
+10 -> 10
+break: 10
+5 -> 5
+1 -> 6
+1 -> 7
+result: 17
+XVIII
+10 -> 10
+break: 10
+5 -> 5
+1 -> 6
+1 -> 7
+1 -> 8
+result: 18
+XIX
+10 -> 10
+break: 10
+1 -> 1
+-10 -> 9
+break: 19
+result: 19
+XX
+10 -> 10
+10 -> 20
+result: 20
+XXI
+10 -> 10
+10 -> 20
+break: 20
+1 -> 1
+result: 21
+XXII
+10 -> 10
+10 -> 20
+break: 20
+1 -> 1
+1 -> 2
+result: 22
+XXIII
+10 -> 10
+10 -> 20
+break: 20
+1 -> 1
+1 -> 2
+1 -> 3
+result: 23
+XXIV
+10 -> 10
+10 -> 20
+break: 20
+1 -> 1
+-5 -> 4
+break: 24
+result: 24
+XXV
+10 -> 10
+10 -> 20
+break: 20
+5 -> 5
+result: 25
+XXVI
+10 -> 10
+10 -> 20
+break: 20
+5 -> 5
+1 -> 6
+result: 26
+XXVII
+10 -> 10
+10 -> 20
+break: 20
+5 -> 5
+1 -> 6
+1 -> 7
+result: 27
+XXVIII
+10 -> 10
+10 -> 20
+break: 20
+5 -> 5
+1 -> 6
+1 -> 7
+1 -> 8
+result: 28
+XXIX
+10 -> 10
+10 -> 20
+break: 20
+1 -> 1
+-10 -> 9
+break: 29
+result: 29
+XXX
+10 -> 10
+10 -> 20
+10 -> 30
+result: 30
+XXXI
+10 -> 10
+10 -> 20
+10 -> 30
+break: 30
+1 -> 1
+result: 31
+XXXII
+10 -> 10
+10 -> 20
+10 -> 30
+break: 30
+1 -> 1
+1 -> 2
+result: 32
+XXXIII
+10 -> 10
+10 -> 20
+10 -> 30
+break: 30
+1 -> 1
+1 -> 2
+1 -> 3
+result: 33
+XXXIV
+10 -> 10
+10 -> 20
+10 -> 30
+break: 30
+1 -> 1
+-5 -> 4
+break: 34
+result: 34
+XXXV
+10 -> 10
+10 -> 20
+10 -> 30
+break: 30
+5 -> 5
+result: 35
+XXXVI
+10 -> 10
+10 -> 20
+10 -> 30
+break: 30
+5 -> 5
+1 -> 6
+result: 36
+XXXVII
+10 -> 10
+10 -> 20
+10 -> 30
+break: 30
+5 -> 5
+1 -> 6
+1 -> 7
+result: 37
+XXXVIII
+10 -> 10
+10 -> 20
+10 -> 30
+break: 30
+5 -> 5
+1 -> 6
+1 -> 7
+1 -> 8
+result: 38
+XXXIX
+10 -> 10
+10 -> 20
+10 -> 30
+break: 30
+1 -> 1
+-10 -> 9
+break: 39
+result: 39
+XL
+10 -> 10
+-50 -> 40
+break: 40
+result: 40
+XLI
+10 -> 10
+-50 -> 40
+break: 40
+1 -> 1
+result: 41
+XLII
+10 -> 10
+-50 -> 40
+break: 40
+1 -> 1
+1 -> 2
+result: 42
+XLIII
+10 -> 10
+-50 -> 40
+break: 40
+1 -> 1
+1 -> 2
+1 -> 3
+result: 43
+XLIV
+10 -> 10
+-50 -> 40
+break: 40
+1 -> 1
+-5 -> 4
+break: 44
+result: 44
+XLV
+10 -> 10
+-50 -> 40
+break: 40
+5 -> 5
+result: 45
+XLVI
+10 -> 10
+-50 -> 40
+break: 40
+5 -> 5
+1 -> 6
+result: 46
+XLVII
+10 -> 10
+-50 -> 40
+break: 40
+5 -> 5
+1 -> 6
+1 -> 7
+result: 47
+XLVIII
+10 -> 10
+-50 -> 40
+break: 40
+5 -> 5
+1 -> 6
+1 -> 7
+1 -> 8
+result: 48
+XLIX
+10 -> 10
+-50 -> 40
+break: 40
+1 -> 1
+-10 -> 9
+break: 49
+result: 49
+L
+LI
+50 -> 50
+break: 50
+1 -> 1
+result: 51
+LII
+50 -> 50
+break: 50
+1 -> 1
+1 -> 2
+result: 52
+LIII
+50 -> 50
+break: 50
+1 -> 1
+1 -> 2
+1 -> 3
+result: 53
+LIV
+50 -> 50
+break: 50
+1 -> 1
+-5 -> 4
+break: 54
+result: 54
+LV
+50 -> 50
+break: 50
+5 -> 5
+result: 55
+LVI
+50 -> 50
+break: 50
+5 -> 5
+1 -> 6
+result: 56
+LVII
+50 -> 50
+break: 50
+5 -> 5
+1 -> 6
+1 -> 7
+result: 57
+LVIII
+50 -> 50
+break: 50
+5 -> 5
+1 -> 6
+1 -> 7
+1 -> 8
+result: 58
+LIX
+50 -> 50
+break: 50
+1 -> 1
+-10 -> 9
+break: 59
+result: 59
+LX
+50 -> 50
+10 -> 60
+result: 60
+LXI
+50 -> 50
+10 -> 60
+break: 60
+1 -> 1
+result: 61
+LXII
+50 -> 50
+10 -> 60
+break: 60
+1 -> 1
+1 -> 2
+result: 62
+LXIII
+50 -> 50
+10 -> 60
+break: 60
+1 -> 1
+1 -> 2
+1 -> 3
+result: 63
+LXIV
+50 -> 50
+10 -> 60
+break: 60
+1 -> 1
+-5 -> 4
+break: 64
+result: 64
+LXV
+50 -> 50
+10 -> 60
+break: 60
+5 -> 5
+result: 65
+LXVI
+50 -> 50
+10 -> 60
+break: 60
+5 -> 5
+1 -> 6
+result: 66
+LXVII
+50 -> 50
+10 -> 60
+break: 60
+5 -> 5
+1 -> 6
+1 -> 7
+result: 67
+LXVIII
+50 -> 50
+10 -> 60
+break: 60
+5 -> 5
+1 -> 6
+1 -> 7
+1 -> 8
+result: 68
+LXIX
+50 -> 50
+10 -> 60
+break: 60
+1 -> 1
+-10 -> 9
+break: 69
+result: 69
+LXX
+50 -> 50
+10 -> 60
+10 -> 70
+result: 70
+LXXI
+50 -> 50
+10 -> 60
+10 -> 70
+break: 70
+1 -> 1
+result: 71
+LXXII
+50 -> 50
+10 -> 60
+10 -> 70
+break: 70
+1 -> 1
+1 -> 2
+result: 72
+LXXIII
+50 -> 50
+10 -> 60
+10 -> 70
+break: 70
+1 -> 1
+1 -> 2
+1 -> 3
+result: 73
+LXXIV
+50 -> 50
+10 -> 60
+10 -> 70
+break: 70
+1 -> 1
+-5 -> 4
+break: 74
+result: 74
+LXXV
+50 -> 50
+10 -> 60
+10 -> 70
+break: 70
+5 -> 5
+result: 75
+LXXVI
+50 -> 50
+10 -> 60
+10 -> 70
+break: 70
+5 -> 5
+1 -> 6
+result: 76
+LXXVII
+50 -> 50
+10 -> 60
+10 -> 70
+break: 70
+5 -> 5
+1 -> 6
+1 -> 7
+result: 77
+LXXVIII
+50 -> 50
+10 -> 60
+10 -> 70
+break: 70
+5 -> 5
+1 -> 6
+1 -> 7
+1 -> 8
+result: 78
+LXXIX
+50 -> 50
+10 -> 60
+10 -> 70
+break: 70
+1 -> 1
+-10 -> 9
+break: 79
+result: 79
+LXXX
+50 -> 50
+10 -> 60
+10 -> 70
+10 -> 80
+result: 80
+LXXXI
+50 -> 50
+10 -> 60
+10 -> 70
+10 -> 80
+exception thrown
 ]]></system-out>
   </testcase>
-  <testcase name="toRoman_outOfRange_hasClearMessage" classname="RomanNumeralConverterTest$InvalidInput" time="0.002"/>
-  <testcase name="toRoman_outOfRange_throwsIllegalArgumentException(int)[1]" classname="RomanNumeralConverterTest$InvalidInput" time="0.004"/>
-  <testcase name="toRoman_outOfRange_throwsIllegalArgumentException(int)[2]" classname="RomanNumeralConverterTest$InvalidInput" time="0.0"/>
+  <testcase name="toRoman_outOfRange_hasClearMessage" classname="RomanNumeralConverterTest$InvalidInput" time="0.004"/>
+  <testcase name="toRoman_outOfRange_throwsIllegalArgumentException(int)[1]" classname="RomanNumeralConverterTest$InvalidInput" time="0.002"/>
+  <testcase name="toRoman_outOfRange_throwsIllegalArgumentException(int)[2]" classname="RomanNumeralConverterTest$InvalidInput" time="0.001"/>
   <testcase name="toRoman_outOfRange_throwsIllegalArgumentException(int)[3]" classname="RomanNumeralConverterTest$InvalidInput" time="0.001"/>
-  <testcase name="toRoman_outOfRange_throwsIllegalArgumentException(int)[4]" classname="RomanNumeralConverterTest$InvalidInput" time="0.001"/>
+  <testcase name="toRoman_outOfRange_throwsIllegalArgumentException(int)[4]" classname="RomanNumeralConverterTest$InvalidInput" time="0.003"/>
   <testcase name="toRoman_outOfRange_throwsIllegalArgumentException(int)[5]" classname="RomanNumeralConverterTest$InvalidInput" time="0.001"/>
-  <testcase name="toRoman_outOfRange_throwsIllegalArgumentException(int)[6]" classname="RomanNumeralConverterTest$InvalidInput" time="0.001"/>
+  <testcase name="toRoman_outOfRange_throwsIllegalArgumentException(int)[6]" classname="RomanNumeralConverterTest$InvalidInput" time="0.002"/>
   <testcase name="toRoman_outOfRange_throwsIllegalArgumentException(int)[7]" classname="RomanNumeralConverterTest$InvalidInput" time="0.001"/>
   <testcase name="toInteger_invalidInput_hasClearMessage" classname="RomanNumeralConverterTest$InvalidInput" time="0.003">
     <system-out><![CDATA[ABC
 ]]></system-out>
   </testcase>
-  <testcase name="toInteger_invalidInput_throwsIllegalArgumentException(String)[1]" classname="RomanNumeralConverterTest$InvalidInput" time="0.002"/>
-  <testcase name="toInteger_invalidInput_throwsIllegalArgumentException(String)[2]" classname="RomanNumeralConverterTest$InvalidInput" time="0.002">
+  <testcase name="toInteger_invalidInput_throwsIllegalArgumentException(String)[1]" classname="RomanNumeralConverterTest$InvalidInput" time="0.004"/>
+  <testcase name="toInteger_invalidInput_throwsIllegalArgumentException(String)[2]" classname="RomanNumeralConverterTest$InvalidInput" time="0.001">
     <system-out><![CDATA[
 ]]></system-out>
   </testcase>
@@ -757,11 +1230,11 @@ result: 0
     <system-out><![CDATA[   
 ]]></system-out>
   </testcase>
-  <testcase name="toInteger_invalidInput_throwsIllegalArgumentException(String)[4]" classname="RomanNumeralConverterTest$InvalidInput" time="0.001">
+  <testcase name="toInteger_invalidInput_throwsIllegalArgumentException(String)[4]" classname="RomanNumeralConverterTest$InvalidInput" time="0.002">
     <system-out><![CDATA[ABC
 ]]></system-out>
   </testcase>
-  <testcase name="toInteger_invalidInput_throwsIllegalArgumentException(String)[5]" classname="RomanNumeralConverterTest$InvalidInput" time="0.001">
+  <testcase name="toInteger_invalidInput_throwsIllegalArgumentException(String)[5]" classname="RomanNumeralConverterTest$InvalidInput" time="0.007">
     <system-out><![CDATA[XIZ
 10 -> 10
 break: 10
@@ -772,12 +1245,12 @@ break: 10
     <system-out><![CDATA[123
 ]]></system-out>
   </testcase>
-  <testcase name="toInteger_invalidInput_throwsIllegalArgumentException(String)[7]" classname="RomanNumeralConverterTest$InvalidInput" time="0.001">
+  <testcase name="toInteger_invalidInput_throwsIllegalArgumentException(String)[7]" classname="RomanNumeralConverterTest$InvalidInput" time="0.002">
     <system-out><![CDATA[X I
 10 -> 10
 ]]></system-out>
   </testcase>
-  <testcase name="toInteger_invalidInput_throwsIllegalArgumentException(String)[8]" classname="RomanNumeralConverterTest$InvalidInput" time="0.002">
+  <testcase name="toInteger_invalidInput_throwsIllegalArgumentException(String)[8]" classname="RomanNumeralConverterTest$InvalidInput" time="0.003">
     <system-out><![CDATA[IV!
 1 -> 1
 -5 -> 4

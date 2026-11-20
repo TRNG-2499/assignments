@@ -268,6 +268,7 @@ public class RomanNumeralConverter {
             }
             prevC = c;
         }
+        number += romanDigitValue;
 
         System.out.println("result: " + number);
         return number;
