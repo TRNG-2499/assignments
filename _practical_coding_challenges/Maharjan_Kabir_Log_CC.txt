@@ -12,3 +12,4 @@ The Coding Challenge platform you used (HackerRank, LeetCode, etc...)
 11/11/2026 - Diameter of a Binary Tree - Easy (apparently) - Java - LeetCode
 11/12/2026 - Add Binary - Easy - Java - LeetCode
 11/12/2026 - Invert Binary Tree - Easy - Java - LeetCode
+11/20/2026 - Valid Parenthesis - Easy - Java - LeetCode
