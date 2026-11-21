@@ -4,3 +4,5 @@ Simple Array Sum,Easy,11-9-2026,Java,HackerRank
 A Very Big Sum,Easy,11-9-2026,Java,HackerRank
 Compare the Triplets,Easy,11-15-2026,Java,HackerRank
 Plus Minus,Easy,11-15-2026,Java,HackerRank
+Birthday Cake Candles,11-20-2026,Java,HackerRank
+Cats and a Mouse,11-20-2026,Java,HackerRank
