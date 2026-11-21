@@ -1,0 +1,1 @@
+SELECT musician_name, band_name, genre_name FROM musician LEFT JOIN band ON musician.band_id = band.band_id LEFT JOIN genre ON band.genre_id = genre.genre_id;

@@ -1,0 +1,2 @@
+SELECT * FROM player WHERE player_name LIKE 'Jo$';
+SELECT * FROM player WHERE LOWER(player_name) LIKE '$a$e$';

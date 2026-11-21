@@ -1,0 +1,1 @@
+SELECT * FROM doctor EXCEPT (SELECT doctor_id, department_id, first_name, last_name, specialty, phone FROM doctor JOIN appointment ON doctor.doctor_id = appointment.doctor_id);

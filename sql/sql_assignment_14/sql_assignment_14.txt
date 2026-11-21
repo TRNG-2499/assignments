@@ -1,0 +1,3 @@
+SELECT sport_name, player_salary FROM player JOIN team ON player.team_id = team.team_id JOIN sport ON team.sport_id = sport.sport_id WHERE player_salary = (SELECT MAX(player_salary) FROM player);
+
+
