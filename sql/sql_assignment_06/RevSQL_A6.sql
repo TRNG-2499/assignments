@@ -1,0 +1,1 @@
+INSERT INTO Author VALUES (1006, 'George R.R. Martin');

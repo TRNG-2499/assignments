@@ -1,0 +1,1 @@
+INSERT INTO Books VALUES (DEFAULT, 'Coming Up for Air', 1002, 1939, 237);
