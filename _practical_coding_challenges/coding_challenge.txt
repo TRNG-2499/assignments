@@ -6,3 +6,5 @@
 6. Reverse int - Medium - 2026-11-11 - java - leetcode
 7. Palindrome Number - 2026-11-17- easy - leetcode
 8. Container With Most Water- 2026-11-17- easy - leetcode
+9. Longest Common Prefix- 2026-11-20- easy - leetcode
+10. Remove Nth Node From End of List - 2026-11-20- easy - leetcode
