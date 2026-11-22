@@ -13,3 +13,4 @@ The Coding Challenge platform you used (HackerRank, LeetCode, etc...)
 11/12/2026 - Add Binary - Easy - Java - LeetCode
 11/12/2026 - Invert Binary Tree - Easy - Java - LeetCode
 11/20/2026 - Valid Parenthesis - Easy - Java - LeetCode
+11/21/2026 - Valid Palindrome - Easy - Java - LeetCode
