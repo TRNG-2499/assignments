@@ -1,6 +1,7 @@
 challenge_name,difficulty,date_completed,language,platform
-Reverse Integer,Medium,2026-11-20,Java,LeetCode
+Reverse Integer,Medium,2026-11-19,Java,LeetCode
 Palindrome Number,Easy,2026-11-20,Java,LeetCode
 Remove Duplicates from Sorted Array,Easy,2026-11-20,Java,LeetCode
 sumDigits,Easy,2026-11-23,Java,CodingBat
 wordCount,Medium,2026-11-23,Java,CodingBat
+"Merge K Sorted Lists",Hard,2026-11-22
