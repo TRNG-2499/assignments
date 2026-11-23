@@ -4,5 +4,15 @@ Simple Array Sum,Easy,11-9-2026,Java,HackerRank
 A Very Big Sum,Easy,11-9-2026,Java,HackerRank
 Compare the Triplets,Easy,11-15-2026,Java,HackerRank
 Plus Minus,Easy,11-15-2026,Java,HackerRank
-Birthday Cake Candles,11-20-2026,Java,HackerRank
-Cats and a Mouse,11-20-2026,Java,HackerRank
+Birthday Cake Candles,Easy,11-20-2026,Java,HackerRank
+Cats and a Mouse,Easy,11-20-2026,Java,HackerRank
+Revising the Select Query I,Easy,11-23-26,SQL,HackerRank
+Revising the Select Query II,Easy,11-23-26,SQL,HackerRank
+Select All,Easy,11-23-26,SQL,HackerRank
+Select by ID,Easy,11-23-26,SQL,HackerRank
+Japanese Cities' Attributes,Easy,11-23-26,SQL,HackerRank
+Japanese Cities' Names,Easy,11-23-26,SQL,HackerRank
+Weather Observation Station 1,Easy,11-23-26,SQL,HackerRank
+Weather Observation Station 3,Easy,11-23-26,SQL,HackerRank
+Weather Observation Station 4,Easy,11-23-26,SQL,HackerRank
+
