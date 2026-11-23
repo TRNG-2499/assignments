@@ -1,0 +1,1 @@
+SELECT * FROM Player WHERE player_name LIKE 'Jo%';
