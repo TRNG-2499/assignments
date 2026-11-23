@@ -1,0 +1,20 @@
+SELECT s.student_id,
+    CASE WHEN te.test_score < 60 THEN NULL ELSE s.student_name END AS student_name,
+    te.test_score
+FROM TestEvent te
+JOIN Student s ON s.student_id = te.student_id
+JOIN TestConfig tc ON tc.test_id = te.test_id
+WHERE tc.test_name = 'Introductory SQL'
+ORDER BY te.test_score DESC;
+
+
+-- Stretch Goal:
+
+SELECT s.student_id,
+    CASE WHEN te.test_score < tc.pass_mark THEN NULL ELSE s.student_name END AS student_name,
+    tc.test_name,
+    te.test_score
+FROM TestEvent te
+JOIN Student s ON s.student_id = te.student_id
+JOIN TestConfig tc ON tc.test_id = te.test_id
+ORDER BY tc.test_name, te.test_score DESC;
