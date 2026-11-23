@@ -4,7 +4,9 @@
 4. Longest Substring Without Repeating Characters - Medum - 2026-11-11- Java - LeetCode
 5. median-of-two-sorted-arrays - Hard - 2026-11-11 - Java - leetcode
 6. Reverse int - Medium - 2026-11-11 - java - leetcode
-7. Palindrome Number - 2026-11-17- easy - leetcode
-8. Container With Most Water- 2026-11-17- easy - leetcode
-9. Longest Common Prefix- 2026-11-20- easy - leetcode
-10. Remove Nth Node From End of List - 2026-11-20- easy - leetcode
+7. Palindrome Number - easy - 2026-11-17- java - leetcode
+8. Container With Most Water- easy- 2026-11-17- java - leetcode
+9. Longest Common Prefix- easy-2026-11-20- java - leetcode
+10. Remove Nth Node From End of List - medium -2026-11-20- java- leetcode
+11. Combine Two Tables - easy - 2026-11-23 - sql - leetcode
+12. Second Highest Salary-  medium - 2026-11-23 - sql - leetcode
