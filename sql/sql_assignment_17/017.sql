@@ -1,10 +1,13 @@
 
 
 SELECT
-    d.doctor_id,
-    d.first_name,
-    d.last_name
-FROM Doctor d
-LEFT JOIN Appointment a
-    ON d.doctor_id = a.doctor_id
-WHERE a.appointment_id IS NULL;
+    m.musician_id,
+    m.musician_name,
+    m.instrument,
+    b.band_name,
+    g.genre_name
+FROM Musician m
+JOIN Band b
+    ON m.band_id = b.band_id
+JOIN Genre g
+    ON b.genre_id = g.genre_id;
