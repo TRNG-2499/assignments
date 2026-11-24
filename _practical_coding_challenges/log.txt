@@ -2,3 +2,4 @@
 2. Regular Expression Matching - Hard - 11/10/2026 - Java - LeetCode
 3. Reverse Integer - Medium - 11/18/2026 - Java - LeetCode
 4. Swap Nodes in Pairs - Medium - 11/20/2026 - Java - LeetCode
+5. Remove Element - Easy - 11/24/2026 - Java - LeetCode
