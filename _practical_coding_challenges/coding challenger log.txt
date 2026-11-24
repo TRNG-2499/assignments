@@ -7,3 +7,7 @@ Coding Challenge Log
 5. Merge and Sort Intervals - Medium - 11/17/2026 - Java - HackerRank
 6. Check Palindrome by Filtering Non-Letters - Easy - 11/19/2026 - Java - HackerRank
 7. Target Index Search - Easy - 11/20 - Java - HackerRank
+8. Revising the Select Query I - Easy - 11/23 - SQL - HackerRank
+9. The Report - Medium - 11/23 - SQL - HackerRank
+10. Average Population of Each Continent - Easy - 11/23 - SQL - HackerRank
+11. Count Number Pairs - Easy - 11/24 - Java - HackerRank
