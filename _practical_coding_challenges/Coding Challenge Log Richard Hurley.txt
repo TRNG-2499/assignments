@@ -10,3 +10,6 @@ Coding Challenge Log
 8. Second Highest Salary - Medium, November 18 2026, SQL, Leetcode
 9. Combine Two Tables - Easy, November 19 2026, SQL, Leetcode
 10. Department Highest Salary - Medium, November 20 2026, SQL, Leetcode
+11. Delete Duplicate Emails - Easy, November 23 2026, SQL, Leetcode
+12. Customers Who Never Order - Easy, November 24 2026, SQL, Leetcode
+
