@@ -1,5 +1,6 @@
-name - difficulty - status
-date - language - platform
+*name - difficulty - status*
+*date - language - platform*
+*attempts*
 
 Flood Fill - Easy - ***Solved***
 11/10/2026 - Java - LeetCode
@@ -28,5 +29,9 @@ Binary Search - Easy  - ***Solved***
 
 Merge Two Sorted Lists - Easy - ***Solved***
 11/20/2026 - Java - LeetCode
+- Attempt 1 - 30 mins
+
+Best Time to Buy and Sell Stock - ***Solved***
+11/23/2026 - Java - LeetCode
 - Attempt 1 - 30 mins
 
