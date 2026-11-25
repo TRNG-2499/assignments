@@ -231,7 +231,11 @@ public class RomanNumeralConverter {
             int cLevel = romanCharacterLevel(c);
             int prevComparison = compareRomanCharacterRanks(c, prevC);
             
-            if(prevComparison < 0 && (romanCharacterL - cLevel) > 0){
+            boolean nextDigit = prevComparison < 0 && (romanCharacterL - cLevel) > 0;
+            
+            boolean sameButNextAdditive = (i >= (roman.length() - 1)) ? false : compareRomanCharacterRanks(roman.charAt(i + 1), c) == -2;
+            boolean sameButDifferentDigit = false; //prevComparison > 0 && sameButNextAdditive;
+            if(nextDigit || sameButDifferentDigit){
                 number += romanDigitValue;
 
                 romanCharacterL--;
