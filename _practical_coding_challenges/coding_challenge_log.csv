@@ -12,3 +12,5 @@ Longest Substring Without Repeating Characters,Medium,2026-11-20,Java,LeetCode
 Managers with at Least 5 Direct Reports,Medium,2026-11-24,SQL,LeetCode
 Second Highest Salary,Medium,2026-11-24,SQL,LeetCode
 Department Highest Salary,Medium,2026-11-24,SQL,LeetCode
+Minimum Window Substring,Hard,2026-11-25,Java,LeetCode
+Department Top Three Salaries,Hard,2026-11-25,SQL,LeetCode
