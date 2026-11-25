@@ -27,3 +27,15 @@ Difficulty of challenge: medium
 Date completed: 11/16/2026
 Programming Language used: java
 Coding challenge platform: HackerRank
+
+Name of challenge: Java Regex 2 - Duplicate Words
+Difficulty of challenge: medium
+Date completed: 11/24/2026
+Programming Language used: java
+Coding challenge platform: HackerRank
+
+Name of challenge: Tag Content Extractor
+Difficulty of challenge: medium
+Date completed: 11/24/2026
+Programming Language used: java
+Coding challenge platform: HackerRank
