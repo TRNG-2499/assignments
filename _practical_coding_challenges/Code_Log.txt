@@ -5,3 +5,5 @@ Coding Challenge Log
 3. Group Anagrams - Medium - 2026-11-13 - Java - NeetCode
 4. Longest Common Prefix - Easy - 2026-11-19 - Java - LeetCode
 5. Flipping an Image - Easy - 2026-11-20 - Java - LeetCode
+6. 3Sum - Medium - 2026-11-26 - Java - Leetcode
+7. Binary Search - Easy - 2026-11-27 - Java - Leetcode
